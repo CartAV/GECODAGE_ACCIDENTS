@@ -24,7 +24,7 @@
     "input": {
       "items": [
         {
-          "ref": "caracteristiques_not_geocoded",
+          "ref": "not_geocoded",
           "deps": []
         }
       ]
@@ -41,11 +41,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488990034106
+    "lastModifiedOn": 1488993317635
   },
   "tags": [],
   "checklists": {
