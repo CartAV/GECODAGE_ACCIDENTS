@@ -1,0 +1,141 @@
+{
+  "creator": "grabenertr",
+  "versionTag": {
+    "versionNumber": 8,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1487845444226
+  },
+  "connection": "datalabmaster",
+  "name": "Bidouilles à Tristram",
+  "checklists": {
+    "checklists": []
+  },
+  "tags": [],
+  "cells": [
+    {
+      "id": "96krh4o5fxg",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "qr7fn2546y8",
+      "type": "QUERY",
+      "name": "Coordonnées douteuses",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "xjfc327ksfd",
+      "type": "QUERY",
+      "name": "Coordonnées probablement hors de france",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "ew5o7adni7u",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "s8lwfa16d8o",
+      "type": "QUERY",
+      "name": "Coordonnées décimales ou minutes/secondes",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "75cua98h04q",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "0xz2lougjv2",
+      "type": "QUERY",
+      "name": "Qualification de la présence de coordonnées",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "187yn6jy0im",
+      "type": "QUERY",
+      "name": "Distances par déciles",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "pmrsgwpr8y",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "5rqzkie4zzt",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "e6d7ujed9w8",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    }
+  ],
+  "automationLocal": false,
+  "createdBy": {},
+  "createdOn": 0,
+  "lastModifiedBy": {},
+  "lastModifiedOn": 0,
+  "allContributors": []
+}

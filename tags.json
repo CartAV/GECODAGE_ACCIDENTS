@@ -1,0 +1,49 @@
+{
+  "tags": {
+    "source": {
+      "color": "#0f6d82"
+    },
+    "usagers": {
+      "color": "#123883"
+    },
+    "vehicules": {
+      "color": "#90a8b7"
+    },
+    "caracteristiques": {
+      "color": "#d66b9b"
+    },
+    "lieux": {
+      "color": "#a088bd"
+    },
+    "creator_antoinefa": {
+      "color": "#1ac2ab"
+    },
+    "creator_dauriame": {
+      "color": "#afc277"
+    },
+    "stats": {
+      "color": "#94be8e"
+    },
+    "s": {
+      "color": "#94be8e"
+    },
+    "creator_grabenertr": {
+      "color": "#a088bd"
+    },
+    "creator_chabouisfr": {
+      "color": "#a088bd"
+    },
+    "creator:antoinefa": {
+      "color": "#0f6d82"
+    },
+    "creator:chabouisfr": {
+      "color": "#90a8b7"
+    },
+    "creator:grabenertr": {
+      "color": "#123883"
+    },
+    "imported": {
+      "color": "#263238"
+    }
+  }
+}

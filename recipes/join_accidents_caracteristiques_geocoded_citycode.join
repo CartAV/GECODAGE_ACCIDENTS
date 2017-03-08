@@ -1,0 +1,299 @@
+{
+    "selectedColumns": [
+        {
+            "table": 0, 
+            "type": "bigint", 
+            "name": "Num_Acc"
+        }, 
+        {
+            "table": 0, 
+            "type": "bigint", 
+            "name": "an"
+        }, 
+        {
+            "table": 0, 
+            "type": "bigint", 
+            "name": "mois"
+        }, 
+        {
+            "table": 0, 
+            "type": "bigint", 
+            "name": "jour"
+        }, 
+        {
+            "table": 0, 
+            "type": "bigint", 
+            "name": "hrmn"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "lum"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "agg"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "int"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "atm"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "col"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "com"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "adr"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "gps"
+        }, 
+        {
+            "table": 0, 
+            "type": "double", 
+            "name": "lat"
+        }, 
+        {
+            "table": 0, 
+            "type": "double", 
+            "name": "long"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "dep"
+        }, 
+        {
+            "table": 0, 
+            "type": "date", 
+            "name": "date"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "original_city_code"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "original_name"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "current_city_code"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "current_name"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "ban_citycode"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "ban_label"
+        }, 
+        {
+            "table": 0, 
+            "type": "float", 
+            "name": "ban_latitude"
+        }, 
+        {
+            "table": 0, 
+            "type": "float", 
+            "name": "ban_longitude"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "ban_postcode"
+        }, 
+        {
+            "table": 0, 
+            "type": "float", 
+            "name": "ban_score"
+        }, 
+        {
+            "table": 0, 
+            "type": "string", 
+            "name": "ban_type"
+        }, 
+        {
+            "table": 1, 
+            "type": "string", 
+            "name": "bano_citycode"
+        }, 
+        {
+            "table": 1, 
+            "type": "string", 
+            "name": "bano_label"
+        }, 
+        {
+            "table": 1, 
+            "type": "float", 
+            "name": "bano_latitude"
+        }, 
+        {
+            "table": 1, 
+            "type": "float", 
+            "name": "bano_longitude"
+        }, 
+        {
+            "table": 1, 
+            "type": "string", 
+            "name": "bano_postcode"
+        }, 
+        {
+            "table": 1, 
+            "type": "float", 
+            "name": "bano_score"
+        }, 
+        {
+            "table": 1, 
+            "type": "string", 
+            "name": "bano_type"
+        }, 
+        {
+            "table": 2, 
+            "type": "string", 
+            "name": "ban2_citycode"
+        }, 
+        {
+            "table": 2, 
+            "type": "string", 
+            "name": "ban2_label"
+        }, 
+        {
+            "table": 2, 
+            "type": "float", 
+            "name": "ban2_latitude"
+        }, 
+        {
+            "table": 2, 
+            "type": "float", 
+            "name": "ban2_longitude"
+        }, 
+        {
+            "table": 2, 
+            "type": "float", 
+            "name": "ban2_score"
+        }, 
+        {
+            "table": 2, 
+            "type": "string", 
+            "name": "ban2_type"
+        }
+    ], 
+    "engineParams": {
+        "impala": {
+            "forceStreamMode": true
+        }, 
+        "sparkSQL": {
+            "overwriteOutputSchema": true, 
+            "readParams": {
+                "map": {}
+            }, 
+            "sparkConfig": {
+                "inheritConf": "default", 
+                "conf": []
+            }
+        }, 
+        "hive": {
+            "useGlobalMetastore": false, 
+            "executionEngine": "HIVECLI_LOCAL", 
+            "addDkuUdf": false, 
+            "hiveconf": []
+        }, 
+        "lowerCaseSchemaIfEngineRequiresIt": true
+    }, 
+    "postFilter": {}, 
+    "joins": [
+        {
+            "table2": 1, 
+            "rightLimit": {}, 
+            "table1": 0, 
+            "on": [
+                {
+                    "caseInsensitive": false, 
+                    "column1": {
+                        "table": 0, 
+                        "name": "Num_Acc"
+                    }, 
+                    "maxMatches": 1, 
+                    "strict": false, 
+                    "maxDistance": 0, 
+                    "normalizeText": false, 
+                    "dateDiffUnit": "DAY", 
+                    "type": "EQ", 
+                    "column2": {
+                        "table": 1, 
+                        "name": "Num_Acc"
+                    }
+                }
+            ], 
+            "conditionsMode": "AND", 
+            "outerJoinOnTheLeft": true, 
+            "type": "LEFT"
+        }, 
+        {
+            "table2": 2, 
+            "on": [
+                {
+                    "caseInsensitive": false, 
+                    "maxDistance": 0, 
+                    "dateDiffUnit": "DAY", 
+                    "strict": false, 
+                    "type": "EQ", 
+                    "normalizeText": false, 
+                    "maxMatches": 1, 
+                    "column1": {
+                        "table": 0, 
+                        "name": "Num_Acc"
+                    }, 
+                    "column2": {
+                        "table": 2, 
+                        "name": "Num_Acc"
+                    }
+                }
+            ], 
+            "table1": 0, 
+            "rightLimit": {}, 
+            "conditionsMode": "AND", 
+            "outerJoinOnTheLeft": true, 
+            "type": "LEFT"
+        }
+    ], 
+    "virtualInputs": [
+        {
+            "index": 0
+        }, 
+        {
+            "index": 1
+        }, 
+        {
+            "index": 2
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "apiKey": "XS897gKNfzzWBWlRfwFuZwMZKfTforJb", 
+    "description": "", 
+    "tags": [], 
+    "creationTag": {
+        "lastModifiedBy": {
+            "login": "antoinefa"
+        }, 
+        "lastModifiedOn": 1484663508787
+    }, 
+    "shortDesc": "", 
+    "owner": "antoinefa", 
+    "pyBackendMustRun": true, 
+    "name": "Test FA", 
+    "pyBackendEnabled": true, 
+    "libraries": [
+        "jquery", 
+        "dataiku", 
+        "leaflet", 
+        "bootstrap"
+    ], 
+    "listed": true, 
+    "checklists": {
+        "checklists": []
+    }
+}

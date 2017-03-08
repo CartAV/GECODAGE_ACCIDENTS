@@ -1,0 +1,151 @@
+{
+  "dashboardAuthorizations": {
+    "allAuthorized": false,
+    "authorizations": []
+  },
+  "exposedObjects": {
+    "objects": []
+  },
+  "projectType": "REGULAR",
+  "owner": "grabenertr",
+  "permissions": [],
+  "tutorialProject": false,
+  "settings": {
+    "flowAnchorSourcesAndSinks": true,
+    "gitCommitMode": "AUTO",
+    "disableAutomaticTriggers": false,
+    "integrations": {
+      "integrations": []
+    },
+    "flowBuildSettings": {
+      "mergeSparkPipelines": false,
+      "pruneBeforeSparkPipelines": true
+    },
+    "limitsSettings": {
+      "memSampleBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "shakerMemTableBytes": {
+        "soft": -1,
+        "hard": -1
+      }
+    },
+    "relocationSettings": {
+      "sqlLikeRecipesInitializationMode": "RESOLVED_TABLE_REFERENCES"
+    },
+    "recipeEnginesPreferences": {
+      "forbiddenEngines": [],
+      "enginesPreferenceOrder": [],
+      "forbiddenByRecipeType": {},
+      "preferenceByRecipeType": {}
+    }
+  },
+  "name": "accidents corporels - geo",
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488985276762
+  },
+  "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation. \u003cbr\u003e\nStatistiques par accident : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/\n\u003cbr\u003e\npar usager \nhttp://10.237.27.129/projects/ACCIDENTS/datasets/accidents_par_usager/explore/",
+  "shortDesc": "Données issues de l\u0027opendata etalab (BAAC)\nDataprep master\u003cbr\u003e\nstatistiques : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/",
+  "tags": [
+    "imported"
+  ],
+  "checklists": {
+    "checklists": [
+      {
+        "title": "Todo accidentalité",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": true,
+            "text": "Import des données via data.gouv.fr",
+            "createdOn": 1479920510514,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": true,
+            "text": "Insertion des dictionnaires",
+            "createdOn": 1479920510514,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": true,
+            "text": "Dictionnaires des valeurs",
+            "createdOn": 1479920510514,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": true,
+            "text": "Jointures",
+            "createdOn": 1479920510514,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Normalisation des lieux",
+            "createdOn": 1479920510514,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Géolocalisation adresse gouv fr (à déboguer)",
+            "createdOn": 1480097013129,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": true,
+            "text": "Migration vers vertica",
+            "createdOn": 1482511565405,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Enrichissement IRIS",
+            "createdOn": 1483013763319,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Enrichissement segment routier",
+            "createdOn": 1483013770990,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": true,
+            "text": "Statistiques par usager",
+            "createdOn": 1483015266358,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Statistiques aggrégées par véhicules",
+            "createdOn": 1483015272493,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Statistiques aggrégées par accident",
+            "createdOn": 1483015281030,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
+  }
+}

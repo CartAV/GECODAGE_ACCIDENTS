@@ -1,0 +1,89 @@
+{
+    "charts": [
+        {
+            "refreshableSelection": {
+                "autoRefreshSample": false, 
+                "selection": {
+                    "maxRecords": 10000, 
+                    "partitionSelectionMethod": "ALL", 
+                    "targetRatio": 0.02, 
+                    "samplingMethod": "HEAD_SEQUENTIAL"
+                }, 
+                "_refreshTrigger": 0
+            }, 
+            "def": {
+                "userEditedName": false, 
+                "showLegend": true, 
+                "axis1LogScale": false, 
+                "disableSafetyLimits": false, 
+                "uaShape": [], 
+                "genericMeasures": [], 
+                "yDimension": [], 
+                "filters": [], 
+                "boxplotValue": [], 
+                "includeZero": true, 
+                "sizeMeasure": [], 
+                "xAxisMode": "NORMAL", 
+                "colorPaletteType": "LINEAR", 
+                "xMeasure": [], 
+                "useLiveProcessingIfAvailable": true, 
+                "mapGridOptions": {
+                    "gridLatDeg": 0.6, 
+                    "gridLonDeg": 0.6
+                }, 
+                "computeMode": "NORMAL", 
+                "uaXDimension": [], 
+                "smoothing": false, 
+                "yMeasure": [], 
+                "type": "admin_map", 
+                "tooltipMeasures": [], 
+                "strokeWidth": 1, 
+                "yAxisMode": "NORMAL", 
+                "uaSize": [], 
+                "genericDimension0": [], 
+                "genericDimension1": [], 
+                "variant": "filled_map", 
+                "bubblesOptions": {
+                    "defaultRadius": 5.0
+                }, 
+                "hexbinRadius": 20, 
+                "uaTooltip": [], 
+                "showXAxis": false, 
+                "xDimension": [], 
+                "uaColor": [], 
+                "groupDimension": [], 
+                "colorMeasure": [], 
+                "scatterOptions": {
+                    "equalScales": false, 
+                    "identityLine": false
+                }, 
+                "boxplotBreakdownDim": [], 
+                "mapOptions": {
+                    "tilesLayer": "cartodb-positron", 
+                    "lockSquareGrid": false
+                }, 
+                "name": "Chart", 
+                "axis2LogScale": false, 
+                "geometry": [
+                    {
+                        "column": "the_geom", 
+                        "isA": "ua", 
+                        "treatAsAlphanum": false, 
+                        "type": "GEOMETRY", 
+                        "adminLevel": 7
+                    }
+                ], 
+                "uaYDimension": [], 
+                "pieOptions": {
+                    "donutHoleSize": 50.0
+                }, 
+                "colorOptions": {
+                    "ccScaleMode": "NORMAL", 
+                    "singleColor": "#659a88", 
+                    "colorPalette": "default", 
+                    "transparency": 0.75
+                }
+            }
+        }
+    ]
+}

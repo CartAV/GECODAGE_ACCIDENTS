@@ -1,0 +1,21 @@
+{
+    "owner": "grabenertr", 
+    "params": {
+        "datasetSmartName": "DATAPREPOPENDATAGEO.geohisto"
+    }, 
+    "name": "DATAPREPOPENDATAGEO.geohisto", 
+    "tags": [], 
+    "shortDesc": "", 
+    "checklists": {
+        "checklists": []
+    }, 
+    "listed": true, 
+    "type": "dataset_table", 
+    "creationTag": {
+        "lastModifiedBy": {
+            "login": "grabenertr"
+        }, 
+        "lastModifiedOn": 1487173944601
+    }, 
+    "description": ""
+}
