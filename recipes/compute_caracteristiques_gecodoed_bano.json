@@ -33,18 +33,18 @@
     "output": {
       "items": [
         {
-          "ref": "caracteristiques_gecodoed_bano",
+          "ref": "geocoded_bano",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488989975667
+    "lastModifiedOn": 1488990119384
   },
   "tags": [],
   "checklists": {
