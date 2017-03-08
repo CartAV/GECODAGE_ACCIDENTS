@@ -1,25 +1,5 @@
 {
   "type": "CustomCode_geocoding-ban",
-  "inputs": {
-    "input": {
-      "items": [
-        {
-          "ref": "caracteristiques_not_geocoded",
-          "deps": []
-        }
-      ]
-    }
-  },
-  "outputs": {
-    "output": {
-      "items": [
-        {
-          "ref": "geocoded_ban_cityname",
-          "appendMode": false
-        }
-      ]
-    }
-  },
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
@@ -36,21 +16,39 @@
       "lines_per_request": 1000.0
     }
   },
-  "checklists": {
-    "checklists": []
-  },
-  "tags": [],
-  "versionTag": {
-    "versionNumber": 26,
-    "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1488204682674
-  },
   "customMeta": {
     "kv": {}
   },
-  "redispatchPartitioning": false
+  "redispatchPartitioning": false,
+  "inputs": {
+    "input": {
+      "items": [
+        {
+          "ref": "caracteristiques_not_geocoded",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "output": {
+      "items": [
+        {
+          "ref": "geocoded_ban_cityname_pg",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 27,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488990034106
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
 }
