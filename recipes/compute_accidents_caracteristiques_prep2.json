@@ -58,18 +58,18 @@
     "main": {
       "items": [
         {
-          "ref": "accidents_caracteristiques_prep2",
+          "ref": "caracteristiques_prep2",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 44,
+    "versionNumber": 45,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488989936667
+    "lastModifiedOn": 1488991832394
   },
   "tags": [],
   "checklists": {
