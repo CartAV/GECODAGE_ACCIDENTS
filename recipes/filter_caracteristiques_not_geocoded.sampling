@@ -1,23 +1,22 @@
 {
-  "enabled": true, 
-  "engineType": "DSS", 
-  "expression": "val(\"ban_id\") == '' || isNull(val(\"ban_id\"))   &&   val(\"adr\") != '' && isNotNull(val(\"adr\"))", 
-  "language": "GREL", 
+  "expression": "val(\"ban_id\") \u003d\u003d \u0027\u0027 || isNull(val(\"ban_id\"))   \u0026\u0026   val(\"adr\") !\u003d \u0027\u0027 \u0026\u0026 isNotNull(val(\"adr\"))",
+  "engineType": "DSS",
+  "enabled": true,
   "uiData": {
     "conditions": [
       {
-        "col": "an", 
-        "input": "ban_id", 
-        "num": 0, 
+        "num": 0,
+        "input": "ban_id",
+        "col": "an",
         "operator": "is empty"
-      }, 
+      },
       {
-        "col": "an", 
-        "input": "adr", 
-        "num": 0, 
+        "num": 0,
+        "input": "adr",
+        "col": "an",
         "operator": "not empty"
       }
-    ], 
-    "mode": "&&"
+    ],
+    "mode": "\u0026\u0026"
   }
 }
