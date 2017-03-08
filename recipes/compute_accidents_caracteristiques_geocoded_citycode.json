@@ -24,7 +24,7 @@
     "input": {
       "items": [
         {
-          "ref": "ACCIDENTS_BRUT.caracteristiques_vertica",
+          "ref": "ACCIDENTS_BRUT.caracteristiques_postgis",
           "deps": []
         }
       ]
@@ -41,11 +41,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488989185915
+    "lastModifiedOn": 1488989536507
   },
   "tags": [],
   "checklists": {
