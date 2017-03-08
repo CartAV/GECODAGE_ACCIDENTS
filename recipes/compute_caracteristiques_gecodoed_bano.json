@@ -4,7 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "server_address": "http://datalab-ban",
+      "server_address": "http://datalab-bano",
       "concurent_requests": 8.0,
       "prefix": "bano_",
       "columns": [
@@ -12,7 +12,7 @@
         "original_name"
       ],
       "timeout": 5000.0,
-      "lines_per_request": 1000.0
+      "lines_per_request": 500.0
     }
   },
   "customMeta": {
@@ -40,11 +40,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488995121560
+    "lastModifiedOn": 1488995177672
   },
   "tags": [],
   "checklists": {
