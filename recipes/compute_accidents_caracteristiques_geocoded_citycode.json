@@ -34,18 +34,18 @@
     "output": {
       "items": [
         {
-          "ref": "accidents_caracteristiques_geocoded_citycode",
+          "ref": "geocoded_ban_citycode",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488989960917
+    "lastModifiedOn": 1488990089984
   },
   "tags": [],
   "checklists": {
