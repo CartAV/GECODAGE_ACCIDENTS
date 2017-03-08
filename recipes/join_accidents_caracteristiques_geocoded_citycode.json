@@ -1,18 +1,24 @@
 {
   "type": "join",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
   "inputs": {
     "main": {
       "items": [
         {
-          "ref": "accidents_caracteristiques_geocoded_citycode",
+          "ref": "geocoded_ban_citycode",
           "deps": []
         },
         {
-          "ref": "caracteristiques_gecodoed_bano",
+          "ref": "geocoded_bano",
           "deps": []
         },
         {
-          "ref": "geocoded_ban_cityname",
+          "ref": "geocoded_ban_cityname_pg",
           "deps": []
         }
       ]
@@ -22,29 +28,21 @@
     "main": {
       "items": [
         {
-          "ref": "caracteristiques_geocoded_3",
+          "ref": "caracteristiques_geocoded_3_postgis",
           "appendMode": false
         }
       ]
     }
   },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
-  "checklists": {
-    "checklists": []
+  "versionTag": {
+    "versionNumber": 4,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488993784614
   },
   "tags": [],
-  "versionTag": {
-    "versionNumber": 3,
-    "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1488188314740
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+  "checklists": {
+    "checklists": []
+  }
 }
