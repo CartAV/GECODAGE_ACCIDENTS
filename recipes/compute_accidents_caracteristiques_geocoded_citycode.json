@@ -1,25 +1,5 @@
 {
   "type": "CustomCode_geocoding-ban",
-  "inputs": {
-    "input": {
-      "items": [
-        {
-          "ref": "accidents_caracteristiques_prep3",
-          "deps": []
-        }
-      ]
-    }
-  },
-  "outputs": {
-    "output": {
-      "items": [
-        {
-          "ref": "accidents_caracteristiques_geocoded_citycode",
-          "appendMode": false
-        }
-      ]
-    }
-  },
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
@@ -36,21 +16,39 @@
       "lines_per_request": 2000.0
     }
   },
-  "checklists": {
-    "checklists": []
-  },
-  "tags": [],
-  "versionTag": {
-    "versionNumber": 29,
-    "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1488200829805
-  },
   "customMeta": {
     "kv": {}
   },
-  "redispatchPartitioning": false
+  "redispatchPartitioning": false,
+  "inputs": {
+    "input": {
+      "items": [
+        {
+          "ref": "caracateristiques_postgis",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "output": {
+      "items": [
+        {
+          "ref": "accidents_caracteristiques_geocoded_citycode",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 30,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488989106218
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
 }
