@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488790084503
+    "lastModifiedOn": 1488993784331
   },
   "creationTag": {
     "versionNumber": 0,
@@ -282,6 +282,12 @@
       {
         "name": "ban2_longitude",
         "type": "float",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "ban2_postcode",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
