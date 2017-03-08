@@ -24,7 +24,7 @@
     "input": {
       "items": [
         {
-          "ref": "ACCIDENTS_BRUT.caracteristiques_postgis",
+          "ref": "accidents_caracteristiques_prep3",
           "deps": []
         }
       ]
@@ -41,11 +41,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488989536507
+    "lastModifiedOn": 1488989960917
   },
   "tags": [],
   "checklists": {
