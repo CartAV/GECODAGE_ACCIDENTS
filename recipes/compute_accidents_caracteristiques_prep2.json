@@ -25,6 +25,10 @@
             "caracateristiques_postgis": {
               "repartition": 10,
               "cache": false
+            },
+            "ACCIDENTS_BRUT.caracteristiques_postgis": {
+              "repartition": 10,
+              "cache": false
             }
           }
         }
@@ -61,11 +65,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 43,
+    "versionNumber": 44,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488989930964
+    "lastModifiedOn": 1488989936667
   },
   "tags": [],
   "checklists": {
