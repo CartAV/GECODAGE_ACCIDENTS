@@ -4,7 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "server_address": "http://datalab-bano",
+      "server_address": "http://datalab-ban",
       "concurent_requests": 8.0,
       "prefix": "bano_",
       "columns": [
@@ -40,11 +40,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488994788628
+    "lastModifiedOn": 1488995117441
   },
   "tags": [],
   "checklists": {
