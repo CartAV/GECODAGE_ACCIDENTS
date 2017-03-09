@@ -6,7 +6,7 @@
     "customConfig": {
       "server_address": "http://datalab-ban",
       "concurent_requests": 1.0,
-      "prefix": "ban2_",
+      "prefix": "ban2xxx_",
       "columns": [
         "adr",
         "current_name"
@@ -41,11 +41,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 34,
+    "versionNumber": 35,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489052667644
+    "lastModifiedOn": 1489054454093
   },
   "tags": [],
   "checklists": {
