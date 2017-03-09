@@ -14,11 +14,11 @@
           "deps": []
         },
         {
-          "ref": "geocoded_ban_cityname_pg",
+          "ref": "geocoded_bano_name",
           "deps": []
         },
         {
-          "ref": "geocoded_bano_name",
+          "ref": "geocoded_cityname",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488995357480
+    "lastModifiedOn": 1489055619188
   },
   "tags": [],
   "checklists": {
