@@ -17,6 +17,10 @@
         {
           "ref": "caracateristiques_postgis",
           "deps": []
+        },
+        {
+          "ref": "DATAPREPOPENDATAGEO.osm_france",
+          "deps": []
         }
       ]
     }
@@ -32,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489056168964
+    "lastModifiedOn": 1489071266395
   },
   "creationTag": {
     "versionNumber": 0,
