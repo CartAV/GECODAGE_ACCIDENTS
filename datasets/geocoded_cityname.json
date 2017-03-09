@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489052400496
+    "lastModifiedOn": 1489054461302
   },
   "creationTag": {
     "versionNumber": 0,
@@ -256,79 +256,79 @@
         "maxLength": -1
       },
       {
-        "name": "ban2_city",
+        "name": "ban2xxx_city",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_citycode",
+        "name": "ban2xxx_citycode",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_context",
+        "name": "ban2xxx_context",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_housenumber",
+        "name": "ban2xxx_housenumber",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_id",
+        "name": "ban2xxx_id",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_label",
+        "name": "ban2xxx_label",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_latitude",
+        "name": "ban2xxx_latitude",
         "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_longitude",
+        "name": "ban2xxx_longitude",
         "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_name",
+        "name": "ban2xxx_name",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_postcode",
+        "name": "ban2xxx_postcode",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_score",
+        "name": "ban2xxx_score",
         "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_street",
+        "name": "ban2xxx_street",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "ban2_type",
+        "name": "ban2xxx_type",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
