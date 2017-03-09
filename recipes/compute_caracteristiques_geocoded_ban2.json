@@ -34,18 +34,18 @@
     "output": {
       "items": [
         {
-          "ref": "geocoded_ban_cityname_pg",
+          "ref": "geocoded_cityname",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 30,
+    "versionNumber": 31,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489052098714
+    "lastModifiedOn": 1489052390538
   },
   "tags": [],
   "checklists": {
