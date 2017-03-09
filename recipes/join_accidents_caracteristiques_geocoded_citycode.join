@@ -261,57 +261,7 @@
       "type": "string"
     },
     {
-      "name": "ban_city",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban_context",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban_housenumber",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban_id",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban_name",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban_street",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_city",
-      "table": 2,
-      "type": "string"
-    },
-    {
       "name": "ban2_citycode",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_context",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_housenumber",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_id",
       "table": 2,
       "type": "string"
     },
@@ -331,11 +281,6 @@
       "type": "float"
     },
     {
-      "name": "ban2_name",
-      "table": 2,
-      "type": "string"
-    },
-    {
       "name": "ban2_postcode",
       "table": 2,
       "type": "string"
@@ -344,11 +289,6 @@
       "name": "ban2_score",
       "table": 2,
       "type": "float"
-    },
-    {
-      "name": "ban2_street",
-      "table": 2,
-      "type": "string"
     },
     {
       "name": "ban2_type",
