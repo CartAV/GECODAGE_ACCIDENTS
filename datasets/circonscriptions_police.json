@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489155278588
+    "lastModifiedOn": 1489155841571
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,6 +43,7 @@
     "normalizeDoubles": true,
     "table": "circonscriptions_police",
     "tableCreationMode": "auto",
+    "customPostWriteStatements": "ALTER TABLE \"circonscriptions_police\"\n\tCOLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
