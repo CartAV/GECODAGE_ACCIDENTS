@@ -20,6 +20,10 @@
         {
           "ref": "geocoded_cityname",
           "deps": []
+        },
+        {
+          "ref": "Liste_communes_police_postgis",
+          "deps": []
         }
       ]
     }
@@ -35,11 +39,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489072739425
+    "lastModifiedOn": 1489158290313
   },
   "tags": [],
   "checklists": {

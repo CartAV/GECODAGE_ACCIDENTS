@@ -8,6 +8,9 @@
     },
     {
       "index": 2
+    },
+    {
+      "index": 3
     }
   ],
   "joins": [
@@ -16,7 +19,6 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 1,
@@ -31,6 +33,7 @@
           }
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -38,26 +41,48 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
+      "type": "LEFT"
+    },
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 3,
+      "conditionsMode": "AND",
       "rightLimit": {},
+      "on": [
+        {
+          "maxDistance": 1,
+          "column1": {
+            "name": "current_city_code",
+            "table": 0
+          },
+          "type": "EQ",
+          "column2": {
+            "name": "commune_insee_long",
+            "table": 3
+          }
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -293,6 +318,12 @@
     {
       "name": "ban2_type",
       "table": 2,
+      "type": "string"
+    },
+    {
+      "alias": "nom_circonscription_police",
+      "name": "nom_circo",
+      "table": 3,
       "type": "string"
     }
   ]
