@@ -44,6 +44,28 @@
         },
         "sql": "ALTER TABLE \"circonscriptions_police\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);",
         "expandedSql": "ALTER TABLE \"circonscriptions_police\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);"
+      },
+      {
+        "mode": "SQL",
+        "id": "B8JXkXde0W1V",
+        "runOn": 1489155884819,
+        "runIn": 100,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "S1oyVz4rKmTGWp91",
+        "hash": "3e63a61b4ec4257a1be95f6106362194",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "ALTER TABLE \"circonscriptions_police\"\n\tALTER COLUMN the_geom type geography(Polygon)\n\tUSING the_geom::geography(Polygon);",
+        "expandedSql": "ALTER TABLE \"circonscriptions_police\"\n\tALTER COLUMN the_geom type geography(Polygon)\n\tUSING the_geom::geography(Polygon);"
       }
     ]
   }
