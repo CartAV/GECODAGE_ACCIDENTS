@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489155505152
+    "lastModifiedOn": 1489155606863
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,22 +49,22 @@
     "readColsWithUnknownTzAsDates": false
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
-        "name": "departement",
+        "name": "n°_departement_mineral",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "commune_insee_court",
-        "type": "string",
+        "name": "n°_commune_insee_court",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "commune_insee_long",
+        "name": "n°_commune_insee_long",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
