@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "q8eqik2om0l": [
+      {
+        "mode": "SQL",
+        "id": "AbWcqiIRIpHv",
+        "runOn": 1489155867009,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "vpxrJTZvw4Adpbo1",
+        "hash": "d36e3103740b9cd9ca548d683e41451d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "ALTER TABLE \"circonscriptions_police\"\n\tCOLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);",
+        "expandedSql": "ALTER TABLE \"circonscriptions_police\"\n\tCOLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);"
+      }
+    ]
+  }
+}
