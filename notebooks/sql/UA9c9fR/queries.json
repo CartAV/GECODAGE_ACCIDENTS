@@ -88,6 +88,28 @@
         },
         "sql": "ALTER TABLE \"circonscriptions_police\"\n\tALTER COLUMN the_geom type geography\n\tUSING the_geom::geography;",
         "expandedSql": "ALTER TABLE \"circonscriptions_police\"\n\tALTER COLUMN the_geom type geography\n\tUSING the_geom::geography;"
+      },
+      {
+        "mode": "SQL",
+        "id": "e1ZQuWVYw6AG",
+        "runOn": 1489156137904,
+        "runIn": 103,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Bhjm5bXypETPE75n",
+        "hash": "3f1a5a24fdeec8f6cabacf85971dcf37",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_astext(the_geom) from\n\"circonscriptions_police\"\n",
+        "expandedSql": "select st_astext(the_geom) from\n\"circonscriptions_police\"\n"
       }
     ]
   }
