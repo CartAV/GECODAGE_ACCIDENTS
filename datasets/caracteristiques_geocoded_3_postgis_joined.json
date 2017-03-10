@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488882431519
+    "lastModifiedOn": 1489161520970
   },
   "creationTag": {
     "versionNumber": 0,
@@ -286,6 +286,12 @@
         "maxLength": -1
       },
       {
+        "name": "ban2_postcode",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "ban2_score",
         "type": "float",
         "timestampNoTzAsDate": false,
@@ -293,6 +299,12 @@
       },
       {
         "name": "ban2_type",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nom_circonscription_police",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
