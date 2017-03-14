@@ -110,6 +110,28 @@
         },
         "sql": "select st_astext(the_geom) from\n\"circonscriptions_police\"\n",
         "expandedSql": "select st_astext(the_geom) from\n\"circonscriptions_police\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "BrUcKVWRCCTV",
+        "runOn": 1489487267453,
+        "runIn": 149,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "ISaT0syjZDcesiqJ",
+        "hash": "b4eb16b1b0f8497be0979ef55aa3f6ac",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(1), \"INSEE_COM\",\"num_route_or_id\" from\n\"caracteristiques_segments\"\ngroup by \"INSEE_COM\", \"num_route_or_id\"\norder by count desc\nlimit 100\n",
+        "expandedSql": "select count(1), \"INSEE_COM\",\"num_route_or_id\" from\n\"caracteristiques_segments\"\ngroup by \"INSEE_COM\", \"num_route_or_id\"\norder by count desc\nlimit 100\n"
       }
     ]
   }
