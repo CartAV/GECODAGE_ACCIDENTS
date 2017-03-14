@@ -222,6 +222,28 @@
         },
         "sql": "select count(1) from \"caracteristiques_segments\"",
         "expandedSql": "select count(1) from \"caracteristiques_segments\""
+      },
+      {
+        "mode": "SQL",
+        "id": "gTH3hAOKdHgM",
+        "runOn": 1489488010251,
+        "runIn": 113,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "BFmhBdMiS1JqkNCx",
+        "hash": "2eb8ef1ea8dc21c3bdc9b68d3075406e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_segments\"",
+        "expandedSql": "select count(*) from \"caracteristiques_segments\""
       }
     ]
   }
