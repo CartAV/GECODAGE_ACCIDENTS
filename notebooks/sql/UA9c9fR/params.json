@@ -5,6 +5,7 @@
     {
       "id": "q8eqik2om0l",
       "type": "QUERY",
+      "name": "Accidents par segment de voirie",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -18,11 +19,11 @@
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489155862744
+    "lastModifiedOn": 1489487980795
   },
   "creationTag": {
     "versionNumber": 0,
