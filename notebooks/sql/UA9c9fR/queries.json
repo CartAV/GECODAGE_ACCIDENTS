@@ -308,6 +308,28 @@
         },
         "sql": "select count(1), avg(distance), \"INSEE_COM\",\"num_route_or_id\" from\n\"caracteristiques_segments\"\nhaving count(1) \u003e 10\ngroup by \"INSEE_COM\", \"num_route_or_id\"\n\norder by count desc\n\n",
         "expandedSql": "select count(1), avg(distance), \"INSEE_COM\",\"num_route_or_id\" from\n\"caracteristiques_segments\"\nhaving count(1) \u003e 10\ngroup by \"INSEE_COM\", \"num_route_or_id\"\n\norder by count desc\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "fEgRhUVV9o1J",
+        "runOn": 1489510686596,
+        "runIn": 59,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "WUrefckTsneYIFZr",
+        "hash": "07b0d971669c8570e6c0295db2bd002a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(1), avg(distance), \"INSEE_COM\",\"num_route_or_id\" from\n\"caracteristiques_segments\"\n\ngroup by \"INSEE_COM\", \"num_route_or_id\"\nhaving count(1) \u003e 10\norder by count desc\n\n",
+        "expandedSql": "select count(1), avg(distance), \"INSEE_COM\",\"num_route_or_id\" from\n\"caracteristiques_segments\"\n\ngroup by \"INSEE_COM\", \"num_route_or_id\"\nhaving count(1) \u003e 10\norder by count desc\n\n"
       }
     ],
     "x0eibswderm": [
