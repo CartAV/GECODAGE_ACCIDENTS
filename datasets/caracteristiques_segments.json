@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489149739944
+    "lastModifiedOn": 1489486624093
   },
   "creationTag": {
     "versionNumber": 0,
@@ -54,6 +54,12 @@
       {
         "name": "Num_Acc",
         "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "INSEE_COM",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
