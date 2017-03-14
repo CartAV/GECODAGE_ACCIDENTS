@@ -1,6 +1,6 @@
 SELECT
     "Num_Acc",
-    "NUM_COM",
+    "INSEE_COM",
     nearest_route.num_route_or_id,
     distance
 FROM "caracateristiques_postgis", 
