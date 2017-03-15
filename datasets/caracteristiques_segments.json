@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489486624093
+    "lastModifiedOn": 1489599060052
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,6 +72,24 @@
       {
         "name": "distance",
         "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "CODE_IRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "NOM_IRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "TYP_IRIS",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
