@@ -2,7 +2,10 @@ SELECT
     "Num_Acc",
     nearest_route."INSEE_COM",
     nearest_route.num_route_or_id,
-    distance
+    distance,
+    "CODE_IRIS",
+    "NOM_IRIS",
+    "TYP_IRIS"
 FROM "caracateristiques_postgis" as caracs
 
 LEFT JOIN LATERAL (SELECT "INSEE_COM", num_route_or_id, st_distance(st_point(longitude, latitude), the_geom) as distance
@@ -13,4 +16,4 @@ LEFT JOIN LATERAL (SELECT "INSEE_COM", num_route_or_id, st_distance(st_point(lon
 ON true
 
 LEFT JOIN "contours_iris"
-    ON st_within(st_point(longitude, latitude), the_geom::geometry)
+    ON st_within(st_setsrid(st_point(longitude, latitude), 4326), the_geom::geometry)
