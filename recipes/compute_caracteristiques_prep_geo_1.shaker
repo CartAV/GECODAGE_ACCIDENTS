@@ -199,7 +199,7 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "matching": "PATTERN",
         "stopAfterFirstMatch": false,
@@ -217,6 +217,18 @@
         "output": ""
       },
       "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "out_column": "the_geom",
+        "lon_column": "longitude",
+        "lat_column": "latitude"
+      },
+      "type": "GeoPointCreator",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
