@@ -15,5 +15,3 @@ LEFT JOIN LATERAL (SELECT "INSEE_COM", num_route_or_id, st_distance(st_point(lon
     LIMIT 1) as nearest_route
 ON true
 
-LEFT JOIN "contours_iris"
-    ON st_within(st_setsrid(st_point(longitude, latitude), 4326), the_geom::geometry)
