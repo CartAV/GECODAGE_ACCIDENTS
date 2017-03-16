@@ -442,6 +442,28 @@
         },
         "sql": "\nALTER TABLE \"caracteristiques_postgis\"\n\tALTER COLUMN \"the_geom\" type geography(Point) using \"the_geom\"::geography(Point);\n\nCREATE INDEX idx_caracteristiques ON \"caracteristiques_postgis\"\n\tUSING GIST(the_geom);",
         "expandedSql": "\nALTER TABLE \"caracteristiques_postgis\"\n\tALTER COLUMN \"the_geom\" type geography(Point) using \"the_geom\"::geography(Point);\n\nCREATE INDEX idx_caracteristiques ON \"caracteristiques_postgis\"\n\tUSING GIST(the_geom);"
+      },
+      {
+        "mode": "SQL",
+        "id": "tUknI2ePf80p",
+        "runOn": 1489670759552,
+        "runIn": 44,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "gXLSVVf4wmFfrVQx",
+        "hash": "dc039388a497050be07f69d64ca7bd3b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "\nALTER TABLE \"caracteristiques_postgis\"\n\tALTER COLUMN \"the_geom\" type geography(Point) using \"the_geom\"::geography(Point);\n\nCREATE INDEX idx_caracteristiques ON \"caracteristiques_postgis\"\n\tUSING GIST(\"the_geom\");",
+        "expandedSql": "\nALTER TABLE \"caracteristiques_postgis\"\n\tALTER COLUMN \"the_geom\" type geography(Point) using \"the_geom\"::geography(Point);\n\nCREATE INDEX idx_caracteristiques ON \"caracteristiques_postgis\"\n\tUSING GIST(\"the_geom\");"
       }
     ]
   }
