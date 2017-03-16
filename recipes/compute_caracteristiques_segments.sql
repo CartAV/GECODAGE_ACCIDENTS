@@ -5,9 +5,9 @@ SELECT
     distance
 FROM "caracateristiques_postgis" as caracs,
 
-LATERAL (SELECT "INSEE_COM", num_route_or_id, st_distance(st_point(longitude, latitude), the_geom) as distance
+LATERAL (SELECT "INSEE_COM", num_route_or_id, st_distance(caracs.the_geom, the_geom) as distance
      FROM "osm_routes_par_commune"  as routes
-     where routes.the_geom && st_point(longitude, latitude)
+     where st_dwithin(caracs.the_geom, the_geom, 100)
      ORDER BY distance
     LIMIT 1) as nearest_route
 
