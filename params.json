@@ -1,15 +1,7 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": [
-      {
-        "objectRef": {
-          "objectId": "caracateristiques_postgis",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      }
-    ]
+    "authorizations": []
   },
   "exposedObjects": {
     "objects": [
@@ -19,6 +11,10 @@
         "rules": [
           {
             "targetProject": "ACCIDENTS",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "Accidents_DSCR",
             "appearOnFlow": true
           }
         ]
@@ -89,11 +85,11 @@
   },
   "name": "Géocodage accidents corporels",
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488995451791
+    "lastModifiedOn": 1489655262280
   },
   "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation. \u003cbr\u003e\nStatistiques par accident : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/\n\u003cbr\u003e\npar usager \nhttp://10.237.27.129/projects/ACCIDENTS/datasets/accidents_par_usager/explore/",
   "shortDesc": "Géocodage des accidents issus de la BAAC",
