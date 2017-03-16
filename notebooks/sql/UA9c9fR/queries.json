@@ -376,6 +376,28 @@
         },
         "sql": "select count(*) from \"caracteristiques_segments\"",
         "expandedSql": "select count(*) from \"caracteristiques_segments\""
+      },
+      {
+        "mode": "SQL",
+        "id": "93zHTb9OcHDy",
+        "runOn": 1489670734672,
+        "runIn": 115,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "7b3fwWpeEyQFEddz",
+        "hash": "bc2f1ae135e5c2c04cc7fe9c928c156f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "\nALTER TABLE \"caracteristiques_postgis\"\n\tALTER COLUMN the_geom type geography(Point) using the_geom::geography(Point);\n\nCREATE INDEX idx_caracteristiques ON \"caracteristiques_postgis\"\n\tUSING GIST(the_geom);",
+        "expandedSql": "\nALTER TABLE \"caracteristiques_postgis\"\n\tALTER COLUMN the_geom type geography(Point) using the_geom::geography(Point);\n\nCREATE INDEX idx_caracteristiques ON \"caracteristiques_postgis\"\n\tUSING GIST(the_geom);"
       }
     ]
   }
