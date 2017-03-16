@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489162049794
+    "lastModifiedOn": 1489661916379
   },
   "creationTag": {
     "versionNumber": 0,
@@ -407,6 +407,12 @@
       },
       {
         "name": "geo_source",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "the_geom",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
