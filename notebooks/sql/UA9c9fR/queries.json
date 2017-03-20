@@ -554,6 +554,28 @@
         },
         "sql": "select count(1), \"IRIS\", \"NOM_IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\", \"NOM_IRIS\"\norder by count desc\n",
         "expandedSql": "select count(1), \"IRIS\", \"NOM_IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\", \"NOM_IRIS\"\norder by count desc\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "lJqBsojcJbqR",
+        "runOn": 1490031391218,
+        "runIn": 9828,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "NNYhXxtHpN2tKPM6",
+        "hash": "f566b85c9b807837c379a275e7aab634",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/*select count(1), \"IRIS\", \"NOM_IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\", \"NOM_IRIS\"\norder by count desc\n*/\n\nselect count(distinct(\"IRIS\")) from contours_iris",
+        "expandedSql": "/*select count(1), \"IRIS\", \"NOM_IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\", \"NOM_IRIS\"\norder by count desc\n*/\n\nselect count(distinct(\"IRIS\")) from contours_iris"
       }
     ]
   }
