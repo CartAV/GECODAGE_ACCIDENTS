@@ -3,7 +3,6 @@ SELECT
     "IRIS",
     "INSEE_COM",
     "NOM_IRIS",
-    "IRIS",
     "TYP_IRIS"
 FROM "caracateristiques_postgis" as caracs,
 
