@@ -532,6 +532,28 @@
         },
         "sql": "select count(1), \"IRIS\", \"NOM_IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\"\norder by count desc\n",
         "expandedSql": "select count(1), \"IRIS\", \"NOM_IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\"\norder by count desc\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "rSaHkXynHXwj",
+        "runOn": 1490031052703,
+        "runIn": 47,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "zUoRGvBmge97X0v1",
+        "hash": "285245903fe71768a47bfa8db38c3516",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(1), \"IRIS\", \"NOM_IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\", \"NOM_IRIS\"\norder by count desc\n",
+        "expandedSql": "select count(1), \"IRIS\", \"NOM_IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\", \"NOM_IRIS\"\norder by count desc\n"
       }
     ]
   }
