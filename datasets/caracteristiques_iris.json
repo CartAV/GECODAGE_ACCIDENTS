@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489672372326
+    "lastModifiedOn": 1490032104120
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,6 +64,12 @@
         "maxLength": -1
       },
       {
+        "name": "CODE_IRIS",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "INSEE_COM",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -71,12 +77,6 @@
       },
       {
         "name": "NOM_IRIS",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "IRIS_1",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
