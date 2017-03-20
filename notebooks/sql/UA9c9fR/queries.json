@@ -487,6 +487,30 @@
         "sql": "\nALTER TABLE \"caracateristiques_postgis\"\n\tALTER COLUMN \"the_geom\" type geography(Point) using \"the_geom\"::geography(Point);\n\nCREATE INDEX idx_caracteristiques ON \"caracateristiques_postgis\"\n\tUSING GIST(\"the_geom\");",
         "expandedSql": "\nALTER TABLE \"caracateristiques_postgis\"\n\tALTER COLUMN \"the_geom\" type geography(Point) using \"the_geom\"::geography(Point);\n\nCREATE INDEX idx_caracteristiques ON \"caracateristiques_postgis\"\n\tUSING GIST(\"the_geom\");"
       }
+    ],
+    "qpl2x1vhnej": [
+      {
+        "mode": "SQL",
+        "id": "A4e675mBK47F",
+        "runOn": 1490031036031,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Myph2cfoUMn3TKG3",
+        "hash": "277a8a50de7f0120eed8120e3e8bd83e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(1), \"IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\"\norder by count desc\n",
+        "expandedSql": "select count(1), \"IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\"\norder by count desc\n"
+      }
     ]
   }
 }
