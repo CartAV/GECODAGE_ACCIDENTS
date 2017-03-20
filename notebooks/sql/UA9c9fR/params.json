@@ -32,6 +32,7 @@
     {
       "id": "qpl2x1vhnej",
       "type": "QUERY",
+      "name": "Accidents par IRIS",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -49,7 +50,7 @@
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1490030897621
+    "lastModifiedOn": 1490030904578
   },
   "creationTag": {
     "versionNumber": 0,
