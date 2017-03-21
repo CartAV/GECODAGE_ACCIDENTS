@@ -686,6 +686,28 @@
         },
         "sql": "select count(1), \"IRIS\", \"NOM_IRIS\", \"CODE_IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\", \"NOM_IRIS\", \"CODE_IRIS\"\norder by count desc\n\n\n/*select count(\"TYP_IRIS\"), \"TYP_IRIS\" from contours_iris\ngroup by \"TYP_IRIS\"*/",
         "expandedSql": "select count(1), \"IRIS\", \"NOM_IRIS\", \"CODE_IRIS\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\", \"NOM_IRIS\", \"CODE_IRIS\"\norder by count desc\n\n\n/*select count(\"TYP_IRIS\"), \"TYP_IRIS\" from contours_iris\ngroup by \"TYP_IRIS\"*/"
+      },
+      {
+        "mode": "SQL",
+        "id": "FBm7RbeI1g0S",
+        "runOn": 1490086200939,
+        "runIn": 276,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "1LRBeL5RtaqbUW4d",
+        "hash": "61889133072579af3bcd83f6311fc69e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(1), \"IRIS\", \"NOM_IRIS\", \"CODE_IRIS\", \"INSEE_COM\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\", \"NOM_IRIS\", \"CODE_IRIS\", \"INSEE_COM\"\norder by count desc\n\n\n/*select count(\"TYP_IRIS\"), \"TYP_IRIS\" from contours_iris\ngroup by \"TYP_IRIS\"*/",
+        "expandedSql": "select count(1), \"IRIS\", \"NOM_IRIS\", \"CODE_IRIS\", \"INSEE_COM\" from\n\"caracteristiques_iris\"\n\ngroup by \"IRIS\", \"NOM_IRIS\", \"CODE_IRIS\", \"INSEE_COM\"\norder by count desc\n\n\n/*select count(\"TYP_IRIS\"), \"TYP_IRIS\" from contours_iris\ngroup by \"TYP_IRIS\"*/"
       }
     ]
   }
