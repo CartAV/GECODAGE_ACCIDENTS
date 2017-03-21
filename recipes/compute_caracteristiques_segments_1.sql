@@ -5,7 +5,7 @@ SELECT
     "INSEE_COM",
     "NOM_IRIS",
     "TYP_IRIS"
-FROM "caracateristiques_postgis" as caracs,
+FROM "CONTOURS_IRIS_POPULATION" as caracs,
 
 LATERAL (SELECT *
      FROM contours_iris as iris
