@@ -53,7 +53,8 @@
       "moderateDashboards": false,
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
-      "manageExposedElements": false
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
     },
     {
       "group": "DSCR",
@@ -66,9 +67,13 @@
       "moderateDashboards": false,
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
-      "manageExposedElements": false
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
     }
   ],
+  "additionalDashboardUsers": {
+    "users": []
+  },
   "tutorialProject": false,
   "settings": {
     "flowAnchorSourcesAndSinks": true,
@@ -103,11 +108,11 @@
   },
   "name": "Géocodage accidents corporels",
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1490106131835
+    "lastModifiedOn": 1491235239983
   },
   "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation. \u003cbr\u003e\nStatistiques par accident : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/\n\u003cbr\u003e\npar usager \nhttp://10.237.27.129/projects/ACCIDENTS/datasets/accidents_par_usager/explore/",
   "shortDesc": "Géocodage des accidents issus de la BAAC",
@@ -156,7 +161,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Géolocalisation adresse gouv fr (à déboguer)",
             "createdOn": 1480097013129,
             "createdBy": "antoinefa",
@@ -170,14 +175,14 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Enrichissement IRIS",
             "createdOn": 1483013763319,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Enrichissement segment routier",
             "createdOn": 1483013770990,
             "createdBy": "antoinefa",
