@@ -83,31 +83,31 @@
             ],
             "mapping": [
               {
-                "to": "LUNDI",
+                "to": "Lundi",
                 "from": "1"
               },
               {
-                "to": "MARDI",
+                "to": "Mardi",
                 "from": "2"
               },
               {
-                "to": "MERCREDI",
+                "to": "Mercredi",
                 "from": "3"
               },
               {
-                "to": "JEUDI",
+                "to": "Jeudi",
                 "from": "4"
               },
               {
-                "to": "VENDREDI",
+                "to": "Vendredi",
                 "from": "5"
               },
               {
-                "to": "SAMEDI",
+                "to": "Samedi",
                 "from": "6"
               },
               {
-                "to": "DIMANCHE",
+                "to": "Dimanche",
                 "from": "7"
               }
             ],
