@@ -46,6 +46,7 @@
     {
       "id": "q2k2vkdklw",
       "type": "QUERY",
+      "name": "Statistiques",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -63,7 +64,7 @@
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1494427609472
+    "lastModifiedOn": 1494427620226
   },
   "creationTag": {
     "versionNumber": 0,
