@@ -46,7 +46,7 @@
     {
       "id": "q2k2vkdklw",
       "type": "QUERY",
-      "name": "Statistiques",
+      "name": "Statistiques géocodage",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -64,7 +64,7 @@
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1494427620226
+    "lastModifiedOn": 1494427623223
   },
   "creationTag": {
     "versionNumber": 0,
