@@ -222,13 +222,128 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "out_column": "the_geom",
         "lon_column": "longitude",
         "lat_column": "latitude"
       },
       "type": "GeoPointCreator",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "matching": "FULL_STRING",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "normalization": "EXACT",
+        "columns": [
+          "HEURE"
+        ],
+        "mapping": [
+          {
+            "to": "00 - 01 h",
+            "from": "0"
+          },
+          {
+            "to": "01 - 02 h",
+            "from": "1"
+          },
+          {
+            "to": "02 - 03 h",
+            "from": "2"
+          },
+          {
+            "to": "03 - 04 h",
+            "from": "3"
+          },
+          {
+            "to": "04 - 05 h",
+            "from": "4"
+          },
+          {
+            "to": "05 - 06 h",
+            "from": "5"
+          },
+          {
+            "to": "06 - 07 h",
+            "from": "6"
+          },
+          {
+            "to": "07 - 08 h",
+            "from": "7"
+          },
+          {
+            "to": "08 - 09 h",
+            "from": "8"
+          },
+          {
+            "to": "09 - 10 h",
+            "from": "9"
+          },
+          {
+            "to": "10 - 11 h",
+            "from": "10"
+          },
+          {
+            "to": "11 - 12 h",
+            "from": "11"
+          },
+          {
+            "to": "12 - 13 h",
+            "from": "12"
+          },
+          {
+            "to": "13 - 14 h",
+            "from": "13"
+          },
+          {
+            "to": "14 - 15 h",
+            "from": "14"
+          },
+          {
+            "to": "15 - 16 h",
+            "from": "15"
+          },
+          {
+            "to": "16 - 17 h",
+            "from": "16"
+          },
+          {
+            "to": "17 - 18 h",
+            "from": "17"
+          },
+          {
+            "to": "18 - 19 h",
+            "from": "18"
+          },
+          {
+            "to": "19 - 20 h",
+            "from": "19"
+          },
+          {
+            "to": "20 - 21 h",
+            "from": "20"
+          },
+          {
+            "to": "21 - 22 h",
+            "from": "21"
+          },
+          {
+            "to": "22 - 23 h",
+            "from": "22"
+          },
+          {
+            "to": "23 - 24 h",
+            "from": "23"
+          }
+        ],
+        "output": "LIBELLE_PLAGE_HORAIRE"
+      },
+      "type": "FindReplace",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
