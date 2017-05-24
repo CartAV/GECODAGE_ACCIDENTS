@@ -22,7 +22,7 @@
           "deps": []
         },
         {
-          "ref": "Liste_communes_police_postgis",
+          "ref": "BRICBRACPROPITAIRE.Liste_communes_police_prepared",
           "deps": []
         }
       ]
@@ -39,11 +39,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489158290313
+    "lastModifiedOn": 1495632632959
   },
   "tags": [],
   "checklists": {

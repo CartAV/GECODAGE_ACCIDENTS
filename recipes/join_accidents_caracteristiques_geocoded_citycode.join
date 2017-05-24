@@ -19,6 +19,7 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 1,
@@ -33,7 +34,6 @@
           }
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -41,26 +41,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -78,7 +78,7 @@
           },
           "type": "EQ",
           "column2": {
-            "name": "commune_insee_long",
+            "name": "n°_commune_insee_long",
             "table": 3
           }
         }
