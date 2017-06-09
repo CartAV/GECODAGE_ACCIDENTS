@@ -154,6 +154,28 @@
         },
         "sql": "/*select dep, count(*) from \"caracteristiques_geocoded_3_postgis\" group by dep order by dep desc;*/\nselect dep, count(*) from \"caracteristiques_prep3\" group by dep order by dep desc;",
         "expandedSql": "/*select dep, count(*) from \"caracteristiques_geocoded_3_postgis\" group by dep order by dep desc;*/\nselect dep, count(*) from \"caracteristiques_prep3\" group by dep order by dep desc;"
+      },
+      {
+        "mode": "SQL",
+        "id": "tLy5Y55L2Ddw",
+        "runOn": 1497021295803,
+        "runIn": 368,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "X6xygXCdYoCg76BX",
+        "hash": "cb2dee150ddbaeb29d5de2ed5b5135e7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/*select dep, count(*) from \"caracteristiques_geocoded_3_postgis\" group by dep order by dep desc;*/\n/*select dep, count(*) from \"caracteristiques_prep3\" group by dep order by dep desc;*/\nselect dep, count(*) from \"caracteristiques_geocoded_3_postgis_joined\" group by dep order by dep desc;\n\n",
+        "expandedSql": "/*select dep, count(*) from \"caracteristiques_geocoded_3_postgis\" group by dep order by dep desc;*/\n/*select dep, count(*) from \"caracteristiques_prep3\" group by dep order by dep desc;*/\nselect dep, count(*) from \"caracteristiques_geocoded_3_postgis_joined\" group by dep order by dep desc;\n\n"
       }
     ]
   }
