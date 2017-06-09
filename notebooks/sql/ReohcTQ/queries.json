@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "19awrbsf7o4": [
+      {
+        "mode": "SQL",
+        "id": "seV0R0eKKjVQ",
+        "runOn": 1497021081784,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "kXtoRNbedSfasE0f",
+        "hash": "2b78c7113fdc395e67470e68cc4a8eec",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select dep, count(*) from \"caracteristiques_geocoded_3_postgis\" group by dep;",
+        "expandedSql": "select dep, count(*) from \"caracteristiques_geocoded_3_postgis\" group by dep;"
+      }
+    ]
+  }
+}
