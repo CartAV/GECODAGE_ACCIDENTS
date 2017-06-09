@@ -1111,10 +1111,10 @@
         "mode": "SQL",
         "id": "S4kH0cV0qTMH",
         "runOn": 1497021784769,
-        "runIn": 386,
+        "runIn": 403,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "MrXeWhomjsMzEJF3",
         "hash": "7a87b5f5e9344a94081f787412a2f517",
         "querySettings": {
