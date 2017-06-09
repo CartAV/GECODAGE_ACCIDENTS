@@ -88,6 +88,28 @@
         },
         "sql": "select dep, count(*) from \"caracteristiques_geocoded_3_postgis\" group by dep order by dep desc;",
         "expandedSql": "select dep, count(*) from \"caracteristiques_geocoded_3_postgis\" group by dep order by dep desc;"
+      },
+      {
+        "mode": "SQL",
+        "id": "OgjheANHF6ty",
+        "runOn": 1497021208346,
+        "runIn": 420,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "OSxJYdUhabBKhUqM",
+        "hash": "568e15bf39dc975083bc8c9945bd0e1d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select dep, count(*) from \"caracteristiques_geocoded_3_postgis\" group by dep order by dep desc;\nselect dep, count(*) from \"caracteristiques_prep3\" group by dep order by dep desc;",
+        "expandedSql": "select dep, count(*) from \"caracteristiques_geocoded_3_postgis\" group by dep order by dep desc;\nselect dep, count(*) from \"caracteristiques_prep3\" group by dep order by dep desc;"
       }
     ]
   }
