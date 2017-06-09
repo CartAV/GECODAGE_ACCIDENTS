@@ -754,6 +754,28 @@
         },
         "sql": "select count(*) from \"caracateristiques_postgis\"\nwhere geo_source is null",
         "expandedSql": "select count(*) from \"caracateristiques_postgis\"\nwhere geo_source is null"
+      },
+      {
+        "mode": "SQL",
+        "id": "dCL79XmIkRkh",
+        "runOn": 1497021199936,
+        "runIn": 554,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "JkUP35KArDe3JoQi",
+        "hash": "6dee5cdb29e3d5401ebe7790ab0c43a1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select distinct(geo_source) from \"caracateristiques_postgis\"\n--where geo_source is null",
+        "expandedSql": "select distinct(geo_source) from \"caracateristiques_postgis\"\n--where geo_source is null"
       }
     ]
   }
