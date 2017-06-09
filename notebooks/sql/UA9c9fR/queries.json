@@ -842,6 +842,28 @@
         },
         "sql": "select distinct(adr), count(*) from \"caracateristiques_postgis\"\nwhere geo_source is null\ngroup by adr\norder by count desc\n\n",
         "expandedSql": "select distinct(adr), count(*) from \"caracateristiques_postgis\"\nwhere geo_source is null\ngroup by adr\norder by count desc\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "pSEqk4RVrThG",
+        "runOn": 1497021518023,
+        "runIn": 493,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "REMCnOsfXGS7dJhQ",
+        "hash": "83dd3637eba4f6b43ff38d5ff0b654b1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select distinct(adr), count(*) from \"caracateristiques_postgis\"\nwhere geo_source is null\ngroup by adr\norder by count desc\n\n",
+        "expandedSql": "select distinct(adr), count(*) from \"caracateristiques_postgis\"\nwhere geo_source is null\ngroup by adr\norder by count desc\n\n"
       }
     ]
   }
