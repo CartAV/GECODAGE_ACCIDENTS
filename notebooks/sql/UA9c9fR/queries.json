@@ -1084,6 +1084,28 @@
         },
         "sql": "select adr from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027%PK%\u0027",
         "expandedSql": "select adr from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027%PK%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "MqyeBK6CoKZv",
+        "runOn": 1497021752340,
+        "runIn": 256,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "ZSqZAQvrashfZ0eq",
+        "hash": "b92eea1024c7494548b817c0d695ec8a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select adr from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027A%PK%\u0027",
+        "expandedSql": "select adr from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027A%PK%\u0027"
       }
     ]
   }
