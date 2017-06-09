@@ -1040,6 +1040,28 @@
         },
         "sql": "select count(1) from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027%KM%\u0027",
         "expandedSql": "select count(1) from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027%KM%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "RKu4NJQmOsYb",
+        "runOn": 1497021682400,
+        "runIn": 467,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "V9EzlqjFkfRKUz7l",
+        "hash": "3a95808e1d42cd4ba4ef9715ef2a9012",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select adr from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027%PR%\u0027",
+        "expandedSql": "select adr from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027%PR%\u0027"
       }
     ]
   }
