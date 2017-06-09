@@ -864,6 +864,28 @@
         },
         "sql": "select distinct(adr), count(*) from \"caracateristiques_postgis\"\nwhere geo_source is null\ngroup by adr\norder by count desc\n\n",
         "expandedSql": "select distinct(adr), count(*) from \"caracateristiques_postgis\"\nwhere geo_source is null\ngroup by adr\norder by count desc\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "8zG7uRuzbHV6",
+        "runOn": 1497021586242,
+        "runIn": 493,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "vJZnMTeEVWPiGw6A",
+        "hash": "ebe1d71761caf00c9d0f0177ff0e0fe8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select distinct(adr) from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027%PK%\u0027\norder by count desc\n\n",
+        "expandedSql": "select distinct(adr) from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027%PK%\u0027\norder by count desc\n\n"
       }
     ]
   }
