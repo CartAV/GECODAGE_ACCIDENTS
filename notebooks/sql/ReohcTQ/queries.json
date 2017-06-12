@@ -594,6 +594,28 @@
         },
         "sql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%A6%\u0027)\n\n",
         "expandedSql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%A6%\u0027)\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "Guc78cFgYbJE",
+        "runOn": 1497270850702,
+        "runIn": 240,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "cbEBNO9bHxlXl8EW",
+        "hash": "1cb89a047e0deed80e92a8e7f897eef4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%AUTOROUTE%\u0027)\n\n",
+        "expandedSql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%AUTOROUTE%\u0027)\n\n"
       }
     ]
   }
