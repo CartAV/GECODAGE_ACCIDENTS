@@ -462,6 +462,28 @@
         },
         "sql": "select adr, dep from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and adr like \u0027%PERIPH%\u0027\n\n",
         "expandedSql": "select adr, dep from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and adr like \u0027%PERIPH%\u0027\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "049A4a0JNsKi",
+        "runOn": 1497266915031,
+        "runIn": 228,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "BLV2XIGCki0cwrxw",
+        "hash": "dd5761ad1059eda88e33215f12bc0040",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and adr like \u0027%PERIPH%\u0027\n\n",
+        "expandedSql": "select count(*) from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and adr like \u0027%PERIPH%\u0027\n\n"
       }
     ]
   }
