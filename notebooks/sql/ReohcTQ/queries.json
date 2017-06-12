@@ -550,6 +550,28 @@
         },
         "sql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%BP%\u0027 or adr like \u0027%PERIPH%\u0027)\n\n",
         "expandedSql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%BP%\u0027 or adr like \u0027%PERIPH%\u0027)\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "i1JQ2DTNVneM",
+        "runOn": 1497270761410,
+        "runIn": 216,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "141C7xcLNfwvnK69",
+        "hash": "fd04e61d352a232c6ffa6a1e6a7cb9b9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%SOLEIL%\u0027)\n\n",
+        "expandedSql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%SOLEIL%\u0027)\n\n"
       }
     ]
   }
