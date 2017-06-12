@@ -572,6 +572,28 @@
         },
         "sql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%SOLEIL%\u0027)\n\n",
         "expandedSql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%SOLEIL%\u0027)\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "aMd6zQPDDZFO",
+        "runOn": 1497270775978,
+        "runIn": 264,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "86EKcKrvfOE8PBZK",
+        "hash": "9f69859b19d5e9637d052842468c7d02",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%A6%\u0027)\n\n",
+        "expandedSql": "select * from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and (adr like \u0027%A6%\u0027)\n\n"
       }
     ]
   }
