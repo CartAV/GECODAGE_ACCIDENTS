@@ -396,6 +396,28 @@
         },
         "sql": "select adr, dep from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and adr like \u0027%BP%\u0027\n\n",
         "expandedSql": "select adr, dep from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and adr like \u0027%BP%\u0027\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "Bs1D4M80ztWO",
+        "runOn": 1497266773485,
+        "runIn": 217,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "IFI0yTHeb5rqnfAX",
+        "hash": "d6da74522e905d24ba5aac29ecb5aa6c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select adr, dep from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and adr like \u0027%peri%\u0027\n\n",
+        "expandedSql": "select adr, dep from \"caracteristiques_prep3\" where dep\u003d\u002775\u0027and adr like \u0027%peri%\u0027\n\n"
       }
     ]
   }
