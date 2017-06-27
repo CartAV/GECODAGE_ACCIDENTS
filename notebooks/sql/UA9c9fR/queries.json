@@ -1216,6 +1216,28 @@
         },
         "sql": "select adr from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027A%PK%\u0027",
         "expandedSql": "select adr from \"caracateristiques_postgis\"\nwhere geo_source is null\nand adr like \u0027A%PK%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "pd9KFsbsel5P",
+        "runOn": 1498572404173,
+        "runIn": 380,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "9Xt9pAmoUC4kfDYM",
+        "hash": "e67d39262ca3dd5454a7f782edd1a7a8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_geocoded_3_postgis_joined\" where \"Num_Acc\"\u003d\u0027201500037852\u0027",
+        "expandedSql": "select * from \"caracteristiques_geocoded_3_postgis_joined\" where \"Num_Acc\"\u003d\u0027201500037852\u0027"
       }
     ]
   }
