@@ -1326,6 +1326,28 @@
         },
         "sql": "select * from \"caracateristiques_postgis\" where \"Num_Acc\"\u003d\u0027201500037852\u0027",
         "expandedSql": "select * from \"caracateristiques_postgis\" where \"Num_Acc\"\u003d\u0027201500037852\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "K6v1SWwgbDd9",
+        "runOn": 1498581785610,
+        "runIn": 624,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "qnEFGEqFFWJL0xUQ",
+        "hash": "030927d13b9e72f1415cc7f4b085a2cf",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracateristiques_postgis\" where \"Num_Acc\"\u003d\u0027201500037852\u0027",
+        "expandedSql": "select * from \"caracateristiques_postgis\" where \"Num_Acc\"\u003d\u0027201500037852\u0027"
       }
     ]
   }
