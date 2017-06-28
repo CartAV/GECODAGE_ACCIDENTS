@@ -704,6 +704,28 @@
         },
         "sql": "select count(*) from \"caracteristiques_postgis\" where \"ANNEE\"\u003d 2016",
         "expandedSql": "select count(*) from \"caracteristiques_postgis\" where \"ANNEE\"\u003d 2016"
+      },
+      {
+        "mode": "SQL",
+        "id": "G1DCOdqExvNl",
+        "runOn": 1498652750138,
+        "runIn": 85,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "ewntkXROrg5RqsLo",
+        "hash": "c90d762ed14a2bae8857277f2e6ea666",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_postgis\" where \"an\"\u003d 2016",
+        "expandedSql": "select count(*) from \"caracteristiques_postgis\" where \"an\"\u003d 2016"
       }
     ]
   }
