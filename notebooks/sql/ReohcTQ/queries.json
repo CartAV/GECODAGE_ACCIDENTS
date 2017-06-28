@@ -836,6 +836,28 @@
         },
         "sql": "select count(*) from \"caracteristiques_prep3\" where \"an\"\u003d \u002716\u0027",
         "expandedSql": "select count(*) from \"caracteristiques_prep3\" where \"an\"\u003d \u002716\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "ti5DKa0TKvId",
+        "runOn": 1498654460662,
+        "runIn": 857,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "P9OWgrkV2xFcloEW",
+        "hash": "b37f6dc8d83a6043fb60322366317871",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"geocoded_bano_name\" where \"an\"\u003d \u002716\u0027",
+        "expandedSql": "select count(*) from \"geocoded_bano_name\" where \"an\"\u003d \u002716\u0027"
       }
     ]
   }
