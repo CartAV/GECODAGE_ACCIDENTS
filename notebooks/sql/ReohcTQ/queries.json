@@ -880,6 +880,28 @@
         },
         "sql": "select count(*) from \"geocoded_ban_citycode\" where \"an\"\u003d \u002716\u0027",
         "expandedSql": "select count(*) from \"geocoded_ban_citycode\" where \"an\"\u003d \u002716\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "VHl2gBT2UfJv",
+        "runOn": 1498655636858,
+        "runIn": 2002,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "LLEOqc0fIQWGq19y",
+        "hash": "33f36d7c3083013068960484aff39f6a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"geocoded_ban_citycode\" where \"an\"\u003d \u002716\u0027",
+        "expandedSql": "select count(*) from \"geocoded_ban_citycode\" where \"an\"\u003d \u002716\u0027"
       }
     ]
   }
