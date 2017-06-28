@@ -858,6 +858,28 @@
         },
         "sql": "select count(*) from \"geocoded_bano_name\" where \"an\"\u003d \u002716\u0027",
         "expandedSql": "select count(*) from \"geocoded_bano_name\" where \"an\"\u003d \u002716\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "aYikf6xCaris",
+        "runOn": 1498654481896,
+        "runIn": 2609,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "QgSUvQt2ZvUCV2MM",
+        "hash": "33f36d7c3083013068960484aff39f6a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"geocoded_ban_citycode\" where \"an\"\u003d \u002716\u0027",
+        "expandedSql": "select count(*) from \"geocoded_ban_citycode\" where \"an\"\u003d \u002716\u0027"
       }
     ]
   }
