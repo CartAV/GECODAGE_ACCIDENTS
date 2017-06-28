@@ -792,6 +792,28 @@
         },
         "sql": "select count(*) from \"2010_2015_pve_sr_regions_postgis\" where \"an\"\u003d \u002716\u0027",
         "expandedSql": "select count(*) from \"2010_2015_pve_sr_regions_postgis\" where \"an\"\u003d \u002716\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "jblS5lAGng8v",
+        "runOn": 1498654403267,
+        "runIn": 77,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "78thVHScNmZjjCjc",
+        "hash": "e21f0b90dd9bdcb3e5cee9f719b72da9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_geocoded_3_postgis\" where \"an\"\u003d \u002716\u0027",
+        "expandedSql": "select count(*) from \"caracteristiques_geocoded_3_postgis\" where \"an\"\u003d \u002716\u0027"
       }
     ]
   }
