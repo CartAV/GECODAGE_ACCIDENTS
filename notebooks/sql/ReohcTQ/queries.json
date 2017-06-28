@@ -660,6 +660,28 @@
         },
         "sql": "select * from \"caracteristiques_prep3\" where (adr like \u0027%A4%\u0027)\n\n",
         "expandedSql": "select * from \"caracteristiques_prep3\" where (adr like \u0027%A4%\u0027)\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "VI7csDnAKYA1",
+        "runOn": 1498652726487,
+        "runIn": 110,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "wLevBoVb5xxR9Kcr",
+        "hash": "02a951d2ec5e3b3ec2d8c8a363920f07",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_postgis\" where \"ANNEE\"\u003d 2016)",
+        "expandedSql": "select count(*) from \"caracteristiques_postgis\" where \"ANNEE\"\u003d 2016)"
       }
     ]
   }
