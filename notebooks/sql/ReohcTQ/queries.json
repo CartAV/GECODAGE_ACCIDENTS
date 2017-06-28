@@ -814,6 +814,28 @@
         },
         "sql": "select count(*) from \"caracteristiques_geocoded_3_postgis\" where \"an\"\u003d \u002716\u0027",
         "expandedSql": "select count(*) from \"caracteristiques_geocoded_3_postgis\" where \"an\"\u003d \u002716\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "BjbI87UDW0fP",
+        "runOn": 1498654441335,
+        "runIn": 1708,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "y9x0TCPtr0MnO0gZ",
+        "hash": "8998f7d37783c72d2175e2640acb11b4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_prep3\" where \"an\"\u003d \u002716\u0027",
+        "expandedSql": "select count(*) from \"caracteristiques_prep3\" where \"an\"\u003d \u002716\u0027"
       }
     ]
   }
