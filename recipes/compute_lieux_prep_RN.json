@@ -12,7 +12,12 @@
           "conf": []
         },
         "readParams": {
-          "map": {}
+          "map": {
+            "ACCIDENTS_BRUT.lieux_postgis": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
         }
       },
       "hadoopConfigKeys": [],
@@ -44,11 +49,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499331731167
+    "lastModifiedOn": 1499332699019
   },
   "creationTag": {
     "versionNumber": 0,

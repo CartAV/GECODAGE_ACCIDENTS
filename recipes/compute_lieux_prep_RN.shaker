@@ -10,14 +10,55 @@
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
+  "origin": "PREPARE_RECIPE",
   "sorting": [],
   "coloring": {
     "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
     "valueColoringMode": "HASH"
   },
-  "steps": [],
-  "exploreUIParams": {},
+  "steps": [
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "matching": "PATTERN",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "normalization": "EXACT",
+        "columns": [
+          "voie"
+        ],
+        "mapping": [
+          {
+            "to": "$1",
+            "from": "^0+([0-9]+)"
+          }
+        ],
+        "output": ""
+      },
+      "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "usePythonUnicode": true,
+        "stopOnError": true,
+        "column": "voie_normalise",
+        "pythonSourceCode": "def process(row):\n    if row[\"catr\"] \u003d \"autoroute\":\n        return \"A \" + row[\"voie\"] + row[\"v2\"]\n    elif row[\"catr\"] \u003d \"route nationale\":\n        return \"N \" + row[\"voie\"]\n    else:\n        return \"\"\n",
+        "mode": "CELL"
+      },
+      "type": "PythonUDF",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    }
+  ],
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
     "_refreshTrigger": 0,
