@@ -48,7 +48,7 @@
         "usePythonUnicode": true,
         "stopOnError": true,
         "column": "voie_normalise",
-        "pythonSourceCode": "def process(row):\n    if row[\"catr\"] \u003d \"autoroute\":\n        return \"A \" + row[\"voie\"] + row[\"v2\"]\n    elif row[\"catr\"] \u003d \"route nationale\":\n        return \"N \" + row[\"voie\"]\n    else:\n        return \"\"\n",
+        "pythonSourceCode": "def process(row):\n    if row[\"catr\"] \u003d\u003d \"autoroute\":\n        return \"A \" + str(row[\"voie\"]) + str(row[\"v2\"])\n    elif row[\"catr\"] \u003d\u003d \"route nationale\":\n        return \"N \" + str(row[\"voie\"])\n    elif row[\"catr\"] \u003d\u003d \"route départementale\":\n        return \"D \" + str(row[\"voie\"])\n    else:\n        return \"\"\n",
         "mode": "CELL"
       },
       "type": "PythonUDF",
