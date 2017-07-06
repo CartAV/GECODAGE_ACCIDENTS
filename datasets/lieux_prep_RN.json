@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499333743694
+    "lastModifiedOn": 1499333888368
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,7 +65,8 @@
       },
       {
         "name": "voie",
-        "type": "bigint",
+        "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
