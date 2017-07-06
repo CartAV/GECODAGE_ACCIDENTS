@@ -48,7 +48,7 @@
         "usePythonUnicode": true,
         "stopOnError": true,
         "column": "voie_normalise",
-        "pythonSourceCode": "def process(row):\n    if row[\"catr\"] \u003d\u003d \"autoroute\":\n        return \"A \" + str(row[\"voie\"]) + str(row[\"v2\"])\n    elif row[\"catr\"] \u003d\u003d \"route nationale\":\n        return \"N \" + str(row[\"voie\"])\n    elif row[\"catr\"] \u003d\u003d \"route départementale\":\n        return \"D \" + str(row[\"voie\"])\n    else:\n        return \"\"\n",
+        "pythonSourceCode": "def process(row):\n    if row[\"catr\"] \u003d\u003d \"autoroute\":\n        res \u003d \"A \"\n    elif row[\"catr\"] \u003d\u003d \"route nationale\":\n        res \u003d \"N \"\n    elif row[\"catr\"] \u003d\u003d \"route départementale\":\n        res \u003d \"D \"\n    else:\n        return \"\"\n    res +\u003d str(row[\"voie\"])\n    if (row[\"v2\"] and not row[\"v2\"].isdigit()):\n        # v2 is supposed to be a letter according to the docs\n        res +\u003d str(row[\"v2\"]).upper()\n    return res",
         "mode": "CELL"
       },
       "type": "PythonUDF",
