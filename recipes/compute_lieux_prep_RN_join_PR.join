@@ -1,0 +1,227 @@
+{
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "index": 0,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 1,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  ],
+  "joins": [
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 1,
+      "conditionsMode": "AND",
+      "on": [],
+      "type": "LEFT"
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "enableAutoCastInJoinConditions": false,
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "table": 0
+    },
+    {
+      "name": "catr",
+      "table": 0
+    },
+    {
+      "name": "voie",
+      "table": 0
+    },
+    {
+      "name": "v1",
+      "table": 0
+    },
+    {
+      "name": "v2",
+      "table": 0
+    },
+    {
+      "name": "circ",
+      "table": 0
+    },
+    {
+      "name": "nbv",
+      "table": 0
+    },
+    {
+      "name": "pr",
+      "table": 0
+    },
+    {
+      "name": "pr1",
+      "table": 0
+    },
+    {
+      "name": "vosp",
+      "table": 0
+    },
+    {
+      "name": "prof",
+      "table": 0
+    },
+    {
+      "name": "plan",
+      "table": 0
+    },
+    {
+      "name": "lartpc",
+      "table": 0
+    },
+    {
+      "name": "larrout",
+      "table": 0
+    },
+    {
+      "name": "surf",
+      "table": 0
+    },
+    {
+      "name": "infra",
+      "table": 0
+    },
+    {
+      "name": "situ",
+      "table": 0
+    },
+    {
+      "name": "env1",
+      "table": 0
+    },
+    {
+      "name": "voie_normalise",
+      "table": 0
+    },
+    {
+      "name": "lon_next",
+      "table": 1
+    },
+    {
+      "name": "lat_next",
+      "table": 1
+    },
+    {
+      "name": "distance_next",
+      "table": 1
+    },
+    {
+      "name": "INSEE_COM",
+      "table": 1
+    },
+    {
+      "name": "NOM_COM",
+      "table": 1
+    },
+    {
+      "name": "date",
+      "table": 1
+    },
+    {
+      "name": "route",
+      "table": 1
+    },
+    {
+      "name": "route_element_1",
+      "table": 1
+    },
+    {
+      "name": "route_element_2",
+      "table": 1
+    },
+    {
+      "name": "nom_courant_route",
+      "table": 1
+    },
+    {
+      "name": "depPr",
+      "table": 1
+    },
+    {
+      "name": "concession",
+      "table": 1
+    },
+    {
+      "name": "abs",
+      "table": 1
+    },
+    {
+      "name": "cumul",
+      "table": 1
+    },
+    {
+      "name": "x",
+      "table": 1
+    },
+    {
+      "name": "y",
+      "table": 1
+    },
+    {
+      "name": "z",
+      "table": 1
+    },
+    {
+      "name": "cote",
+      "table": 1
+    },
+    {
+      "name": "longueurd",
+      "table": 1
+    },
+    {
+      "name": "longueurg",
+      "table": 1
+    },
+    {
+      "name": "gestionnai",
+      "table": 1
+    },
+    {
+      "name": "lat",
+      "table": 1
+    },
+    {
+      "name": "lon",
+      "table": 1
+    }
+  ]
+}
