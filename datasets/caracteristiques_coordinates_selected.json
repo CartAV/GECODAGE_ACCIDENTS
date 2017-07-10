@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1497947872421
+    "lastModifiedOn": 1499700512285
   },
   "creationTag": {
     "versionNumber": 0,
@@ -382,7 +382,25 @@
         "maxLength": -1
       },
       {
+        "name": "lon_pr",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "lat_pr",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "baac_score",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr_score",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
