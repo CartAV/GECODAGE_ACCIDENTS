@@ -1100,6 +1100,28 @@
         },
         "sql": "select * from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \u0027pr_score\u0027 \u003d 1.0",
         "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \u0027pr_score\u0027 \u003d 1.0"
+      },
+      {
+        "mode": "SQL",
+        "id": "B99u4KgjjeHw",
+        "runOn": 1499701083968,
+        "runIn": 42,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "AD1CU3kd0NXgQOgb",
+        "hash": "d647cab282617d40dcef969acd0dc85d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_coordinates_selected\" where \u0027pr_score\u0027 \u003d 1.0",
+        "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where \u0027pr_score\u0027 \u003d 1.0"
       }
     ]
   }
