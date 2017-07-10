@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499700848416
+    "lastModifiedOn": 1499701421114
   },
   "creationTag": {
     "versionNumber": 0,
@@ -378,19 +378,6 @@
       {
         "name": "CODE_COM",
         "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "catr",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "voie",
-        "type": "string",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
