@@ -1122,6 +1122,28 @@
         },
         "sql": "select * from \"caracteristiques_coordinates_selected\" where \u0027pr_score\u0027 \u003d 1.0",
         "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where \u0027pr_score\u0027 \u003d 1.0"
+      },
+      {
+        "mode": "SQL",
+        "id": "gjGBWzREMPYa",
+        "runOn": 1499701102417,
+        "runIn": 45,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "0U4OIcvugvX3So0a",
+        "hash": "5b0f203489cc38439f6e5c05aac5ba47",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_coordinates_selected\" where \u0027pr_score\u0027",
+        "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where \u0027pr_score\u0027"
       }
     ]
   }
