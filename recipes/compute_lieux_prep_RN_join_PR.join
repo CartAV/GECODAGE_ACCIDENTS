@@ -23,17 +23,14 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 1,
-          "caseInsensitive": true,
           "column1": {
             "name": "voie_normalise",
             "table": 0
           },
+          "caseInsensitive": true,
           "type": "EQ",
           "column2": {
             "name": "nom_courant_route",
@@ -52,6 +49,9 @@
           }
         }
       ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     }
   ],
@@ -122,7 +122,7 @@
     {
       "name": "pr",
       "table": 0,
-      "type": "string"
+      "type": "int"
     },
     {
       "name": "pr1",
@@ -201,86 +201,6 @@
     },
     {
       "name": "NOM_COM",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "date",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "route",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "route_element_1",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "route_element_2",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "nom_courant_route",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "depPr",
-      "table": 1,
-      "type": "bigint"
-    },
-    {
-      "name": "concession",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "abs",
-      "table": 1,
-      "type": "bigint"
-    },
-    {
-      "name": "cumul",
-      "table": 1,
-      "type": "bigint"
-    },
-    {
-      "name": "x",
-      "table": 1,
-      "type": "double"
-    },
-    {
-      "name": "y",
-      "table": 1,
-      "type": "double"
-    },
-    {
-      "name": "z",
-      "table": 1,
-      "type": "bigint"
-    },
-    {
-      "name": "cote",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "longueurd",
-      "table": 1,
-      "type": "bigint"
-    },
-    {
-      "name": "longueurg",
-      "table": 1,
-      "type": "bigint"
-    },
-    {
-      "name": "gestionnai",
       "table": 1,
       "type": "string"
     },
