@@ -1012,6 +1012,28 @@
         },
         "sql": "select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \u0027pr_score\u0027\u003e0\n",
         "expandedSql": "select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \u0027pr_score\u0027\u003e0\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "1xA1vbLsVGo0",
+        "runOn": 1499700998676,
+        "runIn": 58,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "dnBX2ZLdHkq6RwI0",
+        "hash": "79f4dbb064665f81b3068b9789c8c5bd",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \u0027pr_score\u0027 \u003e 0.0\n",
+        "expandedSql": "select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \u0027pr_score\u0027 \u003e 0.0\n"
       }
     ]
   }
