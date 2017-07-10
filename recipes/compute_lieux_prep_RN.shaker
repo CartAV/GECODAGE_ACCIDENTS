@@ -1,5 +1,40 @@
 {
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "facet": {
+        "sort": "count",
+        "columnType": "NUMERICAL",
+        "column": "pr",
+        "currentMode": "ALPHANUM",
+        "selectedValues": {},
+        "type": "facet"
+      },
+      "$$hashKey": "SIE",
+      "validityFilter": {
+        "column": "pr",
+        "params": {
+          "nok": true,
+          "empty": true,
+          "ok": true,
+          "type": "LongMeaning"
+        },
+        "type": "validity"
+      },
+      "alphanumFilter": {
+        "values": [],
+        "column": "pr",
+        "params": {
+          "normalization": "exact",
+          "mode": "full_string"
+        },
+        "type": "alphanum"
+      },
+      "column": "pr",
+      "currentMode": "FACET",
+      "active": true,
+      "type": "columnFilter"
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "analysisColumnData": {},
   "columnsSelection": {
@@ -43,7 +78,7 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "usePythonUnicode": true,
         "stopOnError": true,
@@ -53,6 +88,29 @@
       },
       "type": "PythonUDF",
       "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "matching": "PATTERN",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "normalization": "EXACT",
+        "columns": [
+          "pr"
+        ],
+        "mapping": [
+          {
+            "to": "$1",
+            "from": "([0-9]*)(.[0-9]*)?"
+          }
+        ],
+        "output": ""
+      },
+      "type": "FindReplace",
+      "disabled": true,
       "metaType": "PROCESSOR"
     }
   ],
@@ -69,11 +127,23 @@
       "maxStoredBytes": -1,
       "partitionSelectionMethod": "ALL",
       "withinFirstN": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "COLUMN_BASED",
       "latestPartitionsN": 1,
       "maxReadUncompressedBytes": -1,
       "filter": {
-        "enabled": false,
+        "enabled": true,
+        "uiData": {
+          "conditions": [
+            {
+              "num": 0.0,
+              "col": "catr",
+              "input": "pr",
+              "string": "41.5",
+              "operator": "contains"
+            }
+          ],
+          "mode": "\u0026\u0026"
+        },
         "distinct": false
       }
     }
