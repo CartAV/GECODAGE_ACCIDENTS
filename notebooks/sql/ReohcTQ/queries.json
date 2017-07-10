@@ -968,6 +968,28 @@
         },
         "sql": "select * from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027\n",
         "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "Vz8rDNizsNkz",
+        "runOn": 1499700960497,
+        "runIn": 195,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "MkOZZBoYCrDZ9sIz",
+        "hash": "b713896cee9b464d8ec64fc7327023c8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027\n",
+        "expandedSql": "select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027\n"
       }
     ]
   }
