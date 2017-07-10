@@ -946,6 +946,28 @@
         },
         "sql": "select * from \"caracteristiques_geocoded_3_postgis_joined_with_pr\"\n\n",
         "expandedSql": "select * from \"caracteristiques_geocoded_3_postgis_joined_with_pr\"\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "nLD9qk3FRXyf",
+        "runOn": 1499700927492,
+        "runIn": 83,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "dq6523clpVOubvVm",
+        "hash": "da552ed1f08ebbb5fd2c587f5f34285d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027\n",
+        "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027\n"
       }
     ]
   }
