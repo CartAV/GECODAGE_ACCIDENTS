@@ -110,7 +110,7 @@
         "output": ""
       },
       "type": "FindReplace",
-      "disabled": true,
+      "disabled": false,
       "metaType": "PROCESSOR"
     }
   ],
@@ -119,7 +119,7 @@
   },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
-    "_refreshTrigger": 0,
+    "_refreshTrigger": 1,
     "autoRefreshSample": false,
     "selection": {
       "targetRatio": 0.02,
@@ -127,7 +127,7 @@
       "maxStoredBytes": -1,
       "partitionSelectionMethod": "ALL",
       "withinFirstN": -1,
-      "samplingMethod": "COLUMN_BASED",
+      "samplingMethod": "HEAD_SEQUENTIAL",
       "latestPartitionsN": 1,
       "maxReadUncompressedBytes": -1,
       "filter": {
