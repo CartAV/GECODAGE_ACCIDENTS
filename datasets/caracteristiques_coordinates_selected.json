@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499700739689
+    "lastModifiedOn": 1499700848416
   },
   "creationTag": {
     "versionNumber": 0,
@@ -389,7 +389,8 @@
       },
       {
         "name": "voie",
-        "type": "bigint",
+        "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -406,13 +407,13 @@
         "maxLength": -1
       },
       {
-        "name": "baac_score",
+        "name": "pr_score",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "pr_score",
+        "name": "baac_score",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -436,14 +437,14 @@
         "maxLength": -1
       },
       {
-        "name": "geo_source",
-        "type": "string",
+        "name": "geo_score",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "geo_score",
-        "type": "double",
+        "name": "geo_source",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
