@@ -23,7 +23,35 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "on": [],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
+      "on": [
+        {
+          "maxDistance": 1,
+          "caseInsensitive": true,
+          "column1": {
+            "name": "voie_normalise",
+            "table": 0
+          },
+          "type": "EQ",
+          "column2": {
+            "name": "nom_courant_route",
+            "table": 1
+          }
+        },
+        {
+          "column1": {
+            "name": "pr",
+            "table": 0
+          },
+          "type": "EQ",
+          "column2": {
+            "name": "pr",
+            "table": 1
+          }
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -53,175 +81,218 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "postFilter": {},
   "enableAutoCastInJoinConditions": false,
   "selectedColumns": [
     {
       "name": "Num_Acc",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "catr",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "voie",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "v1",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "v2",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "circ",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "nbv",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "pr",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "pr1",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "vosp",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "prof",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "plan",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lartpc",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "larrout",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "surf",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "infra",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "situ",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "env1",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "voie_normalise",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lon_next",
-      "table": 1
+      "table": 1,
+      "type": "double"
     },
     {
       "name": "lat_next",
-      "table": 1
+      "table": 1,
+      "type": "double"
     },
     {
       "name": "distance_next",
-      "table": 1
+      "table": 1,
+      "type": "double"
     },
     {
       "name": "INSEE_COM",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "NOM_COM",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "date",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "route",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "route_element_1",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "route_element_2",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "nom_courant_route",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "depPr",
-      "table": 1
+      "table": 1,
+      "type": "bigint"
     },
     {
       "name": "concession",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "abs",
-      "table": 1
+      "table": 1,
+      "type": "bigint"
     },
     {
       "name": "cumul",
-      "table": 1
+      "table": 1,
+      "type": "bigint"
     },
     {
       "name": "x",
-      "table": 1
+      "table": 1,
+      "type": "double"
     },
     {
       "name": "y",
-      "table": 1
+      "table": 1,
+      "type": "double"
     },
     {
       "name": "z",
-      "table": 1
+      "table": 1,
+      "type": "bigint"
     },
     {
       "name": "cote",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "longueurd",
-      "table": 1
+      "table": 1,
+      "type": "bigint"
     },
     {
       "name": "longueurg",
-      "table": 1
+      "table": 1,
+      "type": "bigint"
     },
     {
       "name": "gestionnai",
-      "table": 1
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "lat",
-      "table": 1
+      "table": 1,
+      "type": "double"
     },
     {
       "name": "lon",
-      "table": 1
+      "table": 1,
+      "type": "double"
     }
   ]
 }
