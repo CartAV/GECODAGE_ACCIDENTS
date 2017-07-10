@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499699606696
+    "lastModifiedOn": 1499699929444
   },
   "creationTag": {
     "versionNumber": 0,
@@ -340,13 +340,13 @@
         "maxLength": -1
       },
       {
-        "name": "lon_i",
+        "name": "lon_pr",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "lat_i",
+        "name": "lat_pr",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
