@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1498572804660
+    "lastModifiedOn": 1499701160226
   },
   "creationTag": {
     "versionNumber": 0,
@@ -383,6 +383,36 @@
         "maxLength": -1
       },
       {
+        "name": "catr",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "voie",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "lon_pr",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "lat_pr",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr_score",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "baac_score",
         "type": "double",
         "timestampNoTzAsDate": false,
@@ -407,14 +437,14 @@
         "maxLength": -1
       },
       {
-        "name": "geo_source",
-        "type": "string",
+        "name": "geo_score",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "geo_score",
-        "type": "double",
+        "name": "geo_source",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
