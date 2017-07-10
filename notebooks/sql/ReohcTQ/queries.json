@@ -924,6 +924,28 @@
         },
         "sql": "select count(*) from \"geocoded_ban_citycode\" where \"an\"\u003d \u002716\u0027",
         "expandedSql": "select count(*) from \"geocoded_ban_citycode\" where \"an\"\u003d \u002716\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "R2zh5TJfQbmJ",
+        "runOn": 1499700603672,
+        "runIn": 110,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "CYjKJfwBWGOeFbgS",
+        "hash": "5ddef835112ca67c83e9c6c7e293be3b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_geocoded_3_postgis_joined_with_pr\"\n\n",
+        "expandedSql": "select * from \"caracteristiques_geocoded_3_postgis_joined_with_pr\"\n\n"
       }
     ]
   }
