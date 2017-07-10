@@ -109,6 +109,7 @@
         ],
         "output": ""
       },
+      "comment": "les PR doivent etre des entiers",
       "type": "FindReplace",
       "disabled": false,
       "metaType": "PROCESSOR"
