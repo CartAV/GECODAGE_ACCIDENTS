@@ -33,7 +33,7 @@
     "main": {
       "items": [
         {
-          "ref": "caracteristiques_geocoded_3_postgis_joined",
+          "ref": "caracteristiques_geocoded_3_postgis_joined_with_PR",
           "deps": []
         }
       ]
@@ -50,11 +50,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1497947872562
+    "lastModifiedOn": 1499699810743
   },
   "creationTag": {
     "versionNumber": 0,
