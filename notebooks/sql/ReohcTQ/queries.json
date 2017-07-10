@@ -1144,6 +1144,28 @@
         },
         "sql": "select * from \"caracteristiques_coordinates_selected\" where \u0027pr_score\u0027",
         "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where \u0027pr_score\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "MPGkB4zOdMnr",
+        "runOn": 1499701121537,
+        "runIn": 45,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "RdSTRyaTiGR8lDxT",
+        "hash": "538c4825be4372af1fd999d3367d79a7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \"pr_score\" \u003d 1.0",
+        "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \"pr_score\" \u003d 1.0"
       }
     ]
   }
