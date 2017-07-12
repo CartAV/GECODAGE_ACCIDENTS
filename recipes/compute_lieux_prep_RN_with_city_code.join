@@ -1,0 +1,215 @@
+{
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "index": 0,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 1,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  ],
+  "joins": [
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 1,
+      "conditionsMode": "AND",
+      "on": [],
+      "type": "LEFT"
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "enableAutoCastInJoinConditions": false,
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "table": 0
+    },
+    {
+      "name": "catr",
+      "table": 0
+    },
+    {
+      "name": "voie",
+      "table": 0
+    },
+    {
+      "name": "v1",
+      "table": 0
+    },
+    {
+      "name": "v2",
+      "table": 0
+    },
+    {
+      "name": "circ",
+      "table": 0
+    },
+    {
+      "name": "nbv",
+      "table": 0
+    },
+    {
+      "name": "pr",
+      "table": 0
+    },
+    {
+      "name": "pr1",
+      "table": 0
+    },
+    {
+      "name": "vosp",
+      "table": 0
+    },
+    {
+      "name": "prof",
+      "table": 0
+    },
+    {
+      "name": "plan",
+      "table": 0
+    },
+    {
+      "name": "lartpc",
+      "table": 0
+    },
+    {
+      "name": "larrout",
+      "table": 0
+    },
+    {
+      "name": "surf",
+      "table": 0
+    },
+    {
+      "name": "infra",
+      "table": 0
+    },
+    {
+      "name": "situ",
+      "table": 0
+    },
+    {
+      "name": "env1",
+      "table": 0
+    },
+    {
+      "name": "voie_normalise",
+      "table": 0
+    },
+    {
+      "name": "an",
+      "table": 1
+    },
+    {
+      "name": "mois",
+      "table": 1
+    },
+    {
+      "name": "jour",
+      "table": 1
+    },
+    {
+      "name": "hrmn",
+      "table": 1
+    },
+    {
+      "name": "lum",
+      "table": 1
+    },
+    {
+      "name": "agg",
+      "table": 1
+    },
+    {
+      "name": "int",
+      "table": 1
+    },
+    {
+      "name": "atm",
+      "table": 1
+    },
+    {
+      "name": "col",
+      "table": 1
+    },
+    {
+      "name": "com",
+      "table": 1
+    },
+    {
+      "name": "adr",
+      "table": 1
+    },
+    {
+      "name": "gps",
+      "table": 1
+    },
+    {
+      "name": "lat",
+      "table": 1
+    },
+    {
+      "name": "long",
+      "table": 1
+    },
+    {
+      "name": "dep",
+      "table": 1
+    },
+    {
+      "name": "date",
+      "table": 1
+    },
+    {
+      "name": "original_city_code",
+      "table": 1
+    },
+    {
+      "name": "original_name",
+      "table": 1
+    },
+    {
+      "name": "current_city_code",
+      "table": 1
+    },
+    {
+      "name": "current_name",
+      "table": 1
+    }
+  ]
+}
