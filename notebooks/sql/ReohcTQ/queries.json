@@ -1233,6 +1233,30 @@
         "sql": "select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \"pr_score\" \u003d 1.0",
         "expandedSql": "select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \"pr_score\" \u003d 1.0"
       }
+    ],
+    "p665bdgl7n": [
+      {
+        "mode": "SQL",
+        "id": "ItISGLLdlLOo",
+        "runOn": 1499864758131,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "2oMpaViRjw55Flj5",
+        "hash": "96b4d86038a0d08000d1f2cd3c254d77",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"lieux_prep_rn_with_city_code\"",
+        "expandedSql": "select * from \"public\".\"lieux_prep_rn_with_city_code\""
+      }
     ]
   }
 }
