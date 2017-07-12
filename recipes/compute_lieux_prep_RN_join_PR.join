@@ -1,16 +1,11 @@
 {
   "virtualInputs": [
     {
-      "autoSelectColumns": false,
-      "index": 0,
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
+      "index": 1
     },
     {
       "autoSelectColumns": false,
-      "index": 1,
+      "index": 0,
       "preFilter": {
         "enabled": false,
         "distinct": false
@@ -23,14 +18,17 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "on": [
         {
           "maxDistance": 1,
+          "caseInsensitive": true,
           "column1": {
             "name": "voie_normalise",
             "table": 0
           },
-          "caseInsensitive": true,
           "type": "EQ",
           "column2": {
             "name": "nom_courant_route",
@@ -47,11 +45,21 @@
             "name": "pr",
             "table": 1
           }
+        },
+        {
+          "maxDistance": 1,
+          "caseInsensitive": true,
+          "column1": {
+            "name": "current_city_code",
+            "table": 0
+          },
+          "type": "EQ",
+          "column2": {
+            "name": "INSEE_COM",
+            "table": 1
+          }
         }
       ],
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "type": "LEFT"
     }
   ],
