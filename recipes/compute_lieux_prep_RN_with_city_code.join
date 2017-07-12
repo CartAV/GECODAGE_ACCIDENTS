@@ -23,7 +23,25 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "on": [],
+      "on": [
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -53,163 +71,108 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "postFilter": {},
   "enableAutoCastInJoinConditions": false,
   "selectedColumns": [
     {
       "name": "Num_Acc",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "catr",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "voie",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "v1",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "v2",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "circ",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "nbv",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "pr",
-      "table": 0
+      "table": 0,
+      "type": "int"
     },
     {
       "name": "pr1",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "vosp",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "prof",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "plan",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lartpc",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "larrout",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "surf",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "infra",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "situ",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "env1",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "voie_normalise",
-      "table": 0
-    },
-    {
-      "name": "an",
-      "table": 1
-    },
-    {
-      "name": "mois",
-      "table": 1
-    },
-    {
-      "name": "jour",
-      "table": 1
-    },
-    {
-      "name": "hrmn",
-      "table": 1
-    },
-    {
-      "name": "lum",
-      "table": 1
-    },
-    {
-      "name": "agg",
-      "table": 1
-    },
-    {
-      "name": "int",
-      "table": 1
-    },
-    {
-      "name": "atm",
-      "table": 1
-    },
-    {
-      "name": "col",
-      "table": 1
-    },
-    {
-      "name": "com",
-      "table": 1
-    },
-    {
-      "name": "adr",
-      "table": 1
-    },
-    {
-      "name": "gps",
-      "table": 1
-    },
-    {
-      "name": "lat",
-      "table": 1
-    },
-    {
-      "name": "long",
-      "table": 1
-    },
-    {
-      "name": "dep",
-      "table": 1
-    },
-    {
-      "name": "date",
-      "table": 1
-    },
-    {
-      "name": "original_city_code",
-      "table": 1
-    },
-    {
-      "name": "original_name",
-      "table": 1
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "current_city_code",
-      "table": 1
-    },
-    {
-      "name": "current_name",
-      "table": 1
+      "table": 1,
+      "type": "string"
     }
   ]
 }
