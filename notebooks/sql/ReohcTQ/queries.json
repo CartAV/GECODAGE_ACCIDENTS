@@ -1390,6 +1390,28 @@
         },
         "sql": "select count(*),\"Num_Acc\" \"public\".\"lieux_prep_rn\" group by \"Num_Acc\" order by count desc",
         "expandedSql": "select count(*),\"Num_Acc\" \"public\".\"lieux_prep_rn\" group by \"Num_Acc\" order by count desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "WzsAgsFahOKk",
+        "runOn": 1499866273449,
+        "runIn": 47,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "OZVv3CyHMulk7pdU",
+        "hash": "8a5c62c0245429e1132db14f55ac5d01",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*),\"Num_Acc\" from \"public\".\"lieux_prep_rn\" group by \"Num_Acc\" order by count desc",
+        "expandedSql": "select count(*),\"Num_Acc\" from \"public\".\"lieux_prep_rn\" group by \"Num_Acc\" order by count desc"
       }
     ]
   }
