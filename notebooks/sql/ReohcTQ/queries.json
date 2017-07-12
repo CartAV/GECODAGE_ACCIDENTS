@@ -1301,6 +1301,30 @@
         "sql": "with lieux as \n    (select l.*, icf.\"the_geom\" as geom from \"public\".\"lieux_prep_rn_with_city_code\" l, \"public\".\"ign_commune_france\" icf where l.\"current_city_code\" \u003d icf.\"INSEE_COM\"),\nbornes as \n    (select b.*, icf.\"the_geom\" as geom from \"public\".\"bornes_routes_borne_suivante_2016\" b, \"public\".\"ign_commune_france\" icf where b.\"INSEE_COM\" \u003d icf.\"INSEE_COM\")\nSELECT * \nFROM lieux l\nLEFT JOIN bornes b\nON \n    (l.catr \u003d \u0027autoroute\u0027 OR l.catr \u003d \u0027route nationale\u0027) \n    AND l.\"voie_normalise\" \u003d b.\"nom_courant_route\" \n    AND l.pr \u003d b.pr \n    AND ST_DWithin(l.geom::geography, b.geom::geography, 2000)\n\n\n\n",
         "expandedSql": "with lieux as \n    (select l.*, icf.\"the_geom\" as geom from \"public\".\"lieux_prep_rn_with_city_code\" l, \"public\".\"ign_commune_france\" icf where l.\"current_city_code\" \u003d icf.\"INSEE_COM\"),\nbornes as \n    (select b.*, icf.\"the_geom\" as geom from \"public\".\"bornes_routes_borne_suivante_2016\" b, \"public\".\"ign_commune_france\" icf where b.\"INSEE_COM\" \u003d icf.\"INSEE_COM\")\nSELECT * \nFROM lieux l\nLEFT JOIN bornes b\nON \n    (l.catr \u003d \u0027autoroute\u0027 OR l.catr \u003d \u0027route nationale\u0027) \n    AND l.\"voie_normalise\" \u003d b.\"nom_courant_route\" \n    AND l.pr \u003d b.pr \n    AND ST_DWithin(l.geom::geography, b.geom::geography, 2000)\n\n\n\n"
       }
+    ],
+    "qxd0bl6wbs": [
+      {
+        "mode": "SQL",
+        "id": "2i63GvbR9dFR",
+        "runOn": 1499866085235,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "UinEhtC6gNKhPiHi",
+        "hash": "a88a06d09fbd75a3847f3492300eab70",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*),\u0027Num_Acc\u0027 from \"public\".\"lieux_prep_rn_with_city_code\" group by \"Num_Acc\" order by count desc",
+        "expandedSql": "select count(*),\u0027Num_Acc\u0027 from \"public\".\"lieux_prep_rn_with_city_code\" group by \"Num_Acc\" order by count desc"
+      }
     ]
   }
 }
