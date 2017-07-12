@@ -1346,6 +1346,28 @@
         },
         "sql": "select count(*),\"Num_Acc\" from \"public\".\"lieux_prep_rn_with_city_code\" group by \"Num_Acc\" order by count desc",
         "expandedSql": "select count(*),\"Num_Acc\" from \"public\".\"lieux_prep_rn_with_city_code\" group by \"Num_Acc\" order by count desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "rjG6DZpbltHa",
+        "runOn": 1499866236471,
+        "runIn": 890,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "mHJAwrJi6xyl2Dg9",
+        "hash": "7f615ae5565570c20d1e591a42196da9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*),\"Num_Acc\" from \"public\".\"lieux_prep_RN\" group by \"Num_Acc\" order by count desc",
+        "expandedSql": "select count(*),\"Num_Acc\" from \"public\".\"lieux_prep_RN\" group by \"Num_Acc\" order by count desc"
       }
     ]
   }
