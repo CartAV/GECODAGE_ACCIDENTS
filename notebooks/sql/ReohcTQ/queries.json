@@ -1545,6 +1545,30 @@
         "sql": "select count(*),\"Num_Acc\" from \"public\".\"caracteristiques_prep3\" group by \"Num_Acc\" order by count desc",
         "expandedSql": "select count(*),\"Num_Acc\" from \"public\".\"caracteristiques_prep3\" group by \"Num_Acc\" order by count desc"
       }
+    ],
+    "iz6pfkiy1zc": [
+      {
+        "mode": "SQL",
+        "id": "Kd48GKCc8b19",
+        "runOn": 1499867293648,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "LBwZlFYH5ATNChfk",
+        "hash": "c199204b41ad574db5effdb9a2da479d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select l.*, icf.\"the_geom\" as geom from \"public\".\"lieux_prep_rn_with_city_code\" l, \"public\".\"ign_commune_france\" icf where l.\"current_city_code\" \u003d icf.\"INSEE_COM\"\n",
+        "expandedSql": "select l.*, icf.\"the_geom\" as geom from \"public\".\"lieux_prep_rn_with_city_code\" l, \"public\".\"ign_commune_france\" icf where l.\"current_city_code\" \u003d icf.\"INSEE_COM\"\n"
+      }
     ]
   }
 }
