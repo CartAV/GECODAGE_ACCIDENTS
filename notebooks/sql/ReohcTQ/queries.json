@@ -1617,10 +1617,10 @@
         "mode": "SQL",
         "id": "sFu8V3BCVhqJ",
         "runOn": 1499867430308,
-        "runIn": 34816,
+        "runIn": 252,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "MxipwiGZftoCme12",
         "hash": "5f9a0d9895b9312afe47081768cf16ae",
         "querySettings": {
