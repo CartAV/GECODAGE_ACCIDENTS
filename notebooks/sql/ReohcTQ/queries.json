@@ -1256,6 +1256,28 @@
         },
         "sql": "select * from \"public\".\"lieux_prep_rn_with_city_code\"",
         "expandedSql": "select * from \"public\".\"lieux_prep_rn_with_city_code\""
+      },
+      {
+        "mode": "SQL",
+        "id": "ofEvuf4o17XP",
+        "runOn": 1499865648424,
+        "runIn": 69,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "zE1HlsbBWUXXGvcI",
+        "hash": "25c6abbc883108668b562ceb09714015",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "with lieux as \n    (select l.*, icf.\"the_geom\" as geom from \"public\".\"lieux_prep_rn_with_city_code\" l, \"public\".\"ign_commune_france\" icf where l.\"current_city_code\" \u003d icf.\"INSEE_COM\"),\nbornes as \n    (select b.*, icf.\"the_geom\" as geom from \"public\".\"bornes_routes_borne_suivante_2016\" b, \"public\".\"ign_commune_france\" icf where b.\"INSEE_COM\" \u003d icf.\"INSEE_COM\")\nSELECT * \nFROM lieux l\nLEFT JOIN bornes b\nON \n    (l.catr \u003d \u0027autoroute\u0027 OR l.catr \u003d \"route nationale\") \n    AND l.\"voie_normalise\" \u003d b.\"nom_courant_route\" \n    AND l.pr \u003d b.pr \n    AND ST_DWithin(l.geom::geography, b.geom::geography, 2000)\n\n\n\n",
+        "expandedSql": "with lieux as \n    (select l.*, icf.\"the_geom\" as geom from \"public\".\"lieux_prep_rn_with_city_code\" l, \"public\".\"ign_commune_france\" icf where l.\"current_city_code\" \u003d icf.\"INSEE_COM\"),\nbornes as \n    (select b.*, icf.\"the_geom\" as geom from \"public\".\"bornes_routes_borne_suivante_2016\" b, \"public\".\"ign_commune_france\" icf where b.\"INSEE_COM\" \u003d icf.\"INSEE_COM\")\nSELECT * \nFROM lieux l\nLEFT JOIN bornes b\nON \n    (l.catr \u003d \u0027autoroute\u0027 OR l.catr \u003d \"route nationale\") \n    AND l.\"voie_normalise\" \u003d b.\"nom_courant_route\" \n    AND l.pr \u003d b.pr \n    AND ST_DWithin(l.geom::geography, b.geom::geography, 2000)\n\n\n\n"
       }
     ]
   }
