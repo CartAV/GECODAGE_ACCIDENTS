@@ -1478,6 +1478,28 @@
         },
         "sql": "select count(*),\"Num_Acc\" from \"public\".\"caracteristiques_prep2\" group by \"Num_Acc\" order by count desc",
         "expandedSql": "select count(*),\"Num_Acc\" from \"public\".\"caracteristiques_prep2\" group by \"Num_Acc\" order by count desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "383owmohXwZp",
+        "runOn": 1499866350621,
+        "runIn": 1281,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "X7jPh7SrckGPFd3J",
+        "hash": "b2eb317c9726ca374f9b9b4382ecf286",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*),\"Num_Acc\" from \"public\".\"caracteristiques_prep3\" group by \"Num_Acc\" order by count desc",
+        "expandedSql": "select count(*),\"Num_Acc\" from \"public\".\"caracteristiques_prep3\" group by \"Num_Acc\" order by count desc"
       }
     ]
   }
