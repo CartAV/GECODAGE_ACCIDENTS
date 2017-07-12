@@ -1239,10 +1239,10 @@
         "mode": "SQL",
         "id": "ItISGLLdlLOo",
         "runOn": 1499864758131,
-        "runIn": -1,
+        "runIn": 69,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "2oMpaViRjw55Flj5",
         "hash": "96b4d86038a0d08000d1f2cd3c254d77",
         "querySettings": {
