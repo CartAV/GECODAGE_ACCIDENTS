@@ -1,0 +1,56 @@
+{
+  "type": "sql_query",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "allowMultipleConnections": false,
+    "displayExecutionPlan": true,
+    "skipPrerunValidate": false
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "lieux_prep_RN_with_city_code",
+          "deps": []
+        },
+        {
+          "ref": "DATAPREPOPENDATAGEO.bornes_routes_borne_suivante_2016",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "lieux_prep_RN_PR",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1499863487084
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1499863487084
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
