@@ -1568,6 +1568,28 @@
         },
         "sql": "select l.*, icf.\"the_geom\" as geom from \"public\".\"lieux_prep_rn_with_city_code\" l, \"public\".\"ign_commune_france\" icf where l.\"current_city_code\" \u003d icf.\"INSEE_COM\"\n",
         "expandedSql": "select l.*, icf.\"the_geom\" as geom from \"public\".\"lieux_prep_rn_with_city_code\" l, \"public\".\"ign_commune_france\" icf where l.\"current_city_code\" \u003d icf.\"INSEE_COM\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "8pslTzY6prVx",
+        "runOn": 1499867308157,
+        "runIn": 679,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "T6UyTHS4LmtOTkiu",
+        "hash": "f0098229cf9fed2f7b51904cb6bfc263",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select b.*, icf.\"the_geom\" as geom from \"public\".\"bornes_routes_borne_suivante_2016\" b, \"public\".\"ign_commune_france\" icf where b.\"INSEE_COM\" \u003d icf.\"INSEE_COM\"",
+        "expandedSql": "select b.*, icf.\"the_geom\" as geom from \"public\".\"bornes_routes_borne_suivante_2016\" b, \"public\".\"ign_commune_france\" icf where b.\"INSEE_COM\" \u003d icf.\"INSEE_COM\""
       }
     ]
   }
