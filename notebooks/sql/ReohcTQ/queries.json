@@ -1590,6 +1590,28 @@
         },
         "sql": "select b.*, icf.\"the_geom\" as geom from \"public\".\"bornes_routes_borne_suivante_2016\" b, \"public\".\"ign_commune_france\" icf where b.\"INSEE_COM\" \u003d icf.\"INSEE_COM\"",
         "expandedSql": "select b.*, icf.\"the_geom\" as geom from \"public\".\"bornes_routes_borne_suivante_2016\" b, \"public\".\"ign_commune_france\" icf where b.\"INSEE_COM\" \u003d icf.\"INSEE_COM\""
+      },
+      {
+        "mode": "SQL",
+        "id": "E9BApxelPgks",
+        "runOn": 1499867338550,
+        "runIn": 122,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "ztDLPFhxseWHr2qi",
+        "hash": "2f23ac3113b3aab1e93e1f8409cd76b3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "with lieux as \n    (select l.*, icf.\"the_geom\" as geom from \"public\".\"lieux_prep_rn_with_city_code\" l, \"public\".\"ign_commune_france\" icf where l.\"current_city_code\" \u003d icf.\"INSEE_COM\"),\nbornes as \n    (select b.*, icf.\"the_geom\" as geom from \"public\".\"bornes_routes_borne_suivante_2016\" b, \"public\".\"ign_commune_france\" icf where b.\"INSEE_COM\" \u003d icf.\"INSEE_COM\")\nSELECT DISTINCT ON (l.\"Num_Acc\") l.*, b.lat, b.lon, b.lat_next, b.lon_next, b.\"INSEE_COM\" as pr_insee_com, b.\"NOM_COM\" as pr_nom_com \nFROM lieux l\nLEFT JOIN bornes b\nON \n    (l.catr \u003d \u0027autoroute\u0027 OR l.catr \u003d \u0027route nationale\u0027) \n    AND l.\"voie_normalise\" \u003d b.\"nom_courant_route\" \n    AND l.pr \u003d b.pr \nLIMIT 100",
+        "expandedSql": "with lieux as \n    (select l.*, icf.\"the_geom\" as geom from \"public\".\"lieux_prep_rn_with_city_code\" l, \"public\".\"ign_commune_france\" icf where l.\"current_city_code\" \u003d icf.\"INSEE_COM\"),\nbornes as \n    (select b.*, icf.\"the_geom\" as geom from \"public\".\"bornes_routes_borne_suivante_2016\" b, \"public\".\"ign_commune_france\" icf where b.\"INSEE_COM\" \u003d icf.\"INSEE_COM\")\nSELECT DISTINCT ON (l.\"Num_Acc\") l.*, b.lat, b.lon, b.lat_next, b.lon_next, b.\"INSEE_COM\" as pr_insee_com, b.\"NOM_COM\" as pr_nom_com \nFROM lieux l\nLEFT JOIN bornes b\nON \n    (l.catr \u003d \u0027autoroute\u0027 OR l.catr \u003d \u0027route nationale\u0027) \n    AND l.\"voie_normalise\" \u003d b.\"nom_courant_route\" \n    AND l.pr \u003d b.pr \nLIMIT 100"
       }
     ]
   }
