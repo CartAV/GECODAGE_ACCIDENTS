@@ -23,9 +23,6 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 1,
@@ -40,6 +37,9 @@
           }
         }
       ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     }
   ],
@@ -283,11 +283,6 @@
       "type": "string"
     },
     {
-      "name": "nom_circonscription_police",
-      "table": 0,
-      "type": "string"
-    },
-    {
       "name": "distance_commune_baac",
       "table": 0,
       "type": "double"
@@ -311,16 +306,6 @@
       "name": "CODE_COM",
       "table": 0,
       "type": "string"
-    },
-    {
-      "name": "lon_pr",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "lat_pr",
-      "table": 0,
-      "type": "double"
     },
     {
       "alias": "nom_circonscription_police",
