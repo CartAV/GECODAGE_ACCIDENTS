@@ -25,9 +25,25 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": false
   },
-  "defaultOutputIndex": -1,
-  "valueSplits": [],
+  "defaultOutputIndex": 1,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "value": "autoroute"
+    },
+    {
+      "outputIndex": 0,
+      "value": "route nationale"
+    }
+  ],
+  "column": "catr",
   "writeVariablesInOutput": false,
-  "filterSplits": [],
-  "enableVariables": false
+  "filterSplits": [
+    {
+      "outputIndex": 0,
+      "filter": {}
+    }
+  ],
+  "enableVariables": false,
+  "mode": "VALUES"
 }
