@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499953136788
+    "lastModifiedOn": 1499953302790
   },
   "creationTag": {
     "versionNumber": 0,
@@ -330,6 +330,18 @@
       {
         "name": "CODE_COM",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr_lat_i",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr_lon_i",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
