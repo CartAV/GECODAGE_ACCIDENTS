@@ -23,28 +23,28 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     }
   ],
@@ -76,7 +76,6 @@
   },
   "postFilter": {},
   "enableAutoCastInJoinConditions": false,
-  "computedColumns": [],
   "selectedColumns": [
     {
       "name": "Num_Acc",
@@ -289,11 +288,6 @@
       "type": "string"
     },
     {
-      "name": "nom_circonscription_police",
-      "table": 0,
-      "type": "string"
-    },
-    {
       "name": "distance_commune_baac",
       "table": 0,
       "type": "double"
@@ -319,16 +313,15 @@
       "type": "string"
     },
     {
-      "alias": "lon_pr",
-      "name": "lon_i",
+      "name": "pr_lat_i",
       "table": 1,
       "type": "double"
     },
     {
-      "alias": "lat_pr",
-      "name": "lat_i",
+      "name": "pr_lon_i",
       "table": 1,
       "type": "double"
     }
-  ]
+  ],
+  "computedColumns": []
 }
