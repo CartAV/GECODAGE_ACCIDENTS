@@ -24,7 +24,7 @@
       "params": {
         "usePythonUnicode": true,
         "stopOnError": true,
-        "pythonSourceCode": "def process(row):\n    m \u003d row[\"pr1\"]\n    if m:\n        m \u003d int(m)\n        if (row[\"lat_next\"] and row[\"lon_next\"] and row[\"lat\"] and row[\"lon\"]):\n            # les coords de la borne et de la suivante doivent etre dispo\n            row[\"lat_i\"] \u003d (float(row[\"lat\"]) * (1000 - m) + float(row[\"lat_next\"]) * m)/1000\n            row[\"lon_i\"] \u003d (float(row[\"lon\"]) * (1000 - m) + float(row[\"lon_next\"]) * m)/1000\n    else:\n        # si pas de metres indiqués (pr1), on prend les coordonnées de la borne sans interpoler\n        row[\"lat_i\"] \u003d row[\"lat\"]\n        row[\"lon_i\"] \u003d row[\"lon\"]\n    return row\n",
+        "pythonSourceCode": "def process(row):\n    m \u003d row[\"pr1\"]\n    if m:\n        m \u003d int(m)\n        if (row[\"pr_lat_next\"] and row[\"pr_lon_next\"] and row[\"pr_lat\"] and row[\"pr_lon\"]):\n            # les coords de la borne et de la suivante doivent etre dispo\n            row[\"lat_i\"] \u003d (float(row[\"pr_lat\"]) * (1000 - m) + float(row[\"pr_lat_next\"]) * m)/1000\n            row[\"lon_i\"] \u003d (float(row[\"pr_lon\"]) * (1000 - m) + float(row[\"pr_lon_next\"]) * m)/1000\n    else:\n        # si pas de metres indiqués (pr1), on prend les coordonnées de la borne sans interpoler\n        row[\"lat_i\"] \u003d row[\"pr_lat\"]\n        row[\"lon_i\"] \u003d row[\"pr_lon\"]\n    return row\n",
         "mode": "ROW"
       },
       "type": "PythonUDF",
