@@ -21,6 +21,10 @@
             "caracteristiques_geocoded_3_postgis_joined_with_PR": {
               "repartition": 10,
               "cache": false
+            },
+            "lieux_carac_toutes_routes_circo_police": {
+              "repartition": 10,
+              "cache": false
             }
           }
         }
@@ -54,11 +58,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499949957407
+    "lastModifiedOn": 1499949974090
   },
   "creationTag": {
     "versionNumber": 0,
