@@ -24,7 +24,7 @@
     "input": {
       "items": [
         {
-          "ref": "caracteristiques_prep3",
+          "ref": "lieux_caracteristiques_autres_routes",
           "deps": []
         }
       ]
@@ -41,11 +41,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 39,
+    "versionNumber": 40,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1498657059689
+    "lastModifiedOn": 1499938498460
   },
   "tags": [],
   "checklists": {
