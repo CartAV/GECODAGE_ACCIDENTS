@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499950681910
+    "lastModifiedOn": 1499950732043
   },
   "creationTag": {
     "versionNumber": 0,
@@ -99,6 +99,7 @@
       {
         "name": "pr",
         "type": "int",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
