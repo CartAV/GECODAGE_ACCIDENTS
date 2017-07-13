@@ -26,20 +26,20 @@
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
       "type": "LEFT"
@@ -170,7 +170,102 @@
       "type": "string"
     },
     {
+      "name": "an",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "mois",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "jour",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "hrmn",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "name": "lum",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "agg",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "int",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "atm",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "col",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "com",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "adr",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "gps",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "lat",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "long",
+      "table": 1,
+      "type": "double"
+    },
+    {
+      "name": "dep",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "date",
+      "table": 1,
+      "type": "date"
+    },
+    {
+      "name": "original_city_code",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "original_name",
+      "table": 1,
+      "type": "string"
+    },
+    {
       "name": "current_city_code",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "current_name",
       "table": 1,
       "type": "string"
     }
