@@ -16,6 +16,10 @@
             "lieux_prep_RN_join_PR": {
               "repartition": 10,
               "cache": false
+            },
+            "lieux_prep_RN_PR": {
+              "repartition": 10,
+              "cache": false
             }
           }
         }
@@ -49,11 +53,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499952009747
+    "lastModifiedOn": 1499952286429
   },
   "creationTag": {
     "versionNumber": 0,
