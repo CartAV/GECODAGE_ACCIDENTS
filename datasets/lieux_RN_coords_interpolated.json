@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499939224751
+    "lastModifiedOn": 1499939524471
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,7 +65,7 @@
       },
       {
         "name": "voie",
-        "type": "string",
+        "type": "bigint",
         "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -287,25 +287,25 @@
         "maxLength": -1
       },
       {
-        "name": "lat_1",
+        "name": "pr_lat",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "lon",
+        "name": "pr_lon",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "lat_next",
+        "name": "pr_lat_next",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "lon_next",
+        "name": "pr_lon_next",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
