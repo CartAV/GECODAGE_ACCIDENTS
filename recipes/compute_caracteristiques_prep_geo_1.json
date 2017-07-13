@@ -21,6 +21,10 @@
             "caracteristiques_geocoded_3_postgis_joined_with_PR": {
               "repartition": 10,
               "cache": false
+            },
+            "caracteristiques_geocoded_3_circo_police": {
+              "repartition": 10,
+              "cache": false
             }
           }
         }
@@ -54,11 +58,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499952748409
+    "lastModifiedOn": 1499952753331
   },
   "creationTag": {
     "versionNumber": 0,
