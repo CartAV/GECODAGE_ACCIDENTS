@@ -1,0 +1,51 @@
+{
+  "type": "vstack",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "caracteristiques_geocoded_3_postgis_joined",
+          "deps": []
+        },
+        {
+          "ref": "lieux_carac_RN_with_PR_interpolated",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "lieux_carac_toutes_routes",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1499949335416
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1499949335416
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
