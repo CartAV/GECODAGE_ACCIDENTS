@@ -18,18 +18,18 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499949842576
+    "lastModifiedOn": 1499701366597
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499949749006
+    "lastModifiedOn": 1499699479013
   },
   "tags": [
     "creator:chabouisfr"
@@ -41,7 +41,7 @@
     "partitioned": false,
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "table": "caracteristiques_geocoded_4",
+    "table": "caracteristiques_geocoded_3_postgis_joined_with_pr",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
@@ -49,7 +49,7 @@
     "readColsWithUnknownTzAsDates": false
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
@@ -113,7 +113,7 @@
       },
       {
         "name": "com",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -191,25 +191,25 @@
       },
       {
         "name": "ban_latitude",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "ban_longitude",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "ban_postcode",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "ban_score",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -233,25 +233,25 @@
       },
       {
         "name": "bano_latitude",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "bano_longitude",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "bano_postcode",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "bano_score",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -275,25 +275,25 @@
       },
       {
         "name": "ban2_latitude",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "ban2_longitude",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "ban2_postcode",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "ban2_score",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -335,42 +335,18 @@
       },
       {
         "name": "CODE_COM",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "baac_score",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "latitude",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "geo_type",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "longitude",
+        "name": "lon_pr",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "geo_source",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "geo_score",
+        "name": "lat_pr",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1

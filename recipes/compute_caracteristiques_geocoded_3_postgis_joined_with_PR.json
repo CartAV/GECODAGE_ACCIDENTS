@@ -1,5 +1,5 @@
 {
-  "type": "split",
+  "type": "join",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "customMeta": {
@@ -10,7 +10,11 @@
     "main": {
       "items": [
         {
-          "ref": "lieux_caracteristiques",
+          "ref": "caracteristiques_geocoded_3_postgis_joined",
+          "deps": []
+        },
+        {
+          "ref": "lieux_RN_coords_interpolated",
           "deps": []
         }
       ]
@@ -20,29 +24,25 @@
     "main": {
       "items": [
         {
-          "ref": "lieux_caracteristiques_routes_nationales",
-          "appendMode": false
-        },
-        {
-          "ref": "lieux_caracteristiques_autres_routes",
+          "ref": "caracteristiques_geocoded_3_postgis_joined_with_PR",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499950622077
+    "lastModifiedOn": 1499701366868
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499938379360
+    "lastModifiedOn": 1499699479063
   },
   "tags": [],
   "checklists": {

@@ -1,12 +1,7 @@
 {
-  "type": "sql_query",
+  "type": "join",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
-  "params": {
-    "allowMultipleConnections": false,
-    "displayExecutionPlan": true,
-    "skipPrerunValidate": false
-  },
   "customMeta": {
     "kv": {}
   },
@@ -15,15 +10,11 @@
     "main": {
       "items": [
         {
-          "ref": "lieux_caracteristiques_routes_nationales",
-          "deps": []
-        },
-        {
           "ref": "DATAPREPOPENDATAGEO.bornes_routes_borne_suivante_2016",
           "deps": []
         },
         {
-          "ref": "DATAPREPOPENDATAGEO.IGN_COMMUNE_FRANCE",
+          "ref": "lieux_prep_RN_with_city_code",
           "deps": []
         }
       ]
@@ -33,25 +24,25 @@
     "main": {
       "items": [
         {
-          "ref": "lieux_carac_RN_with_PR_coords",
+          "ref": "lieux_prep_RN_join_PR",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499939441014
+    "lastModifiedOn": 1499848763344
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499938843203
+    "lastModifiedOn": 1499696474924
   },
   "tags": [],
   "checklists": {

@@ -28,16 +28,21 @@
       },
       "on": [
         {
-          "maxDistance": 1,
+          "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
-            "name": "current_city_code",
+            "name": "Num_Acc",
             "table": 0
           },
+          "strict": false,
           "type": "EQ",
+          "normalizeText": false,
           "column2": {
-            "name": "n°_commune_insee_long",
+            "name": "Num_Acc",
             "table": 1
-          }
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
       "type": "LEFT"
@@ -71,6 +76,7 @@
   },
   "postFilter": {},
   "enableAutoCastInJoinConditions": false,
+  "computedColumns": [],
   "selectedColumns": [
     {
       "name": "Num_Acc",
@@ -313,155 +319,16 @@
       "type": "string"
     },
     {
-      "name": "catr",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "voie",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "v1",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "v2",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "circ",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "nbv",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "pr",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "pr1",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "vosp",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "prof",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "plan",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "lartpc",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "larrout",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "surf",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "infra",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "situ",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "env1",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "voie_normalise",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "pr_lat",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "pr_lon",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "pr_lat_next",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "pr_lon_next",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "pr_insee_com",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "pr_nom_com",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "latitude",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "geo_score",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "geo_type",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "longitude",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "geo_source",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "alias": "nom_circonscription_police",
-      "name": "nom_circo",
+      "alias": "lon_pr",
+      "name": "lon_i",
       "table": 1,
-      "type": "string"
+      "type": "double"
+    },
+    {
+      "alias": "lat_pr",
+      "name": "lat_i",
+      "table": 1,
+      "type": "double"
     }
   ]
 }

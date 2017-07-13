@@ -1,7 +1,12 @@
 {
-  "type": "join",
+  "type": "sql_query",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
+  "params": {
+    "allowMultipleConnections": false,
+    "displayExecutionPlan": true,
+    "skipPrerunValidate": false
+  },
   "customMeta": {
     "kv": {}
   },
@@ -10,11 +15,11 @@
     "main": {
       "items": [
         {
-          "ref": "lieux_carac_toutes_routes",
+          "ref": "lieux_prep_RN_with_city_code",
           "deps": []
         },
         {
-          "ref": "BRICBRACPROPITAIRE.Liste_communes_police_prepared",
+          "ref": "DATAPREPOPENDATAGEO.bornes_routes_borne_suivante_2016",
           "deps": []
         }
       ]
@@ -24,25 +29,25 @@
     "main": {
       "items": [
         {
-          "ref": "lieux_carac_toutes_routes_circo_police",
+          "ref": "lieux_prep_RN_PR",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 0,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499949616110
+    "lastModifiedOn": 1499863487084
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499949545464
+    "lastModifiedOn": 1499863487084
   },
   "tags": [],
   "checklists": {

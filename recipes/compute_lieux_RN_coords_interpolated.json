@@ -16,10 +16,6 @@
             "lieux_prep_RN_join_PR": {
               "repartition": 10,
               "cache": false
-            },
-            "lieux_carac_RN_with_PR_coords": {
-              "repartition": 10,
-              "cache": false
             }
           }
         }
@@ -36,7 +32,7 @@
     "main": {
       "items": [
         {
-          "ref": "lieux_carac_RN_with_PR_coords",
+          "ref": "lieux_prep_RN_join_PR",
           "deps": []
         }
       ]
@@ -46,18 +42,18 @@
     "main": {
       "items": [
         {
-          "ref": "lieux_carac_RN_with_PR_interpolated",
+          "ref": "lieux_RN_coords_interpolated",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499949045721
+    "lastModifiedOn": 1499848862768
   },
   "creationTag": {
     "versionNumber": 0,
