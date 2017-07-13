@@ -1,6 +1,6 @@
 SELECT DISTINCT ON (lc."Num_Acc") lc.*, b.lat, b.lon, b.lat_next, b.lon_next, b."INSEE_COM" as pr_insee_com, b."NOM_COM" as pr_nom_com 
 FROM "lieux_caracteristiques_routes_nationales" lc
-LEFT JOIN "IGN_COMMUNE_FRANCE" icf
+LEFT JOIN "ign_commune_france" icf
 ON
     lc."current_city_code" = icf."INSEE_COM"
 LEFT JOIN  "bornes_routes_borne_suivante_2016" b
