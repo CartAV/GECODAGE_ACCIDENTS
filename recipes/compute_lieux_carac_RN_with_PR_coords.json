@@ -21,6 +21,10 @@
         {
           "ref": "DATAPREPOPENDATAGEO.bornes_routes_borne_suivante_2016",
           "deps": []
+        },
+        {
+          "ref": "DATAPREPOPENDATAGEO.IGN_COMMUNE_FRANCE",
+          "deps": []
         }
       ]
     }
@@ -36,11 +40,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499938893035
+    "lastModifiedOn": 1499938905465
   },
   "creationTag": {
     "versionNumber": 0,
