@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499952829791
+    "lastModifiedOn": 1499953024299
   },
   "creationTag": {
     "versionNumber": 0,
@@ -322,7 +322,8 @@
       },
       {
         "name": "pr_insee_com",
-        "type": "bigint",
+        "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
