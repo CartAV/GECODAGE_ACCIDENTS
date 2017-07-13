@@ -12,7 +12,7 @@
       "partitionSelectionMethod": "ALL",
       "latestPartitionsN": 1,
       "samplingMethod": "HEAD_SEQUENTIAL",
-      "maxRecords": 100000,
+      "maxRecords": 100,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
@@ -70,11 +70,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499951388314
+    "lastModifiedOn": 1499951393847
   },
   "creationTag": {
     "versionNumber": 0,
