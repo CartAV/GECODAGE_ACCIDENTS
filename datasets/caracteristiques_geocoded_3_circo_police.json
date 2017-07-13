@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499952505031
+    "lastModifiedOn": 1499953136788
   },
   "creationTag": {
     "versionNumber": 0,
@@ -304,12 +304,6 @@
         "maxLength": -1
       },
       {
-        "name": "nom_circonscription_police",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "distance_commune_baac",
         "type": "double",
         "timestampNoTzAsDate": false,
@@ -340,61 +334,7 @@
         "maxLength": -1
       },
       {
-        "name": "lon_pr",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "lat_pr",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "n°_departement_mineral",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "n°_commune_insee_court",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "n°_commune_insee_long",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nom_commune",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nom_circo",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "insee_ddsp_rat",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "insee_circo_rat",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "departement_nom",
+        "name": "nom_circonscription_police",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
