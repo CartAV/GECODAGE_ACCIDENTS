@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499952813742
+    "lastModifiedOn": 1499952829791
   },
   "creationTag": {
     "versionNumber": 0,
@@ -292,6 +292,7 @@
       {
         "name": "icf_city_code",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
