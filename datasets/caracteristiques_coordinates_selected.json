@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499701421114
+    "lastModifiedOn": 1499953427510
   },
   "creationTag": {
     "versionNumber": 0,
@@ -346,12 +346,6 @@
         "maxLength": -1
       },
       {
-        "name": "nom_circonscription_police",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "distance_commune_baac",
         "type": "double",
         "timestampNoTzAsDate": false,
@@ -382,14 +376,20 @@
         "maxLength": -1
       },
       {
-        "name": "lon_pr",
+        "name": "pr_lat_i",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "lat_pr",
+        "name": "pr_lon_i",
         "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nom_circonscription_police",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
