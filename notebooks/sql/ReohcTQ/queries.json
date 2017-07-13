@@ -1944,6 +1944,28 @@
         },
         "sql": "select * from \"public\".\"ign_commune_france\" where \"NOM_COM\" \u003d \u002759051\u0027",
         "expandedSql": "select * from \"public\".\"ign_commune_france\" where \"NOM_COM\" \u003d \u002759051\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "t9KCr8tEhtXP",
+        "runOn": 1499940084502,
+        "runIn": 81,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Yytg52G0RWinlZHA",
+        "hash": "fff2e7b2c48b75c0433c5644195b1248",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"ign_commune_france\" where \"INSEE_COM\" \u003d \u002759051\u0027",
+        "expandedSql": "select * from \"public\".\"ign_commune_france\" where \"INSEE_COM\" \u003d \u002759051\u0027"
       }
     ]
   }
