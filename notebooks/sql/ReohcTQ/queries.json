@@ -1854,6 +1854,28 @@
         },
         "sql": "SELECT DISTINCT ON (l.\"Num_Acc\") l.*, b.lat, b.lon, b.lat_next, b.lon_next, b.\"INSEE_COM\" as pr_insee_com, b.\"NOM_COM\" as pr_nom_com \nFROM \"public\".\"lieux_prep_rn_with_city_code\" l\nLEFT JOIN \"public\".\"ign_commune_france\" icf\nON\n    l.\"current_city_code\" \u003d icf.\"INSEE_COM\"\nLEFT JOIN  \"public\".\"bornes_routes_borne_suivante_2016\" b\nON\n    (l.catr \u003d \u0027autoroute\u0027 OR l.catr \u003d \u0027route nationale\u0027) \n    AND l.\"voie_normalise\" \u003d b.\"nom_courant_route\" \n    AND l.pr \u003d b.pr \n    AND ST_DWithin(icf.the_geom::geography, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326)::geography, 2000)\norder by l.\"Num_Acc\", ST_distance(icf.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326))\nlimit 100\n",
         "expandedSql": "SELECT DISTINCT ON (l.\"Num_Acc\") l.*, b.lat, b.lon, b.lat_next, b.lon_next, b.\"INSEE_COM\" as pr_insee_com, b.\"NOM_COM\" as pr_nom_com \nFROM \"public\".\"lieux_prep_rn_with_city_code\" l\nLEFT JOIN \"public\".\"ign_commune_france\" icf\nON\n    l.\"current_city_code\" \u003d icf.\"INSEE_COM\"\nLEFT JOIN  \"public\".\"bornes_routes_borne_suivante_2016\" b\nON\n    (l.catr \u003d \u0027autoroute\u0027 OR l.catr \u003d \u0027route nationale\u0027) \n    AND l.\"voie_normalise\" \u003d b.\"nom_courant_route\" \n    AND l.pr \u003d b.pr \n    AND ST_DWithin(icf.the_geom::geography, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326)::geography, 2000)\norder by l.\"Num_Acc\", ST_distance(icf.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326))\nlimit 100\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "mQA3UKJrEmm4",
+        "runOn": 1499937250728,
+        "runIn": 13755,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "3FexcvMsJvMs8M9R",
+        "hash": "576dbf71190aaaa8168bb43714e732e2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT ON (l.\"Num_Acc\") l.*, b.lat, b.lon, b.lat_next, b.lon_next, b.\"INSEE_COM\" as pr_insee_com, b.\"NOM_COM\" as pr_nom_com \nFROM \"public\".\"lieux_prep_rn_with_city_code\" l\nLEFT JOIN \"public\".\"ign_commune_france\" icf\nON\n    l.\"current_city_code\" \u003d icf.\"INSEE_COM\"\nLEFT JOIN  \"public\".\"bornes_routes_borne_suivante_2016\" b\nON\n    (l.catr \u003d \u0027autoroute\u0027 OR l.catr \u003d \u0027route nationale\u0027) \n    AND l.\"voie_normalise\" \u003d b.\"nom_courant_route\" \n    AND l.pr \u003d b.pr \n    AND ST_DWithin(icf.the_geom::geography, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326)::geography, 2000)\norder by l.\"Num_Acc\", ST_distance(icf.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326))\nlimit 1000\n",
+        "expandedSql": "SELECT DISTINCT ON (l.\"Num_Acc\") l.*, b.lat, b.lon, b.lat_next, b.lon_next, b.\"INSEE_COM\" as pr_insee_com, b.\"NOM_COM\" as pr_nom_com \nFROM \"public\".\"lieux_prep_rn_with_city_code\" l\nLEFT JOIN \"public\".\"ign_commune_france\" icf\nON\n    l.\"current_city_code\" \u003d icf.\"INSEE_COM\"\nLEFT JOIN  \"public\".\"bornes_routes_borne_suivante_2016\" b\nON\n    (l.catr \u003d \u0027autoroute\u0027 OR l.catr \u003d \u0027route nationale\u0027) \n    AND l.\"voie_normalise\" \u003d b.\"nom_courant_route\" \n    AND l.pr \u003d b.pr \n    AND ST_DWithin(icf.the_geom::geography, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326)::geography, 2000)\norder by l.\"Num_Acc\", ST_distance(icf.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326))\nlimit 1000\n"
       }
     ]
   }
