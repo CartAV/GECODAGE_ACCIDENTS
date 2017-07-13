@@ -5,7 +5,7 @@ ON
     lc."current_city_code" = icf."INSEE_COM"
 LEFT JOIN  "bornes_routes_borne_suivante_2016" b
 ON
-    AND lc."voie_normalise" = b."nom_courant_route" 
+    lc."voie_normalise" = b."nom_courant_route" 
     AND lc.pr = b.pr 
     AND ST_DWithin(icf.the_geom::geography, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326)::geography, 2000)
 order by lc."Num_Acc", ST_distance(icf.the_geom, ST_SetSRID(ST_MakePoint(b.lon, b.lat),4326))
