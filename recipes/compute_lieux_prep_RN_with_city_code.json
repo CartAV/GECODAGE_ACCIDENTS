@@ -24,18 +24,18 @@
     "main": {
       "items": [
         {
-          "ref": "lieux_prep_RN_with_city_code",
+          "ref": "lieux_caracteristiques",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499938193356
+    "lastModifiedOn": 1499938290230
   },
   "creationTag": {
     "versionNumber": 0,
