@@ -10,11 +10,11 @@
     "main": {
       "items": [
         {
-          "ref": "caracteristiques_geocoded_3_postgis_joined",
+          "ref": "lieux_carac_RN_with_PR_interpolated",
           "deps": []
         },
         {
-          "ref": "lieux_carac_RN_with_PR_interpolated",
+          "ref": "caracteristiques_geocoded_4",
           "deps": []
         }
       ]
@@ -31,11 +31,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499949335416
+    "lastModifiedOn": 1499949891478
   },
   "creationTag": {
     "versionNumber": 0,

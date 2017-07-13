@@ -2,7 +2,7 @@
   "virtualInputs": [
     {
       "index": 0,
-      "originLabel": "caracteristiques_geocoded_3_postgis_joined",
+      "originLabel": "lieux_carac_RN_with_PR_interpolated",
       "preFilter": {
         "enabled": false,
         "distinct": false
@@ -10,11 +10,8 @@
     },
     {
       "index": 1,
-      "originLabel": "lieux_carac_RN_with_PR_interpolated",
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
+      "originLabel": "caracteristiques_geocoded_4",
+      "preFilter": {}
     }
   ],
   "engineParams": {
@@ -43,13 +40,31 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "distinct": false
   },
-  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
+    "catr",
+    "voie",
+    "v1",
+    "v2",
+    "circ",
+    "nbv",
+    "pr",
+    "pr1",
+    "vosp",
+    "prof",
+    "plan",
+    "lartpc",
+    "larrout",
+    "surf",
+    "infra",
+    "situ",
+    "env1",
+    "voie_normalise",
     "an",
     "mois",
     "jour",
@@ -70,6 +85,17 @@
     "original_name",
     "current_city_code",
     "current_name",
+    "pr_lat",
+    "pr_lon",
+    "pr_lat_next",
+    "pr_lon_next",
+    "pr_insee_com",
+    "pr_nom_com",
+    "latitude",
+    "geo_score",
+    "geo_type",
+    "longitude",
+    "geo_source",
     "ban_citycode",
     "ban_label",
     "ban_latitude",
@@ -97,35 +123,7 @@
     "distance_commune_ban2",
     "distance_commune_bano",
     "CODE_COM",
-    "catr",
-    "voie",
-    "v1",
-    "v2",
-    "circ",
-    "nbv",
-    "pr",
-    "pr1",
-    "vosp",
-    "prof",
-    "plan",
-    "lartpc",
-    "larrout",
-    "surf",
-    "infra",
-    "situ",
-    "env1",
-    "voie_normalise",
-    "pr_lat",
-    "pr_lon",
-    "pr_lat_next",
-    "pr_lon_next",
-    "pr_insee_com",
-    "pr_nom_com",
-    "latitude",
-    "geo_score",
-    "geo_type",
-    "longitude",
-    "geo_source"
+    "baac_score"
   ],
   "addOriginColumn": false,
   "mode": "UNION"
