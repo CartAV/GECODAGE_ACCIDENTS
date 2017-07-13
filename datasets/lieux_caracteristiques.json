@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499950553634
+    "lastModifiedOn": 1499950606052
   },
   "creationTag": {
     "versionNumber": 0,
@@ -235,6 +235,7 @@
       {
         "name": "gps",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
