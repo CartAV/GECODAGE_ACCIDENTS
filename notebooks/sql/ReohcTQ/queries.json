@@ -1388,6 +1388,28 @@
         },
         "sql": "select * from \"public\".\"caracateristiques_postgis\" where \"Num_Acc\"\u003d\u0027200500000052\u0027\n\n",
         "expandedSql": "select * from \"public\".\"caracateristiques_postgis\" where \"Num_Acc\"\u003d\u0027200500000052\u0027\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "gmvMwlgS68Dr",
+        "runOn": 1499937303144,
+        "runIn": 573,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "qwrb8Ef4pvJ4ZWoC",
+        "hash": "1b8686f7f75b3660da9ab5946114975e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"caracateristiques_postgis\" where \"Num_Acc\"\u003d\u0027200500000154\u0027\n\n",
+        "expandedSql": "select * from \"public\".\"caracateristiques_postgis\" where \"Num_Acc\"\u003d\u0027200500000154\u0027\n\n"
       }
     ],
     "qxd0bl6wbs": [
