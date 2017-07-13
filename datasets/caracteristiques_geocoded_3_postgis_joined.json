@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "chabouisfr"
     },
-    "lastModifiedOn": 1489161520970
+    "lastModifiedOn": 1499952691174
   },
   "creationTag": {
     "versionNumber": 0,
@@ -299,12 +299,6 @@
       },
       {
         "name": "ban2_type",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nom_circonscription_police",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
