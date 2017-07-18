@@ -23,9 +23,6 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 1,
@@ -40,6 +37,9 @@
           }
         }
       ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     }
   ],
@@ -304,6 +304,11 @@
     },
     {
       "name": "CODE_COM",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "catr",
       "table": 0,
       "type": "string"
     },
