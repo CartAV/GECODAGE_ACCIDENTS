@@ -2015,10 +2015,10 @@
         "mode": "SQL",
         "id": "coYF1H1lIm5b",
         "runOn": 1500386542342,
-        "runIn": 57,
+        "runIn": 41,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "Y4VOtN8WftYIbTUo",
         "hash": "2c21a5e608d60538e4869a1d08886b63",
         "querySettings": {
