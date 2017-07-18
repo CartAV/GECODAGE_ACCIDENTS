@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500377889128
+    "lastModifiedOn": 1500380721261
   },
   "creationTag": {
     "versionNumber": 0,
@@ -377,12 +377,6 @@
         "maxLength": -1
       },
       {
-        "name": "catr",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "pr_lat_i",
         "type": "double",
         "timestampNoTzAsDate": false,
@@ -444,6 +438,12 @@
       },
       {
         "name": "the_geom",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catr",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
