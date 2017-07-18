@@ -1,4 +1,4 @@
-WITH accidents AS (SELECT acc.*, l.catr FROM "caracteristiques_coordinates_selected" AS acc LEFT JOIN "lieux_postgis" ON "Num_Acc")
+WITH accidents AS (SELECT acc.*, l.catr FROM "caracteristiques_coordinates_selected" AS acc LEFT JOIN "lieux_postgis" AS l ON acc."Num_Acc" = l."Num_Acc")
 
 SELECT accidents.*,
        nearest_route.num_route_or_id,
