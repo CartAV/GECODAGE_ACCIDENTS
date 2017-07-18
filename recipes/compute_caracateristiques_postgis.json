@@ -21,6 +21,10 @@
         {
           "ref": "DATAPREPOPENDATAGEO.osm_routes_par_commune_geojson",
           "deps": []
+        },
+        {
+          "ref": "ACCIDENTS_BRUT.lieux_postgis",
+          "deps": []
         }
       ]
     }
@@ -36,11 +40,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500377891801
+    "lastModifiedOn": 1500380453756
   },
   "creationTag": {
     "versionNumber": 0,
