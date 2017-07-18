@@ -1966,6 +1966,28 @@
         },
         "sql": "With accidents as (select * from \"public\".\"caracteristiques_coordinates_selected\" where \"Num_Acc\" \u003d \u0027201500046804\u0027)\nSELECT \"INSEE_COM\", num_route_or_id, num_route_com_id, st_distance(st_point(accidents.longitude, accidents.latitude), the_geom) AS distance, geojson\n     FROM \"osm_routes_par_commune_geojson\"  AS routes\n     WHERE\n        st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)\n        AND (\n            (accidents.catr \u003d \u0027autoroute\u0027 AND routes.cat_route_osm \u003d \u0027autoroute\u0027)\n            OR (accidents.catr \u003d \u0027route nationale\u0027 AND routes.cat_route_osm \u003d \u0027route principale\u0027)\n            OR (accidents.catr !\u003d \u0027autoroute\u0027 AND accidents.catr !\u003d \u0027route nationale\u0027))\n     ORDER BY distance\n    LIMIT 1\n\n",
         "expandedSql": "With accidents as (select * from \"public\".\"caracteristiques_coordinates_selected\" where \"Num_Acc\" \u003d \u0027201500046804\u0027)\nSELECT \"INSEE_COM\", num_route_or_id, num_route_com_id, st_distance(st_point(accidents.longitude, accidents.latitude), the_geom) AS distance, geojson\n     FROM \"osm_routes_par_commune_geojson\"  AS routes\n     WHERE\n        st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)\n        AND (\n            (accidents.catr \u003d \u0027autoroute\u0027 AND routes.cat_route_osm \u003d \u0027autoroute\u0027)\n            OR (accidents.catr \u003d \u0027route nationale\u0027 AND routes.cat_route_osm \u003d \u0027route principale\u0027)\n            OR (accidents.catr !\u003d \u0027autoroute\u0027 AND accidents.catr !\u003d \u0027route nationale\u0027))\n     ORDER BY distance\n    LIMIT 1\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "CgaYu63kgslH",
+        "runOn": 1500386448530,
+        "runIn": 43,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "NKFUSoW9npBYYznU",
+        "hash": "b8777e66382b74e59644f104674154ca",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "With accidents as (select * from \"public\".\"caracteristiques_coordinates_selected\" where \"Num_Acc\" \u003d \u0027201500046804\u0027)\nSELECT \"INSEE_COM\", num_route_or_id, num_route_com_id, st_distance(st_point(accidents.longitude, accidents.latitude), the_geom) AS distance, geojson\n     FROM \"osm_routes_par_commune_geojson\"  AS routes, accidents\n     WHERE\n        st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)\n        AND (\n            (accidents.catr \u003d \u0027autoroute\u0027 AND routes.cat_route_osm \u003d \u0027autoroute\u0027)\n            OR (accidents.catr \u003d \u0027route nationale\u0027 AND routes.cat_route_osm \u003d \u0027route principale\u0027)\n            OR (accidents.catr !\u003d \u0027autoroute\u0027 AND accidents.catr !\u003d \u0027route nationale\u0027))\n     ORDER BY distance\n    LIMIT 1\n\n",
+        "expandedSql": "With accidents as (select * from \"public\".\"caracteristiques_coordinates_selected\" where \"Num_Acc\" \u003d \u0027201500046804\u0027)\nSELECT \"INSEE_COM\", num_route_or_id, num_route_com_id, st_distance(st_point(accidents.longitude, accidents.latitude), the_geom) AS distance, geojson\n     FROM \"osm_routes_par_commune_geojson\"  AS routes, accidents\n     WHERE\n        st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)\n        AND (\n            (accidents.catr \u003d \u0027autoroute\u0027 AND routes.cat_route_osm \u003d \u0027autoroute\u0027)\n            OR (accidents.catr \u003d \u0027route nationale\u0027 AND routes.cat_route_osm \u003d \u0027route principale\u0027)\n            OR (accidents.catr !\u003d \u0027autoroute\u0027 AND accidents.catr !\u003d \u0027route nationale\u0027))\n     ORDER BY distance\n    LIMIT 1\n\n"
       }
     ]
   }
