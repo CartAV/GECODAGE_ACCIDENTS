@@ -2076,6 +2076,28 @@
         },
         "sql": "With accidents as (select acc.*, l.catr from \"public\".\"caracteristiques_coordinates_selected\" as acc, \"public\".\"lieux_postgis\" as l where l.\"Num_Acc\" \u003d \u0027201500046804\u0027 and l.\"Num_Acc\" \u003d acc.\"Num_Acc\")\nselect * from accidents\n\n/*SELECT \"INSEE_COM\", num_route_or_id, num_route_com_id, st_distance(st_point(accidents.longitude, accidents.latitude), routes.the_geom) AS distance, geojson\n     FROM \"osm_routes_par_commune_geojson\"  AS routes, accidents\n     WHERE\n        st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)\n        AND (\n            (accidents.catr \u003d \u0027autoroute\u0027 AND routes.cat_route_osm \u003d \u0027autoroute\u0027)\n            OR (accidents.catr \u003d \u0027route nationale\u0027 AND routes.cat_route_osm \u003d \u0027route principale\u0027)\n            OR (accidents.catr !\u003d \u0027autoroute\u0027 AND accidents.catr !\u003d \u0027route nationale\u0027))\n     ORDER BY distance\n    LIMIT 1\n\n*/",
         "expandedSql": "With accidents as (select acc.*, l.catr from \"public\".\"caracteristiques_coordinates_selected\" as acc, \"public\".\"lieux_postgis\" as l where l.\"Num_Acc\" \u003d \u0027201500046804\u0027 and l.\"Num_Acc\" \u003d acc.\"Num_Acc\")\nselect * from accidents\n\n/*SELECT \"INSEE_COM\", num_route_or_id, num_route_com_id, st_distance(st_point(accidents.longitude, accidents.latitude), routes.the_geom) AS distance, geojson\n     FROM \"osm_routes_par_commune_geojson\"  AS routes, accidents\n     WHERE\n        st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)\n        AND (\n            (accidents.catr \u003d \u0027autoroute\u0027 AND routes.cat_route_osm \u003d \u0027autoroute\u0027)\n            OR (accidents.catr \u003d \u0027route nationale\u0027 AND routes.cat_route_osm \u003d \u0027route principale\u0027)\n            OR (accidents.catr !\u003d \u0027autoroute\u0027 AND accidents.catr !\u003d \u0027route nationale\u0027))\n     ORDER BY distance\n    LIMIT 1\n\n*/"
+      },
+      {
+        "mode": "SQL",
+        "id": "kXMpaYdBFP1N",
+        "runOn": 1500386658340,
+        "runIn": 411,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "sOiNiSA1Smlp98KX",
+        "hash": "2879050677a33063ce3cdc193006ba42",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "With accidents as (select acc.*, l.catr from \"public\".\"caracteristiques_coordinates_selected\" as acc, \"public\".\"lieux_postgis\" as l where l.\"Num_Acc\" \u003d \u0027201500046804\u0027 and l.\"Num_Acc\" \u003d acc.\"Num_Acc\")\nSELECT \"INSEE_COM\", num_route_or_id, num_route_com_id, st_distance(st_point(accidents.longitude, accidents.latitude), routes.the_geom) AS distance, geojson\n     FROM \"osm_routes_par_commune_geojson\"  AS routes, accidents\n     WHERE\n        st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)\n\n     ORDER BY distance\n    LIMIT 1\n\n/*select * from accidents*/",
+        "expandedSql": "With accidents as (select acc.*, l.catr from \"public\".\"caracteristiques_coordinates_selected\" as acc, \"public\".\"lieux_postgis\" as l where l.\"Num_Acc\" \u003d \u0027201500046804\u0027 and l.\"Num_Acc\" \u003d acc.\"Num_Acc\")\nSELECT \"INSEE_COM\", num_route_or_id, num_route_com_id, st_distance(st_point(accidents.longitude, accidents.latitude), routes.the_geom) AS distance, geojson\n     FROM \"osm_routes_par_commune_geojson\"  AS routes, accidents\n     WHERE\n        st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)\n\n     ORDER BY distance\n    LIMIT 1\n\n/*select * from accidents*/"
       }
     ]
   }
