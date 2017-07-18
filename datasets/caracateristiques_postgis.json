@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500278674207
+    "lastModifiedOn": 1500377889128
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,12 +50,11 @@
     "readColsWithUnknownTzAsDates": false
   },
   "schema": {
-    "userModified": true,
+    "userModified": false,
     "columns": [
       {
         "name": "Num_Acc",
         "type": "string",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -374,6 +373,12 @@
       {
         "name": "CODE_COM",
         "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catr",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
