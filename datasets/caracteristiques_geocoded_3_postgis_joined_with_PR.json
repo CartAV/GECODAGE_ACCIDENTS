@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499952931214
+    "lastModifiedOn": 1500377496984
   },
   "creationTag": {
     "versionNumber": 0,
@@ -329,6 +329,12 @@
       },
       {
         "name": "CODE_COM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catr",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
