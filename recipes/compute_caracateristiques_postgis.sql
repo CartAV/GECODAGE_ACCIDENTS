@@ -11,8 +11,8 @@ LEFT JOIN LATERAL (SELECT "INSEE_COM", num_route_or_id, num_route_com_id, st_dis
         st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)
         AND (
             (accidents.catr = 'autoroute' AND routes.osm_cat_route = 'autoroute')
-            OR (accidents.catr = 'route nationale' AND routes.osm_cat_route = 'route principale')
-            OR (accidents.catr != 'autoroute' AND accidents.catr != 'route nationale')
+            OR (accidents.catr = 'route nationale' AND routes.cat_route_osm = 'route principale')
+            OR (accidents.catr != 'autoroute' AND accidents.catr != 'route nationale'))
      ORDER BY distance
     LIMIT 1) AS nearest_route
 ON true
