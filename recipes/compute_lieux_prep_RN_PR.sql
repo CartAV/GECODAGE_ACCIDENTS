@@ -1,4 +1,10 @@
-SELECT DISTINCT ON (lc."Num_Acc") lc.*, icf."INSEE_COM" as icf_city_code, b.lat as pr_lat, b.lon as pr_lon, b.lat_next as pr_lat_next, b.lon_next as pr_lon_next, b."INSEE_COM" as pr_insee_com, b."NOM_COM" as pr_nom_com 
+SELECT DISTINCT ON (lc."Num_Acc") 
+    lc.*, icf."INSEE_COM" as icf_city_code, 
+    b.lat as pr_lat, b.lon as pr_lon, 
+    b.lat_next as pr_lat_next1, b.lon_next as pr_lon_next1, 
+    b.lat_next2 as pr_lat_next2, b.lon_next2 as pr_lon_next2, 
+    b.lat_prev as pr_lat_prev, b.lon_prev as pr_lon_prev, 
+    b."INSEE_COM" as pr_insee_com, b."NOM_COM" as pr_nom_com 
 FROM "public"."lieux_caracteristiques_routes_nationales" lc
 LEFT JOIN "public"."ign_commune_france" icf
 ON
