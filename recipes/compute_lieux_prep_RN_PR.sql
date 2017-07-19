@@ -3,7 +3,7 @@ FROM "public"."lieux_caracteristiques_routes_nationales" lc
 LEFT JOIN "public"."ign_commune_france" icf
 ON
     lc."current_city_code" = icf."INSEE_COM"
-LEFT JOIN  "public"."bornes_routes_borne_suivante_2016" b
+LEFT JOIN  "bornes_routes_2016_pour_interpolation" b
 ON
     lc."voie_normalise" = b."nom_courant_route" 
     AND lc.pr = b.pr 
