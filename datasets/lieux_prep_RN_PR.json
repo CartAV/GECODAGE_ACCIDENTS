@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499951810285
+    "lastModifiedOn": 1500459007883
   },
   "creationTag": {
     "versionNumber": 0,
@@ -304,13 +304,37 @@
         "maxLength": -1
       },
       {
-        "name": "pr_lat_next",
+        "name": "pr_lat_next1",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "pr_lon_next",
+        "name": "pr_lon_next1",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr_lat_next2",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr_lon_next2",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr_lat_prev",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr_lon_prev",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
