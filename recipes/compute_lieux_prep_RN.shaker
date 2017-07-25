@@ -1,40 +1,5 @@
 {
-  "explorationFilters": [
-    {
-      "facet": {
-        "sort": "count",
-        "columnType": "NUMERICAL",
-        "column": "pr",
-        "currentMode": "ALPHANUM",
-        "selectedValues": {},
-        "type": "facet"
-      },
-      "$$hashKey": "SIE",
-      "validityFilter": {
-        "column": "pr",
-        "params": {
-          "nok": true,
-          "empty": true,
-          "ok": true,
-          "type": "LongMeaning"
-        },
-        "type": "validity"
-      },
-      "alphanumFilter": {
-        "values": [],
-        "column": "pr",
-        "params": {
-          "normalization": "exact",
-          "mode": "full_string"
-        },
-        "type": "alphanum"
-      },
-      "column": "pr",
-      "currentMode": "FACET",
-      "active": true,
-      "type": "columnFilter"
-    }
-  ],
+  "explorationFilters": [],
   "maxProcessedMemTableBytes": -1,
   "analysisColumnData": {},
   "columnsSelection": {
@@ -120,7 +85,7 @@
   },
   "previewMode": "ALL_ROWS",
   "explorationSampling": {
-    "_refreshTrigger": 1,
+    "_refreshTrigger": 2,
     "autoRefreshSample": false,
     "selection": {
       "targetRatio": 0.02,
@@ -132,7 +97,7 @@
       "latestPartitionsN": 1,
       "maxReadUncompressedBytes": -1,
       "filter": {
-        "enabled": true,
+        "enabled": false,
         "uiData": {
           "conditions": [
             {
