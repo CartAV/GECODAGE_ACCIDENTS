@@ -15,11 +15,11 @@
     "main": {
       "items": [
         {
-          "ref": "lieux_prep_RN_with_city_code",
+          "ref": "DATAPREPOPENDATAGEO.bornes_routes_2016_pour_interpolation",
           "deps": []
         },
         {
-          "ref": "DATAPREPOPENDATAGEO.bornes_routes_2016_pour_interpolation",
+          "ref": "lieux_prep_periph",
           "deps": []
         }
       ]
@@ -36,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500459029024
+    "lastModifiedOn": 1500994110074
   },
   "creationTag": {
     "versionNumber": 0,
