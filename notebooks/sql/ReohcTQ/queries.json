@@ -2408,6 +2408,28 @@
         },
         "sql": "select * from \"public\".\"lieux_prep_periph\" where dep\u003d\u002775\u0027 and adr like \u0027%PERIP%\u0027",
         "expandedSql": "select * from \"public\".\"lieux_prep_periph\" where dep\u003d\u002775\u0027 and adr like \u0027%PERIP%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "hSkMf8yKkGeF",
+        "runOn": 1500995456805,
+        "runIn": 231,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "EBIS3w5EKP66bSan",
+        "hash": "e9b6d7fdacfb0edb8a158ace85fcae94",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"lieux_prep_RN_PR\" where dep\u003d\u002775\u0027 and adr like \u0027%PERIP%\u0027",
+        "expandedSql": "select * from \"public\".\"lieux_prep_RN_PR\" where dep\u003d\u002775\u0027 and adr like \u0027%PERIP%\u0027"
       }
     ]
   }
