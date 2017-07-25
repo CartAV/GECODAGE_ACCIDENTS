@@ -25,7 +25,7 @@
         "usePythonUnicode": true,
         "stopOnError": true,
         "column": "test",
-        "pythonSourceCode": "import re\n\ndef process(row):\n    \n    if row[\u0027dep\u0027] \u003d\u003d \"75\":\n        match \u003d re.search(r\u0027(PERIPH|BP[IE])\u0027, row[\u0027adr\u0027], re.IGNORECASE)\n        if match:\n            row[\u0027voie_normalise\u0027] \u003d \u0027Boulevard Périphérique\u0027\n    return row\n",
+        "pythonSourceCode": "import re\n\ndef process(row):\n    \n    if row[\u0027dep\u0027] \u003d\u003d \"75\":\n        match \u003d re.search(r\u0027(PERIPH|BP[IE])\u0027, row[\u0027adr\u0027], re.IGNORECASE)\n        if match:\n            row[\u0027voie_normalise\u0027] \u003d \u0027Boulevard Périphérique\u0027\n            row[\u0027catr\u0027] \u003d \u0027Boulevard Périphérique\u0027\n    return row\n",
         "mode": "ROW"
       },
       "type": "PythonUDF",
