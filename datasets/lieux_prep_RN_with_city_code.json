@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499848616193
+    "lastModifiedOn": 1500989561607
   },
   "creationTag": {
     "versionNumber": 0,
@@ -161,6 +161,18 @@
       },
       {
         "name": "voie_normalise",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "adr",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "dep",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
