@@ -24,10 +24,10 @@
       "params": {
         "usePythonUnicode": true,
         "stopOnError": true,
-        "pythonSourceCode": "import re\n\ndef process(row):\n    \n    if row[\u0027dep\u0027] \u003d\u003d \"75\":\n        match \u003d re.search(r\u0027(PERIPH | BP[IE])\u0027, row[\u0027adr\u0027], re.IGNORECASE)\n        if match:\n            row[\u0027voie_normalise\u0027] \u003d \u0027Boulevard Périphérique\u0027\n        match \u003d re.search(r\u0027BP[IE]\u0027, row[\u0027adr\u0027], re.IGNORECASE)      \n    return row\n",
+        "column": "test",
+        "pythonSourceCode": "import re\n\ndef process(row):\n    \n    if row[\u0027dep\u0027] \u003d\u003d \"75\":\n        match \u003d re.search(r\u0027(PERIPH|BP[IE])\u0027, row[\u0027adr\u0027], re.IGNORECASE)\n        if match:\n            row[\u0027voie_normalise\u0027] \u003d \u0027Boulevard Périphérique\u0027\n    return row\n",
         "mode": "ROW"
       },
-      "comment": "regex pour le periph parisien",
       "type": "PythonUDF",
       "disabled": false,
       "metaType": "PROCESSOR"
@@ -36,9 +36,9 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "previewMode": "ALL_ROWS",
+  "previewMode": "IMPACTED_ONLY",
   "explorationSampling": {
-    "_refreshTrigger": 3,
+    "_refreshTrigger": 4,
     "autoRefreshSample": false,
     "selection": {
       "targetRatio": 0.02,
@@ -50,7 +50,7 @@
       "latestPartitionsN": 1,
       "maxReadUncompressedBytes": -1,
       "filter": {
-        "enabled": false,
+        "enabled": true,
         "uiData": {
           "conditions": [
             {
@@ -59,13 +59,6 @@
               "input": "dep",
               "string": "75",
               "operator": "\u003d\u003d [string]"
-            },
-            {
-              "num": 0.0,
-              "col": "catr",
-              "input": "voie_normalise",
-              "string": "\"\"",
-              "operator": "!\u003d [string]"
             }
           ],
           "mode": "\u0026\u0026"
