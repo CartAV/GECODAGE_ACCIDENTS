@@ -2276,6 +2276,28 @@
         },
         "sql": "select * from \"public\".\"lieux_prep_rn_with_city_code\" where dep\u003d\u002775\u0027",
         "expandedSql": "select * from \"public\".\"lieux_prep_rn_with_city_code\" where dep\u003d\u002775\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "ATq0daydZLn5",
+        "runOn": 1500989757922,
+        "runIn": 61,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "tDN8dh9OEwqkkCmN",
+        "hash": "4751ccff6f793e0901fded487a6ecc04",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"lieux_prep_rn_with_city_code\" where dep\u003d\u002775\u0027 and adr like \u0027%PERIPH%\u0027",
+        "expandedSql": "select * from \"public\".\"lieux_prep_rn_with_city_code\" where dep\u003d\u002775\u0027 and adr like \u0027%PERIPH%\u0027"
       }
     ]
   }
