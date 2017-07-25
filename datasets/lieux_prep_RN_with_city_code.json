@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500993844831
+    "lastModifiedOn": 1500993870069
   },
   "creationTag": {
     "versionNumber": 0,
@@ -169,6 +169,7 @@
       {
         "name": "adr",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
