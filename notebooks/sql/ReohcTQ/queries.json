@@ -2518,6 +2518,28 @@
         },
         "sql": "select * from \"public\".\"caracateristiques_postgis\" where dep\u003d\u002775\u0027 and adr like \u0027%PERIP%\u0027",
         "expandedSql": "select * from \"public\".\"caracateristiques_postgis\" where dep\u003d\u002775\u0027 and adr like \u0027%PERIP%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "R4XxxCvGUHa2",
+        "runOn": 1501161173669,
+        "runIn": 102,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "VeymYhpgWKGgKKAw",
+        "hash": "50b0561691b57da01b3ae5755287d4f9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT ST_UNION(the_geom) as the_geom, \u0027Boulevard Périphérique75\u0027 as \u0027num_route_com_id\u0027, \u002775056\u0027 as \u0027INSEE_COM\u0027, \u0027Boulevard Périphérique\u0027 as \u0027num_route_or_id\u0027\n  FROM \"public\".\"osm_routes_par_departement\"\n  WHERE (\"CODE_DEPT\" \u003d \u002775\u0027 AND \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 AND \"cat_route_osm\" \u003d \u0027route principale\u0027)",
+        "expandedSql": "SELECT ST_UNION(the_geom) as the_geom, \u0027Boulevard Périphérique75\u0027 as \u0027num_route_com_id\u0027, \u002775056\u0027 as \u0027INSEE_COM\u0027, \u0027Boulevard Périphérique\u0027 as \u0027num_route_or_id\u0027\n  FROM \"public\".\"osm_routes_par_departement\"\n  WHERE (\"CODE_DEPT\" \u003d \u002775\u0027 AND \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 AND \"cat_route_osm\" \u003d \u0027route principale\u0027)"
       }
     ]
   }
