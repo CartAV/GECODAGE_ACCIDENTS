@@ -2716,6 +2716,28 @@
         },
         "sql": "SELECT ST_UNION(the_geom::geometry) as the_geom, \u0027Boulevard Périphérique75\u0027 as num_route_com_id, \u002775056\u0027 as \"INSEE_COM\", \u0027Boulevard Périphérique\u0027 as num_route_or_id, \u0027route principale\u0027 as cat_route_osm\n  FROM \"public\".\"osm_routes_par_departement\"\n  WHERE (\"CODE_DEPT\" \u003d \u002775\u0027 AND \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 AND \"cat_route_osm\" \u003d \u0027route principale\u0027)",
         "expandedSql": "SELECT ST_UNION(the_geom::geometry) as the_geom, \u0027Boulevard Périphérique75\u0027 as num_route_com_id, \u002775056\u0027 as \"INSEE_COM\", \u0027Boulevard Périphérique\u0027 as num_route_or_id, \u0027route principale\u0027 as cat_route_osm\n  FROM \"public\".\"osm_routes_par_departement\"\n  WHERE (\"CODE_DEPT\" \u003d \u002775\u0027 AND \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 AND \"cat_route_osm\" \u003d \u0027route principale\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "6izVfOSi6iLy",
+        "runOn": 1501161425585,
+        "runIn": 169,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Kg4lDaETRcMxLLqT",
+        "hash": "0198f65dba1cdd98117802a85f1ad26f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT ST_UNION(the_geom::geometry) as the_geom, \u0027Boulevard Périphérique75\u0027 as num_route_com_id, \u002775056\u0027 as \"INSEE_COM\", \u0027Boulevard Périphérique\u0027 as num_route_or_id, \u0027route principale\u0027 as cat_route_osm\n  FROM \"public.\"\"osm_routes_par_departement\"\n  WHERE (\"CODE_DEPT\" \u003d \u002775\u0027 AND \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 AND \"cat_route_osm\" \u003d \u0027route principale\u0027)",
+        "expandedSql": "SELECT ST_UNION(the_geom::geometry) as the_geom, \u0027Boulevard Périphérique75\u0027 as num_route_com_id, \u002775056\u0027 as \"INSEE_COM\", \u0027Boulevard Périphérique\u0027 as num_route_or_id, \u0027route principale\u0027 as cat_route_osm\n  FROM \"public.\"\"osm_routes_par_departement\"\n  WHERE (\"CODE_DEPT\" \u003d \u002775\u0027 AND \"num_route_or_id\" like \u0027%Boulevard Périphérique%\u0027 AND \"cat_route_osm\" \u003d \u0027route principale\u0027)"
       }
     ]
   }
