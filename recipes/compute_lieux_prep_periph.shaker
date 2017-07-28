@@ -1,5 +1,42 @@
 {
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "facet": {
+        "sort": "count",
+        "columnType": "ALPHANUM",
+        "column": "voie_normalise",
+        "currentMode": "ALPHANUM",
+        "selectedValues": {
+          "Boulevard Périphérique": true
+        },
+        "type": "facet"
+      },
+      "$$hashKey": "23T",
+      "validityFilter": {
+        "column": "voie_normalise",
+        "params": {
+          "nok": true,
+          "empty": true,
+          "ok": true,
+          "type": "Text"
+        },
+        "type": "validity"
+      },
+      "alphanumFilter": {
+        "values": [],
+        "column": "voie_normalise",
+        "params": {
+          "normalization": "exact",
+          "mode": "full_string"
+        },
+        "type": "alphanum"
+      },
+      "column": "voie_normalise",
+      "currentMode": "FACET",
+      "active": true,
+      "type": "columnFilter"
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "analysisColumnData": {},
   "columnsSelection": {
