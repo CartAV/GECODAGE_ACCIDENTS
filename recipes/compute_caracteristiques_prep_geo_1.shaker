@@ -29,7 +29,7 @@
       "params": {
         "usePythonUnicode": true,
         "stopOnError": true,
-        "pythonSourceCode": "def process(row):\n    if row[\"distance_commune_baac\"] and float(row[\"distance_commune_baac\"]) \u003e 2000:\n        row[\"baac_score\"] \u003d 0.0\n    elif row[\"long\"]:\n        row[\"baac_score\"] \u003d 1.0\n    if row[\"distance_commune_ban\"] and float(row[\"distance_commune_ban\"]) \u003e 1000:\n        row[\"ban_score\"] \u003d 0.0\n    if row[\"distance_commune_ban2\"] and float(row[\"distance_commune_ban2\"]) \u003e 1000:\n        row[\"ban2_score\"] \u003d 0.0\n    if row[\"distance_commune_bano\"] and float(row[\"distance_commune_bano\"]) \u003e 1000:\n        row[\"bano_score\"] \u003d 0.0\n    if row[\"pr_lon_i\"] and row[\"pr_lat_i\"]:\n        row[\"pr_score\"] \u003d 1.0\n    else:\n        row[\"pr_score\"] \u003d 0.0\n    return row",
+        "pythonSourceCode": "def process(row):\n    if row[\"distance_commune_baac\"] is None or float(row[\"distance_commune_baac\"]) \u003e 2000:\n        row[\"baac_score\"] \u003d 0.0\n    elif row[\"long\"]:\n        row[\"baac_score\"] \u003d 1.0\n    if row[\"distance_commune_ban\"] is None or float(row[\"distance_commune_ban\"]) \u003e 1000:\n        row[\"ban_score\"] \u003d 0.0\n    if row[\"distance_commune_ban2\"] is None or float(row[\"distance_commune_ban2\"]) \u003e 1000:\n        row[\"ban2_score\"] \u003d 0.0\n    if row[\"distance_commune_bano\"] is None or float(row[\"distance_commune_bano\"]) \u003e 1000:\n        row[\"bano_score\"] \u003d 0.0\n    if row[\"pr_lon_i\"] and row[\"pr_lat_i\"]:\n        row[\"pr_score\"] \u003d 1.0\n    else:\n        row[\"pr_score\"] \u003d 0.0\n    return row",
         "mode": "ROW"
       },
       "type": "PythonUDF",
@@ -166,7 +166,7 @@
         "keep": false
       },
       "type": "ColumnsSelector",
-      "disabled": true,
+      "disabled": false,
       "metaType": "PROCESSOR"
     },
     {
