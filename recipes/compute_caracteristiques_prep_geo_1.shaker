@@ -166,7 +166,7 @@
         "keep": false
       },
       "type": "ColumnsSelector",
-      "disabled": false,
+      "disabled": true,
       "metaType": "PROCESSOR"
     },
     {
