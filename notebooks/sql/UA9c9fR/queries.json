@@ -374,6 +374,28 @@
         },
         "sql": "select * from \"caracteristiques_coordinates_selected\" where \"geo_score\" \u003c 0.6 limit 10",
         "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where \"geo_score\" \u003c 0.6 limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "3a0iePN6iDZN",
+        "runOn": 1504875002392,
+        "runIn": 65,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "AmxGnq1dQKPi1Kpn",
+        "hash": "07480a06d076823a445f31ad3a00a8b5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_coordinates_selected\" where \"Num_Acc\" \u003d \u0027201600030001\u0027",
+        "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where \"Num_Acc\" \u003d \u0027201600030001\u0027"
       }
     ],
     "x0eibswderm": [
