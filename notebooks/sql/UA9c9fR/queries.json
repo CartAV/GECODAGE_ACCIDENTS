@@ -330,6 +330,28 @@
         },
         "sql": "select count(1), avg(distance), \"INSEE_COM\",\"num_route_or_id\" from\n\"caracteristiques_segments\"\n\ngroup by \"INSEE_COM\", \"num_route_or_id\"\nhaving count(1) \u003e 10\norder by count desc\n\n",
         "expandedSql": "select count(1), avg(distance), \"INSEE_COM\",\"num_route_or_id\" from\n\"caracteristiques_segments\"\n\ngroup by \"INSEE_COM\", \"num_route_or_id\"\nhaving count(1) \u003e 10\norder by count desc\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "nt9vmTohNNFn",
+        "runOn": 1504874938382,
+        "runIn": 11948,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "0fMH0m0kcwk5Bqvc",
+        "hash": "ab2613878cd22cc612cafb0838761b58",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_coordinates_selected\" where \"geo_score\" \u003c 0.5 limit 10",
+        "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where \"geo_score\" \u003c 0.5 limit 10"
       }
     ],
     "x0eibswderm": [
