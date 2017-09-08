@@ -418,6 +418,28 @@
         },
         "sql": "select * from \"caracteristiques_coordinates_selected\" where \"Num_Acc\" \u003d \u0027201600030001\u0027",
         "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where \"Num_Acc\" \u003d \u0027201600030001\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "dmqunzrheLKN",
+        "runOn": 1504881086321,
+        "runIn": 325,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "8nlQrpPKeriI5Lld",
+        "hash": "07480a06d076823a445f31ad3a00a8b5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"caracteristiques_coordinates_selected\" where \"Num_Acc\" \u003d \u0027201600030001\u0027",
+        "expandedSql": "select * from \"caracteristiques_coordinates_selected\" where \"Num_Acc\" \u003d \u0027201600030001\u0027"
       }
     ],
     "x0eibswderm": [
