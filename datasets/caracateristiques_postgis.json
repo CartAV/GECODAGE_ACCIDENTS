@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1505130505995
+    "lastModifiedOn": 1505136559570
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "caracateristiques_postgis",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "ALTER TABLE \"caracateristiques_postgis\"\n\tALTER COLUMN the_geom type geography(Point) using the_geom::geography(Point);\n\nCREATE INDEX idx_caracateristiques ON \"caracateristiques_postgis\"\n\tUSING GIST(the_geom);",
+    "customPostWriteStatements": "--ALTER TABLE \"caracateristiques_postgis\"\n\t--ALTER COLUMN the_geom type geography(Point) using the_geom::geography(Point);\n\n--CREATE INDEX idx_caracateristiques ON \"caracateristiques_postgis\"\n\t--USING GIST(the_geom);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
