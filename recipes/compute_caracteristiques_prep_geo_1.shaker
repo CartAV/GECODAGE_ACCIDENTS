@@ -211,11 +211,36 @@
         "mapping": [
           {
             "to": "13055",
-            "from": "132[01][0-6]"
+            "from": "132[01][0-9]"
           }
         ],
         "output": ""
       },
+      "comment": "Arrondissements Marseille",
+      "type": "FindReplace",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "matching": "PATTERN",
+        "stopAfterFirstMatch": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "normalization": "EXACT",
+        "columns": [
+          "current_city_code"
+        ],
+        "mapping": [
+          {
+            "to": "69123",
+            "from": "6938[1-9]"
+          }
+        ],
+        "output": ""
+      },
+      "comment": "Arrondissements Lyon",
       "type": "FindReplace",
       "disabled": false,
       "metaType": "PROCESSOR"
@@ -234,7 +259,7 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "matching": "FULL_STRING",
         "stopAfterFirstMatch": false,
