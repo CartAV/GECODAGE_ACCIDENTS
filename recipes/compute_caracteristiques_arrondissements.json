@@ -17,6 +17,10 @@
         {
           "ref": "caracateristiques_postgis",
           "deps": []
+        },
+        {
+          "ref": "DATAPREPOPENDATAGEO.IGN_COMMUNE_FRANCE",
+          "deps": []
         }
       ]
     }
@@ -32,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1507560585184
+    "lastModifiedOn": 1507565249771
   },
   "creationTag": {
     "versionNumber": 0,
