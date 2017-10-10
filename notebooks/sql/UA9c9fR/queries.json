@@ -550,6 +550,28 @@
         },
         "sql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\ndrop index carac_code_com",
         "expandedSql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\ndrop index carac_code_com"
+      },
+      {
+        "mode": "SQL",
+        "id": "IjSMtCPw20Cz",
+        "runOn": 1507642465322,
+        "runIn": 62,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "78EZo97R6DFl12jR",
+        "hash": "f9da97402a126da8cc5137f5ced57c52",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\nCREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);",
+        "expandedSql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\nCREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);"
       }
     ],
     "x0eibswderm": [
