@@ -506,6 +506,28 @@
         },
         "sql": "select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027",
         "expandedSql": "select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "2h7VRNf74wgD",
+        "runOn": 1507633631678,
+        "runIn": 657,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "t7rVrMybldCajX9v",
+        "hash": "7cde9572fa559b935e6c4b0cb98008bc",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\ndrop index carac_code_com",
+        "expandedSql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\ndrop index carac_code_com"
       }
     ],
     "x0eibswderm": [
