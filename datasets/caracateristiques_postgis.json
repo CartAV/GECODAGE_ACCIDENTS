@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1507625398615
+    "lastModifiedOn": 1507633612615
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "caracateristiques_postgis",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "--ALTER TABLE \"caracateristiques_postgis\"\n\t--ALTER COLUMN the_geom type geography(Point) using the_geom::geography(Point);\n\n--CREATE INDEX idx_caracateristiques ON \"caracateristiques_postgis\"\n\t--USING GIST(the_geom);\n\nCREATE INDEX carac_code_com on caracateristiques_postgis(\"CODE_COM\");",
+    "customPostWriteStatements": "--ALTER TABLE \"caracateristiques_postgis\"\n\t--ALTER COLUMN the_geom type geography(Point) using the_geom::geography(Point);\n\n--CREATE INDEX idx_caracateristiques ON \"caracateristiques_postgis\"\n\t--USING GIST(the_geom);\n\nCREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
