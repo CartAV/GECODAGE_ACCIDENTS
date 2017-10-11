@@ -1,7 +1,15 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "caracteristiques_arrondissements_prepared",
+          "objectType": "DATASET"
+        },
+        "modes": []
+      }
+    ]
   },
   "exposedObjects": {
     "objects": [
@@ -15,6 +23,16 @@
           },
           {
             "targetProject": "Accidents_DSCR",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "caracteristiques_arrondissements_prepared",
+        "rules": [
+          {
+            "targetProject": "ACCIDENTS",
             "appearOnFlow": true
           }
         ]
@@ -90,11 +108,11 @@
   },
   "name": "Géocodage accidents corporels",
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1507629327261
+    "lastModifiedOn": 1507715977220
   },
   "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation. \u003cbr\u003e\nStatistiques par accident : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/\n\u003cbr\u003e\npar usager \nhttp://10.237.27.129/projects/ACCIDENTS/datasets/accidents_par_usager/explore/",
   "shortDesc": "Géocodage des accidents issus de la BAAC",
