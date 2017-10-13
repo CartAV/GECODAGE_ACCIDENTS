@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1507723632498
+    "lastModifiedOn": 1507906679134
   },
   "creationTag": {
     "versionNumber": 0,
@@ -419,18 +419,6 @@
       },
       {
         "name": "code_arrondissement",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "rowLength",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "static_value",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
