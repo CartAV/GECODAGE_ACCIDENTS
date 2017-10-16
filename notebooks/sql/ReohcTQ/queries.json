@@ -2807,6 +2807,30 @@
         "sql": "select * from \"public\".\"lieux_prep_rn\" where \"Num_Acc\"\u003d\u0027201200049616\u0027",
         "expandedSql": "select * from \"public\".\"lieux_prep_rn\" where \"Num_Acc\"\u003d\u0027201200049616\u0027"
       }
+    ],
+    "p0xnd4t9bkb": [
+      {
+        "mode": "SQL",
+        "id": "ojDXqDkaDYnc",
+        "runOn": 1508169409141,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "k2xQKJePrOIDdr5B",
+        "hash": "8e29b3ab04b77bb485d724cc9dd4a7b9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"caracteristiques_prep2\" where \"Num_Acc\"\u003d\u0027201200049616\u0027",
+        "expandedSql": "select * from \"public\".\"caracteristiques_prep2\" where \"Num_Acc\"\u003d\u0027201200049616\u0027"
+      }
     ]
   }
 }
