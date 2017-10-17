@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1507565287765
+    "lastModifiedOn": 1508254530495
   },
   "creationTag": {
     "versionNumber": 0,
@@ -300,6 +300,18 @@
       {
         "name": "geojson",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "similarity",
+        "type": "float",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "score",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
