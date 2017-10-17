@@ -682,6 +682,28 @@
         },
         "sql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\n--CREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);\n\nselect similarity(\u0027r goblin\u0027, \u0027rue des gobelins\u0027)",
         "expandedSql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\n--CREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);\n\nselect similarity(\u0027r goblin\u0027, \u0027rue des gobelins\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "4iABoYZSfTGM",
+        "runOn": 1508230072832,
+        "runIn": 54,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "c3Rl0CPApkaAf5QK",
+        "hash": "22a4aa8f0be246f8f6e13c89edd75cf2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\n--CREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);\n\nselect similarity(\u0027r gobelins\u0027, \u0027rue des gobelins\u0027)",
+        "expandedSql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\n--CREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);\n\nselect similarity(\u0027r gobelins\u0027, \u0027rue des gobelins\u0027)"
       }
     ],
     "x0eibswderm": [
