@@ -594,6 +594,28 @@
         },
         "sql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\n--CREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);\n\nselect \u0027coucou\u0027  \u003c-\u003e \u0027coicoi\u0027",
         "expandedSql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\n--CREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);\n\nselect \u0027coucou\u0027  \u003c-\u003e \u0027coicoi\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "VONGmJfGFfEY",
+        "runOn": 1508229798793,
+        "runIn": 171,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "3biY3LpCau4D91qq",
+        "hash": "51dba0ac882be1115fc86f5bf312ffe2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\n--CREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);\n\nselect \u0027coucou\u0027::text  \u003c-\u003e \u0027coicoi\u0027::text",
+        "expandedSql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\n--CREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);\n\nselect \u0027coucou\u0027::text  \u003c-\u003e \u0027coicoi\u0027::text"
       }
     ],
     "x0eibswderm": [
