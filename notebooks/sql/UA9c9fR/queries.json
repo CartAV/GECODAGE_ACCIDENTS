@@ -572,6 +572,28 @@
         },
         "sql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\nCREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);",
         "expandedSql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\nCREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);"
+      },
+      {
+        "mode": "SQL",
+        "id": "0IwsGncsE86j",
+        "runOn": 1508229786559,
+        "runIn": 2616001,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "EtIcsxTmf2yESQaO",
+        "hash": "0720bc5ba1784bfae23aa7fe6c10d630",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\n--CREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);\n\nselect \u0027coucou\u0027  \u003c-\u003e \u0027coicoi\u0027",
+        "expandedSql": "--select * from \"caracateristiques_postgis\" where \"Num_Acc\" \u003d \u0027201600030001\u0027\n--CREATE INDEX carac_code_com on caracateristiques_postgis(current_city_code);\n\nselect \u0027coucou\u0027  \u003c-\u003e \u0027coicoi\u0027"
       }
     ],
     "x0eibswderm": [
