@@ -10,7 +10,7 @@ LEFT JOIN LATERAL (SELECT num_route_or_id,
                           geojson,
                           similarity(accidents.adr, num_route_or_id) as similarity,
                           (CASE WHEN similarity(accidents.adr, num_route_or_id) > 0.9 THEN 0
-                                WHEN similarity(accidents.adr, num_route_or_id) > 0.7 THEN 100
+                                WHEN similarity(accidents.adr, num_route_or_id) > 0.7 THEN 50
                                ELSE st_distance(st_point(accidents.longitude, accidents.latitude), the_geom)
                            END) as score
      FROM "osm_routes_par_commune_geojson"  AS routes
