@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1508231702853
+    "lastModifiedOn": 1508243840648
   },
   "creationTag": {
     "versionNumber": 0,
@@ -307,6 +307,12 @@
       {
         "name": "similarity",
         "type": "float",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "score",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
