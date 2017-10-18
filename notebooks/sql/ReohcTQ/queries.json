@@ -3248,6 +3248,28 @@
         },
         "sql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Mery%\u0027 and \"INSEE_COM\" like \u00277%\u0027",
         "expandedSql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Mery%\u0027 and \"INSEE_COM\" like \u00277%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "eCCHC3bCngzj",
+        "runOn": 1508326940867,
+        "runIn": 1107,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Sul2VAP2O2U7b7ih",
+        "hash": "35f634735a0ec5bd640d265f8ce2e0a3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select similarity(\u002716, BOULEVARD AUGUSTE BL\u0027, \u0027Boulevard Auguste Blanqui\u0027)",
+        "expandedSql": "select similarity(\u002716, BOULEVARD AUGUSTE BL\u0027, \u0027Boulevard Auguste Blanqui\u0027)"
       }
     ]
   }
