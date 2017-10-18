@@ -2874,6 +2874,28 @@
         },
         "sql": "select similarity(\u002703, RUE PAULIN MERY\u0027, \u0027RUE DU PÈRE GUERIN\u0027)",
         "expandedSql": "select similarity(\u002703, RUE PAULIN MERY\u0027, \u0027RUE DU PÈRE GUERIN\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "oMZgOFZrawjb",
+        "runOn": 1508321651367,
+        "runIn": 938,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "pGN5h7n2EDfCJd4s",
+        "hash": "a33ae9e47f61ac9fa41841813ad3b22c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"caracteristiques_postgis\" where \"Num_Acc\"\u003d\u0027201400057439\u0027",
+        "expandedSql": "select * from \"public\".\"caracteristiques_postgis\" where \"Num_Acc\"\u003d\u0027201400057439\u0027"
       }
     ]
   }
