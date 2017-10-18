@@ -3050,6 +3050,28 @@
         },
         "sql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%paulin%\u0027",
         "expandedSql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%paulin%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "vbbuGLP8DNrg",
+        "runOn": 1508326233624,
+        "runIn": 1014,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "KbIOTlpQ71UL1zyu",
+        "hash": "bac8e7c85ee1792017879046a6f85f44",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%PAULIN%\u0027",
+        "expandedSql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%PAULIN%\u0027"
       }
     ]
   }
