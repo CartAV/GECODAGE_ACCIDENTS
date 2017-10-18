@@ -2830,6 +2830,28 @@
         },
         "sql": "select * from \"public\".\"caracteristiques_prep2\" where \"Num_Acc\"\u003d\u0027201200049616\u0027",
         "expandedSql": "select * from \"public\".\"caracteristiques_prep2\" where \"Num_Acc\"\u003d\u0027201200049616\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "5xgpFyC3JUZk",
+        "runOn": 1508321553941,
+        "runIn": 938,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "oiTONBfH812Xx2gS",
+        "hash": "d80bca927fc8250ad048738bc198cca3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select similarity(\u002703, RUE PAULIN MERY\u0027, \u0027RUE PAULIN MERY\u0027)",
+        "expandedSql": "select similarity(\u002703, RUE PAULIN MERY\u0027, \u0027RUE PAULIN MERY\u0027)"
       }
     ]
   }
