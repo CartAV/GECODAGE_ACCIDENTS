@@ -3204,6 +3204,28 @@
         },
         "sql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Mery%\u0027",
         "expandedSql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Mery%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "a67RU5oNVQ4v",
+        "runOn": 1508326357179,
+        "runIn": 1047,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "F6vQNzt7kVe9GVai",
+        "hash": "a4da1a4752c810916d0f365cd18eee69",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Mery%\u0027 and \"INSEE_COM\" like \u002775%\u0027",
+        "expandedSql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Mery%\u0027 and \"INSEE_COM\" like \u002775%\u0027"
       }
     ]
   }
