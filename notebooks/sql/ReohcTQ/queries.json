@@ -3055,10 +3055,10 @@
         "mode": "SQL",
         "id": "vbbuGLP8DNrg",
         "runOn": 1508326233624,
-        "runIn": 1014,
+        "runIn": 1002,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "KbIOTlpQ71UL1zyu",
         "hash": "bac8e7c85ee1792017879046a6f85f44",
         "querySettings": {
