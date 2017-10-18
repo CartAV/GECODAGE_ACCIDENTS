@@ -3341,10 +3341,10 @@
         "mode": "SQL",
         "id": "FTnsi9S5DB3r",
         "runOn": 1508327762424,
-        "runIn": 67,
+        "runIn": 61,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "6Cwms7AuoYvB1Om3",
         "hash": "ab3391546b1dca17673dd7969a464170",
         "querySettings": {
