@@ -3190,7 +3190,7 @@
         "runIn": 1047,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "meIshzDaTGuLaFPz",
         "hash": "d12f4e4a903cd7bc4d784d71bd67736c",
         "querySettings": {
