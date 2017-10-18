@@ -3336,6 +3336,28 @@
         },
         "sql": "select similarity(\u002716, BOULEVARD AUGUSTE BL\u0027, \u0027rue Abel Hovelacque\u0027) as s",
         "expandedSql": "select similarity(\u002716, BOULEVARD AUGUSTE BL\u0027, \u0027rue Abel Hovelacque\u0027) as s"
+      },
+      {
+        "mode": "SQL",
+        "id": "FTnsi9S5DB3r",
+        "runOn": 1508327762424,
+        "runIn": 67,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "6Cwms7AuoYvB1Om3",
+        "hash": "ab3391546b1dca17673dd7969a464170",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select similarity(\u002716, BOULEVARD AUGUSTE BL\u0027, \u0027rue Abel Hovelacque\u0027) as s, s",
+        "expandedSql": "select similarity(\u002716, BOULEVARD AUGUSTE BL\u0027, \u0027rue Abel Hovelacque\u0027) as s, s"
       }
     ]
   }
