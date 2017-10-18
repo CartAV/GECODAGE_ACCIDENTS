@@ -2945,10 +2945,10 @@
         "mode": "SQL",
         "id": "p6XxojvVTVag",
         "runOn": 1508326082700,
-        "runIn": 559,
+        "runIn": 87,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "I0Q6cs8E7c6wnVhY",
         "hash": "34a80e7ad5c7ff1bdc580397c6eb40f0",
         "querySettings": {
