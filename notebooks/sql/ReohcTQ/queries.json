@@ -2918,6 +2918,28 @@
         },
         "sql": "select * from \"public\".\"caracateristiques_postgis\" where \"Num_Acc\"\u003d\u0027201400057439\u0027",
         "expandedSql": "select * from \"public\".\"caracateristiques_postgis\" where \"Num_Acc\"\u003d\u0027201400057439\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "xXTb2hSXFyL3",
+        "runOn": 1508326042864,
+        "runIn": 52,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "tWL55KZnPFfmLfjb",
+        "hash": "4b939a9cf3e10c912e5535a92d0a53a7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"osm_routes_par_commune_geojson\" limit 2",
+        "expandedSql": "select * from \"public\".\"osm_routes_par_commune_geojson\" limit 2"
       }
     ]
   }
