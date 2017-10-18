@@ -3160,6 +3160,28 @@
         },
         "sql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Mery%\u0027",
         "expandedSql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Mery%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "dt1lKPtPy3rx",
+        "runOn": 1508326291197,
+        "runIn": 999,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "YLtDrysepVm0qAGL",
+        "hash": "38075e6139611775098d1b635f52c55f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Paulin Mery%\u0027",
+        "expandedSql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \u0027%Paulin Mery%\u0027"
       }
     ]
   }
