@@ -2940,6 +2940,28 @@
         },
         "sql": "select * from \"public\".\"osm_routes_par_commune_geojson\" limit 2",
         "expandedSql": "select * from \"public\".\"osm_routes_par_commune_geojson\" limit 2"
+      },
+      {
+        "mode": "SQL",
+        "id": "p6XxojvVTVag",
+        "runOn": 1508326082700,
+        "runIn": 559,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "I0Q6cs8E7c6wnVhY",
+        "hash": "34a80e7ad5c7ff1bdc580397c6eb40f0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \"paulin mery\"",
+        "expandedSql": "select * from \"public\".\"osm_routes_par_commune_geojson\" where \"num_route_or_id\" like \"paulin mery\""
       }
     ]
   }
