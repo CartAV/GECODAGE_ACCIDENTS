@@ -1254,6 +1254,28 @@
         },
         "sql": "--select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \"pr_score\" \u003d 1.0\n\nselect * from \"caracteristiques_arrondissements_prepared\" where \"Num_Acc\" \u003d \"201500050955\"",
         "expandedSql": "--select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \"pr_score\" \u003d 1.0\n\nselect * from \"caracteristiques_arrondissements_prepared\" where \"Num_Acc\" \u003d \"201500050955\""
+      },
+      {
+        "mode": "SQL",
+        "id": "eDRErJ2mTbo5",
+        "runOn": 1509098518855,
+        "runIn": 67,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "TVp4lCi2Iu95fxMM",
+        "hash": "ed4eae2ce89dbe0c64ca9ab6fb48ddd0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \"pr_score\" \u003d 1.0\n\nselect * from \"caracteristiques_arrondissements_prepared\" where \"Num_Acc\" \u003d \u0027201500050955\u0027",
+        "expandedSql": "--select count(*) from \"caracteristiques_coordinates_selected\" where catr\u003d\u0027autoroute\u0027 and \"pr_score\" \u003d 1.0\n\nselect * from \"caracteristiques_arrondissements_prepared\" where \"Num_Acc\" \u003d \u0027201500050955\u0027"
       }
     ],
     "p665bdgl7n": [
