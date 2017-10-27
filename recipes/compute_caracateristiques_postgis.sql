@@ -20,6 +20,6 @@ LEFT JOIN LATERAL (SELECT num_route_or_id,
             OR (accidents.catr = 'route nationale' AND routes.cat_route_osm = 'route principale')
             OR (accidents.catr = 'Boulevard Périphérique' AND routes.cat_route_osm = 'route principale')
             OR (accidents.catr != 'autoroute' AND accidents.catr != 'route nationale' AND accidents.catr != 'Boulevard Périphérique'))
-     ORDER BY score
+     ORDER BY score, distance
     LIMIT 1) AS nearest_route
 ON true
