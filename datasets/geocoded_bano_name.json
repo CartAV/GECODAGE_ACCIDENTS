@@ -13,16 +13,26 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1488995269851
+    "lastModifiedOn": 1520361325247
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,6 +61,12 @@
   "schema": {
     "userModified": false,
     "columns": [
+      {
+        "name": "index",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
       {
         "name": "Num_Acc",
         "type": "bigint",
@@ -178,6 +194,12 @@
         "maxLength": -1
       },
       {
+        "name": "bano_error",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "bano_city",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -215,13 +237,13 @@
       },
       {
         "name": "bano_latitude",
-        "type": "float",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "bano_longitude",
-        "type": "float",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -239,7 +261,7 @@
       },
       {
         "name": "bano_score",
-        "type": "float",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
