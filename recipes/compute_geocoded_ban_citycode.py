@@ -30,7 +30,7 @@ columns = ['adr']
 post_code = None
 city_code = 'current_city_code'
 # Ouput fields configuration
-output_prefix = 'bano_'
+output_prefix = 'ban_'
 error_prefix = 'error'
 error_col = '{}{}'.format(output_prefix,error_prefix) if error_prefix else None
 
