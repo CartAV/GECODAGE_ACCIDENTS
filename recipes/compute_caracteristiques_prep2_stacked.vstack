@@ -1,0 +1,73 @@
+{
+  "virtualInputs": [
+    {
+      "index": 0,
+      "originLabel": "caracteristiques_prep2",
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    {
+      "index": 1,
+      "originLabel": "caracteristiques_prep2_test",
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "postFilter": {
+    "enabled": false,
+    "distinct": false
+  },
+  "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "Num_Acc",
+    "jour",
+    "mois",
+    "an",
+    "hrmn",
+    "lum",
+    "dep",
+    "com",
+    "agg",
+    "int",
+    "atm",
+    "col",
+    "adr",
+    "gps",
+    "lat",
+    "long",
+    "date",
+    "original_city_code"
+  ],
+  "addOriginColumn": false,
+  "mode": "UNION"
+}
