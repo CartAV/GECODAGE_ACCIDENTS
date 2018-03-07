@@ -46,7 +46,7 @@
     "main": {
       "items": [
         {
-          "ref": "caracateristiques_postgis",
+          "ref": "ACCIDENTS_BRUT.caracteristiques_postgis",
           "deps": []
         }
       ]
@@ -66,11 +66,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 48,
+    "versionNumber": 49,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520428181248
+    "lastModifiedOn": 1520428639623
   },
   "tags": [],
   "checklists": {
