@@ -13,16 +13,26 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1488991832202
+    "lastModifiedOn": 1520429126010
   },
   "creationTag": {
     "versionNumber": 0,
@@ -37,6 +47,7 @@
   "params": {
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
     "connection": "postgis",
+    "notReadyIfEmpty": false,
     "mode": "table",
     "partitioned": false,
     "partitioningType": "custom",
@@ -45,11 +56,11 @@
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "hasColsWithUnknownTz": false,
-    "readColsWithUnknownTzAsDates": false
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
@@ -58,7 +69,7 @@
         "maxLength": -1
       },
       {
-        "name": "an",
+        "name": "jour",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -70,7 +81,7 @@
         "maxLength": -1
       },
       {
-        "name": "jour",
+        "name": "an",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -84,6 +95,20 @@
       {
         "name": "lum",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "dep",
+        "type": "string",
+        "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "com",
+        "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -112,13 +137,6 @@
         "maxLength": -1
       },
       {
-        "name": "com",
-        "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "adr",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -139,13 +157,6 @@
       {
         "name": "long",
         "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "dep",
-        "type": "string",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
