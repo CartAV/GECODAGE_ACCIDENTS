@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520361325247
+    "lastModifiedOn": 1520409210146
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,12 +61,6 @@
   "schema": {
     "userModified": false,
     "columns": [
-      {
-        "name": "index",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
       {
         "name": "Num_Acc",
         "type": "bigint",
@@ -194,12 +188,6 @@
         "maxLength": -1
       },
       {
-        "name": "bano_error",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "bano_city",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -213,6 +201,12 @@
       },
       {
         "name": "bano_context",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "bano_error",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -237,13 +231,13 @@
       },
       {
         "name": "bano_latitude",
-        "type": "string",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "bano_longitude",
-        "type": "string",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -261,7 +255,7 @@
       },
       {
         "name": "bano_score",
-        "type": "string",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -273,6 +267,12 @@
       },
       {
         "name": "bano_type",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "index",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
