@@ -1,22 +1,28 @@
 {
   "expression": "val(\"ban_id\") \u003d\u003d \u0027\u0027 || isNull(val(\"ban_id\"))   \u0026\u0026   val(\"adr\") !\u003d \u0027\u0027 \u0026\u0026 isNotNull(val(\"adr\"))",
-  "engineType": "DSS",
   "enabled": true,
+  "engineType": "DSS",
   "uiData": {
     "conditions": [
       {
-        "num": 0,
-        "input": "ban_id",
         "col": "an",
+        "input": "ban_id",
+        "num": 0,
         "operator": "is empty"
       },
       {
-        "num": 0,
-        "input": "adr",
         "col": "an",
+        "input": "adr",
+        "num": 0,
         "operator": "not empty"
       }
     ],
     "mode": "\u0026\u0026"
+  },
+  "$status": {
+    "sql": "(\"ban_id\" \u003d \u0027\u0027) OR \"ban_id\" IS NULL AND (\"adr\" !\u003d \u0027\u0027 OR \"adr\" IS NULL AND \u0027\u0027 IS NOT NULL OR \"adr\" IS NOT NULL AND \u0027\u0027 IS NULL) AND \"adr\" IS NOT NULL",
+    "fullyTranslated": true,
+    "ok": true,
+    "validated": true
   }
 }
