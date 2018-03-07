@@ -21,6 +21,10 @@
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
         "samplingMethod": "HEAD_SEQUENTIAL",
         "maxRecords": 10000,
         "targetRatio": 0.02,
@@ -46,12 +50,15 @@
       "def": {
         "type": "stacked_columns",
         "variant": "normal",
-        "name": "Count by date",
+        "name": "Count by date and dep",
         "userEditedName": false,
         "genericDimension0": [
           {
             "column": "date",
             "type": "DATE",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
             "dateParams": {
               "mode": "WEEK"
             },
@@ -89,6 +96,9 @@
           {
             "column": "dep",
             "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
             "maxValues": 20,
             "generateOthersCategory": true,
             "oneTickPerBin": false,
@@ -119,6 +129,8 @@
             }
           }
         ],
+        "facetDimension": [],
+        "animationDimension": [],
         "genericMeasures": [
           {
             "function": "COUNT",
@@ -128,7 +140,7 @@
             "displayAxis": "axis1",
             "displayType": "column",
             "computeMode": "NORMAL",
-            "computeModeDim": 0
+            "computeModeDim": 1
           }
         ],
         "xDimension": [],
@@ -155,17 +167,37 @@
         "smoothing": true,
         "showLegend": true,
         "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": false,
         "strokeWidth": 1,
+        "fillOpacity": 0.5,
+        "showXAxisLabel": false,
+        "showYAxisLabel": false,
         "hexbinRadius": 20,
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": false,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
         "colorOptions": {
           "singleColor": "#659a88",
           "transparency": 0.75,
           "colorPalette": "default",
-          "ccScaleMode": "NORMAL"
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
         },
-        "colorPaletteType": "LINEAR",
         "bubblesOptions": {
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
@@ -188,10 +220,12 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACeUlEQVRoge3Vv2sTYRgH8G5OnbsIsc1BMtykS2pQsItDugbc7CJ1KtblXmghY0qMVUt6vGibBE1ELtpWk5yxl963pOVuqFiumFMaJUJKiX9BNl8HuRDaqkvw5M194RnupufzPu+PoSEv/09CYQK3e/hnCYUJBhIcChNcHJ8VuMd7YA/MWTywB+YsZ4G5RntgD8xZBhJ8+epcZWDAI/o+Go3FwZmwZc0UtzC+/jcwN4tgmiZisRjSh8dYqbeE9OExzkJzA+6oBzia21EbjUXU63HB2d7cgltSDbsrKWxvb6uGYQimaZ4Cc3Wuk9EIVu+STEc9gHLvyWjuAc2M6Pv8go0NG6lpHbsrKRyS0tjX+c1XVX0Uve8zV+DUtI4Xd97mktEI4tHrQjIawae8lucWzKiMbxMTampaRzW/N1ZTPhY+PHyKpc9HhV7siL7PB9gOBGEHgvh+P6Ow5WWBURmb6XdK7+UVChNomlZxu9e+hDYToM0E7EAQdb9fsAPB7pl2sFV9FC2pxseExawIMSuCNhNY/hIXaDOBH0uP3hgbNixrpmhZM8WWVENuPs4PmGkEYlbEFG5cuL0ztUqbCTAqo1O2tjpla8vYsMGozAeYaQQsNgymEbxfv+nfK99SxawIOxBEMhpBMhoBozLsQJATcGwY3arMCkwj3YkzKoNRGbSZgJgV+QCvmW2sme1fYHJO6OI1AudCu/bs0nOmcfIOO+A1sw3FaAm9C7BQmMRCYRLs8ZV1FhvmA+yTSvBJpVPgneLLvDNt55/bvfYlDtgnlXB+9rXQuwAny+1e+5LfgX1SCUSpK0SpK8632732JX8Cnyy3e/XixcX8BFP6XCNSCHnTAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAEJklEQVRoQ+2XfUwbdRjHn3vrO4PS9Q95kWT6B24kGqt7Aa1b0s1uciZLtESxmhAGZudG8K1jsYlvsa0THVuaRQxGxWxJG8PCMZnihhgRutkQN8HoAJWxiCm0gwJr76535g6L+CdrCFzp3T/fP37P3X2e7/M8v98hsM4uRA6828uOdAscVxcIvHcl1e/NAKeawZWIXxcOi5AR4B/XA9ouJjFtS9pkqtEQqtxzImQGOB2HVsbhTA+ntg+suX04U9KZks6U9LIykOnhZaVrBRZnhhag7b+/VQEsL1Bhy/1DqeZ4zZX0sZ8mtEoF95kIFmfwZw1qvuPO8TIAPkFZLGPpB+zzGXW5G3V0UeEhYJgZkmGvt55tK8hhGIZyuVzyBX5wxyuPYCj2en+ve1eyTLeVOs6Y7oseMBqNtNVqhVgsRo6Pj9M7fy4CnmOookaL/IFFWIaHAwoUPhJ1+9OPkjihpdUFKojOTpHcIN56esidwwBPHfV3ph+wNa+f1IGW3mrZM3drhqm4eunbjtLKY8AxAmW2bUk/YFednVQqEHphaAnk4IW/6WL9TWBYjtrXaEs/4IObdpXPaTF/QkDVk+FJcnO+zlfS+aJaSHDUluHh9ANu+a2FRHIN9D31hwESAvnLiZP0wPHyEA+o07733V9luw8np7ShcCP89eekNLQUakW8ogl9AtNoaLP1YxDCUxK8rQEHgReowapB+TpcanaYBR51Xjz6FH7FcLCW5RDnpZ7HClqyW0lEu9DDwpxAUnvtbYHAuZCG4984Ze+Vp8M7yhq6y/eo3BhKvKwdGcLv3b6VQnHUG+zp4Q6Txv2g30BfjocmlGGmupIf6LiaXw7AshSyr1GeDovAlcVjbysJrCrhKMnbXf1VLUZgzvOnLAW1l/8gRWCpVyMzC/p7LwAjUIhrVr7Az3y+wYMB5qgdDkvuAUF4v4tN3DB3fvI8GLMWgENRUtRt1mvAsQJlM98hX+AfnJwHMMyRdA8UiFdk9O/sJ3GVQQLmYlP/aVagPmg44e3rdS0eRW9nYq/K31Je90DXjQsPNQKGOkT39rffTYnAkpNLIf/V9Wd/hEQiUVfY198kS+DTb/adeTUa/hRDBYd0ouI4SonjksPz0XlSk6WRHF6qReAvqoZe2ra54bnbcTYZsyoOC11Hugu/ftizXOCB/FCTsb5afiVd+s7F82ORW8eXC3y9+P3XkOoe24o4PFLTlS0NkYgHmi2ji+/oCn64qG3BbyTtM1kgR8kKN+MEclfz7unkAveIO9tvG2UB9EQw6Jm+duhLJRonVA9ARLzn9aDXSLtPBGb1etBJutk2ra/xSe/+n166ZmmsUhfbVPKCymeqAYAYOxqxE08G/QBZWQmEomZNJkc2js8LgcDJGfGZq1LSqTiUamwGONUMrvX4defwPw1ygkdGJAtAAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
-        "useLiveProcessingIfAvailable": true
-      }
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
     }
   ]
 }
