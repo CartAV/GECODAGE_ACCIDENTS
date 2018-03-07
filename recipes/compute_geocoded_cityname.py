@@ -40,7 +40,7 @@ lines_per_request = 2
 verbosechunksize = 5000
 threads = 16
 timeout = 500
-maxtries = 5
+maxtries = 2
 limit = None
 
 
