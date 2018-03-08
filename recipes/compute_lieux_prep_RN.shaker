@@ -33,6 +33,40 @@
       "currentMode": "FACET",
       "active": true,
       "type": "columnFilter"
+    },
+    {
+      "facet": {
+        "sort": "count",
+        "columnType": "NUMERICAL",
+        "column": "v1",
+        "currentMode": "NUMERICAL",
+        "selectedValues": {},
+        "type": "facet"
+      },
+      "$$hashKey": "object:2321",
+      "validityFilter": {
+        "column": "v1",
+        "params": {
+          "nok": true,
+          "empty": true,
+          "ok": true,
+          "type": "LongMeaning"
+        },
+        "type": "validity"
+      },
+      "alphanumFilter": {
+        "values": [],
+        "column": "v1",
+        "params": {
+          "normalization": "exact",
+          "mode": "full_string"
+        },
+        "type": "alphanum"
+      },
+      "column": "v1",
+      "currentMode": "SIMPLE_ALPHANUM",
+      "active": true,
+      "type": "columnFilter"
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -116,12 +150,28 @@
     },
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "booleanMode": "AND",
         "appliesTo": "SINGLE_COLUMN",
         "columns": [
           "pr1"
+        ],
+        "action": "CLEAR_CELL",
+        "type": "LongMeaning"
+      },
+      "type": "FilterOnBadType",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": false,
+      "params": {
+        "booleanMode": "AND",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "v1"
         ],
         "action": "CLEAR_CELL",
         "type": "LongMeaning"
