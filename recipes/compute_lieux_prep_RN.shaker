@@ -1,5 +1,40 @@
 {
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "facet": {
+        "sort": "count",
+        "columnType": "NUMERICAL",
+        "column": "pr1",
+        "currentMode": "ALPHANUM",
+        "selectedValues": {},
+        "type": "facet"
+      },
+      "$$hashKey": "object:45394",
+      "validityFilter": {
+        "column": "pr1",
+        "params": {
+          "nok": true,
+          "empty": true,
+          "ok": true,
+          "type": "LongMeaning"
+        },
+        "type": "validity"
+      },
+      "alphanumFilter": {
+        "values": [],
+        "column": "pr1",
+        "params": {
+          "normalization": "exact",
+          "mode": "full_string"
+        },
+        "type": "alphanum"
+      },
+      "column": "pr1",
+      "currentMode": "FACET",
+      "active": true,
+      "type": "columnFilter"
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "analysisColumnData": {},
   "columnsSelection": {
@@ -78,6 +113,22 @@
       "type": "FindReplace",
       "disabled": false,
       "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "booleanMode": "AND",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "pr1"
+        ],
+        "action": "CLEAR_CELL",
+        "type": "LongMeaning"
+      },
+      "type": "FilterOnBadType",
+      "disabled": false,
+      "metaType": "PROCESSOR"
     }
   ],
   "exploreUIParams": {
@@ -95,6 +146,10 @@
       "withinFirstN": -1,
       "samplingMethod": "HEAD_SEQUENTIAL",
       "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
       "maxReadUncompressedBytes": -1,
       "filter": {
         "enabled": false,

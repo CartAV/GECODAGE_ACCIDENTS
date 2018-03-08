@@ -28,6 +28,7 @@
     "kv": {}
   },
   "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
   "inputs": {
     "main": {
       "items": [
@@ -49,11 +50,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1500989505995
+    "lastModifiedOn": 1520492889887
   },
   "creationTag": {
     "versionNumber": 0,
