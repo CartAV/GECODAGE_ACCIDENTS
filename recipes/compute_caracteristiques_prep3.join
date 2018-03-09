@@ -24,12 +24,18 @@
           "conditions": [
             {
               "num": 0,
-              "col": "insee_code",
               "input": "successors",
+              "col": "insee_code",
               "operator": "is empty"
             }
           ],
           "mode": "\u0026\u0026"
+        },
+        "$status": {
+          "message": "Filter expression is invalid",
+          "fullyTranslated": false,
+          "ok": false,
+          "validated": true
         }
       }
     }
@@ -40,6 +46,9 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "on": [
         {
           "maxDistance": 1,
@@ -76,9 +85,6 @@
           }
         }
       ],
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "type": "LEFT"
     },
     {
@@ -86,6 +92,7 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 1,
@@ -100,7 +107,6 @@
           }
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -130,16 +136,154 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "postFilter": {},
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "jour",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "mois",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "an",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "hrmn",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "lum",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "dep",
+            "meaning": "Text",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "com",
+            "meaning": "Text",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "agg",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "int",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "atm",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "col",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "adr",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "gps",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "lat",
+            "type": "double"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "long",
+            "type": "double"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "original_city_code",
+            "meaning": "Text",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "original_name",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "current_city_code",
+            "meaning": "Text",
+            "type": "string"
+          },
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "current_name",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false,
   "selectedColumns": [
     {
       "name": "Num_Acc",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
-      "name": "an",
+      "name": "jour",
       "table": 0,
       "type": "bigint"
     },
@@ -149,7 +293,7 @@
       "type": "bigint"
     },
     {
-      "name": "jour",
+      "name": "an",
       "table": 0,
       "type": "bigint"
     },
@@ -160,6 +304,16 @@
     },
     {
       "name": "lum",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "dep",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "com",
       "table": 0,
       "type": "string"
     },
@@ -184,11 +338,6 @@
       "type": "string"
     },
     {
-      "name": "com",
-      "table": 0,
-      "type": "string"
-    },
-    {
       "name": "adr",
       "table": 0,
       "type": "string"
@@ -207,11 +356,6 @@
       "name": "long",
       "table": 0,
       "type": "double"
-    },
-    {
-      "name": "dep",
-      "table": 0,
-      "type": "string"
     },
     {
       "name": "date",
@@ -241,5 +385,6 @@
       "table": 2,
       "type": "string"
     }
-  ]
+  ],
+  "computedColumns": []
 }
