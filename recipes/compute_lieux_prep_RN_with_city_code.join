@@ -33,11 +33,11 @@
           "caseInsensitive": false,
           "type": "EQ",
           "strict": false,
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "normalizeText": false,
           "maxMatches": 1,
           "dateDiffUnit": "DAY"
         }
@@ -71,13 +71,154 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "postFilter": {},
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "catr",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "voie",
+            "meaning": "Text",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "v1",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "v2",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "circ",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "nbv",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "vosp",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "prof",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "pr",
+            "type": "int"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "pr1",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "plan",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "lartpc",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "larrout",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "surf",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "infra",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "situ",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "env1",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "voie_normalise",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "dep",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "adr",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "current_city_code",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false,
   "selectedColumns": [
     {
       "name": "Num_Acc",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "catr",
@@ -110,16 +251,6 @@
       "type": "bigint"
     },
     {
-      "name": "pr",
-      "table": 0,
-      "type": "int"
-    },
-    {
-      "name": "pr1",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
       "name": "vosp",
       "table": 0,
       "type": "string"
@@ -128,6 +259,16 @@
       "name": "prof",
       "table": 0,
       "type": "string"
+    },
+    {
+      "name": "pr",
+      "table": 0,
+      "type": "int"
+    },
+    {
+      "name": "pr1",
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "plan",
@@ -170,12 +311,12 @@
       "type": "string"
     },
     {
-      "name": "adr",
+      "name": "dep",
       "table": 1,
       "type": "string"
     },
     {
-      "name": "dep",
+      "name": "adr",
       "table": 1,
       "type": "string"
     },
@@ -184,5 +325,6 @@
       "table": 1,
       "type": "string"
     }
-  ]
+  ],
+  "computedColumns": []
 }
