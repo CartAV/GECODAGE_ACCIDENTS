@@ -16,6 +16,7 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 1,
@@ -30,7 +31,6 @@
           }
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -42,20 +42,20 @@
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
+          "strict": false,
           "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
       "type": "LEFT"
@@ -83,15 +83,275 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "postFilter": {},
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "jour",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "mois",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "an",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "hrmn",
+            "type": "bigint"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "lum",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "dep",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "com",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "agg",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "int",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "atm",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "col",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "adr",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "gps",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "lat",
+            "type": "double"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "long",
+            "type": "double"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "original_city_code",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "original_name",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "current_city_code",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "current_name",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban_citycode",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban_label",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban_latitude",
+            "type": "float"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban_longitude",
+            "type": "float"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban_postcode",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban_score",
+            "type": "float"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban_type",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "bano_citycode",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "bano_label",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "bano_latitude",
+            "type": "float"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "bano_longitude",
+            "type": "float"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "bano_postcode",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "bano_score",
+            "type": "float"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "bano_type",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban2_citycode",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban2_label",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban2_latitude",
+            "type": "float"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban2_longitude",
+            "type": "float"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban2_postcode",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban2_score",
+            "type": "float"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "ban2_type",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "selectedColumns": [
     {
       "name": "Num_Acc",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
-      "name": "an",
+      "name": "jour",
       "table": 0,
       "type": "bigint"
     },
@@ -101,7 +361,7 @@
       "type": "bigint"
     },
     {
-      "name": "jour",
+      "name": "an",
       "table": 0,
       "type": "bigint"
     },
@@ -112,6 +372,16 @@
     },
     {
       "name": "lum",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "dep",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "com",
       "table": 0,
       "type": "string"
     },
@@ -136,11 +406,6 @@
       "type": "string"
     },
     {
-      "name": "com",
-      "table": 0,
-      "type": "string"
-    },
-    {
       "name": "adr",
       "table": 0,
       "type": "string"
@@ -159,11 +424,6 @@
       "name": "long",
       "table": 0,
       "type": "double"
-    },
-    {
-      "name": "dep",
-      "table": 0,
-      "type": "string"
     },
     {
       "name": "date",
@@ -295,5 +555,6 @@
       "table": 2,
       "type": "string"
     }
-  ]
+  ],
+  "computedColumns": []
 }
