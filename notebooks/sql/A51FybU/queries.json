@@ -23,6 +23,30 @@
         "sql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\n",
         "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\n"
       }
+    ],
+    "0.47652077637460066": [
+      {
+        "mode": "SQL",
+        "id": "0urz14Ny4a6p",
+        "runOn": 1521044521368,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "lUS1MCOc",
+        "hash": "a3de71aa71e18b8c1b7c32a428891fa4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE geo_score \u003e 0.6",
+        "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE geo_score \u003e 0.6"
+      }
     ]
   }
 }
