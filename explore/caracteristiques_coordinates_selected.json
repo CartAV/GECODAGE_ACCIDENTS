@@ -86,7 +86,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg. of geo_score by ANNEE and geo_type",
+        "name": "Count by ANNEE and geo_type",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -112,12 +112,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of geo_score, descending"
+                "label": "Count of records, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of geo_score, ascending",
+                "label": "Count of records, ascending",
                 "sortAscending": true
               }
             ],
@@ -149,12 +149,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of geo_score, descending"
+                "label": "Count of records, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of geo_score, ascending",
+                "label": "Count of records, ascending",
                 "sortAscending": true
               }
             ],
@@ -169,8 +169,7 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "geo_score",
-            "function": "AVG",
+            "function": "COUNT",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
@@ -268,7 +267,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACRklEQVRoQ2NkGIJg5sMOm3T5iiMwp8942FmeIV/eSYxXGIlRNNjUTH/QHpipULke4eGu+RnyZYnEuHPUw8SE0kCrAcWw7kVfOxt/nUKQW2Y8HAExrHvBN88mQMdx1MMEkt+QzcOjMUzLUvp/X58QY1HRO1yp539nJy9jeflnfKnr8IYrcbYBOovQ1fyv4S5lbPnajU8vuNCiZh7+P2PafsaMLHCBAAKE+BiOJsHD/2u5khibv82D21XHs4qx6UsYnF/Pu5+x8TPCLfW8+2ckVk2Cefh/Pe/+mUm1Dyiqhwl5EEN+5uQAxvTcDXBHkuHhoxuvLLP214n6j8XD11dIM2jdvAH2NMiDVPXw/z0VlQx35NxgMfx/d8V+hrtyDLhiHCT/at6DT+LLV/iDHbS7Yv+t4m3f1S9d8oLxr+dsgDsYJHZNXWP/284180FJGhTD11fJxb7vWvMc5uHrK2VEkT2I7uFDT62fMvv0SIOqJfQYBvGRUwR66sMopQl5GD0AKPbwAtfV19sfixDy8LvONQwwD6J7eIl99qdYpw5IgA82D4MCCBTj8BhG93CrxKbriwR40WN41MNISZqiGN64MWav33MrJlx5mNIkTWwMI8coKA/TLIZHPYxWSo/GMInVEq2StOKnGD5YKU5StTRUk/Soh3E0xjEaHqMxPEQKrdEkPZqkISEwmodHC63RQgt1QIDU/vBoSwtHf5jU3tJotTRaLY1WS5AQGK2WRqul0WqJpIH40Xp4oOthAvPJQ156SE6IUxLqAADY9rD6KDexAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACDElEQVRoQ2NkGGGAcYT5l2HUw8M9xkdjeDSGiQsBUEr5T5zSgVVFrSQ96uGBjUfcto/GMJkxM5qkyQw4mmsbTdJkBvFokiYz4GiuDSNJ/6/n3c/Y+NkRZjMhPlTd0I1hQh7EIe80ZFtaox4mLomjxPB/BgZGRqS2dQMDA1MDA8M/mmdQIiygOA9DUwROD4PkGxs/OyN7+D8DAxPjAAXAqIepkYeRkzR6DIP4DI2fnZFjeBUDA3MYA8NfIlIkxUroHsPoHgbxVzd+dhn1MMVxid2AQRnD6En8goyMtMGTJ0+pEQZU9zA0yTrBqiVCeRg9SWPjX5zLHzNiPYxeqJIa60MuhgnVIoQCYNTDhEKQUOeB1nmYkPtGYxgtBIZkkr6+VLxY686dcyC/kFqIjXoYWx6ZEV9zJ1OpPBUWojPjav5nKJeDekiwEIb3luiRh6kewzMTahkyFMvAwzwgD8xMqPmfoYjwILqHZ8ZW/89QqYAHwMzYqn8ZKpXOcP0xFXMzVKuXwPmxlX8zVKpcYHzktjTYvqiKvxnq1XD5hc45fxPs2uH8lbqJfyNCJsH5lxdLduvdu7WNUIEFkseapKnt4RmxVf8ykQMAzcMzoyv+ZqghPEiqhzeIhvwLzJkPDmAQuKqqnqh9++Z8bAEw6mFIEqZukqZnDIPcf22Z1CKiY5iYfDCU1VBrqmXIhAEA50NeZVPk6yQAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
