@@ -44,6 +44,28 @@
         },
         "sql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE ANNEE \u003d 2017\n",
         "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE ANNEE \u003d 2017\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "0BxAuX5B0LhW",
+        "runOn": 1521044618731,
+        "runIn": 139,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "0nGo5KRM",
+        "hash": "e50378208939ce5354ac4a978b535b9c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE \"ANNEE\" \u003d 2017\n",
+        "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE \"ANNEE\" \u003d 2017\n"
       }
     ],
     "0.47652077637460066": [
