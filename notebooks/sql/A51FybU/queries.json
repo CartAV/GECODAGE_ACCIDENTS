@@ -90,6 +90,28 @@
         },
         "sql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE geo_score \u003e 0.6",
         "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE geo_score \u003e 0.6"
+      },
+      {
+        "mode": "SQL",
+        "id": "dVHKQDo8shNL",
+        "runOn": 1521044634560,
+        "runIn": 310,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "LuMygJM1",
+        "hash": "58386c5b78c2fd68b2f6001bf42f091c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE \"ANNEE\" \u003d 2017\nAND geo_score \u003e 0.6",
+        "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE \"ANNEE\" \u003d 2017\nAND geo_score \u003e 0.6"
       }
     ]
   }
