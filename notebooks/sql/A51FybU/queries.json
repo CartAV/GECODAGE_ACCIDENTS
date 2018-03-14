@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "yi4inx50wcf": [
+      {
+        "mode": "SQL",
+        "id": "5iR8MeFysA57",
+        "runOn": 1521044500560,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "zo9dQpfm",
+        "hash": "c3ba2a973a3efba27628a47da4bba6c0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\n",
+        "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\n"
+      }
+    ]
+  }
+}
