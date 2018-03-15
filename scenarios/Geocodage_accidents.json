@@ -5,11 +5,11 @@
   "name": "Geocodage accidents",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521110923827
+    "lastModifiedOn": 1521110973726
   },
   "checklists": {
     "checklists": []
@@ -23,7 +23,25 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_2_true_d_caracteristiques_arrondissements_prepared",
+        "type": "build_flowitem",
+        "name": "Build prepared DB",
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "caracteristiques_arrondissements_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false
 }
