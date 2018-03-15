@@ -1,0 +1,29 @@
+{
+  "projectKey": "GECODAGE_ACCIDENTS",
+  "id": "Geocodage_accidents",
+  "type": "step_based",
+  "name": "Geocodage accidents",
+  "active": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1521110923827
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": []
+  },
+  "automationLocal": false
+}
