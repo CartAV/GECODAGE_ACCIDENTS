@@ -220,7 +220,175 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAElUlEQVRoQ+2Zf0xVZRjHn/c9916g/ssZUSssZEqjloHJlePUodVYyqBG5cgx2l0QCR6HgA6KOSWc4tUmWR3wV2RZW+qBGFcFmzuBQiWyKS7Hj4GaW41N+nG999zzvu19L7BoduWC3OHhnn+ee+6e857383y/5/1xDoIZdqB7wZuwuKgEEEo690PF8nvR3lS2EQT2p7oJicVneD6lTUxh6tFykclcpREt56fWyiv+tBWo3EkpHASeyQqbsXkf0emptnPbywNl1/HcZ8osHQQeT/kDkBNU2J8i+xqlg5b2p5JTmBu0tD/FnbGW7t6SrmKExDmbakeXliPPMBbQSl9FDPSGY1KW3v/LDb6WFuGIihAWMzKuGxv46tVdHLi/f49KERa3h9RLAsZ2SnXbrY21MltpGUrh1tZWDvzc4IMqIBAH5jZKCJnsLpfL9u5Qym5KqUMr/DzNMJZ2NnRy4N/O3FIRpmJX0loJm5Dd49ZsUVEbZACivJX5+2rDAA8UnfVaOrpTpQBiQ88NyWw2c4VTUlJkAFCkghPGAa7KTD/GgJ+Ie+08ADy/PCJqKw4xbcVutJ6GQQ2ioCwrP2Ic4Jbjl7nCP3/3qwoYiQviLkoUm+2ay22b2x8vUwJKekuDcYD3vtPMgXMXXFHZ7LSjqV7CgOwaeGxLXlolA1Cl4MB14wDTTz7mwEPd3SqiIDY/+moeCJb39b+dRRExs2oIgFKw47BxgC/Pm+99iUcot3RM3joJBGQHndqqOmNkSkH54tJJ4wGfdWSqQLG4cs2xPGSxlGAnLY7MemM/UKpYaweMAxx7MJYrTIGqCJB4dJtLQliwE49mwyazDDpRssLTjAtMKZUQQnbiIbbaQw/IFEC5WKNw4L904mFxBcgmFnPWI37+vaPM5+bCn93beHIntXmgp4ZfxANVAZAYe61uFBibsEyBKtXzqsco3NfX18M6Njt881MslpS+zvsZqF3ThICtiZu4lVtW7B0uqhcYErMlQIIddJcNhBC+0rp2OvmOlq4ObeLXOk677mNgjUhgxnZwuW0QYpGBEqWyaxkHXvRmuc7i+S83CywueWYV/xST7+ibf98ovHFnPleHEtKEME7yaDTXZEZVhJKchAvrinQc2lLX8fYalmMq/pHneirieXzosbCbLH7kOPHItAe+0JF9gHWy11k25/+AMcL7mKU/7H0lmeU43bf5YPXe0rVjxpaDGYPT39LfVOw7ynopLE19+G7AqX/u9jktWcu8/NN60NIqd37NOlm3OGP2XYEbo33Pwy+f5MBWqzUgH9MnNEqPLDj+6KrgnSUEqRhT0UOQZMLUrrt1m2ARZEKQsictjgOnNkbz3IbQ1QMsJt9WHmfx08xS/n/2k4XTF/jb1pt8WpKOewciX8AYU58K983KH2JtoMLulDEP9xSd3FHhhQs38Oq3t+/iavz3iCyq924aho/JAI+08aJr8BD73dHZa+b3bv6AzeOjR+yi/PAwIlj+3afGGrV0iOJ2y7ORl3QSSju6iiPYBVt6vrKw+EJb1tMstsV/1siLus05MCFLT1HxA9LsjAP+Bwh29kcfmPstAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAC/UlEQVRoge2Yz0vbYBjHv+y8seNOm+wwHOjVtVr/g+Fhh10EUUaZB0Hwx0w71EZEh1KslVLCUOdBG+3azh9dqbTmLSM02xD8gXiwBw968LbjYJfsoE+ITfzBZG2jeeADD09I+n7e5H3epIAd5Y0XDVzY4eIEh4sTzI47XR7mdHkYgHslHtr/CWcDl9VJGY/fZmEz8Tsj7Kjn4o56Ln5nhE1qtrAlwxa2hW1ha4ctbAvbwtYOW/i2CpMIH5WT/OdT7oTwI2lLQy88e3DMZg+Ob59wNvtUY2J7QZzYXhABoFDws0LBr01Gucd74yBhn8+noSgKUxSFAUA+n9/I5/MbNBnlHu+Ng4R/p3YNAADlNBnXvV7xPyYVEzS4I+6bAQCgXD8J17lexQv7X780AACUy9MhJk+HLpQo7uYVL5yL7iYIeXmPyct7DABC7VkWas+em4Ticy+iPEZXBHVfEtMDAFt8ZGmLjyzpa1eJVrRwLBabicViM/vVzxmhCmGmCmEGAGY1SwtTUxIOxw0AAOWRlS4xstIlAhYXDrnb0iF3W7p2rpYVAwBmNWsLn63NYPxVglAzHqZmTgdMub5maWFam+fEhEamCo3WF96ZklM7U3IqILXME7RGVd8DAwBgVqtoYfpxh4sL0P6q33pobSaUEwMAYFa7THIyv69RFmGSlFf2AvT4/hn7ME/QnfsXYf0nJX1V6XG6vK1Ol7e1pKLa/vqsOmC29ZDw2NqBSFRxSVbFJRkAUK6vSVIdk6Q6lkwmRYLetdPCwieipI82CdEjWzNXEzDbeujOFYtdJrw62s9WR/u192t5OqS9esb9a/NESYWNTeh+wKwxmYleJUwd+1fu/ReiuJurGQ9z8yJz86JROLrZNXgK93AxN9C9mBvoTv8Y7yPcfSM97r6RnkRmoJc4igabj6LB5rdB/klHeMjbER7ySutNndJ6UycAxJWTYT2J7ydvKJ9MHQ4Sj999Hb4IADCr6c8n6NotH396ic1Monczk+gtyR22o8zxF/ANCD1mFO5TAAAAAElFTkSuQmCC",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "SQL",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 1
+      },
+      "def": {
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "Count by an",
+        "userEditedName": false,
+        "genericDimension0": [
+          {
+            "column": "an",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "TREAT_AS_ALPHANUM",
+              "nbBins": "10",
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "function": "COUNT",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAj0lEQVRoge3TMQqAMAyF4U4ewFXFK3i1DsXV83S2s1dzEqKDKJSkgf9BhkzN96AhkHYyr/txjfUtKnmCX/ctd7bXVghgwHew3F3++xpgVwWogIdUllZaMQNbFQDYCqxVQLPgKZUo5/ex3sBfHgIMGDBgwIABAwYMGDBgwIABAwYMGDBgX+Ax5l6OGpgQ4ionp1XhUFV/8cAAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
