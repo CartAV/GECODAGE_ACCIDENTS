@@ -267,7 +267,171 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACDElEQVRoQ2NkGGGAcYT5l2HUw8M9xkdjeDSGiQsBUEr5T5zSgVVFrSQ96uGBjUfcto/GMJkxM5qkyQw4mmsbTdJkBvFokiYz4GiuDSNJ/6/n3c/Y+NkRZjMhPlTd0I1hQh7EIe80ZFtaox4mLomjxPB/BgZGRqS2dQMDA1MDA8M/mmdQIiygOA9DUwROD4PkGxs/OyN7+D8DAxPjAAXAqIepkYeRkzR6DIP4DI2fnZFjeBUDA3MYA8NfIlIkxUroHsPoHgbxVzd+dhn1MMVxid2AQRnD6En8goyMtMGTJ0+pEQZU9zA0yTrBqiVCeRg9SWPjX5zLHzNiPYxeqJIa60MuhgnVIoQCYNTDhEKQUOeB1nmYkPtGYxgtBIZkkr6+VLxY686dcyC/kFqIjXoYWx6ZEV9zJ1OpPBUWojPjav5nKJeDekiwEIb3luiRh6kewzMTahkyFMvAwzwgD8xMqPmfoYjwILqHZ8ZW/89QqYAHwMzYqn8ZKpXOcP0xFXMzVKuXwPmxlX8zVKpcYHzktjTYvqiKvxnq1XD5hc45fxPs2uH8lbqJfyNCJsH5lxdLduvdu7WNUIEFkseapKnt4RmxVf8ykQMAzcMzoyv+ZqghPEiqhzeIhvwLzJkPDmAQuKqqnqh9++Z8bAEw6mFIEqZukqZnDIPcf22Z1CKiY5iYfDCU1VBrqmXIhAEA50NeZVPk6yQAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABOklEQVRoge3ZsWoCMRjA8e8B7p6gWLc7wUEUPOjg3Cfo7KagiyBctwZ0qkMXI9iuXUodLPQGESXQF6hLb3HwUeKkxuPqYHOJTb7/9t2QfL8tcAAYllrseS+6d1Aagk3PenDsF5iuXZSEYAQbFoIRbFhWgTlxRkaD+YPzcTQTl1kN5sTpWw+OvQJVtZ/0zgP7r6r2kx6CNYBpc/Ep87yT6QDT5oIlZgRnlgrwsLF8EmcE2wpO7pJJlwzmxJX/wkMwgn8HX4fRXPyev49SF7QGnAujLgCC9YPHm8H+YE5c9n1TnhxmA8BHQMVguu4VRfB4M2AiOLmLlP9c/wm8qpbezpcKl+wPtQGc1vJ9dSXOX9OfQJxpvV4U58e72+DU/JeSd+9mzloOAMBzu1MBAOCzMFjXahWZd2PYBbUFsq8lkxUGYuIAAAAASUVORK5CYII\u003d",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
+    },
+    {
+      "copySelectionFromScript": true,
+      "engineType": "SQL",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 1
+      },
+      "def": {
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "Count by Num_Acc",
+        "userEditedName": false,
+        "genericDimension0": [
+          {
+            "column": "Num_Acc",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": false,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            }
+          }
+        ],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "function": "COUNT",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": true,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": true,
+        "strokeWidth": 1,
+        "fillOpacity": 0.6,
+        "showXAxisLabel": true,
+        "showYAxisLabel": true,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#2678B1",
+          "transparency": 0.75,
+          "colorPalette": "default",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
