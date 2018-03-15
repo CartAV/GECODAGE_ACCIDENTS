@@ -24,8 +24,8 @@
               {
                 "input": "Num_Acc",
                 "operator": "contains",
-                "col": "Num_Acc",
-                "string": "000105300",
+                "col": "mois",
+                "string": "50610001701",
                 "num": 0.0
               }
             ]
@@ -44,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 2
+      "_refreshTrigger": 3
     },
     "vizSampling": {
       "autoRefreshSample": false,
