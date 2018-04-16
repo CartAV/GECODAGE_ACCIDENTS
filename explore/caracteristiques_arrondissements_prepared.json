@@ -17,16 +17,16 @@
         "maxStoredBytes": -1,
         "filter": {
           "distinct": false,
-          "enabled": false,
+          "enabled": true,
           "uiData": {
             "mode": "\u0026\u0026",
             "conditions": [
               {
-                "input": "Num_Acc",
-                "operator": "contains",
+                "input": "ANNEE",
+                "operator": "\u003d\u003d [number]",
                 "col": "mois",
                 "string": "000105300",
-                "num": 0.0
+                "num": 2017.0
               }
             ]
           }
@@ -44,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 2
+      "_refreshTrigger": 3
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -392,6 +392,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
