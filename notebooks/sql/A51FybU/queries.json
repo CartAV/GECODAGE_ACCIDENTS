@@ -554,6 +554,28 @@
         },
         "sql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"CODE_COM\", \"lat\", \"long\", \"ban_latitude\", \"ban_longitude\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18",
         "expandedSql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"CODE_COM\", \"lat\", \"long\", \"ban_latitude\", \"ban_longitude\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18"
+      },
+      {
+        "mode": "SQL",
+        "id": "LV29IsmAEMvD",
+        "runOn": 1530704129037,
+        "runIn": 283,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Y1KT7GHd",
+        "hash": "2b6ee39d8c01635000ddc4f4af15a773",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"current_city_code\", \"current_name\", \"CODE_COM\", \"lat\", \"long\", \"ban_latitude\", \"ban_longitude\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18",
+        "expandedSql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"current_city_code\", \"current_name\", \"CODE_COM\", \"lat\", \"long\", \"ban_latitude\", \"ban_longitude\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18"
       }
     ]
   }
