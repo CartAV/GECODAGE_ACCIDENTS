@@ -268,6 +268,28 @@
         },
         "sql": "SELECT an FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\n--AND \"an\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000",
         "expandedSql": "SELECT an FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\n--AND \"an\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000"
+      },
+      {
+        "mode": "SQL",
+        "id": "PDgDQJM9eBUd",
+        "runOn": 1530699323749,
+        "runIn": 71,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "aFJOibxa",
+        "hash": "03b1076be99c7aced2a6e3d14572e96b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT MAX(an) FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\n--AND \"an\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000",
+        "expandedSql": "SELECT MAX(an) FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\n--AND \"an\" \u003d 2018\n--AND \"distance_commune_baac\" \u003c 2000"
       }
     ]
   }
