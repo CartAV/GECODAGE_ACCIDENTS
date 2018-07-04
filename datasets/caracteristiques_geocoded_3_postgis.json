@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1530715160083
+    "lastModifiedOn": 1530715212967
   },
   "creationTag": {
     "versionNumber": 0,
@@ -442,7 +442,13 @@
       "columns": [],
       "metrics": [
         "basic:COUNT_COLUMNS",
-        "records:COUNT_RECORDS"
+        "records:COUNT_RECORDS",
+        "python:housenumber:Python probe",
+        "python:street:Python probe",
+        "python:village:Python probe",
+        "python:town:Python probe",
+        "python:place:Python probe",
+        "python:city:Python probe"
       ]
     }
   },
