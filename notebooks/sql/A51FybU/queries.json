@@ -688,6 +688,28 @@
         },
         "sql": "SELECT COUNT(*)\nFROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 17\n--AND long \u003e 0\n",
         "expandedSql": "SELECT COUNT(*)\nFROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 17\n--AND long \u003e 0\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "l3I3KNkmuEfi",
+        "runOn": 1530706182046,
+        "runIn": 286,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "kDy50V4E",
+        "hash": "65bc3328b3ed0536bb4d5e03ff9936eb",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*)\nFROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 17\nAND long \u003e 0\n",
+        "expandedSql": "SELECT COUNT(*)\nFROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 17\nAND long \u003e 0\n"
       }
     ]
   }
