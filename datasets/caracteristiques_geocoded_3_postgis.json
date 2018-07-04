@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1530715212967
+    "lastModifiedOn": 1530715329214
   },
   "creationTag": {
     "versionNumber": 0,
@@ -394,7 +394,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "from collections import Counter\n\ndef process(dataset, partition_id):\n\tdf \u003d dataset.get_dataframe()\n\tres \u003d Counter()\n\tfor geo_type in df[\u0027bano_type\u0027]:\n\t\tres[geo_type] +\u003d 1\n\treturn res\n",
+          "code": "from collections import Counter\n\ndef process(dataset, partition_id):\n\tdf \u003d dataset.get_dataframe()\n\tcs \u003d Counter()\n\tfor geo_type in df[\u0027bano_type\u0027]:\n\t\tcs[geo_type] +\u003d 1\n    total \u003d sum(cs.values())\n    res \u003d dict([(t, \u0027%d %d\u0027 % (c, c*100/total)) for t, c in cs])\n\treturn { \u0027geo types\u0027: res }\n",
           "envSelection": {
             "envMode": "INHERIT"
           }
