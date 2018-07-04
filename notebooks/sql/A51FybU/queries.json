@@ -113,6 +113,30 @@
         "sql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE \"ANNEE\" \u003d 2017\nAND geo_score \u003e 0.6",
         "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_coordinates_selected\"\nWHERE \"ANNEE\" \u003d 2017\nAND geo_score \u003e 0.6"
       }
+    ],
+    "bto5n54te2o": [
+      {
+        "mode": "SQL",
+        "id": "qGYLUAPPnXWL",
+        "runOn": 1530698522945,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "HYNDO2zX",
+        "hash": "e43a76cd83ae91a05caa7558738e186a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027",
+        "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027"
+      }
     ]
   }
 }
