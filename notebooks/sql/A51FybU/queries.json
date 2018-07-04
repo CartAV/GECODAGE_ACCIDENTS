@@ -361,10 +361,10 @@
         "mode": "SQL",
         "id": "7kSEmPsMAlAZ",
         "runOn": 1530699358592,
-        "runIn": 296,
+        "runIn": 241,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "KUVMQwMT",
         "hash": "3f242f6c4e375612681976e3f29821a7",
         "querySettings": {
