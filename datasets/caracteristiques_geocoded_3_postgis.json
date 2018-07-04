@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1520853017117
+    "lastModifiedOn": 1530715160083
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,7 +49,6 @@
     "connection": "postgis",
     "notReadyIfEmpty": false,
     "mode": "table",
-    "partitioned": false,
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "caracteristiques_geocoded_3_postgis",
@@ -337,6 +336,69 @@
           "level": 0
         },
         "configuration": {}
+      },
+      {
+        "type": "col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns statistics",
+          "level": 2
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "adv_col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Most frequent values",
+          "level": 3
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "percentile_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns percentiles",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "verify_col",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Data validity",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "python",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Python probe",
+          "level": 8
+        },
+        "configuration": {
+          "code": "from collections import Counter\n\ndef process(dataset, partition_id):\n\tdf \u003d dataset.get_dataframe()\n\tres \u003d Counter()\n\tfor geo_type in df[\u0027bano_type\u0027]:\n\t\tres[geo_type] +\u003d 1\n\treturn res\n",
+          "envSelection": {
+            "envMode": "INHERIT"
+          }
+        }
       }
     ],
     "engineConfig": {
@@ -356,6 +418,10 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
           "samplingMethod": "FULL",
           "maxRecords": -1,
           "targetRatio": 0.02,
@@ -372,6 +438,7 @@
       "python": {}
     },
     "displayedState": {
+      "partition": "NP",
       "columns": [],
       "metrics": [
         "basic:COUNT_COLUMNS",
@@ -383,6 +450,7 @@
     "runOnBuild": false,
     "checks": [],
     "displayedState": {
+      "partition": "NP",
       "checks": []
     }
   }
