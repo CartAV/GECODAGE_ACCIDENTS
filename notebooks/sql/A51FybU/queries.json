@@ -466,6 +466,28 @@
         },
         "sql": "SELECT COUNT(*) FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18\nAND \"distance_commune_baac\" \u003e 2000",
         "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18\nAND \"distance_commune_baac\" \u003e 2000"
+      },
+      {
+        "mode": "SQL",
+        "id": "XlQQVsZoqDUv",
+        "runOn": 1530703797059,
+        "runIn": 316,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "uhzRJnLe",
+        "hash": "b4dbcfb453fab78bb59627a6389b9569",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT distance_commune_baac FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18",
+        "expandedSql": "SELECT distance_commune_baac FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18"
       }
     ]
   }
