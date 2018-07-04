@@ -576,6 +576,28 @@
         },
         "sql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"current_city_code\", \"current_name\", \"CODE_COM\", \"lat\", \"long\", \"ban_latitude\", \"ban_longitude\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18",
         "expandedSql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"current_city_code\", \"current_name\", \"CODE_COM\", \"lat\", \"long\", \"ban_latitude\", \"ban_longitude\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18"
+      },
+      {
+        "mode": "SQL",
+        "id": "q6T9H6wBvwJe",
+        "runOn": 1530704185281,
+        "runIn": 322,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "IqANPDaw",
+        "hash": "4567284344da843e9c764c1ee713b54d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"current_city_code\", \"current_name\", \"CODE_COM\", \"lat\", \"long\", \"ban_latitude\", \"ban_longitude\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18\nORDER BY \"distance_commune_baac\" DESC",
+        "expandedSql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"current_city_code\", \"current_name\", \"CODE_COM\", \"lat\", \"long\", \"ban_latitude\", \"ban_longitude\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18\nORDER BY \"distance_commune_baac\" DESC"
       }
     ]
   }
