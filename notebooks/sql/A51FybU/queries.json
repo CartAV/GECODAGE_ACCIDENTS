@@ -488,6 +488,28 @@
         },
         "sql": "SELECT distance_commune_baac FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18",
         "expandedSql": "SELECT distance_commune_baac FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18"
+      },
+      {
+        "mode": "SQL",
+        "id": "0dtZkCmbsE5V",
+        "runOn": 1530703836630,
+        "runIn": 300,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "RJsMavpH",
+        "hash": "3eb72713a1ad6c22e8150278c6c3544e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"CODE_COM\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18",
+        "expandedSql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"CODE_COM\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18"
       }
     ]
   }
