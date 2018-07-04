@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1530715442132
+    "lastModifiedOn": 1530715635237
   },
   "creationTag": {
     "versionNumber": 0,
@@ -394,7 +394,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "from collections import Counter\n\ndef process(dataset, partition_id):\n\tdf \u003d dataset.get_dataframe()\n\tcs \u003d Counter()\n\tfor geo_type in df[\u0027bano_type\u0027]:\n\t\tcs[geo_type] +\u003d 1\n\ttotal \u003d sum(cs.values())\n\tres \u003d dict([(t, \u0027%d %d\u0027 % (c, c*100/total)) for t, c in cs.items()])\n\treturn { \u0027geo types\u0027: res }\n",
+          "code": "from collections import Counter\n\nTYPES \u003d {\n\t\u0027housenumber\u0027: \u0027numéro\u0027,\n\t\u0027street\u0027: \u0027rue\u0027,\n\t\u0027town\u0027: \u0027commune\u0027,\n\t\u0027city\u0027: \u0027commune\u0027,\n\t\u0027place\u0027: \u0027commune\u0027,\n\t\u0027village\u0027: \u0027commune\u0027\n}\n\ndef process(dataset, partition_id):\n\tdf \u003d dataset.get_dataframe()\n\tcs \u003d Counter()\n\tfor geo_type in df[\u0027bano_type\u0027]:\n\t\tcs[TYPES[geo_type] if geo_type in TYPES else \u0027N/A\u0027] +\u003d 1\n\ttotal \u003d sum(cs.values())\n\tres \u003d dict([(t, \u0027%d %d\u0027 % (c, c*100/total)) for t, c in cs])\n\treturn { \u0027geo types\u0027: res }\n",
           "envSelection": {
             "envMode": "INHERIT"
           }
