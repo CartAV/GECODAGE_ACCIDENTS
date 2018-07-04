@@ -72,19 +72,19 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by date",
+        "name": "Count by distance_commune_baac",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "date",
-            "type": "DATE",
+            "column": "distance_commune_baac",
+            "type": "NUMERICAL",
             "numParams": {
+              "mode": "FIXED_SIZE",
+              "nbBins": "10",
+              "binSize": "10",
               "emptyBinsMode": "ZEROS"
             },
-            "dateParams": {
-              "mode": "MONTH"
-            },
-            "maxValues": 0,
+            "maxValues": 100,
             "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
@@ -146,7 +146,24 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "distance_commune_baac",
+            "columnType": "NUMERICAL",
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          },
+          {
+            "filterType": "ALPHANUM_FACET",
+            "column": "nom_circonscription_police",
+            "columnType": "ALPHANUM",
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -206,7 +223,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADIElEQVRoQ+2ZTWgTQRTH/282pSqIUHsyzfZSQW9VpCAiUq9JRWgRPPhBEYpIhYK7uXvrBnrpQQUVRdCLBzGb9qCYS3uoIPQg9CKIW4uCVAQP1rI7T6Z04jZNTNWkzcfmsmSXXfjN7703M28ILfajcrymnbvgOclHzTYeEbA2qgwz+OyikxpU97rTbv7DeKq/0Y2XNZyw3GEQkmWBL+d34UH/SqMNwF8Ba7g1080CbNq5W56TvFrKcCngSqFu2u4rz0mdrpdI2GS4GFgQOpRRBRYG7rJyVz5mkndbAniVA8vgWG8l4LiV6zWIJ8KGE7b7ZNFJnd8p4yUNM/EzSMRV0SpluBRwKdPqHjNYA6v/kvG57oGLbWhgguwXgg7okFdXM5196o0PDOmprGWAE5Z7Ugjc1MC6BhQbrlQDqh36WwrpSobDxUwbrgg8OtVu7pb3iBDXCxo9KLVc4FQVWIEzeFmFdCXgLjvbJ0DXFbB6LzwT/C9wwnYnF53UaKnoqBHwm3MJ69iJP4V0NYFN273kOamHGrDugAnIS/B82HDYhs/y/pJzprBT03mur6aVtb3MgKPeMdPuCwJihbSw3WkJvNtWw5LpMTG+lDNcLeAuOzspiA7tOHAgjecC8r0GJkIhdVSVFhCzAYLXlQybVnbcywykyxkOAxfqwE4YriYwCeoLF7W1ud7K2sw0xYJHtOFCSjBWtj2kawEcznGWPN10wL4Qs+0Bj2jDm4BlLM+Gf7FpDDPHVmMIjpYDlj7PoY2GIuBGzeHIcCiJVdGKQloPSBTSG7cQNdk8VGMejnL4H3PYtN2XAdONpUxyXn2iaQ0H3zht7KMJIvQQwdDL0whY9aWLu5ZbbfHojkc95HBkeL2NFIV0FNKEjiiH18+W9MnDhr0qeLmhilbCyo1BBjMMdJIhjhOwt9iw/zO4TW1GjyA+QkT7NwLL7z5jxhDGJ8E8zEWTPQNfWRpvJfsLhkGDBHRu7h/TVAD2CTgogMPFz1liTkpeoBifIlA3gcTvFg+tgrDk/aA7iT3BNbCIE3jtueekxsoeiFf7iKNevtdywL8AQYpjgxL5BAwAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA5ElEQVRoQ+2U2w3CMAxF7dgpEiswBCMxBvMwAysxA6/GNkpFq0rdwL39axRb9T2nZtrZwzublzBwduIgDMLJEoDSyYBuxgFhEE6WAJROBhRLC0pD6WQJQOlkQLGloTSUTpYAlE4GFFsaSkPpZAlA6WRAsaWhNJROlgCUPl3v5w61OF+8xI3No7+PJK4eYhFNpcpoHjp4WQvAptHP+22m4mGNVau0MNdBijUZRa1ONSNRP6/CU+hz/1bYVELat/i6fzO2SlLm/r1uqfn3n7+FnZ5hdFz6m8ZH/X1orwcIJ/tlN+P8AFF9WGnO7aQUAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -358,6 +375,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
