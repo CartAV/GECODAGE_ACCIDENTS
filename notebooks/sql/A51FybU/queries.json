@@ -778,6 +778,28 @@
         },
         "sql": "SELECT COUNT(*) FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" \u003d\u003d \"current_name\"",
         "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" \u003d\u003d \"current_name\""
+      },
+      {
+        "mode": "SQL",
+        "id": "gpisq9t4nK4L",
+        "runOn": 1530713829591,
+        "runIn": 15,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "PusyfhMN",
+        "hash": "ecfb7f56cfe113b9766fc56291a224f4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" \u003d \"current_name\"",
+        "expandedSql": "SELECT COUNT(*) FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" \u003d \"current_name\""
       }
     ]
   }
