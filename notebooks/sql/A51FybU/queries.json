@@ -621,6 +621,30 @@
         "sql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"current_city_code\", \"current_name\", \"CODE_COM\", \"lat\", \"long\", \"ban_latitude\", \"ban_longitude\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18\nORDER BY \"distance_commune_baac\" DESC",
         "expandedSql": "SELECT distance_commune_baac, \"ban_label\", \"ban_citycode\", \"current_city_code\", \"current_name\", \"CODE_COM\", \"lat\", \"long\", \"ban_latitude\", \"ban_longitude\" FROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18\nORDER BY \"distance_commune_baac\" DESC"
       }
+    ],
+    "0.8068253124942344": [
+      {
+        "mode": "SQL",
+        "id": "DdYuU2T40OTg",
+        "runOn": 1530706098001,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "ChZekUnO",
+        "hash": "f6babcc0c9881db418c0ff7e4358b5a7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*)\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18\n--AND long \u003e 0\n",
+        "expandedSql": "SELECT COUNT(*)\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 18\n--AND long \u003e 0\n"
+      }
     ]
   }
 }
