@@ -711,6 +711,30 @@
         "sql": "SELECT COUNT(*)\nFROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 17\nAND long \u003e 0\n",
         "expandedSql": "SELECT COUNT(*)\nFROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"nom_circonscription_police\" \u003d \u0027NANTES\u0027\nAND \"an\" \u003d 17\nAND long \u003e 0\n"
       }
+    ],
+    "tkyo51w295s": [
+      {
+        "mode": "SQL",
+        "id": "uBFgmmJeuGJI",
+        "runOn": 1530713805563,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "5aaf9or4",
+        "hash": "7ab48cf8405cd2694e5052c6eb9656a9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" !\u003d \"current_name\"",
+        "expandedSql": "SELECT * FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" !\u003d \"current_name\""
+      }
     ]
   }
 }
