@@ -295,10 +295,10 @@
         "mode": "SQL",
         "id": "JK6D06CuLdwn",
         "runOn": 1530699340344,
-        "runIn": 300,
+        "runIn": 264,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "VixATXuV",
         "hash": "b26f36ca5cc1c0dba7bd00e42c36bbcd",
         "querySettings": {
