@@ -1,222 +1,222 @@
 {
-  "explorationFilters": [
-    {
-      "facet": {
-        "sort": "count",
-        "columnType": "NUMERICAL",
-        "column": "pr1",
-        "currentMode": "ALPHANUM",
-        "selectedValues": {},
-        "type": "facet"
-      },
-      "$$hashKey": "object:45394",
-      "validityFilter": {
-        "column": "pr1",
-        "params": {
-          "nok": true,
-          "empty": true,
-          "ok": true,
-          "type": "LongMeaning"
-        },
-        "type": "validity"
-      },
-      "alphanumFilter": {
-        "values": [],
-        "column": "pr1",
-        "params": {
-          "normalization": "exact",
-          "mode": "full_string"
-        },
-        "type": "alphanum"
-      },
-      "column": "pr1",
-      "currentMode": "FACET",
-      "active": true,
-      "type": "columnFilter"
-    },
-    {
-      "facet": {
-        "sort": "count",
-        "columnType": "NUMERICAL",
-        "column": "v1",
-        "currentMode": "NUMERICAL",
-        "selectedValues": {},
-        "type": "facet"
-      },
-      "$$hashKey": "object:2321",
-      "validityFilter": {
-        "column": "v1",
-        "params": {
-          "nok": true,
-          "empty": true,
-          "ok": true,
-          "type": "LongMeaning"
-        },
-        "type": "validity"
-      },
-      "alphanumFilter": {
-        "values": [],
-        "column": "v1",
-        "params": {
-          "normalization": "exact",
-          "mode": "full_string"
-        },
-        "type": "alphanum"
-      },
-      "column": "v1",
-      "currentMode": "SIMPLE_ALPHANUM",
-      "active": true,
-      "type": "columnFilter"
-    }
-  ],
-  "maxProcessedMemTableBytes": -1,
-  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
-  "globalSearchQuery": "",
-  "vizSampling": {
-    "_refreshTrigger": 0,
+  "explorationSampling": {
+    "_refreshTrigger": 2,
+    "selection": {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "pr",
+              "col": "catr",
+              "string": "41.5",
+              "num": 0.0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
     "autoRefreshSample": false
   },
+  "explorationFilters": [
+    {
+      "validityFilter": {
+        "column": "pr1",
+        "params": {
+          "nok": true,
+          "ok": true,
+          "type": "LongMeaning",
+          "empty": true
+        },
+        "type": "validity"
+      },
+      "column": "pr1",
+      "active": true,
+      "alphanumFilter": {
+        "values": [],
+        "column": "pr1",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        },
+        "type": "alphanum"
+      },
+      "$$hashKey": "object:45394",
+      "type": "columnFilter",
+      "facet": {
+        "columnType": "NUMERICAL",
+        "selectedValues": {},
+        "column": "pr1",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    },
+    {
+      "validityFilter": {
+        "column": "v1",
+        "params": {
+          "nok": true,
+          "ok": true,
+          "type": "LongMeaning",
+          "empty": true
+        },
+        "type": "validity"
+      },
+      "column": "v1",
+      "active": true,
+      "alphanumFilter": {
+        "values": [],
+        "column": "v1",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        },
+        "type": "alphanum"
+      },
+      "$$hashKey": "object:2321",
+      "type": "columnFilter",
+      "facet": {
+        "columnType": "NUMERICAL",
+        "selectedValues": {},
+        "column": "v1",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "NUMERICAL"
+      },
+      "currentMode": "SIMPLE_ALPHANUM"
+    }
+  ],
   "origin": "PREPARE_RECIPE",
-  "sorting": [],
-  "coloring": {
-    "individualColumns": [],
-    "scheme": "MEANING_AND_STATUS",
-    "valueColoringMode": "HASH"
+  "exploreUIParams": {
+    "autoRefresh": true
   },
   "steps": [
     {
-      "alwaysShowComment": false,
       "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
       "params": {
-        "matching": "PATTERN",
-        "stopAfterFirstMatch": false,
-        "appliesTo": "SINGLE_COLUMN",
+        "output": "",
+        "mapping": [
+          {
+            "from": "^0+([0-9]+)",
+            "to": "$1"
+          }
+        ],
         "normalization": "EXACT",
         "columns": [
           "voie"
         ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "PythonUDF",
+      "params": {
+        "mode": "CELL",
+        "stopOnError": false,
+        "pythonSourceCode": "def process(row):\n    if row[\"catr\"] \u003d\u003d \"autoroute\":\n        res \u003d \"A \"\n    elif row[\"catr\"] \u003d\u003d \"route nationale\":\n        res \u003d \"N \"\n    elif row[\"catr\"] \u003d\u003d \"route départementale\":\n        res \u003d \"D \"\n    else:\n        return \"\"\n    res +\u003d str(row[\"voie\"])\n    if (row[\"v2\"] and not row[\"v2\"].isdigit()):\n        # v2 is supposed to be a letter according to the docs\n        res +\u003d str(row[\"v2\"]).upper()\n    return res",
+        "column": "voie_normalise",
+        "usePythonUnicode": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "comment": "les PR doivent etre des entiers",
+      "type": "FindReplace",
+      "params": {
+        "output": "",
         "mapping": [
           {
-            "to": "$1",
-            "from": "^0+([0-9]+)"
+            "from": "([0-9]*)(.[0-9]*)?",
+            "to": "$1"
           }
         ],
-        "output": ""
-      },
-      "type": "FindReplace",
-      "disabled": false,
-      "metaType": "PROCESSOR"
-    },
-    {
-      "alwaysShowComment": false,
-      "preview": false,
-      "params": {
-        "usePythonUnicode": true,
-        "stopOnError": true,
-        "column": "voie_normalise",
-        "pythonSourceCode": "def process(row):\n    if row[\"catr\"] \u003d\u003d \"autoroute\":\n        res \u003d \"A \"\n    elif row[\"catr\"] \u003d\u003d \"route nationale\":\n        res \u003d \"N \"\n    elif row[\"catr\"] \u003d\u003d \"route départementale\":\n        res \u003d \"D \"\n    else:\n        return \"\"\n    res +\u003d str(row[\"voie\"])\n    if (row[\"v2\"] and not row[\"v2\"].isdigit()):\n        # v2 is supposed to be a letter according to the docs\n        res +\u003d str(row[\"v2\"]).upper()\n    return res",
-        "mode": "CELL"
-      },
-      "type": "PythonUDF",
-      "disabled": false,
-      "metaType": "PROCESSOR"
-    },
-    {
-      "alwaysShowComment": false,
-      "preview": false,
-      "params": {
-        "matching": "PATTERN",
-        "stopAfterFirstMatch": false,
-        "appliesTo": "SINGLE_COLUMN",
         "normalization": "EXACT",
         "columns": [
           "pr"
         ],
-        "mapping": [
-          {
-            "to": "$1",
-            "from": "([0-9]*)(.[0-9]*)?"
-          }
-        ],
-        "output": ""
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
       },
-      "comment": "les PR doivent etre des entiers",
-      "type": "FindReplace",
-      "disabled": false,
-      "metaType": "PROCESSOR"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnBadType",
       "params": {
         "booleanMode": "AND",
-        "appliesTo": "SINGLE_COLUMN",
         "columns": [
           "pr1"
         ],
         "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN",
         "type": "LongMeaning"
       },
-      "type": "FilterOnBadType",
-      "disabled": false,
-      "metaType": "PROCESSOR"
+      "alwaysShowComment": false
     },
     {
-      "alwaysShowComment": false,
       "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnBadType",
       "params": {
         "booleanMode": "AND",
-        "appliesTo": "SINGLE_COLUMN",
         "columns": [
           "v1"
         ],
         "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN",
         "type": "LongMeaning"
       },
-      "type": "FilterOnBadType",
-      "disabled": false,
-      "metaType": "PROCESSOR"
+      "alwaysShowComment": false
     }
   ],
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
+  "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
-  "explorationSampling": {
-    "_refreshTrigger": 2,
-    "autoRefreshSample": false,
-    "selection": {
-      "targetRatio": 0.02,
-      "maxRecords": 10000,
-      "maxStoredBytes": -1,
-      "partitionSelectionMethod": "ALL",
-      "withinFirstN": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "latestPartitionsN": 1,
-      "ordering": {
-        "enabled": false,
-        "rules": []
-      },
-      "maxReadUncompressedBytes": -1,
-      "filter": {
-        "enabled": false,
-        "uiData": {
-          "conditions": [
-            {
-              "num": 0.0,
-              "col": "catr",
-              "input": "pr",
-              "string": "41.5",
-              "operator": "contains"
-            }
-          ],
-          "mode": "\u0026\u0026"
-        },
-        "distinct": false
-      }
-    }
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }

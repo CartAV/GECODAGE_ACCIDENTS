@@ -18,7 +18,8 @@
               "cache": false
             }
           }
-        }
+        },
+        "useGlobalMetastore": false
       },
       "hadoopConfigKeys": [],
       "maxThreads": 8
@@ -50,11 +51,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1520609537752
+    "lastModifiedOn": 1537776242977
   },
   "creationTag": {
     "versionNumber": 0,
