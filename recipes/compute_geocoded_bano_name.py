@@ -5,6 +5,7 @@ from dataiku.customrecipe import get_input_names_for_role
 from dataiku.customrecipe import get_output_names_for_role
 from dataiku.customrecipe import get_recipe_config
 import itertools
+import os
 import logging
 import pandas as pd
 import requests
@@ -13,12 +14,12 @@ import sys, time, traceback
 
 # Proxy and server  config
 
-PROXY_OPEN_LAB = 'proxy-1:3128'
-PROXY_PRIVATE_LAB = 'localhost:3128'
-
+# PROXY_OPEN_LAB = '192.168.3.1:3128'
+# PROXY_PRIVATE_LAB = 'localhost:3128'
+os.environ['http_proxy']=''
 SERVER_OPEN_LAB = 'http://datalab-bano'
-SERVER_PRIVATE_LAB = 'http://adresse.datalab.mi'
-SERVER_GOUV_FR = 'http://api-adresse.data.gouv.fr'
+# SERVER_PRIVATE_LAB = 'http://adresse.datalab.mi'
+# SERVER_GOUV_FR = 'http://api-adresse.data.gouv.fr'
 
 OPEN_LAB = True
 
