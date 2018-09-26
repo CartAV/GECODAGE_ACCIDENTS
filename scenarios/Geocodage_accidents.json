@@ -5,11 +5,11 @@
   "name": "Geocodage accidents -\u003e Prod (full chain)",
   "active": false,
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537951900045
+    "lastModifiedOn": 1537951909016
   },
   "checklists": {
     "checklists": []
@@ -20,24 +20,7 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [
-    {
-      "id": "NxFR1HFR",
-      "type": "temporal",
-      "delay": 5,
-      "active": true,
-      "params": {
-        "frequency": "Daily",
-        "daysOfWeek": [
-          "Saturday"
-        ],
-        "dayOfMonth": 1,
-        "minute": 0,
-        "hour": 2,
-        "count": 5
-      }
-    }
-  ],
+  "triggers": [],
   "reporters": [],
   "params": {
     "steps": [
