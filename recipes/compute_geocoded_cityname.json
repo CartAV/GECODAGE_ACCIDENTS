@@ -6,6 +6,9 @@
     "envSelection": {
       "envMode": "INHERIT"
     },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
     "skipPrerunValidate": false
   },
   "customMeta": {
@@ -34,11 +37,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1523555158189
+    "lastModifiedOn": 1537951860677
   },
   "creationTag": {
     "versionNumber": 0,

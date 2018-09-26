@@ -12,18 +12,9 @@ import StringIO
 import sys, time, traceback
 
 # Proxy and server  config
-
-PROXY_OPEN_LAB = 'proxy-1:3128'
-PROXY_PRIVATE_LAB = 'localhost:3128'
-
-SERVER_OPEN_LAB = 'http://datalab-ban'
-SERVER_PRIVATE_LAB = 'http://adresse.datalab.mi'
-SERVER_GOUV_FR = 'http://api-adresse.data.gouv.fr'
-
-OPEN_LAB = True
-
-http_proxy = None #PROXY_OPEN_LAB if OPEN_LAB else PROXY_PRIVATE_LAB
-server_address = SERVER_OPEN_LAB if OPEN_LAB else SERVER_PRIVATE_LAB
+os.environ['http_proxy'] = ''
+http_proxy = None
+server_address = 'http://datalab-ban'
 
 # Input fields configuration
 columns = ['adr','current_name']
