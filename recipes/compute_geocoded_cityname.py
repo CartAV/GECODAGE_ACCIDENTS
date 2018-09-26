@@ -9,7 +9,7 @@ import logging
 import pandas as pd
 import requests
 import StringIO
-import sys, time, traceback
+import sys, time, traceback, os
 
 # Proxy and server  config
 os.environ['http_proxy'] = ''
