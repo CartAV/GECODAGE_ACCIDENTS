@@ -5,11 +5,11 @@
   "name": "Geocodage accidents -\u003e Prod (full chain)",
   "active": false,
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538037831458
+    "lastModifiedOn": 1538049402191
   },
   "checklists": {
     "checklists": []
@@ -42,7 +42,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_BUILD",
+          "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
