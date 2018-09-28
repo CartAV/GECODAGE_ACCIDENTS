@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538141683498
+    "lastModifiedOn": 1538145807929
   },
   "creationTag": {
     "versionNumber": 0,
@@ -200,6 +200,14 @@
       {
         "name": "pr_nom_com",
         "type": "string"
+      },
+      {
+        "name": "pr_lat_i",
+        "type": "double"
+      },
+      {
+        "name": "pr_lon_i",
+        "type": "double"
       }
     ],
     "userModified": true
