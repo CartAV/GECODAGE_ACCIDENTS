@@ -267,7 +267,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABOklEQVRoge3ZsWoCMRjA8e8B7p6gWLc7wUEUPOjg3Cfo7KagiyBctwZ0qkMXI9iuXUodLPQGESXQF6hLb3HwUeKkxuPqYHOJTb7/9t2QfL8tcAAYllrseS+6d1Aagk3PenDsF5iuXZSEYAQbFoIRbFhWgTlxRkaD+YPzcTQTl1kN5sTpWw+OvQJVtZ/0zgP7r6r2kx6CNYBpc/Ep87yT6QDT5oIlZgRnlgrwsLF8EmcE2wpO7pJJlwzmxJX/wkMwgn8HX4fRXPyev49SF7QGnAujLgCC9YPHm8H+YE5c9n1TnhxmA8BHQMVguu4VRfB4M2AiOLmLlP9c/wm8qpbezpcKl+wPtQGc1vJ9dSXOX9OfQJxpvV4U58e72+DU/JeSd+9mzloOAMBzu1MBAOCzMFjXahWZd2PYBbUFsq8lkxUGYuIAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABHklEQVRoge3WPQrCMBwF8O7SI4gHSATd9CKeRBBcuqq7tmPUwUFFkFoXITfRo9RBi/1KiTQ2aX1vfST9/0JaallIMt5jwXXPUGmKwI08DIAlu9rGZHDoLgPlmxoN9lbqnw+wZFdFAFYRgCW7KgJw6Q0dm0eozsTnok5XjAJXcRjawOnOsgBOdfOT9AwFKIDL5hfgcNrq/QU4Gu61LgmOD+7eZyNRl5nPFHBeJwMOHZu799lBFtVocOjYGVztwHkdwABnO2XRCW6PfZruMvOp/qDpBAvWXQD+JZgwshd1lNGtajBllNcSTBjZicCEkeBb8HvdLY4S/dk1Hpy+NaXAg3UvEHf9Y3K4Tzfc9M8icJeRa1lw0SuEIAiCIIg5eQI0R5nfnDwp7gAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -302,17 +302,20 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by Num_Acc",
+        "name": "Count by pr_score and ANNEE",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "Num_Acc",
-            "type": "ALPHANUM",
+            "column": "pr_score",
+            "type": "NUMERICAL",
             "numParams": {
+              "mode": "TREAT_AS_ALPHANUM",
+              "nbBins": 10,
+              "binSize": 100,
               "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 20,
-            "generateOthersCategory": false,
+            "maxValues": 100,
+            "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
@@ -335,13 +338,52 @@
               }
             ],
             "sort": {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, descending"
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
             }
           }
         ],
-        "genericDimension1": [],
+        "genericDimension1": [
+          {
+            "column": "ANNEE",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "NONE",
+              "nbBins": 5,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -415,6 +457,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -432,6 +475,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA/UlEQVRoge3ZPw8BMRjH8S6e12DzAu42r+UWL4DBzBkbo5UIicEghkqEuBgQTUTYxVkNFu/AYKhBJOJfRLg77e87N83zaaemjKH7Eq4nw54h0IwEd5d7c9DGgtW4YAb6Gmw3bf3RAOveLbi2LemNBnhbkqpaToU91896CK5V9b3lZ+BKZiLnvbVs57OdsGf8agADDPB/BzDAAP93AANsIHjnzvR5TAD8BHwYrvRAAwwwwB81b1SicWDfAidcTx6L8cHly6Y1yvXP+0zloreRWoPtpi0jCw4y3xHkC0EvFzmCFGekhEMWt8hnjBTnxB1B9XQyJjint/ZBCKGodwIndsVJk7tMHQAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
