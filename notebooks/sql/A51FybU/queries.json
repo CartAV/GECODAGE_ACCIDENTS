@@ -934,6 +934,28 @@
         },
         "sql": "--SELECT COUNT(*) c, \"voie_normalise\" FROM \"lieux_prep_periph\"\n--GROUP BY \"voie_normalise\"\n--ORDER BY c DESC\n\nSELECT COUNT(*) c FROM \"lieux_prep_periph\"\nWHERE \"voie_normalise\" IS NOT NULL\n",
         "expandedSql": "--SELECT COUNT(*) c, \"voie_normalise\" FROM \"lieux_prep_periph\"\n--GROUP BY \"voie_normalise\"\n--ORDER BY c DESC\n\nSELECT COUNT(*) c FROM \"lieux_prep_periph\"\nWHERE \"voie_normalise\" IS NOT NULL\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "lIDawXEMrN7e",
+        "runOn": 1538143515270,
+        "runIn": 248,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "J3ebhd9p",
+        "hash": "2d05962407cc45ef54c9a17889f0868e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--SELECT COUNT(*) c, \"voie_normalise\" FROM \"lieux_prep_periph\"\n--GROUP BY \"voie_normalise\"\n--ORDER BY c DESC\n\nSELECT COUNT(*) c FROM \"lieux_prep_periph\"\nWHERE \"voie_normalise\" IS NOT NULL\n",
+        "expandedSql": "--SELECT COUNT(*) c, \"voie_normalise\" FROM \"lieux_prep_periph\"\n--GROUP BY \"voie_normalise\"\n--ORDER BY c DESC\n\nSELECT COUNT(*) c FROM \"lieux_prep_periph\"\nWHERE \"voie_normalise\" IS NOT NULL\n"
       }
     ],
     "5rn0fiewckx": [
