@@ -1,210 +1,287 @@
 {
-  "virtualInputs": [
-    {
-      "autoSelectColumns": false,
-      "index": 0,
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
-    },
-    {
-      "autoSelectColumns": false,
-      "index": 1,
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
-    }
-  ],
   "joins": [
     {
-      "table1": 0,
-      "outerJoinOnTheLeft": true,
       "table2": 1,
+      "table1": 0,
       "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
       "on": [
         {
-          "maxDistance": 0,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
-          "strict": false,
-          "normalizeText": false,
+          "dateDiffUnit": "DAY",
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
           "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
         }
-      ],
-      "type": "LEFT"
+      ]
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "catr",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "voie",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "v1",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "v2",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "circ",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "nbv",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "pr",
+      "type": "int",
+      "table": 0
+    },
+    {
+      "name": "pr1",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "vosp",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "prof",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "plan",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "lartpc",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "larrout",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "surf",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "infra",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "situ",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "env1",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Organisme",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "voie_normalise",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "dep",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "adr",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "current_city_code",
+      "type": "string",
+      "table": 1
     }
   ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
       "hiveconf": [],
+      "inheritConf": "default",
       "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL",
-      "inheritConf": "default"
+      "executionEngine": "HIVECLI_LOCAL"
     },
     "impala": {
       "forceStreamMode": true
     },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
     "sparkSQL": {
       "pipelineAllowMerge": true,
-      "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      },
       "pipelineAllowStart": true,
-      "overwriteOutputSchema": false,
+      "useGlobalMetastore": false,
       "readParams": {
         "map": {}
       },
-      "useGlobalMetastore": false
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
   },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1
+    }
+  ],
   "postFilter": {
     "$status": {
       "schema": {
         "columns": [
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "Num_Acc",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "catr",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "voie",
             "meaning": "Text",
+            "name": "voie",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "v1",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "v2",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "circ",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "nbv",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "vosp",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
-            "name": "prof",
-            "type": "string"
-          },
-          {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "pr",
             "type": "int"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "pr1",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
+            "name": "vosp",
+            "type": "string"
+          },
+          {
+            "name": "prof",
+            "type": "string"
+          },
+          {
             "name": "plan",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "lartpc",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "larrout",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "surf",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "infra",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "situ",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "env1",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
+            "name": "Organisme",
+            "type": "string"
+          },
+          {
             "name": "voie_normalise",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "dep",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "adr",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "current_city_code",
             "type": "string"
           }
@@ -213,118 +290,6 @@
       }
     }
   },
-  "enableAutoCastInJoinConditions": false,
-  "selectedColumns": [
-    {
-      "name": "Num_Acc",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "catr",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "voie",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "v1",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "v2",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "circ",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "nbv",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "vosp",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "prof",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "pr",
-      "table": 0,
-      "type": "int"
-    },
-    {
-      "name": "pr1",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "plan",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "lartpc",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "larrout",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "surf",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "infra",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "situ",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "env1",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "voie_normalise",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "dep",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "adr",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "current_city_code",
-      "table": 1,
-      "type": "string"
-    }
-  ],
-  "computedColumns": []
+  "computedColumns": [],
+  "enableAutoCastInJoinConditions": false
 }
