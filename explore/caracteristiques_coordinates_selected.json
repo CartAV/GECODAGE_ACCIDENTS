@@ -17,7 +17,7 @@
         "maxStoredBytes": -1,
         "filter": {
           "distinct": false,
-          "enabled": true,
+          "enabled": false,
           "uiData": {
             "mode": "\u0026\u0026",
             "conditions": [
@@ -44,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 3
+      "_refreshTrigger": 4
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -198,13 +198,20 @@
         "boxplotValue": [],
         "filters": [
           {
+            "filterType": "NUMERICAL_FACET",
+            "column": "ANNEE",
+            "columnType": "NUMERICAL",
+            "minValue": 2010.0115,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          },
+          {
             "filterType": "ALPHANUM_FACET",
             "column": "nom_circonscription_police",
             "columnType": "ALPHANUM",
             "isA": "filter",
-            "excludedValues": {
-              "": true
-            },
+            "excludedValues": {},
             "explicitExclude": false
           }
         ],
@@ -267,7 +274,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAIElEQVRoge3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAHgaJagAAXCxjHYAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABAUlEQVRoge3QPw6CMBTH8XcBTuDAqEMTd3ZOQDwDgwcghIHVMBPECXbjpAsM9hauHAUXG/lr1AiF+vuOr4HXT4nQdCrjiMu+w6gBrHoAqx7Aqgew6gGsegCrvhxgMT9EW3nLo2gz+s4xHh9gMZcM1p3Lb/Glr/G4CPgQ4NLTjJfnUwPHRcCHAJe+xolmBN4XO/utfwP83EkkAaw7Fw5wpb8BiyUAPwK4J4DFHODG+RzALGFm6+KeZrCU1S68cM7rLnAV1j8PWzs+SiaYpaxzJ9EEwblrZc0ZS5h5W65quG/AfXchGgnM3dOx+V3uWlloX2sQAa7OBbj6EFLBCCGEJHcHHxFMh+nXwlcAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
