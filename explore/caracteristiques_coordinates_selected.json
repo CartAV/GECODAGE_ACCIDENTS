@@ -510,7 +510,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg. of distance_commune_bano by ANNEE",
+        "name": "Avg. of distance_commune_baac by ANNEE",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -536,45 +536,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of distance_commune_bano, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of distance_commune_bano, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
                 "label": "Average of distance_commune_baac, descending"
               },
               {
                 "type": "AGGREGATION",
-                "measureIdx": 1,
+                "measureIdx": 0,
                 "label": "Average of distance_commune_baac, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 2,
-                "label": "Average of distance_commune_ban, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 2,
-                "label": "Average of distance_commune_ban, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 3,
-                "label": "Average of distance_commune_ban2, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 3,
-                "label": "Average of distance_commune_ban2, ascending",
                 "sortAscending": true
               }
             ],
@@ -590,40 +557,7 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "distance_commune_bano",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
             "column": "distance_commune_baac",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "distance_commune_ban",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "distance_commune_ban2",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -711,7 +645,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAu0lEQVRoge2Suw2DQBAFqcABKTJU4cJI8NXgDmgDCCwRUNqRWU4W8Vn2VqeZ+Gnfm9MVBegR57Ck3mAKwrnjQdh0A8IJQDibMg8bEE4AwtmUediAcAIub4hz6M3KFED4xAGENcri2FbnFultkA7cI3zTb8hC2PQhEVYq85CVDiCsUeYhKx1AWKPMQ1Y6gLBGmYesdOAn3LynzWP/ZUeydTd+9mYf7beUcs8wvBA+CsI7hyG8kXUlDAAAhqyQ6HFDyVG8+QAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAWUlEQVRoge3PsRFAAAAEQY2gM2VQlYhcayItMHP2og9/h0Gdpu1YxvXcv/7xWsD1gOv9Ajxv5/Vs4GLAwLGAgWMBA8cCBo4FDBwLGDgWMHAsYOBYvwNLUqobKBKtzulq0FQAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
