@@ -27,7 +27,8 @@
               "cache": false
             }
           }
-        }
+        },
+        "useGlobalMetastore": false
       },
       "hadoopConfigKeys": [],
       "maxThreads": 8
@@ -37,6 +38,7 @@
     "kv": {}
   },
   "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
   "inputs": {
     "main": {
       "items": [
@@ -58,11 +60,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 36,
+    "versionNumber": 37,
     "lastModifiedBy": {
-      "login": "grabenertr"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1507635926216
+    "lastModifiedOn": 1538141734249
   },
   "creationTag": {
     "versionNumber": 0,
