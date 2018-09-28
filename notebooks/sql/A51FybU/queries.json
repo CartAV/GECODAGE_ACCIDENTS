@@ -868,6 +868,28 @@
         },
         "sql": "SELECT COUNT(*) c, \"voie_normalise\" FROM \"lieux_prep_periph\"\nGROUP BY \"voie_normalise\"\nORDER BY c DESC\n",
         "expandedSql": "SELECT COUNT(*) c, \"voie_normalise\" FROM \"lieux_prep_periph\"\nGROUP BY \"voie_normalise\"\nORDER BY c DESC\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "hj0StwoOH21l",
+        "runOn": 1538139344396,
+        "runIn": 332,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "dwoqkYNk",
+        "hash": "3cdbf2a762aeab0d124fe6e7a9530eb6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--SELECT COUNT(*) c, \"voie_normalise\" FROM \"lieux_prep_periph\"\n--GROUP BY \"voie_normalise\"\n--ORDER BY c DESC\n\nSELECT COUNT(*) c FROM \"lieux_prep_periph\"\nWHERE \"voie_normalise\" IS NULL\n",
+        "expandedSql": "--SELECT COUNT(*) c, \"voie_normalise\" FROM \"lieux_prep_periph\"\n--GROUP BY \"voie_normalise\"\n--ORDER BY c DESC\n\nSELECT COUNT(*) c FROM \"lieux_prep_periph\"\nWHERE \"voie_normalise\" IS NULL\n"
       }
     ]
   }
