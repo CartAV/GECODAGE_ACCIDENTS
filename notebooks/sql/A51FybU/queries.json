@@ -1048,6 +1048,28 @@
         },
         "sql": "SELECT \"voie\", \"voie_normalise\" FROM \"lieux_prep_periph\"\nGROUP BY \"voie_normalise\"\n\n",
         "expandedSql": "SELECT \"voie\", \"voie_normalise\" FROM \"lieux_prep_periph\"\nGROUP BY \"voie_normalise\"\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "6gMLLbtnCRTV",
+        "runOn": 1538144783771,
+        "runIn": 95,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Dn3wY1cR",
+        "hash": "defdc00dacbbd625100f0f7b4d468b79",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"voie\", \"voie_normalise\" FROM \"lieux_prep_periph\"\n\n\n",
+        "expandedSql": "SELECT \"voie\", \"voie_normalise\" FROM \"lieux_prep_periph\"\n\n\n"
       }
     ]
   }
