@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1520609769280
+    "lastModifiedOn": 1538141662182
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,7 +49,6 @@
     "connection": "postgis",
     "notReadyIfEmpty": false,
     "mode": "table",
-    "partitioned": false,
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "lieux_prep_rn_pr",
@@ -60,207 +59,179 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "catr",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "voie",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "v1",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "v2",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "circ",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "nbv",
         "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "int8"
       },
       {
         "name": "pr",
         "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "int8"
       },
       {
         "name": "pr1",
         "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "int8"
       },
       {
         "name": "vosp",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "prof",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "plan",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "lartpc",
         "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "int8"
       },
       {
         "name": "larrout",
         "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "int8"
       },
       {
         "name": "surf",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "infra",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "situ",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "env1",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
+      },
+      {
+        "name": "Organisme",
+        "type": "bigint",
+        "originalType": "int8"
       },
       {
         "name": "voie_normalise",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "adr",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "dep",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
+      },
+      {
+        "name": "adr",
+        "type": "string",
+        "originalType": "text"
       },
       {
         "name": "current_city_code",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "icf_city_code",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "pr_lat",
         "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "float8"
       },
       {
         "name": "pr_lon",
         "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "float8"
       },
       {
         "name": "pr_lat_next1",
         "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "float8"
       },
       {
         "name": "pr_lon_next1",
         "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "float8"
       },
       {
         "name": "pr_lat_next2",
         "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "float8"
       },
       {
         "name": "pr_lon_next2",
         "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "float8"
       },
       {
         "name": "pr_lat_prev",
         "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "float8"
       },
       {
         "name": "pr_lon_prev",
         "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "float8"
       },
       {
         "name": "pr_insee_com",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       },
       {
         "name": "pr_nom_com",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "originalType": "text"
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [
