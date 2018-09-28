@@ -36,76 +36,7 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [
-    {
-      "validityFilter": {
-        "column": "pr1",
-        "params": {
-          "nok": true,
-          "ok": true,
-          "type": "LongMeaning",
-          "empty": true
-        },
-        "type": "validity"
-      },
-      "column": "pr1",
-      "active": true,
-      "alphanumFilter": {
-        "values": [],
-        "column": "pr1",
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        },
-        "type": "alphanum"
-      },
-      "$$hashKey": "object:45394",
-      "type": "columnFilter",
-      "facet": {
-        "columnType": "NUMERICAL",
-        "selectedValues": {},
-        "column": "pr1",
-        "sort": "count",
-        "type": "facet",
-        "currentMode": "ALPHANUM"
-      },
-      "currentMode": "FACET"
-    },
-    {
-      "validityFilter": {
-        "column": "v1",
-        "params": {
-          "nok": true,
-          "ok": true,
-          "type": "LongMeaning",
-          "empty": true
-        },
-        "type": "validity"
-      },
-      "column": "v1",
-      "active": true,
-      "alphanumFilter": {
-        "values": [],
-        "column": "v1",
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        },
-        "type": "alphanum"
-      },
-      "$$hashKey": "object:2321",
-      "type": "columnFilter",
-      "facet": {
-        "columnType": "NUMERICAL",
-        "selectedValues": {},
-        "column": "v1",
-        "sort": "count",
-        "type": "facet",
-        "currentMode": "NUMERICAL"
-      },
-      "currentMode": "SIMPLE_ALPHANUM"
-    }
-  ],
+  "explorationFilters": [],
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
