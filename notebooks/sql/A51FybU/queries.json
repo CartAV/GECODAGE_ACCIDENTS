@@ -961,10 +961,10 @@
         "mode": "SQL",
         "id": "juEnruvC4mO6",
         "runOn": 1538144705252,
-        "runIn": 269,
+        "runIn": 494,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "QUQnp78u",
         "hash": "83732d1d44900f289d9d619471ad99a1",
         "querySettings": {
