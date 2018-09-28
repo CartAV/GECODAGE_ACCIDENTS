@@ -172,12 +172,7 @@
   },
   "virtualInputs": [
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "autoSelectColumns": false,
-      "index": 0
+      "index": 1
     },
     {
       "preFilter": {
@@ -185,7 +180,7 @@
         "enabled": false
       },
       "autoSelectColumns": false,
-      "index": 1
+      "index": 0
     }
   ],
   "postFilter": {
