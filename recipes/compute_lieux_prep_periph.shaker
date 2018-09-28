@@ -1,112 +1,75 @@
 {
-  "explorationFilters": [
-    {
-      "facet": {
-        "sort": "count",
-        "columnType": "ALPHANUM",
-        "column": "voie_normalise",
-        "currentMode": "ALPHANUM",
-        "selectedValues": {
-          "Boulevard Périphérique": true
-        },
-        "type": "facet"
-      },
-      "$$hashKey": "23T",
-      "validityFilter": {
-        "column": "voie_normalise",
-        "params": {
-          "nok": true,
-          "empty": true,
-          "ok": true,
-          "type": "Text"
-        },
-        "type": "validity"
-      },
-      "alphanumFilter": {
-        "values": [],
-        "column": "voie_normalise",
-        "params": {
-          "normalization": "exact",
-          "mode": "full_string"
-        },
-        "type": "alphanum"
-      },
-      "column": "voie_normalise",
-      "currentMode": "FACET",
-      "active": true,
-      "type": "columnFilter"
-    }
-  ],
-  "maxProcessedMemTableBytes": -1,
-  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
-  "globalSearchQuery": "",
+  "explorationSampling": {
+    "_refreshTrigger": 4,
+    "selection": {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "dep",
+              "col": "catr",
+              "string": "75",
+              "num": 0.0,
+              "operator": "\u003d\u003d [string]"
+            }
+          ]
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "comment": "regex pour le periph parisien",
+      "type": "PythonUDF",
+      "params": {
+        "mode": "ROW",
+        "stopOnError": true,
+        "pythonSourceCode": "import re\n\ndef process(row):\n    \n    if row[\u0027dep\u0027] \u003d\u003d \"75\":\n        match \u003d re.search(r\u0027(PERIPH|BP[IE])\u0027, row[\u0027adr\u0027], re.IGNORECASE)\n        if match:\n            row[\u0027voie_normalise\u0027] \u003d \u0027Boulevard Périphérique\u0027\n            row[\u0027catr\u0027] \u003d \u0027Boulevard Périphérique\u0027\n        if row[\"pr\"]:\n            # les années plus anciennes, l\u0027adresse était souvent rentrée sous forme \"PORTE DE ...\"\n            match \u003d re.search(r\u0027(PORTE)\u0027, row[\u0027adr\u0027], re.IGNORECASE)\n            if match:\n                row[\u0027voie_normalise\u0027] \u003d \u0027Boulevard Périphérique\u0027\n                row[\u0027catr\u0027] \u003d \u0027Boulevard Périphérique\u0027\n    return row\n",
+        "column": "test",
+        "usePythonUnicode": true
+      },
+      "alwaysShowComment": true
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "IMPACTED_ONLY",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
-  "origin": "PREPARE_RECIPE",
+  "analysisColumnData": {},
   "sorting": [],
+  "globalSearchQuery": "",
   "coloring": {
-    "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
     "valueColoringMode": "HASH"
-  },
-  "steps": [
-    {
-      "alwaysShowComment": true,
-      "preview": true,
-      "params": {
-        "usePythonUnicode": true,
-        "stopOnError": true,
-        "column": "test",
-        "pythonSourceCode": "import re\n\ndef process(row):\n    \n    if row[\u0027dep\u0027] \u003d\u003d \"75\":\n        match \u003d re.search(r\u0027(PERIPH|BP[IE])\u0027, row[\u0027adr\u0027], re.IGNORECASE)\n        if match:\n            row[\u0027voie_normalise\u0027] \u003d \u0027Boulevard Périphérique\u0027\n            row[\u0027catr\u0027] \u003d \u0027Boulevard Périphérique\u0027\n        if row[\"pr\"]:\n            # les années plus anciennes, l\u0027adresse était souvent rentrée sous forme \"PORTE DE ...\"\n            match \u003d re.search(r\u0027(PORTE)\u0027, row[\u0027adr\u0027], re.IGNORECASE)\n            if match:\n                row[\u0027voie_normalise\u0027] \u003d \u0027Boulevard Périphérique\u0027\n                row[\u0027catr\u0027] \u003d \u0027Boulevard Périphérique\u0027\n    return row\n",
-        "mode": "ROW"
-      },
-      "comment": "regex pour le periph parisien",
-      "type": "PythonUDF",
-      "disabled": false,
-      "metaType": "PROCESSOR"
-    }
-  ],
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
-  "previewMode": "IMPACTED_ONLY",
-  "explorationSampling": {
-    "_refreshTrigger": 4,
-    "autoRefreshSample": false,
-    "selection": {
-      "targetRatio": 0.02,
-      "maxRecords": 10000,
-      "maxStoredBytes": -1,
-      "partitionSelectionMethod": "ALL",
-      "withinFirstN": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "latestPartitionsN": 1,
-      "ordering": {
-        "enabled": false,
-        "rules": []
-      },
-      "maxReadUncompressedBytes": -1,
-      "filter": {
-        "enabled": true,
-        "uiData": {
-          "conditions": [
-            {
-              "num": 0.0,
-              "col": "catr",
-              "input": "dep",
-              "string": "75",
-              "operator": "\u003d\u003d [string]"
-            }
-          ],
-          "mode": "\u0026\u0026"
-        },
-        "distinct": false
-      }
-    }
   }
 }
