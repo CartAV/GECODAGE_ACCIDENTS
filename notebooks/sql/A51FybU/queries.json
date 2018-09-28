@@ -1053,10 +1053,10 @@
         "mode": "SQL",
         "id": "6gMLLbtnCRTV",
         "runOn": 1538144783771,
-        "runIn": 95,
+        "runIn": 78,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "Dn3wY1cR",
         "hash": "defdc00dacbbd625100f0f7b4d468b79",
         "querySettings": {
