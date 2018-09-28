@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1537776242669
+    "lastModifiedOn": 1538141180551
   },
   "creationTag": {
     "versionNumber": 0,
@@ -135,7 +135,7 @@
       },
       {
         "name": "Organisme",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "voie_normalise",
@@ -184,6 +184,10 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
           "samplingMethod": "FULL",
           "maxRecords": -1,
           "targetRatio": 0.02,
