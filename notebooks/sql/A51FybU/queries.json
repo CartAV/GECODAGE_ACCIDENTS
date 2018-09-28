@@ -845,6 +845,30 @@
         "sql": "SELECT DISTINCT (\"original_name\", \"current_name\") FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" !\u003d \"current_name\"",
         "expandedSql": "SELECT DISTINCT (\"original_name\", \"current_name\") FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" !\u003d \"current_name\""
       }
+    ],
+    "fityiwqtlev": [
+      {
+        "mode": "SQL",
+        "id": "H9fI5flcPhjS",
+        "runOn": 1538139237923,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "aBEmGdJl",
+        "hash": "83732d1d44900f289d9d619471ad99a1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) c, \"voie_normalise\" FROM \"lieux_prep_periph\"\nGROUP BY \"voie_normalise\"\nORDER BY c DESC\n",
+        "expandedSql": "SELECT COUNT(*) c, \"voie_normalise\" FROM \"lieux_prep_periph\"\nGROUP BY \"voie_normalise\"\nORDER BY c DESC\n"
+      }
     ]
   }
 }
