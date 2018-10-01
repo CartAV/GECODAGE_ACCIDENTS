@@ -265,6 +265,166 @@
       "name": "CODE_COM",
       "type": "string",
       "table": 0
+    },
+    {
+      "name": "catr",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "voie",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "v1",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "v2",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "circ",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "nbv",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "pr",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "pr1",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "vosp",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "prof",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "plan",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "lartpc",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "larrout",
+      "type": "bigint",
+      "table": 1
+    },
+    {
+      "name": "surf",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "infra",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "situ",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "env1",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Organisme",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "voie_normalise",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "icf_city_code",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "pr_lat",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "pr_lon",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "pr_lat_next1",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "pr_lon_next1",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "pr_lat_next2",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "pr_lon_next2",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "pr_lat_prev",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "pr_lon_prev",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "pr_insee_com",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "pr_nom_com",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "pr_lat_i",
+      "type": "double",
+      "table": 1
+    },
+    {
+      "name": "pr_lon_i",
+      "type": "double",
+      "table": 1
     }
   ],
   "engineParams": {
@@ -502,6 +662,137 @@
           {
             "name": "CODE_COM",
             "type": "string"
+          },
+          {
+            "name": "catr",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "voie",
+            "type": "string"
+          },
+          {
+            "name": "v1",
+            "type": "bigint"
+          },
+          {
+            "name": "v2",
+            "type": "string"
+          },
+          {
+            "name": "circ",
+            "type": "string"
+          },
+          {
+            "name": "nbv",
+            "type": "bigint"
+          },
+          {
+            "name": "pr",
+            "type": "bigint"
+          },
+          {
+            "name": "pr1",
+            "type": "bigint"
+          },
+          {
+            "name": "vosp",
+            "type": "string"
+          },
+          {
+            "name": "prof",
+            "type": "string"
+          },
+          {
+            "name": "plan",
+            "type": "string"
+          },
+          {
+            "name": "lartpc",
+            "type": "bigint"
+          },
+          {
+            "name": "larrout",
+            "type": "bigint"
+          },
+          {
+            "name": "surf",
+            "type": "string"
+          },
+          {
+            "name": "infra",
+            "type": "string"
+          },
+          {
+            "name": "situ",
+            "type": "string"
+          },
+          {
+            "name": "env1",
+            "type": "string"
+          },
+          {
+            "name": "Organisme",
+            "type": "string"
+          },
+          {
+            "name": "voie_normalise",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "icf_city_code",
+            "type": "string"
+          },
+          {
+            "name": "pr_lat",
+            "type": "double"
+          },
+          {
+            "name": "pr_lon",
+            "type": "double"
+          },
+          {
+            "name": "pr_lat_next1",
+            "type": "double"
+          },
+          {
+            "name": "pr_lon_next1",
+            "type": "double"
+          },
+          {
+            "name": "pr_lat_next2",
+            "type": "double"
+          },
+          {
+            "name": "pr_lon_next2",
+            "type": "double"
+          },
+          {
+            "name": "pr_lat_prev",
+            "type": "double"
+          },
+          {
+            "name": "pr_lon_prev",
+            "type": "double"
+          },
+          {
+            "meaning": "Text",
+            "name": "pr_insee_com",
+            "type": "string"
+          },
+          {
+            "name": "pr_nom_com",
+            "type": "string"
+          },
+          {
+            "name": "pr_lat_i",
+            "type": "double"
+          },
+          {
+            "name": "pr_lon_i",
+            "type": "double"
           }
         ],
         "userModified": false
