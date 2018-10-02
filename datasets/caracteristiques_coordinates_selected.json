@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538466662600
+    "lastModifiedOn": 1538471771831
   },
   "creationTag": {
     "versionNumber": 0,
@@ -66,19 +66,7 @@
         "meaning": "Text"
       },
       {
-        "name": "jour",
-        "type": "bigint"
-      },
-      {
         "name": "mois",
-        "type": "bigint"
-      },
-      {
-        "name": "an",
-        "type": "bigint"
-      },
-      {
-        "name": "hrmn",
         "type": "bigint"
       },
       {
@@ -88,10 +76,6 @@
       {
         "name": "dep",
         "type": "string"
-      },
-      {
-        "name": "com",
-        "type": "bigint"
       },
       {
         "name": "agg",
@@ -112,18 +96,6 @@
       {
         "name": "adr",
         "type": "string"
-      },
-      {
-        "name": "gps",
-        "type": "string"
-      },
-      {
-        "name": "lat",
-        "type": "double"
-      },
-      {
-        "name": "long",
-        "type": "double"
       },
       {
         "name": "date",
@@ -174,88 +146,8 @@
         "type": "string"
       },
       {
-        "name": "ban_citycode",
-        "type": "string"
-      },
-      {
-        "name": "ban_label",
-        "type": "string"
-      },
-      {
-        "name": "ban_latitude",
-        "type": "double"
-      },
-      {
-        "name": "ban_longitude",
-        "type": "double"
-      },
-      {
-        "name": "ban_postcode",
-        "type": "bigint"
-      },
-      {
-        "name": "ban_score",
-        "type": "double"
-      },
-      {
-        "name": "ban_type",
-        "type": "string"
-      },
-      {
-        "name": "bano_citycode",
-        "type": "string"
-      },
-      {
-        "name": "bano_label",
-        "type": "string"
-      },
-      {
-        "name": "bano_latitude",
-        "type": "double"
-      },
-      {
-        "name": "bano_longitude",
-        "type": "double"
-      },
-      {
-        "name": "bano_postcode",
-        "type": "bigint"
-      },
-      {
-        "name": "bano_score",
-        "type": "double"
-      },
-      {
-        "name": "bano_type",
-        "type": "string"
-      },
-      {
-        "name": "ban2_citycode",
-        "type": "string"
-      },
-      {
-        "name": "ban2_label",
-        "type": "string"
-      },
-      {
-        "name": "ban2_latitude",
-        "type": "double"
-      },
-      {
-        "name": "ban2_longitude",
-        "type": "double"
-      },
-      {
         "name": "ban2_postcode",
         "type": "bigint"
-      },
-      {
-        "name": "ban2_score",
-        "type": "double"
-      },
-      {
-        "name": "ban2_type",
-        "type": "string"
       },
       {
         "name": "distance_commune_baac",
@@ -278,124 +170,8 @@
         "type": "bigint"
       },
       {
-        "name": "catr",
-        "type": "string"
-      },
-      {
-        "name": "voie",
-        "type": "string"
-      },
-      {
-        "name": "v1",
-        "type": "bigint"
-      },
-      {
-        "name": "v2",
-        "type": "string"
-      },
-      {
-        "name": "circ",
-        "type": "string"
-      },
-      {
-        "name": "nbv",
-        "type": "bigint"
-      },
-      {
-        "name": "pr",
-        "type": "bigint"
-      },
-      {
-        "name": "pr1",
-        "type": "bigint"
-      },
-      {
-        "name": "vosp",
-        "type": "string"
-      },
-      {
-        "name": "prof",
-        "type": "string"
-      },
-      {
-        "name": "plan",
-        "type": "string"
-      },
-      {
-        "name": "lartpc",
-        "type": "bigint"
-      },
-      {
-        "name": "larrout",
-        "type": "bigint"
-      },
-      {
-        "name": "surf",
-        "type": "string"
-      },
-      {
-        "name": "infra",
-        "type": "string"
-      },
-      {
-        "name": "situ",
-        "type": "string"
-      },
-      {
-        "name": "env1",
-        "type": "string"
-      },
-      {
         "name": "Organisme",
         "type": "bigint"
-      },
-      {
-        "name": "voie_normalise",
-        "type": "string"
-      },
-      {
-        "name": "icf_city_code",
-        "type": "string"
-      },
-      {
-        "name": "pr_lat",
-        "type": "double"
-      },
-      {
-        "name": "pr_lon",
-        "type": "double"
-      },
-      {
-        "name": "pr_lat_next1",
-        "type": "double"
-      },
-      {
-        "name": "pr_lon_next1",
-        "type": "double"
-      },
-      {
-        "name": "pr_lat_next2",
-        "type": "double"
-      },
-      {
-        "name": "pr_lon_next2",
-        "type": "double"
-      },
-      {
-        "name": "pr_lat_prev",
-        "type": "double"
-      },
-      {
-        "name": "pr_lon_prev",
-        "type": "double"
-      },
-      {
-        "name": "pr_insee_com",
-        "type": "string"
-      },
-      {
-        "name": "pr_nom_com",
-        "type": "string"
       },
       {
         "name": "pr_lat_i",
