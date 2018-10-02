@@ -1,58 +1,62 @@
 {
-  "explorationFilters": [],
-  "maxProcessedMemTableBytes": -1,
-  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
-  "globalSearchQuery": "",
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "comment": "Associer le code arrondissement pour PLM",
+      "type": "PythonUDF",
+      "params": {
+        "mode": "ROW",
+        "stopOnError": true,
+        "pythonSourceCode": "def process(row):\n    if row[\"code_arrondissement\"]:\n        row[\"current_city_code\"] \u003d row[\"code_arrondissement\"]\n    return row\n",
+        "usePythonUnicode": true
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
-  "origin": "PREPARE_RECIPE",
+  "analysisColumnData": {},
   "sorting": [],
+  "globalSearchQuery": "",
   "coloring": {
-    "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
     "valueColoringMode": "HASH"
-  },
-  "steps": [
-    {
-      "alwaysShowComment": false,
-      "preview": true,
-      "params": {
-        "usePythonUnicode": true,
-        "stopOnError": true,
-        "pythonSourceCode": "def process(row):\n    if row[\"code_arrondissement\"]:\n        row[\"current_city_code\"] \u003d row[\"code_arrondissement\"]\n    return row\n",
-        "mode": "ROW"
-      },
-      "comment": "Associer le code arrondissement pour PLM",
-      "type": "PythonUDF",
-      "disabled": false,
-      "metaType": "PROCESSOR"
-    }
-  ],
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
-  "previewMode": "ALL_ROWS",
-  "explorationSampling": {
-    "_refreshTrigger": 0,
-    "autoRefreshSample": false,
-    "selection": {
-      "targetRatio": 0.02,
-      "maxRecords": 10000,
-      "maxStoredBytes": -1,
-      "partitionSelectionMethod": "ALL",
-      "withinFirstN": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "latestPartitionsN": 1,
-      "maxReadUncompressedBytes": -1,
-      "filter": {
-        "enabled": false,
-        "distinct": false
-      }
-    }
   }
 }
