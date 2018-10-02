@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538397600552
+    "lastModifiedOn": 1538471725358
   },
   "creationTag": {
     "versionNumber": 0,
@@ -249,126 +249,7 @@
         "type": "string"
       },
       {
-        "name": "catr",
-        "type": "string"
-      },
-      {
-        "name": "voie",
-        "type": "string",
-        "meaning": "Text"
-      },
-      {
-        "name": "v1",
-        "type": "bigint"
-      },
-      {
-        "name": "v2",
-        "type": "string"
-      },
-      {
-        "name": "circ",
-        "type": "string"
-      },
-      {
-        "name": "nbv",
-        "type": "bigint"
-      },
-      {
-        "name": "pr",
-        "type": "bigint"
-      },
-      {
-        "name": "pr1",
-        "type": "bigint"
-      },
-      {
-        "name": "vosp",
-        "type": "string"
-      },
-      {
-        "name": "prof",
-        "type": "string"
-      },
-      {
-        "name": "plan",
-        "type": "string"
-      },
-      {
-        "name": "lartpc",
-        "type": "bigint"
-      },
-      {
-        "name": "larrout",
-        "type": "bigint"
-      },
-      {
-        "name": "surf",
-        "type": "string"
-      },
-      {
-        "name": "infra",
-        "type": "string"
-      },
-      {
-        "name": "situ",
-        "type": "string"
-      },
-      {
-        "name": "env1",
-        "type": "string"
-      },
-      {
         "name": "Organisme",
-        "type": "string"
-      },
-      {
-        "name": "voie_normalise",
-        "type": "string"
-      },
-      {
-        "name": "icf_city_code",
-        "type": "string",
-        "meaning": "Text"
-      },
-      {
-        "name": "pr_lat",
-        "type": "double"
-      },
-      {
-        "name": "pr_lon",
-        "type": "double"
-      },
-      {
-        "name": "pr_lat_next1",
-        "type": "double"
-      },
-      {
-        "name": "pr_lon_next1",
-        "type": "double"
-      },
-      {
-        "name": "pr_lat_next2",
-        "type": "double"
-      },
-      {
-        "name": "pr_lon_next2",
-        "type": "double"
-      },
-      {
-        "name": "pr_lat_prev",
-        "type": "double"
-      },
-      {
-        "name": "pr_lon_prev",
-        "type": "double"
-      },
-      {
-        "name": "pr_insee_com",
-        "type": "string",
-        "meaning": "Text"
-      },
-      {
-        "name": "pr_nom_com",
         "type": "string"
       },
       {
