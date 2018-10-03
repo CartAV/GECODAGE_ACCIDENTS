@@ -1472,6 +1472,28 @@
         },
         "sql": "SELECT -- \"distance_commune_baac\" \nlat, long\n--FROM \"caracteristiques_geocoded_3_circo_police\"\nFROM \"caracteristiques_geocoded_3_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
         "expandedSql": "SELECT -- \"distance_commune_baac\" \nlat, long\n--FROM \"caracteristiques_geocoded_3_circo_police\"\nFROM \"caracteristiques_geocoded_3_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "9WQIvxxR3Ljz",
+        "runOn": 1538557124702,
+        "runIn": 1964,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Ateh2dct",
+        "hash": "39a427ff0eef1bd0706a8e7ef6cf99f7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT -- \"distance_commune_baac\" \nlat, long, commune\n--FROM \"caracteristiques_geocoded_3_circo_police\"\nFROM \"caracteristiques_geocoded_3_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
+        "expandedSql": "SELECT -- \"distance_commune_baac\" \nlat, long, commune\n--FROM \"caracteristiques_geocoded_3_circo_police\"\nFROM \"caracteristiques_geocoded_3_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
       }
     ]
   }
