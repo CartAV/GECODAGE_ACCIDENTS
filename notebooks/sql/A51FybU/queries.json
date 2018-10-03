@@ -1161,6 +1161,30 @@
         "sql": "--SELECT longitude, latitude \nSELECT COUNT(*)\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"geo_source\" \u003d \u0027baac\u0027",
         "expandedSql": "--SELECT longitude, latitude \nSELECT COUNT(*)\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"geo_source\" \u003d \u0027baac\u0027"
       }
+    ],
+    "kcwfb90ddnb": [
+      {
+        "mode": "SQL",
+        "id": "d2TK1tPjUkLd",
+        "runOn": 1538556406089,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "AKjoWlL9",
+        "hash": "3f7125cb86a88ff8f44a77626309d266",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * \n\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
+        "expandedSql": "SELECT * \n\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
+      }
     ]
   }
 }
