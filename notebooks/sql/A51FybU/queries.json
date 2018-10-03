@@ -1609,10 +1609,10 @@
         "mode": "SQL",
         "id": "HFSWZ5SKTHS3",
         "runOn": 1538557516324,
-        "runIn": 329,
+        "runIn": 282,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "DCNFyrer",
         "hash": "e7e347a75894b46a4ecb112ae24a18df",
         "querySettings": {
