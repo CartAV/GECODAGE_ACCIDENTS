@@ -1184,6 +1184,28 @@
         },
         "sql": "SELECT * \n\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
         "expandedSql": "SELECT * \n\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "w4BMc3EEen3O",
+        "runOn": 1538556445044,
+        "runIn": 347,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "0zCb1zKB",
+        "hash": "4179e8f9e80398734514fc3f72721b66",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * \n\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
+        "expandedSql": "SELECT * \n\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
       }
     ]
   }
