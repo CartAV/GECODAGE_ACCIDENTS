@@ -1138,6 +1138,28 @@
         },
         "sql": "SELECT longitude, latitude FROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"geo_source\" \u003d \u0027baac\u0027",
         "expandedSql": "SELECT longitude, latitude FROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"geo_source\" \u003d \u0027baac\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "gOerPtouPmYa",
+        "runOn": 1538554261704,
+        "runIn": 32,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "2UHaqe2D",
+        "hash": "d17c336f93e51c639e96d2cfc2379463",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--SELECT longitude, latitude \nSELECT COUNT(*)\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"geo_source\" \u003d \u0027baac\u0027",
+        "expandedSql": "--SELECT longitude, latitude \nSELECT COUNT(*)\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"geo_source\" \u003d \u0027baac\u0027"
       }
     ]
   }
