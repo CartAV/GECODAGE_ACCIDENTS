@@ -1207,6 +1207,30 @@
         "sql": "SELECT * \n\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
         "expandedSql": "SELECT * \n\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
       }
+    ],
+    "ubthyqznd2g": [
+      {
+        "mode": "SQL",
+        "id": "ggutq3QR3Ndt",
+        "runOn": 1538556641312,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "PWE3Q6pM",
+        "hash": "57205617fc7c446c3f9f2583c460a33c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
+        "expandedSql": "SELECT *\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
+      }
     ]
   }
 }
