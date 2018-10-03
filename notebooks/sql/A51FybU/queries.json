@@ -1812,7 +1812,7 @@
         "runIn": 36,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "XgaJTYrd",
         "hash": "e0169662257867e31f15b3bbd09eca82",
         "querySettings": {
