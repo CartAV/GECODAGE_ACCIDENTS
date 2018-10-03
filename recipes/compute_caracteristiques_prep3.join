@@ -1,390 +1,360 @@
 {
-  "virtualInputs": [
-    {
-      "autoSelectColumns": false,
-      "index": 0,
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
-    },
-    {
-      "autoSelectColumns": false,
-      "index": 1,
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
-    },
-    {
-      "index": 1,
-      "preFilter": {
-        "enabled": true,
-        "uiData": {
-          "conditions": [
-            {
-              "num": 0,
-              "input": "successors",
-              "col": "insee_code",
-              "operator": "is empty"
-            }
-          ],
-          "mode": "\u0026\u0026"
-        },
-        "$status": {
-          "message": "Filter expression is invalid",
-          "fullyTranslated": false,
-          "ok": false,
-          "validated": true
-        }
-      }
-    }
-  ],
   "joins": [
     {
-      "table1": 0,
-      "outerJoinOnTheLeft": true,
       "table2": 1,
+      "table1": 0,
       "conditionsMode": "AND",
       "rightLimit": {
         "decisionColumn": {}
       },
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
       "on": [
         {
-          "maxDistance": 1,
           "column1": {
             "name": "original_city_code",
             "table": 0
           },
-          "type": "EQ",
           "column2": {
             "name": "insee_code",
             "table": 1
-          }
+          },
+          "maxDistance": 1,
+          "type": "EQ"
         },
         {
           "column1": {
             "name": "date",
             "table": 0
           },
-          "type": "GTE",
           "column2": {
             "name": "start_datetime",
             "table": 1
-          }
+          },
+          "type": "GTE"
         },
         {
           "column1": {
             "name": "date",
             "table": 0
           },
-          "type": "LTE",
           "column2": {
             "name": "end_datetime",
             "table": 1
-          }
+          },
+          "type": "LTE"
         }
-      ],
-      "type": "LEFT"
+      ]
     },
     {
-      "table1": 1,
-      "outerJoinOnTheLeft": true,
       "table2": 2,
+      "table1": 1,
       "conditionsMode": "AND",
       "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
       "on": [
         {
-          "maxDistance": 1,
           "column1": {
             "name": "current_insee_code",
             "table": 1
           },
-          "type": "EQ",
           "column2": {
             "name": "insee_code",
             "table": 2
-          }
+          },
+          "maxDistance": 1,
+          "type": "EQ"
         }
-      ],
-      "type": "LEFT"
+      ]
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Organisme",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "jour",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "mois",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "an",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "hrmn",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "lum",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "dep",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "com",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "agg",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "int",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "atm",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "col",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "adr",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "gps",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "lat",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "long",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "date",
+      "type": "date",
+      "table": 0
+    },
+    {
+      "name": "original_city_code",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "name",
+      "alias": "original_name",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "current_insee_code",
+      "alias": "current_city_code",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "name",
+      "alias": "current_name",
+      "type": "string",
+      "table": 2
     }
   ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
       "hiveconf": [],
+      "inheritConf": "default",
       "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL",
-      "inheritConf": "default"
+      "executionEngine": "HIVECLI_LOCAL"
     },
     "impala": {
       "forceStreamMode": true
     },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
     "sparkSQL": {
       "pipelineAllowMerge": true,
-      "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      },
       "pipelineAllowStart": true,
-      "overwriteOutputSchema": false,
+      "useGlobalMetastore": false,
       "readParams": {
         "map": {}
       },
-      "useGlobalMetastore": false
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
   },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1
+    },
+    {
+      "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "successors",
+              "col": "insee_code",
+              "num": 0,
+              "operator": "is empty"
+            }
+          ]
+        },
+        "$status": {
+          "validated": true,
+          "fullyTranslated": false,
+          "message": "Filter expression is invalid",
+          "ok": false
+        },
+        "enabled": true
+      },
+      "index": 1
+    }
+  ],
   "postFilter": {
     "$status": {
       "schema": {
         "columns": [
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "Num_Acc",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
+            "name": "Organisme",
+            "type": "string"
+          },
+          {
             "name": "jour",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "mois",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "an",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "hrmn",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "lum",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
+            "meaning": "Text",
             "name": "dep",
-            "meaning": "Text",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
+            "meaning": "Text",
             "name": "com",
-            "meaning": "Text",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "agg",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "int",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "atm",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "col",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "adr",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "gps",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "lat",
             "type": "double"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "long",
             "type": "double"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "date",
             "type": "date"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
+            "meaning": "Text",
             "name": "original_city_code",
-            "meaning": "Text",
             "type": "string"
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "original_name",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
-            "name": "current_city_code",
             "meaning": "Text",
-            "type": "string"
+            "name": "current_city_code",
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "current_name",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           }
         ],
         "userModified": false
       }
     }
   },
-  "enableAutoCastInJoinConditions": false,
-  "selectedColumns": [
-    {
-      "name": "Num_Acc",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "jour",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "mois",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "an",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "hrmn",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "lum",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "dep",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "com",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "agg",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "int",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "atm",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "col",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "adr",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "gps",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "lat",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "long",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "date",
-      "table": 0,
-      "type": "date"
-    },
-    {
-      "name": "original_city_code",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "alias": "original_name",
-      "name": "name",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "alias": "current_city_code",
-      "name": "current_insee_code",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "alias": "current_name",
-      "name": "name",
-      "table": 2,
-      "type": "string"
-    }
-  ],
-  "computedColumns": []
+  "computedColumns": [],
+  "enableAutoCastInJoinConditions": false
 }
