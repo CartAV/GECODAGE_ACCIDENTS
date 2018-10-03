@@ -1805,6 +1805,30 @@
         "sql": "SELECT -- \"distance_commune_baac\" \nlat, long, current_city_code\n--FROM \"caracteristiques_geocoded_3_circo_police\"\nFROM \"caracteristiques_geocoded_3_postgis\"\nWHERE an\u003d18 -- AND \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
         "expandedSql": "SELECT -- \"distance_commune_baac\" \nlat, long, current_city_code\n--FROM \"caracteristiques_geocoded_3_circo_police\"\nFROM \"caracteristiques_geocoded_3_postgis\"\nWHERE an\u003d18 -- AND \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
       }
+    ],
+    "0.27245228629744866": [
+      {
+        "mode": "SQL",
+        "id": "iHWpWOdf0P2t",
+        "runOn": 1538558680569,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "YfcyqjgR",
+        "hash": "f57d4e023f3906267b90cca26543c69a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT latitude, longitude\n--FROM \"caracteristiques_coordinates_selected\"\nFROM \"caracteristiques_prep2\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
+        "expandedSql": "SELECT latitude, longitude\n--FROM \"caracteristiques_coordinates_selected\"\nFROM \"caracteristiques_prep2\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
+      }
     ]
   }
 }
