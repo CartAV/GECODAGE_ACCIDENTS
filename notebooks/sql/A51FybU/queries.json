@@ -1071,6 +1071,30 @@
         "sql": "SELECT \"voie\", \"voie_normalise\" FROM \"lieux_prep_periph\"\n\n\n",
         "expandedSql": "SELECT \"voie\", \"voie_normalise\" FROM \"lieux_prep_periph\"\n\n\n"
       }
+    ],
+    "a77k79y2hn5": [
+      {
+        "mode": "SQL",
+        "id": "kPTtAb3jnyiN",
+        "runOn": 1538554182186,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "LeihSQJ4",
+        "hash": "42b8dec48aa9b9be73cc2ad430da9229",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"geo_source\" \u003d \u0027baac\u0027",
+        "expandedSql": "SELECT * FROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"geo_source\" \u003d \u0027baac\u0027"
+      }
     ]
   }
 }
