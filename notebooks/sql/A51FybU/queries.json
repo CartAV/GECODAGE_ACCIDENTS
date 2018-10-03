@@ -1384,6 +1384,28 @@
         },
         "sql": "SELECT lat, long\n--FROM \"caracteristiques_geocoded_3_postgis_joined_with_pr\"\nFROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
         "expandedSql": "SELECT lat, long\n--FROM \"caracteristiques_geocoded_3_postgis_joined_with_pr\"\nFROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "6hCUU5WixArz",
+        "runOn": 1538556926393,
+        "runIn": 2066,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "GhfSPHTW",
+        "hash": "0e1ece944b4a98ae7b3d56bf57534707",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * -- lat, long\nFROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
+        "expandedSql": "SELECT * -- lat, long\nFROM \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
       }
     ]
   }
