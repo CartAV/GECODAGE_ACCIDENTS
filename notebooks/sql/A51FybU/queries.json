@@ -1560,6 +1560,28 @@
         },
         "sql": "SELECT COUNT(*)\nFROM \"caracteristiques_geocoded_3_postgis\"\nWHERE current_city_code IS NOT NULL\n",
         "expandedSql": "SELECT COUNT(*)\nFROM \"caracteristiques_geocoded_3_postgis\"\nWHERE current_city_code IS NOT NULL\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "6G4gUZYvq4jN",
+        "runOn": 1538557307747,
+        "runIn": 252,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "2F5187pW",
+        "hash": "5e8bcde9b02f643d926c12c71418080b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"caracteristiques_geocoded_3_postgis\"\nWHERE current_city_code IS NULL\n",
+        "expandedSql": "SELECT *\nFROM \"caracteristiques_geocoded_3_postgis\"\nWHERE current_city_code IS NULL\n"
       }
     ]
   }
