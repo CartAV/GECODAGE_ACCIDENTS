@@ -1318,6 +1318,28 @@
         },
         "sql": "SELECT latitude, longitude\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
         "expandedSql": "SELECT latitude, longitude\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "UdmhAYVHwoL2",
+        "runOn": 1538556772301,
+        "runIn": 189,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "rkE9twRQ",
+        "hash": "e4593ea889b1abea93a20487945a8023",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT lat, long\nFROM \"caracteristiques_geocoded_3_postgis_joined\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
+        "expandedSql": "SELECT lat, long\nFROM \"caracteristiques_geocoded_3_postgis_joined\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
       }
     ]
   }
