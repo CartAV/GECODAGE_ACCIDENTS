@@ -1296,6 +1296,28 @@
         },
         "sql": "SELECT lat, long\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
         "expandedSql": "SELECT lat, long\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "wBYc402yqxeB",
+        "runOn": 1538556748331,
+        "runIn": 35,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "tNt6ceCy",
+        "hash": "39177b2ab1da04efb258d6b10dce2252",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT latitude, longitude\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
+        "expandedSql": "SELECT latitude, longitude\nFROM \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
       }
     ]
   }
