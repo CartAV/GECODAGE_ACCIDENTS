@@ -5,7 +5,7 @@ from dataiku.customrecipe import get_input_names_for_role
 from dataiku.customrecipe import get_output_names_for_role
 from dataiku.customrecipe import get_recipe_config
 import itertools
-import os
+import os, re
 import logging
 import pandas as pd
 import requests
