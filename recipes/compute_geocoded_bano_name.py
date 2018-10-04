@@ -20,7 +20,7 @@ server_address = 'http://adresse.datalab.mi' # 'http://datalab-ban'
 # Process config
 lines_per_request = 50
 verbosechunksize = 5000
-threads = 80
+threads = 40
 timeout = 60
 maxtries = 2
 limit = 8000
