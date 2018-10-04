@@ -21,8 +21,8 @@ server_address = 'http://adresse.datalab.mi' # 'http://datalab-ban'
 lines_per_request = 50
 verbosechunksize = 5000
 threads = 100
-timeout = 500
-maxtries = 2
+timeout = 60
+maxtries = 1
 limit = 10000
 
 # Input fields configuration
