@@ -888,6 +888,28 @@
         },
         "sql": "SELECT DISTINCT (\"original_name\", \"current_name\") FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" !\u003d \"current_name\"",
         "expandedSql": "SELECT DISTINCT (\"original_name\", \"current_name\") FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" !\u003d \"current_name\""
+      },
+      {
+        "mode": "SQL",
+        "id": "xmetiplvhwig",
+        "runOn": 1538658571131,
+        "runIn": 4400,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "u8HIalsM",
+        "hash": "d99020d6f5f2debb2adc6440551bcaa5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"original_city_code\"\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" IS NULL",
+        "expandedSql": "SELECT \"original_city_code\"\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" IS NULL"
       }
     ],
     "fityiwqtlev": [
