@@ -72,7 +72,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by bano_type",
+        "name": "Count by bano_type and date",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -111,7 +111,46 @@
             }
           }
         ],
-        "genericDimension1": [],
+        "genericDimension1": [
+          {
+            "column": "date",
+            "type": "DATE",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "dateParams": {
+              "mode": "YEAR"
+            },
+            "maxValues": 0,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -203,7 +242,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA5ElEQVRoQ2NkGGGAEZd/5cu37EeXe9jp4zjUw2fUw7AYHI1hBgaG0SQ9BDP0aB4ezcNIyXY0D4/m4cEfAqOF1mihNVpoDf58is+FZOfhodrWHvUwsYXWaAwj9abkyjbPYmRkVB2MAwg0SdKjHoZG9WBoi4/GMDUKrdEkPZqkB661NpqHR/Mwjt4SvpbWaKGFVmhhCyyQEnrU0wOSh0c9TMdqa1DGMC17YkPSwxK5q0TRa/IXk8NeE1O7D0kPU5IChqWH8QXIqIfp0dIiVC0RSrKUyOOMYWIKgKGoZtTDQzHWSHEzALMnkDgE/UdMAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABOklEQVRoge3WMUvDQBjG8YyCa2cDZqjDbW79EOLUwS/QpVMdUhcR3IIFKUE6iHToFmhTGmjF4jsYdBeMm47t1K9wLrmShgy1Nnf28vzHwJu8PziSGAZajV/uO6p3kBrAurdoVXzVO0gNYN1btCo+6zJSvYe0CgvmnbtioJPgcPhxonqf3Cs0+OH8whPXTTvQ84gDHFdIMH9qZqL5lbEnb8MttwnYD78ed/bbDXCcAH9a1nF6Rmuw59VH6RkB3sm/s3XAbm1K4b27xCXBL4P3qZrNNwzgOIDXAJt2QHzcGMo2/Ko8wJ1v5/++zACO+yvYrT0TuTde+nnKkwlmXUazanXy6kfLex3YQTtv40qywP23OWWBTTsgfl3qiZnbs9NJesfIspheYOdwlAUWM1H5iJIzACOEEEIIqegH4GnL4uTszIIAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
