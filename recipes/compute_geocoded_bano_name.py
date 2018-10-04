@@ -23,7 +23,7 @@ verbosechunksize = 5000
 threads = 40
 timeout = 60
 maxtries = 2
-limit = 8000
+limit = None
 
 # Input fields configuration
 columns = ['adr','original_name']
