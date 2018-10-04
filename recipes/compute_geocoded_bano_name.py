@@ -64,7 +64,7 @@ def process_chunk(i,df,process_queue,write_queue,schema_check=[]):
         logging.warning("chunk {}-{} failed - {}".format(i*lines_per_request+1,(i+1)*lines_per_request,traceback.print_exception(exc_type, exc_obj, exc_tb)))
     write_queue.put(df)
     process_queue.get(i)
-
+    
 def adresse_submit(df,i=0,schema_check=[]):
     """Does the actual request to the geocoding server"""
     global maxtries
@@ -119,10 +119,10 @@ def adresse_submit(df,i=0,schema_check=[]):
         tries -= 1
         logging.warning("chunk {}-{} failed after {} tries".format(i*lines_per_request+1,(i+1)*lines_per_request,tries))
         if (df.shape[0] > 1):
-            #list_df=[]
-            #for i in range(0,df.shape[0],1):
-            #    list_df.append(adresse_submit(df.iloc[i:i+1]))
-            #df=pd.concat(list_df)
+            pd.concat(list_df)=[]
+            for i in range(0,df.shape[0],1):
+                list_df.append(adresse_submit(df[i::i+1]))
+            df=pd.concat(list_df)
             df[output_prefix+'score'] = -1
             if error_col:
                 df[error_col] = "HTTP Status: {}".format(status_code)
