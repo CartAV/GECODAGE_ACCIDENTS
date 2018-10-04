@@ -22,7 +22,7 @@ lines_per_request = 50
 verbosechunksize = 5000
 threads = 40
 timeout = 60
-maxtries = 2
+maxtries = 1
 limit = None
 
 # Input fields configuration
