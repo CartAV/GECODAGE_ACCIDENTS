@@ -119,7 +119,7 @@ def adresse_submit(df,i=0,schema_check=[]):
         tries -= 1
         logging.warning("chunk {}-{} failed after {} tries".format(i*lines_per_request+1,(i+1)*lines_per_request,tries))
         if (df.shape[0] > 1):
-            list_df=[adresse_submit(df[i::i+1])) for i in range(0,df.shape[0],1)]
+            list_df=[adresse_submit(df[i:i+1])) for i in range(0,df.shape[0],1)]
             df=pd.concat(list_df,axis=0)
         else:
             df[output_prefix+'score'] = -1
