@@ -3,7 +3,7 @@
     "mode": "ALL"
   },
   "explorationSampling": {
-    "_refreshTrigger": 0,
+    "_refreshTrigger": 1,
     "selection": {
       "filter": {
         "uiData": {
@@ -19,7 +19,7 @@
           ]
         },
         "distinct": false,
-        "enabled": true
+        "enabled": false
       },
       "latestPartitionsN": 1,
       "maxRecords": 10000,
@@ -393,6 +393,21 @@
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
         "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnBadType",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [],
+        "action": "CLEAR_CELL",
+        "appliesTo": "PATTERN",
+        "appliesToPattern": ".*postcode",
+        "type": "LongMeaning"
       },
       "alwaysShowComment": false
     }
