@@ -18,9 +18,9 @@ http_proxy = None
 server_address = 'http://adresse.datalab.mi' # 'http://datalab-ban'
 
 # Process config
-lines_per_request = 1
+lines_per_request = 50
 verbosechunksize = 5000
-threads = 300
+threads = 100
 timeout = 500
 maxtries = 2
 limit = None
@@ -118,13 +118,19 @@ def adresse_submit(df,i=0,schema_check=[]):
     if (failed == True):
         tries -= 1
         logging.warning("chunk {}-{} failed after {} tries".format(i*lines_per_request+1,(i+1)*lines_per_request,tries))
-        df[output_prefix+'score'] = -1
-        if error_col:
-            df[error_col] = "HTTP Status: {}".format(status_code)
-        if (len(schema_check)>len(df.axes[1])):
-            diff = [x for x in schema_check.difference(df.axes[1])]
-            for col in diff:
-                df[col]=None
+        if (df.shape[0] > 1):
+            list_df=[]
+            for i in range(0,df.shape[0],1):
+                list_df.append(adress_submit(df[i:i+1]))
+            df=pd.concat(list_df)
+        else:
+            df[output_prefix+'score'] = -1
+            if error_col:
+                df[error_col] = "HTTP Status: {}".format(status_code)
+            if (len(schema_check)>len(df.axes[1])):
+                diff = [x for x in schema_check.difference(df.axes[1])]
+                for col in diff:
+                    df[col]=None
 
     return df
 
