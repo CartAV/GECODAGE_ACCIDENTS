@@ -893,10 +893,10 @@
         "mode": "SQL",
         "id": "xmetiplvhwig",
         "runOn": 1538658571131,
-        "runIn": 4400,
+        "runIn": 25,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "u8HIalsM",
         "hash": "d99020d6f5f2debb2adc6440551bcaa5",
         "querySettings": {
