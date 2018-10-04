@@ -5,7 +5,7 @@ from dataiku.customrecipe import get_input_names_for_role
 from dataiku.customrecipe import get_output_names_for_role
 from dataiku.customrecipe import get_recipe_config
 import itertools
-import os, re
+import os
 import logging
 import pandas as pd
 import requests
@@ -74,8 +74,8 @@ def adresse_submit(df,i=0,schema_check=[]):
     if not isinstance(df,pd.DataFrame):
         return df
     df.reset_index(inplace=True)
-    for col in columns:
-        df[col].replace(r'^\s*$',"xxxxx")    
+    for col in cols:
+        df[col].replace(r'^\s*$',"xxxxx",regex=True)    
     df[cols].to_csv(string_io, encoding="utf-8", index=False)
     kwargs = {
         'data': data,
@@ -132,8 +132,8 @@ def adresse_submit(df,i=0,schema_check=[]):
                 diff = [x for x in schema_check.difference(df.axes[1])]
                 for col in diff:
                     df[col]=None
-    for i in columns:
-        df[i][df[i].apply(lambda i: True if re.search('^xxxxx$', str(i)) else False)]="" 
+    for col in cols:
+        df[col].replace(r'^xxxxx$',"",regex=True)    
                     
     return df
 
