@@ -954,6 +954,28 @@
         },
         "sql": "SELECT COUNT(*) -- \"original_city_code\"\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" IS NULL",
         "expandedSql": "SELECT COUNT(*) -- \"original_city_code\"\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" IS NULL"
+      },
+      {
+        "mode": "SQL",
+        "id": "36pf8KHAa7aM",
+        "runOn": 1538661805467,
+        "runIn": 277,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "M679cvxS",
+        "hash": "6afc33bfec0cadfbe7a04641ff2ac3c3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT COUNT(*) -- \"original_city_code\"\nFROM \"caracteristiques_prep3\"\n--WHERE \"current_city_code\" IS NULL",
+        "expandedSql": "SELECT COUNT(*) -- \"original_city_code\"\nFROM \"caracteristiques_prep3\"\n--WHERE \"current_city_code\" IS NULL"
       }
     ],
     "fityiwqtlev": [
