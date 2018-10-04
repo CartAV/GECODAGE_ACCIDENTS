@@ -2,7 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "explorationSampling": {
     "_refreshTrigger": 4,
     "selection": {
@@ -38,19 +37,35 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(isNull(Organisme),\u0027DCSP (txt)\u0027, \n\tif(Organisme \u003d\u003d 1, \u0027GN\u0027,\n\t\tif(Organisme \u003d\u003d 2 || Organisme \u003d\u003d 7, \u0027PP\u0027,\n\t\t\tif(Organisme \u003d\u003d 3, \u0027DCCRS\u0027,\n\t\t\t\tif(Organisme \u003d\u003d 4 || Organisme \u003d\u003d 6, \u0027N/A\u0027,\n\t\t\t\t\tif(Organisme \u003d\u003d 5, \u0027DCSP\u0027, \u0027Inconnu\u0027)\n                )\n           )\n       )\n   )\n)   \n\n",
+        "column": "Source"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }

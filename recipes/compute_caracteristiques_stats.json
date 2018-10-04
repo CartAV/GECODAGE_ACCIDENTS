@@ -12,7 +12,12 @@
           "conf": []
         },
         "readParams": {
-          "map": {}
+          "map": {
+            "caracteristiques_arrondissements_prepared": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
         },
         "useGlobalMetastore": false
       },
@@ -46,11 +51,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538639957747
+    "lastModifiedOn": 1538640790971
   },
   "creationTag": {
     "versionNumber": 0,
