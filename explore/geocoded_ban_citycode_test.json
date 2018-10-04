@@ -72,7 +72,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by ban_type",
+        "name": "Count by ban_type and date",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -111,7 +111,46 @@
             }
           }
         ],
-        "genericDimension1": [],
+        "genericDimension1": [
+          {
+            "column": "date",
+            "type": "DATE",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "dateParams": {
+              "mode": "YEAR"
+            },
+            "maxValues": 0,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -203,7 +242,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAwUlEQVRoQ+2YQQ5AMBRE+y/CykHsnYczuIJrsHcWNxGh0ggiwm+bPluLmj8zf6bEJPbIFd68Gcbju6mtytjnA2DLIAwbY5KWdKwKeO1hAEcieRh+uqWRNJIOs5Ph4S88nNV9JyJFiF38F4YBvFEdQjWFYTzsbB5XknfFAw/jYX+lhKXF0mJprRNgSzvXQ2KJWCKW1CZADpPD5DA5vGvAXh/J4dRz+KyWLjPR+OflJZaCBKzWBJQPumRY+TvUjksO8AwjjHg4OgcueAAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA/klEQVRoge3YMQqCUBzHccegGzTk6KAn8BCdImhpiQZriWahJimDinapjAqKojfkCYLWuoFXeC2+KBOSEsv3ft/xB8L/M+igJKF4ycaK/PqGVOMWTFt5M2rnFux3dDdqB5iXhAQrI6UQ3mVjReiuwR/a7+iuNtFeYADzEgNTu/eEEwLsLc4ltgsBXvemZba/A6sDtZjOhQn3CB7Xmw7bGdhxqsvwM7Qt5aLe+0wUB2xV9sQbWnegcGDXu2yFBIe/7JnoW/Bxftr/5vIPAzgIYIABzkYABwEMMMDZCOCgT8Ds1659NYlVORDS787S1cQoaTDd1JZ/DUYIIYQQSqobLNCc74IVnKMAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
