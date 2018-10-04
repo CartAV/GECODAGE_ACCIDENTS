@@ -1,0 +1,56 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "analysisColumnData": {},
+  "explorationSampling": {
+    "_refreshTrigger": 4,
+    "selection": {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "ANNEE",
+              "col": "mois",
+              "string": "000105300",
+              "num": 2017.0,
+              "operator": "\u003d\u003d [number]"
+            }
+          ]
+        },
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "sorting": [],
+  "exploreUIParams": {},
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  },
+  "steps": [],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  }
+}
