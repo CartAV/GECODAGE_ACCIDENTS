@@ -74,6 +74,8 @@ def adresse_submit(df,i=0,schema_check=[]):
     if not isinstance(df,pd.DataFrame):
         return df
     df.reset_index(inplace=True)
+    for i in columns:
+        df[i][df[i].apply(lambda i: True if re.search('^\s*$', str(i)) else False)]="xxxxx"    
     df[cols].to_csv(string_io, encoding="utf-8", index=False)
     kwargs = {
         'data': data,
