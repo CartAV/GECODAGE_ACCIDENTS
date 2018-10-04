@@ -120,7 +120,7 @@ def adresse_submit(df,i=0,schema_check=[]):
     if (failed == True):
         tries -= 1
         logging.warning("chunk {}-{} failed after {} tries".format(i*lines_per_request+1,(i+1)*lines_per_request,tries))
-        if (df.shape[0] > 1):
+        if (df.shape[0] < 1):
             list_df=[adresse_submit(df[j::j+1],i,schema_check) for j in range(0,df.shape[0],1)]
             df=pd.concat(list_df,axis=0).reset_index(inplace=True)
 
