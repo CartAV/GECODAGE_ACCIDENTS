@@ -21,8 +21,8 @@ server_address = 'http://adresse.datalab.mi' # 'http://datalab-ban'
 lines_per_request = 50
 verbosechunksize = 5000
 threads = 100
-timeout = 60
-maxtries = 1
+timeout = 500
+maxtries = 2
 limit = 10000
 
 # Input fields configuration
@@ -122,7 +122,14 @@ def adresse_submit(df,i=0,schema_check=[]):
             list_df=[]
             for i in range(0,df.shape[0],1):
                 list_df.append(adresse_submit(df.iloc[i:i+1]))
-            df=pd.concat(list_df)
+            #df=pd.concat(list_df)
+            df[output_prefix+'score'] = -1
+            if error_col:
+                df[error_col] = "HTTP Status: {}".format(status_code)
+            if (len(schema_check)>len(df.axes[1])):
+                diff = [x for x in schema_check.difference(df.axes[1])]
+                for col in diff:
+                    df[col]=None            
         else:
             df[output_prefix+'score'] = -1
             if error_col:
