@@ -8,6 +8,7 @@ import itertools
 import os
 import logging
 import pandas as pd
+import numpy as np
 import requests
 import StringIO
 import sys, time, traceback
