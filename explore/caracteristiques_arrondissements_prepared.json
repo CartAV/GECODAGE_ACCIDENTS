@@ -301,7 +301,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by date",
+        "name": "Count by date and Organisme",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -343,7 +343,46 @@
             }
           }
         ],
-        "genericDimension1": [],
+        "genericDimension1": [
+          {
+            "column": "Organisme",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "TREAT_AS_ALPHANUM",
+              "nbBins": 5,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -395,7 +434,8 @@
               "2013": true,
               "2014": true,
               "2015": true,
-              "2016": true
+              "2016": true,
+              "2017": true
             },
             "explicitExclude": false
           }
@@ -459,7 +499,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAwUlEQVRoge3QMQ6DIBTGcc9Rld6hk+fo2KEXcG3hYM84mfRqnUg6UFCBWMr/S95C8PH9bBqyP2czvewc3cUmayfAgXvJC0R0il7ue6QosAvlG9+3n2cJbMG+0QsAR4BzwTftXlMa8Jfp9HQtBnx6yqU3MvZGxirA3UNue6GAAecBuzoABgz4t8GhDoABHwR2FWz1PLR6HqoBryldPDj0EwADBvwfYKVlUVqWasBrOxQJtqOM3Ld2AFw9mBBCCCEkZd6OZJScQdr+dAAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA/0lEQVRoge3PPw6CMBTHcUYXEhdXOACMXsADuQIbDk6ewE30AC4QBjF5o8dg9RAmdcK/pWmbChZ+34m8tLx+HAc98+OC+n5DpwFs+PzfZTPYi/KD8iWADZ//ZUbBqvM+Gh14vj6XypcA1pybakf1RPZsAw6zUP5NAGvOTQWwIIBlsgHcthNgmQDWnJsKYMFOgGUCWHNuIj8uCGDBzlGCWerSoMHbevP4tg7MquTtXyIwS11yHEvAn7C2eadg3nLReZWsArNyOePNVVIB31bTE++NLHUp2AcLa8HHy5VE4FdYAw6zkAYJZlVC1oB5y1mVfD1qVGAvyvPewAghhHruDsD5U++UYGvCAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
