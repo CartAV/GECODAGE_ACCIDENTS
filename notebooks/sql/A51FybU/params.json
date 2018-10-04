@@ -29,19 +29,6 @@
       }
     },
     {
-      "id": "bto5n54te2o",
-      "type": "QUERY",
-      "querySettings": {
-        "addLimitToStatement": true,
-        "statementsOutOfTransaction": false,
-        "inheritConf": "default",
-        "extraConf": [],
-        "addDkuUdf": false,
-        "statementsParseMode": "SPLIT",
-        "statementsExecutionMode": "PREPARED"
-      }
-    },
-    {
       "id": "0.8068253124942344",
       "type": "QUERY",
       "querySettings": {
@@ -139,7 +126,7 @@
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538658423498
+    "lastModifiedOn": 1538658439284
   },
   "creationTag": {
     "versionNumber": 0,
