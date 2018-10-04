@@ -17,6 +17,14 @@ os.environ['http_proxy'] = ''
 http_proxy = None
 server_address = 'http://adresse.datalab.mi' # 'http://datalab-ban'
 
+# Process config
+lines_per_request = 5
+verbosechunksize = 5000
+threads = 100
+timeout = 500
+maxtries = 2
+limit = None
+
 # Input fields configuration
 columns = ['adr']
 post_code = None
@@ -25,16 +33,6 @@ city_code = 'current_city_code'
 output_prefix = 'ban_'
 error_prefix = 'error'
 error_col = '{}{}'.format(output_prefix,error_prefix) if error_prefix else None
-
-
-# Process config
-lines_per_request = 1
-verbosechunksize = 5000
-threads = 8
-timeout = 500
-maxtries = 2
-limit = None
-
 
 def err():
 	#exc_info=sys.exc_info()
