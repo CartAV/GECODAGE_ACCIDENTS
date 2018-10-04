@@ -6,8 +6,20 @@
     "_refreshTrigger": 0,
     "selection": {
       "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "ban2_postcode",
+              "col": "jour",
+              "string": "PLURI",
+              "num": 0.0,
+              "operator": "contains"
+            }
+          ]
+        },
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "latestPartitionsN": 1,
       "maxRecords": 10000,
