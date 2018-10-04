@@ -15,7 +15,7 @@ import sys, time, traceback
 # Proxy and server  config
 os.environ['http_proxy'] = ''
 http_proxy = None
-server_address = 'http://datalab-ban'
+server_address = 'http://adresse.datalab.mi' # 'http://datalab-ban'
 
 # Input fields configuration
 columns = ['adr']
