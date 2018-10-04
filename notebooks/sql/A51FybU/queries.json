@@ -866,6 +866,28 @@
         },
         "sql": "SELECT DISTINCT (\"original_name\", \"current_name\") FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" !\u003d \"current_name\"",
         "expandedSql": "SELECT DISTINCT (\"original_name\", \"current_name\") FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" !\u003d \"current_name\""
+      },
+      {
+        "mode": "SQL",
+        "id": "1HNubOf0yEbR",
+        "runOn": 1538658492187,
+        "runIn": 410,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "DImuqLlW",
+        "hash": "c8ff7c74b03409f51ca3f0ed613a5cdc",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT (\"original_name\", \"current_name\") FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" !\u003d \"current_name\"",
+        "expandedSql": "SELECT DISTINCT (\"original_name\", \"current_name\") FROM \"caracteristiques_prep3\"\nWHERE \"original_name\" !\u003d \"current_name\""
       }
     ],
     "fityiwqtlev": [
