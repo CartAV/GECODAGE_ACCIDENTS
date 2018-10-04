@@ -77,7 +77,6 @@ def adresse_submit(df,i=0,schema_check=[]):
     df.reset_index(inplace=True)
     for col in cols:
         df[col].replace(np.nan,"xxxxx",regex=True) 
-        df[col].replace(r'^\s*$',"xxxxx",regex=True)    
     df[cols].to_csv(string_io, encoding="utf-8", index=False)
     kwargs = {
         'data': data,
