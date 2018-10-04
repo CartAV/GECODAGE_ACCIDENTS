@@ -76,7 +76,7 @@ def adresse_submit(df,i=0,schema_check=[]):
         return df
     df.reset_index(inplace=True)
     for col in cols:
-        df[col].replace(np.nan,"",regex=True) 
+        df[col].replace(np.nan,"xxxxx",regex=True) 
         #df[col].replace(r'^\s*$',"xxxxx",regex=True)    
     df[cols].to_csv(string_io, encoding="utf-8", index=False)
     kwargs = {
@@ -136,7 +136,7 @@ def adresse_submit(df,i=0,schema_check=[]):
                 for col in diff:
                     df[col]=None
     for col in cols:
-        df[col].replace("^$",np.nan,regex=True) 
+        df[col].replace(r"^xxxxx$",np.nan,regex=True) 
         #df[col].replace(r'^xxxxx$',"",regex=True)    
                     
     return df
