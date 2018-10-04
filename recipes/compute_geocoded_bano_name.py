@@ -132,7 +132,9 @@ def adresse_submit(df,i=0,schema_check=[]):
                 diff = [x for x in schema_check.difference(df.axes[1])]
                 for col in diff:
                     df[col]=None
-
+    for i in columns:
+        df[i][df[i].apply(lambda i: True if re.search('^xxxxx$', str(i)) else False)]="" 
+                    
     return df
 
 def grouper(iterable, n, fillvalue=None):
