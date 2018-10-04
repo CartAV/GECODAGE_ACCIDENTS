@@ -18,11 +18,11 @@ http_proxy = None
 server_address = 'http://adresse.datalab.mi' # 'http://datalab-ban'
 
 # Process config
-lines_per_request = 1
+lines_per_request = 500
 verbosechunksize = 5000
-threads = 300
-timeout = 500
-maxtries = 2
+threads = 40
+timeout = 60
+maxtries = 1
 limit = None
 
 # Input fields configuration
@@ -74,6 +74,9 @@ def adresse_submit(df,i=0,schema_check=[]):
     if not isinstance(df,pd.DataFrame):
         return df
     df.reset_index(inplace=True)
+    for col in cols:
+        df[col].replace(np.nan,"xxxxx",regex=True) 
+        df[col].replace(r'^\s*$',"xxxxx",regex=True)        
     df[cols].to_csv(string_io, encoding="utf-8", index=False)
     kwargs = {
         'data': data,
@@ -126,6 +129,9 @@ def adresse_submit(df,i=0,schema_check=[]):
             for col in diff:
                 df[col]=None
 
+    for col in cols:
+        df[col].replace(r"^xxxxx$",np.nan,regex=True)      
+                
     return df
 
 def grouper(iterable, n, fillvalue=None):
