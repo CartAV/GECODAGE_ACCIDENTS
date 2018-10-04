@@ -18,9 +18,9 @@ http_proxy = None
 server_address = 'http://adresse.datalab.mi' # 'http://datalab-ban'
 
 # Process config
-lines_per_request = 5
+lines_per_request = 1
 verbosechunksize = 5000
-threads = 100
+threads = 300
 timeout = 500
 maxtries = 2
 limit = None
