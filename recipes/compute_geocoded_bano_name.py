@@ -68,6 +68,13 @@ def process_chunk(i,df,process_queue,write_queue,schema_check=[]):
         logging.warning("chunk {}-{} failed - {}".format(i*lines_per_request+1,(i+1)*lines_per_request,traceback.print_exception(exc_type, exc_obj, exc_tb)))
     write_queue.put(df)
     process_queue.get(i)
+
+def correct_addr(df, cols)
+    df[cols] = df[cols].replace(np.nan, "xxxxx",regex = True)
+    df[cols] = df[cols].replace(r'^\s*$', "xxxxx",regex = True) 
+    # df[cols] = df[cols].replace(r'["\']', "",regex = True) 
+    df[cols] = df[cols].replace(r'"', "",regex = True) 
+    df[cols] = df[cols].replace(r"'", "",regex = True) 
     
 def adresse_submit(df,i=0,schema_check=[]):
     """Does the actual request to the geocoding server"""
@@ -78,9 +85,7 @@ def adresse_submit(df,i=0,schema_check=[]):
     if not isinstance(df,pd.DataFrame):
         return df
     df.reset_index(inplace=True)
-    df[cols]=df[cols].replace(np.nan,"xxxxx",regex=True)
-    df[cols]=df[cols].replace(r'^\s*$',"xxxxx",regex=True) 
-        
+    correct_addr(df, cols)        
     df[cols].to_csv(string_io, encoding="utf-8", index=False)
     kwargs = {
         'data': data,
