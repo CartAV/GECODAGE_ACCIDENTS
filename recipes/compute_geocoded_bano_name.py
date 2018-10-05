@@ -69,7 +69,7 @@ def process_chunk(i,df,process_queue,write_queue,schema_check=[]):
     write_queue.put(df)
     process_queue.get(i)
 
-def correct_addr(df, cols)
+def correct_addr(df, cols):
     df[cols] = df[cols].replace(np.nan, "xxxxx",regex = True)
     df[cols] = df[cols].replace(r'^\s*$', "xxxxx",regex = True) 
     # df[cols] = df[cols].replace(r'["\']', "",regex = True) 
