@@ -41,11 +41,12 @@ error_prefix = 'error'
 error_col = '{}{}'.format(output_prefix,error_prefix) if error_prefix else None
 
 def correct_addr(df, cols):
-    df[cols] = df[cols].replace(np.nan, "xxxxx",regex = True)
-    df[cols] = df[cols].replace(r'^\s*$', "xxxxx",regex = True) 
+    df[cols] = df[cols].replace(np.nan, "xxxxx", regex = True)
+    df[cols] = df[cols].replace(r'^\s*$', "xxxxx", regex = True) 
     # df[cols] = df[cols].replace(r'["\']', "",regex = True) 
-    df[cols] = df[cols].replace(r'"', "",regex = True) 
-    df[cols] = df[cols].replace(r"'", "",regex = True) 
+    df[cols] = df[cols].replace(r'"', "", regex = True) 
+    df[cols] = df[cols].replace(r"'", "", regex = True) 
+    df[cols] = df[cols].replace(r"\.,", "", regex = True) 
     
 def err():
 	#exc_info=sys.exc_info()
