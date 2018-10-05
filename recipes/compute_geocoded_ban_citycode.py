@@ -40,6 +40,13 @@ output_prefix = 'ban_'
 error_prefix = 'error'
 error_col = '{}{}'.format(output_prefix,error_prefix) if error_prefix else None
 
+def correct_addr(df, cols):
+    df[cols] = df[cols].replace(np.nan, "xxxxx",regex = True)
+    df[cols] = df[cols].replace(r'^\s*$', "xxxxx",regex = True) 
+    # df[cols] = df[cols].replace(r'["\']', "",regex = True) 
+    df[cols] = df[cols].replace(r'"', "",regex = True) 
+    df[cols] = df[cols].replace(r"'", "",regex = True) 
+    
 def err():
 	#exc_info=sys.exc_info()
 	exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -80,8 +87,7 @@ def adresse_submit(df,i=0,schema_check=[]):
     if not isinstance(df,pd.DataFrame):
         return df
     df.reset_index(inplace=True)
-    df[cols].replace(np.nan,"xxxxx",regex=True) 
-    df[cols].replace(r'^\s*$',"xxxxx",regex=True)        
+    correct_addr(df, cols)
     df[cols].to_csv(string_io, encoding="utf-8", index=False)
     kwargs = {
         'data': data,
