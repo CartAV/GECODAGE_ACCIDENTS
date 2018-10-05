@@ -76,7 +76,8 @@ def correct_addr(df, cols):
     df[cols] = df[cols].replace(r'"', "", regex = True) 
     df[cols] = df[cols].replace(r"'", "", regex = True) 
     df[cols] = df[cols].replace(r"\.,", "", regex = True) 
-    
+    df[cols] = df[cols].replace(r"_", ",", regex = True) 
+
 def adresse_submit(df,i=0,schema_check=[]):
     """Does the actual request to the geocoding server"""
     global maxtries
