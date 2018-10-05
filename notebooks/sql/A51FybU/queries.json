@@ -2178,6 +2178,28 @@
         },
         "sql": "SELECT MAX(LENGTH(\"adr\"))\nFROM \"caracteristiques_prep3\"\n--WHERE \"current_city_code\" \u003d \u002717299\u0027",
         "expandedSql": "SELECT MAX(LENGTH(\"adr\"))\nFROM \"caracteristiques_prep3\"\n--WHERE \"current_city_code\" \u003d \u002717299\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "i2h7PkNrUU0y",
+        "runOn": 1538731012767,
+        "runIn": 439,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "m0jbfAaF",
+        "hash": "2a01364f8fd190102cdddbb893673a1d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_prep3\"\nGROUP BY l\nORDER BY l\n--WHERE \"current_city_code\" \u003d \u002717299\u0027",
+        "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_prep3\"\nGROUP BY l\nORDER BY l\n--WHERE \"current_city_code\" \u003d \u002717299\u0027"
       }
     ],
     "0.27245228629744866": [
