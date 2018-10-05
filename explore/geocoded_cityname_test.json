@@ -125,7 +125,7 @@
             "isA": "measure",
             "displayAxis": "axis1",
             "displayType": "column",
-            "computeMode": "CUMULATIVE_PERCENTAGE",
+            "computeMode": "PERCENTAGE",
             "computeModeDim": 0
           }
         ],
@@ -206,7 +206,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAoElEQVRoge3PsQ2DMBBA0VsEew+2osAMkAHo6TIDRpSsloZIVuRDQSjBPv0vXXMy4p4I1Zcf4pbOvms/d2YCLIbACg4w4FoDrO8AVxlgfQe46JpheeQOBqzvABcd4D3A+g5w0ZkGN/3SpSNiHJw7GPDBW8AC+D7wtwcDPvk94F/nQpxcPz/fYx7sQ1yvHAy4JHD2h1bALsQxHfNgIiL6Yy8IhYvitpCc1AAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAhUlEQVRoge3PwQ2AIAxA0U6CY7IHs3B3Na8cqogGaJv/Ey6kkD4Rst2R69me3ftMD3D0AEdKgwGOFGABDNh1gAUwYNeFBd8hAD/Mugqwct+bdRVg5b43azZtYcDK7Jf3y3u7HGDl/eifWwI8uLBp8J/lAFsCp1xLe8KDZywH2BKYiIgWdgEal2yd88Ev1QAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
