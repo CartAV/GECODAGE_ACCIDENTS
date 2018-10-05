@@ -2112,6 +2112,28 @@
         },
         "sql": "SELECT \"adr\"\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" \u003d \u002717299\u0027",
         "expandedSql": "SELECT \"adr\"\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" \u003d \u002717299\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "A5MZYiPf1cZT",
+        "runOn": 1538730969814,
+        "runIn": 301,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "hWYiPNWV",
+        "hash": "4c4245c748000515d5e889b41ce3f209",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT LEN(\"adr\")\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" \u003d \u002717299\u0027",
+        "expandedSql": "SELECT LEN(\"adr\")\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" \u003d \u002717299\u0027"
       }
     ],
     "0.27245228629744866": [
