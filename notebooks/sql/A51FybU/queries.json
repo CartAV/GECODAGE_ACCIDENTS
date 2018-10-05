@@ -2090,6 +2090,28 @@
         },
         "sql": "SELECT *\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" \u003d \u002717299\u0027",
         "expandedSql": "SELECT *\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" \u003d \u002717299\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "l34BSeJdXtVI",
+        "runOn": 1538730896850,
+        "runIn": 288,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "FfSnOPQG",
+        "hash": "e3c68b8352a773c0d31da1478201b6e8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"adr\"\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" \u003d \u002717299\u0027",
+        "expandedSql": "SELECT \"adr\"\nFROM \"caracteristiques_prep3\"\nWHERE \"current_city_code\" \u003d \u002717299\u0027"
       }
     ],
     "0.27245228629744866": [
