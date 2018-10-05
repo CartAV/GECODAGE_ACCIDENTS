@@ -366,7 +366,7 @@
             "isA": "measure",
             "displayAxis": "axis1",
             "displayType": "column",
-            "computeMode": "NORMAL",
+            "computeMode": "CUMULATIVE_PERCENTAGE",
             "computeModeDim": 0
           }
         ],
@@ -447,7 +447,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAIElEQVRoge3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAHgaJagAAXCxjHYAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAlElEQVRoge3PQQqAIBBA0bmIeY/OFbpq1ZE0Wna1VoILjSLEHP6H2QxG80RIR9bH2fp4pul9T/MAa081OIclHGBNARbA44IrOMCARw1wfTcW2Ph9Kx0MuL4D/OtUg80S13xElINLBwO+eQtYAPcDPz0Y8MvvAfcKcGU3HNi6eHw5GDDgjuDJhZCPenDxh5rBRETUqAvjeURQHoQDiAAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -652,7 +652,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA6UlEQVRoge2XPQoCMRCF9wIeQkRW2L2BJ/EEXkDQImCfWmTLrQQbwXqFKb2BpbbeIrbjMBBkDdlk3wevmuZ9JOSnKIDOYX0jmdidggLh3IVdcySZ2J2CAmEIZwaEcxd+lAuSid0pKBCGcGY0L0sysTsFBcJjF9Z+U0n/qOq2Jhk+h3DuwtrTM+nnZ1/hx7w0Sd3lrtuRzNfcI9w8rUnqpPcJa6vHVxDCqQtrMlyoaivjOwcGxfiE9xOS4XNNhguNTth1W+PbJYPicn+TDJ9rMlzI2enG2dlV5pcOq9PyrOVfjgAAAAAAoA8fc7SvDHYHP1EAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA2UlEQVRoge2XoQ7CMBCG56p4iyYg9hYongRVj8MjG0ImkSjkDCQneQPMBJa3KKoYLrklrOl6/b/kU2fu25Zuaxrwy3F7J87ceyUDwdqDQ3ciztx7JQPBCFYGgrUHP5cr4sy9VzIQjGBldK8DcebeKxkIrj3Yb3qj6m+qPbfEGecI1h4cvDeqPj2nCC7qXR5uO+L8zkcEF3XSS8GDtUa6ewguOdgPzkgx0jkwK+oL3i+IM86tt0aKqS5YekpmxfXxJs44D70zUox00cbgLmvinKoTAAAAAAD8wwfowvBr6tt+FgAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
