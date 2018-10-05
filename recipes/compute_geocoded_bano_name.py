@@ -70,11 +70,12 @@ def process_chunk(i,df,process_queue,write_queue,schema_check=[]):
     process_queue.get(i)
 
 def correct_addr(df, cols):
-    df[cols] = df[cols].replace(np.nan, "xxxxx",regex = True)
-    df[cols] = df[cols].replace(r'^\s*$', "xxxxx",regex = True) 
+    df[cols] = df[cols].replace(np.nan, "xxxxx", regex = True)
+    df[cols] = df[cols].replace(r'^\s*$', "xxxxx", regex = True) 
     # df[cols] = df[cols].replace(r'["\']', "",regex = True) 
-    df[cols] = df[cols].replace(r'"', "",regex = True) 
-    df[cols] = df[cols].replace(r"'", "",regex = True) 
+    df[cols] = df[cols].replace(r'"', "", regex = True) 
+    df[cols] = df[cols].replace(r"'", "", regex = True) 
+    df[cols] = df[cols].replace(r"\.,", "", regex = True) 
     
 def adresse_submit(df,i=0,schema_check=[]):
     """Does the actual request to the geocoding server"""
