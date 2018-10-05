@@ -47,6 +47,7 @@ def correct_addr(df, cols):
     df[cols] = df[cols].replace(r'"', "", regex = True) 
     df[cols] = df[cols].replace(r"'", "", regex = True) 
     df[cols] = df[cols].replace(r"\.,", "", regex = True) 
+    df[cols] = df[cols].replace(r"_", ",", regex = True) 
     
 def err():
 	#exc_info=sys.exc_info()
