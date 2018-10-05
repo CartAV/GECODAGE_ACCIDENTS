@@ -14,9 +14,12 @@ import StringIO
 import sys, time, traceback
 
 # Proxy and server  config
+BANO = 'http://datalab-bano'
+OLD_BAN = 'http://datalab-ban'
+NEW_BAN = 'http://adresse.datalab.mi'
+server_address = BANO
 os.environ['http_proxy'] = ''
 http_proxy = None
-server_address = 'http://adresse.datalab.mi' # 'http://datalab-ban'
 
 # Process config
 lines_per_request = 5
