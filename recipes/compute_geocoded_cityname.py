@@ -5,11 +5,13 @@ from dataiku.customrecipe import get_input_names_for_role
 from dataiku.customrecipe import get_output_names_for_role
 from dataiku.customrecipe import get_recipe_config
 import itertools
+import os
 import logging
 import pandas as pd
+import numpy as np
 import requests
 import StringIO
-import sys, time, traceback, os
+import sys, time, traceback
 
 # Proxy and server  config
 os.environ['http_proxy'] = ''
