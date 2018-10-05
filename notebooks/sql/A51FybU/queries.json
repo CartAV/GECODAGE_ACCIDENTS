@@ -2288,6 +2288,28 @@
         },
         "sql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_prep3\"\n--WHERE \"current_city_code\" \u003d \u002717299\u0027\nWHERE \"Organisme\" IS NULL\nGROUP BY l\nORDER BY l\n",
         "expandedSql": "SELECT LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_prep3\"\n--WHERE \"current_city_code\" \u003d \u002717299\u0027\nWHERE \"Organisme\" IS NULL\nGROUP BY l\nORDER BY l\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "z5QwO9h7QO9a",
+        "runOn": 1538732493823,
+        "runIn": 1654,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "JggdT4Lk",
+        "hash": "22775d47c5d99275110e2562c3f0a642",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT l -- LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_prep3\"\n--WHERE \"current_city_code\" \u003d \u002717299\u0027\nWHERE \"Organisme\" IS NULL\nAND LENGTH(l) \u003e 24\n--GROUP BY l\n--ORDER BY l\n",
+        "expandedSql": "SELECT l -- LENGTH(\"adr\") l, COUNT(*) c\nFROM \"caracteristiques_prep3\"\n--WHERE \"current_city_code\" \u003d \u002717299\u0027\nWHERE \"Organisme\" IS NULL\nAND LENGTH(l) \u003e 24\n--GROUP BY l\n--ORDER BY l\n"
       }
     ],
     "0.27245228629744866": [
