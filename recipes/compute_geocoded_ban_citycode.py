@@ -121,6 +121,7 @@ def adresse_submit(df,i=0,schema_check=[]):
     if (failed == True):
         tries -= 1
         logging.warning("chunk {}-{} failed after {} tries".format(i*lines_per_request+1,(i+1)*lines_per_request,tries))
+        print df[cols]
         df[output_prefix+'score'] = -1
         if error_col:
             df[error_col] = "HTTP Status: {}".format(status_code)
