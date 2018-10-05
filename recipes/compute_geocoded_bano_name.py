@@ -75,8 +75,8 @@ def adresse_submit(df,i=0,schema_check=[]):
     if not isinstance(df,pd.DataFrame):
         return df
     df.reset_index(inplace=True)
-    df[cols].replace(np.nan,"xxxxx",regex=True)
-    df[cols].replace(r'^\s*$',"xxxxx",regex=True) 
+    df[cols]=df[cols].replace(np.nan,"xxxxx",regex=True)
+    df[cols]=df[cols].replace(r'^\s*$',"xxxxx",regex=True) 
         
     df[cols].to_csv(string_io, encoding="utf-8", index=False)
     kwargs = {
@@ -130,8 +130,7 @@ def adresse_submit(df,i=0,schema_check=[]):
             diff = [x for x in schema_check.difference(df.axes[1])]
             for col in diff:
                 df[col]=None
-    for col in cols:
-        df[col].replace(r"^xxxxx$",np.nan,regex=True) 
+    df[cols]=df[cols].replace(r"^xxxxx$",np.nan,regex=True) 
                     
     return df
 
