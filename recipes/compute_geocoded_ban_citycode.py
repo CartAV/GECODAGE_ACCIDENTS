@@ -24,7 +24,7 @@ http_proxy = None
 
 
 # Process config
-lines_per_request = 5
+lines_per_request = 50
 verbosechunksize = 5000
 threads = 100
 timeout = 60
