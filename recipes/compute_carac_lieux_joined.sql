@@ -11,7 +11,7 @@ SELECT accidents.*,
 FROM(
      "caracteristiques_coordinates_selected_joined" AS accidents
      LEFT JOIN LATERAL 
-    "osm_routes_par_commune"  AS routes
+     "osm_routes_par_commune"  AS routes
     WHERE st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)
     AND ((accidents.catr = 'autoroute' AND routes.cat_route_osm = 'autoroute')
         OR (accidents.catr = 'route nationale' AND routes.cat_route_osm = 'route principale')
