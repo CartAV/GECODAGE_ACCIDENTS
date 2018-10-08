@@ -8,7 +8,7 @@ SELECT accidents.*,
          THEN 0
          ELSE st_distance(st_point(accidents.longitude, accidents.latitude), route.the_geom) * (1 - similarity(accidents.adr, route.num_route_or_id))
          END) AS score
-FROM(
+FROM( 
     "caracteristiques_coordinates_selected_joined" AS accidents
     LEFT JOIN LATERAL 
     "osm_routes_par_commune"  AS routes
