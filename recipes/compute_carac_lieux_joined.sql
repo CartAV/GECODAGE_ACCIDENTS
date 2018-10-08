@@ -13,7 +13,7 @@ FROM(
      LEFT JOIN --LATERAL 
       "osm_routes_par_commune"  AS routes
       WHERE st_dwithin(routes.the_geom, st_point(longitude, latitude), 500)
-      AND ((accidents.catr = 'autoroute' AND routes.cat_route_osm = 'autoroute')
+     AND ((accidents.catr = 'autoroute' AND routes.cat_route_osm = 'autoroute')
         OR (accidents.catr = 'route nationale' AND routes.cat_route_osm = 'route principale')
         OR (accidents.catr = 'Boulevard Périphérique' AND routes.cat_route_osm = 'route principale')
         OR (accidents.catr != 'autoroute' AND accidents.catr != 'route nationale' AND accidents.catr != 'Boulevard Périphérique')
