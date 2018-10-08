@@ -1,0 +1,285 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "table": 0
+    },
+    {
+      "name": "mois",
+      "table": 0
+    },
+    {
+      "name": "lum",
+      "table": 0
+    },
+    {
+      "name": "dep",
+      "table": 0
+    },
+    {
+      "name": "agg",
+      "table": 0
+    },
+    {
+      "name": "int",
+      "table": 0
+    },
+    {
+      "name": "atm",
+      "table": 0
+    },
+    {
+      "name": "col",
+      "table": 0
+    },
+    {
+      "name": "adr",
+      "table": 0
+    },
+    {
+      "name": "date",
+      "table": 0
+    },
+    {
+      "name": "date_formated",
+      "table": 0
+    },
+    {
+      "name": "heures_minutes",
+      "table": 0
+    },
+    {
+      "name": "ANNEE",
+      "table": 0
+    },
+    {
+      "name": "SEMAINE",
+      "table": 0
+    },
+    {
+      "name": "LIBELLE_JOUR",
+      "table": 0
+    },
+    {
+      "name": "HEURE",
+      "table": 0
+    },
+    {
+      "name": "LIBELLE_PLAGE_HORAIRE",
+      "table": 0
+    },
+    {
+      "name": "original_city_code",
+      "table": 0
+    },
+    {
+      "name": "original_name",
+      "table": 0
+    },
+    {
+      "name": "current_city_code",
+      "table": 0
+    },
+    {
+      "name": "current_name",
+      "table": 0
+    },
+    {
+      "name": "ban2_postcode",
+      "table": 0
+    },
+    {
+      "name": "distance_commune_baac",
+      "table": 0
+    },
+    {
+      "name": "distance_commune_ban",
+      "table": 0
+    },
+    {
+      "name": "distance_commune_ban2",
+      "table": 0
+    },
+    {
+      "name": "distance_commune_bano",
+      "table": 0
+    },
+    {
+      "name": "CODE_COM",
+      "table": 0
+    },
+    {
+      "name": "Organisme",
+      "table": 0
+    },
+    {
+      "name": "pr_lat_i",
+      "table": 0
+    },
+    {
+      "name": "pr_lon_i",
+      "table": 0
+    },
+    {
+      "name": "nom_circonscription_police",
+      "table": 0
+    },
+    {
+      "name": "pr_score",
+      "table": 0
+    },
+    {
+      "name": "baac_score",
+      "table": 0
+    },
+    {
+      "name": "longitude",
+      "table": 0
+    },
+    {
+      "name": "geo_type",
+      "table": 0
+    },
+    {
+      "name": "latitude",
+      "table": 0
+    },
+    {
+      "name": "geo_source",
+      "table": 0
+    },
+    {
+      "name": "geo_score",
+      "table": 0
+    },
+    {
+      "name": "catr",
+      "table": 1
+    },
+    {
+      "name": "voie",
+      "table": 1
+    },
+    {
+      "name": "v1",
+      "table": 1
+    },
+    {
+      "name": "v2",
+      "table": 1
+    },
+    {
+      "name": "circ",
+      "table": 1
+    },
+    {
+      "name": "nbv",
+      "table": 1
+    },
+    {
+      "name": "pr",
+      "table": 1
+    },
+    {
+      "name": "pr1",
+      "table": 1
+    },
+    {
+      "name": "vosp",
+      "table": 1
+    },
+    {
+      "name": "prof",
+      "table": 1
+    },
+    {
+      "name": "plan",
+      "table": 1
+    },
+    {
+      "name": "lartpc",
+      "table": 1
+    },
+    {
+      "name": "larrout",
+      "table": 1
+    },
+    {
+      "name": "surf",
+      "table": 1
+    },
+    {
+      "name": "infra",
+      "table": 1
+    },
+    {
+      "name": "situ",
+      "table": 1
+    },
+    {
+      "name": "env1",
+      "table": 1
+    },
+    {
+      "name": "origin",
+      "table": 1
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
