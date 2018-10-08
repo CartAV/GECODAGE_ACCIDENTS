@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1539010717805
+    "lastModifiedOn": 1539010746114
   },
   "creationTag": {
     "versionNumber": 0,
@@ -213,74 +213,6 @@
       },
       {
         "name": "catr",
-        "type": "string"
-      },
-      {
-        "name": "voie",
-        "type": "string"
-      },
-      {
-        "name": "v1",
-        "type": "string"
-      },
-      {
-        "name": "v2",
-        "type": "string"
-      },
-      {
-        "name": "circ",
-        "type": "string"
-      },
-      {
-        "name": "nbv",
-        "type": "string"
-      },
-      {
-        "name": "pr",
-        "type": "string"
-      },
-      {
-        "name": "pr1",
-        "type": "string"
-      },
-      {
-        "name": "vosp",
-        "type": "string"
-      },
-      {
-        "name": "prof",
-        "type": "string"
-      },
-      {
-        "name": "plan",
-        "type": "string"
-      },
-      {
-        "name": "lartpc",
-        "type": "string"
-      },
-      {
-        "name": "larrout",
-        "type": "string"
-      },
-      {
-        "name": "surf",
-        "type": "string"
-      },
-      {
-        "name": "infra",
-        "type": "string"
-      },
-      {
-        "name": "situ",
-        "type": "string"
-      },
-      {
-        "name": "env1",
-        "type": "string"
-      },
-      {
-        "name": "origin",
         "type": "string"
       }
     ],
