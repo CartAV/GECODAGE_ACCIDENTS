@@ -18,6 +18,5 @@ FROM(
         OR (accidents.catr = 'Boulevard Périphérique' AND routes.cat_route_osm = 'route principale')
         OR (accidents.catr != 'autoroute' AND accidents.catr != 'route nationale' AND accidents.catr != 'Boulevard Périphérique')
     )
-
-    ON true
+ 
 )
