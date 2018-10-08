@@ -4,234 +4,226 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "Num_Acc",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "Num_Acc",
+      "type": "string",
       "table": 0
     },
     {
       "name": "mois",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "lum",
+      "type": "string",
       "table": 0
     },
     {
       "name": "dep",
+      "type": "string",
       "table": 0
     },
     {
       "name": "agg",
+      "type": "string",
       "table": 0
     },
     {
       "name": "int",
+      "type": "string",
       "table": 0
     },
     {
       "name": "atm",
+      "type": "string",
       "table": 0
     },
     {
       "name": "col",
+      "type": "string",
       "table": 0
     },
     {
       "name": "adr",
+      "type": "string",
       "table": 0
     },
     {
       "name": "date",
+      "type": "date",
       "table": 0
     },
     {
       "name": "date_formated",
+      "type": "string",
       "table": 0
     },
     {
       "name": "heures_minutes",
+      "type": "string",
       "table": 0
     },
     {
       "name": "ANNEE",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "SEMAINE",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "LIBELLE_JOUR",
+      "type": "string",
       "table": 0
     },
     {
       "name": "HEURE",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "LIBELLE_PLAGE_HORAIRE",
+      "type": "string",
       "table": 0
     },
     {
       "name": "original_city_code",
+      "type": "string",
       "table": 0
     },
     {
       "name": "original_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "current_city_code",
+      "type": "string",
       "table": 0
     },
     {
       "name": "current_name",
+      "type": "string",
       "table": 0
     },
     {
       "name": "ban2_postcode",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "distance_commune_baac",
+      "type": "double",
       "table": 0
     },
     {
       "name": "distance_commune_ban",
+      "type": "double",
       "table": 0
     },
     {
       "name": "distance_commune_ban2",
+      "type": "double",
       "table": 0
     },
     {
       "name": "distance_commune_bano",
+      "type": "double",
       "table": 0
     },
     {
       "name": "CODE_COM",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "Organisme",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "pr_lat_i",
+      "type": "double",
       "table": 0
     },
     {
       "name": "pr_lon_i",
+      "type": "double",
       "table": 0
     },
     {
       "name": "nom_circonscription_police",
+      "type": "string",
       "table": 0
     },
     {
       "name": "pr_score",
+      "type": "double",
       "table": 0
     },
     {
       "name": "baac_score",
+      "type": "double",
       "table": 0
     },
     {
       "name": "longitude",
+      "type": "double",
       "table": 0
     },
     {
       "name": "geo_type",
+      "type": "string",
       "table": 0
     },
     {
       "name": "latitude",
+      "type": "double",
       "table": 0
     },
     {
       "name": "geo_source",
+      "type": "string",
       "table": 0
     },
     {
       "name": "geo_score",
+      "type": "double",
       "table": 0
     },
     {
       "name": "catr",
-      "table": 1
-    },
-    {
-      "name": "voie",
-      "table": 1
-    },
-    {
-      "name": "v1",
-      "table": 1
-    },
-    {
-      "name": "v2",
-      "table": 1
-    },
-    {
-      "name": "circ",
-      "table": 1
-    },
-    {
-      "name": "nbv",
-      "table": 1
-    },
-    {
-      "name": "pr",
-      "table": 1
-    },
-    {
-      "name": "pr1",
-      "table": 1
-    },
-    {
-      "name": "vosp",
-      "table": 1
-    },
-    {
-      "name": "prof",
-      "table": 1
-    },
-    {
-      "name": "plan",
-      "table": 1
-    },
-    {
-      "name": "lartpc",
-      "table": 1
-    },
-    {
-      "name": "larrout",
-      "table": 1
-    },
-    {
-      "name": "surf",
-      "table": 1
-    },
-    {
-      "name": "infra",
-      "table": 1
-    },
-    {
-      "name": "situ",
-      "table": 1
-    },
-    {
-      "name": "env1",
-      "table": 1
-    },
-    {
-      "name": "origin",
+      "type": "string",
       "table": 1
     }
   ],
@@ -267,7 +259,7 @@
         "distinct": false,
         "enabled": false
       },
-      "autoSelectColumns": false,
+      "autoSelectColumns": true,
       "index": 0,
       "computedColumns": []
     },
@@ -281,5 +273,172 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "name": "mois",
+            "type": "bigint"
+          },
+          {
+            "name": "lum",
+            "type": "string"
+          },
+          {
+            "name": "dep",
+            "type": "string"
+          },
+          {
+            "name": "agg",
+            "type": "string"
+          },
+          {
+            "name": "int",
+            "type": "string"
+          },
+          {
+            "name": "atm",
+            "type": "string"
+          },
+          {
+            "name": "col",
+            "type": "string"
+          },
+          {
+            "name": "adr",
+            "type": "string"
+          },
+          {
+            "name": "date",
+            "type": "date"
+          },
+          {
+            "name": "date_formated",
+            "type": "string"
+          },
+          {
+            "name": "heures_minutes",
+            "type": "string"
+          },
+          {
+            "name": "ANNEE",
+            "type": "bigint"
+          },
+          {
+            "name": "SEMAINE",
+            "type": "bigint"
+          },
+          {
+            "name": "LIBELLE_JOUR",
+            "type": "string"
+          },
+          {
+            "name": "HEURE",
+            "type": "bigint"
+          },
+          {
+            "name": "LIBELLE_PLAGE_HORAIRE",
+            "type": "string"
+          },
+          {
+            "name": "original_city_code",
+            "type": "string"
+          },
+          {
+            "name": "original_name",
+            "type": "string"
+          },
+          {
+            "name": "current_city_code",
+            "type": "string"
+          },
+          {
+            "name": "current_name",
+            "type": "string"
+          },
+          {
+            "name": "ban2_postcode",
+            "type": "bigint"
+          },
+          {
+            "name": "distance_commune_baac",
+            "type": "double"
+          },
+          {
+            "name": "distance_commune_ban",
+            "type": "double"
+          },
+          {
+            "name": "distance_commune_ban2",
+            "type": "double"
+          },
+          {
+            "name": "distance_commune_bano",
+            "type": "double"
+          },
+          {
+            "name": "CODE_COM",
+            "type": "bigint"
+          },
+          {
+            "name": "Organisme",
+            "type": "bigint"
+          },
+          {
+            "name": "pr_lat_i",
+            "type": "double"
+          },
+          {
+            "name": "pr_lon_i",
+            "type": "double"
+          },
+          {
+            "name": "nom_circonscription_police",
+            "type": "string"
+          },
+          {
+            "name": "pr_score",
+            "type": "double"
+          },
+          {
+            "name": "baac_score",
+            "type": "double"
+          },
+          {
+            "name": "longitude",
+            "type": "double"
+          },
+          {
+            "name": "geo_type",
+            "type": "string"
+          },
+          {
+            "name": "latitude",
+            "type": "double"
+          },
+          {
+            "name": "geo_source",
+            "type": "string"
+          },
+          {
+            "name": "geo_score",
+            "type": "double"
+          },
+          {
+            "name": "catr",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
