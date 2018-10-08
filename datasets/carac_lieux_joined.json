@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1539011217084
+    "lastModifiedOn": 1539011714380
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,233 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "Num_Acc",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "mois",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "lum",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "dep",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "agg",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "int",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "atm",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "col",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "adr",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "date",
+        "type": "date",
+        "originalType": "timestamptz"
+      },
+      {
+        "name": "date_formated",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "heures_minutes",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "ANNEE",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "SEMAINE",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "LIBELLE_JOUR",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "HEURE",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "LIBELLE_PLAGE_HORAIRE",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "original_city_code",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "original_name",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "current_city_code",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "current_name",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "ban2_postcode",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "distance_commune_baac",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "distance_commune_ban",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "distance_commune_ban2",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "distance_commune_bano",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "CODE_COM",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "Organisme",
+        "type": "bigint",
+        "originalType": "int8"
+      },
+      {
+        "name": "pr_lat_i",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "pr_lon_i",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "nom_circonscription_police",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "pr_score",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "baac_score",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "longitude",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "geo_type",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "latitude",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "geo_source",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "geo_score",
+        "type": "double",
+        "originalType": "float8"
+      },
+      {
+        "name": "catr",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "the_geom",
+        "type": "string",
+        "originalType": "geography"
+      },
+      {
+        "name": "geojson",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "num_route_com_id",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "INSEE_COM",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "num_route_or_id",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "cat_route_osm",
+        "type": "string",
+        "originalType": "text"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
