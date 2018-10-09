@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538640790694
+    "lastModifiedOn": 1539075374415
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,6 +73,7 @@
       {
         "name": "dep",
         "type": "string",
+        "meaning": "Text",
         "maxLength": 16200
       },
       {
@@ -139,6 +140,7 @@
       {
         "name": "original_city_code",
         "type": "string",
+        "meaning": "Text",
         "maxLength": 16200
       },
       {
@@ -149,6 +151,7 @@
       {
         "name": "current_city_code",
         "type": "string",
+        "meaning": "Text",
         "maxLength": 16200
       },
       {
