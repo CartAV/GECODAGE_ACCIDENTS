@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538480736679
+    "lastModifiedOn": 1539075452563
   },
   "creationTag": {
     "versionNumber": 0,
@@ -62,7 +62,8 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "mois",
