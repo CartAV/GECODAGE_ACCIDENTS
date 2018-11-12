@@ -2644,6 +2644,28 @@
         },
         "sql": "SELECT *\nFROM  \"caracateristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
         "expandedSql": "SELECT *\nFROM  \"caracateristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "6sP6TxUrJHwk",
+        "runOn": 1542045637603,
+        "runIn": 54,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "MgdGQgpr",
+        "hash": "d318588c2e321be6718f7f3af5ab77b5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM  \"caracteristiques_arrondissements_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
+        "expandedSql": "SELECT *\nFROM  \"caracteristiques_arrondissements_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
       }
     ]
   }
