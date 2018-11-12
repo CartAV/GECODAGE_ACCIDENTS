@@ -2710,6 +2710,28 @@
         },
         "sql": "SELECT *\nFROM  \"caracteristiques_geocoded_3_postgis_joined_with_pr\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
         "expandedSql": "SELECT *\nFROM  \"caracteristiques_geocoded_3_postgis_joined_with_pr\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "iueaOf8uKYbz",
+        "runOn": 1542045820074,
+        "runIn": 44,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "EZHC3dUW",
+        "hash": "6e4f50f986aef3d77ccd5ba676a9752f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM  \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
+        "expandedSql": "SELECT *\nFROM  \"caracteristiques_geocoded_3_circo_police\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
       }
     ]
   }
