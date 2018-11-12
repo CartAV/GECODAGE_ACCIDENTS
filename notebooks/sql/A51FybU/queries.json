@@ -2759,10 +2759,10 @@
         "mode": "SQL",
         "id": "u3Xilp5mKMSF",
         "runOn": 1542045862084,
-        "runIn": 44,
+        "runIn": 63,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "ceeLON5N",
         "hash": "9bc00f128cdc6c1bde3a52cdf044f81b",
         "querySettings": {
