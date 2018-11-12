@@ -2776,6 +2776,28 @@
         },
         "sql": "SELECT *\nFROM  \"caracateristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
         "expandedSql": "SELECT *\nFROM  \"caracateristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "2BemfAI9n2Uh",
+        "runOn": 1542045918912,
+        "runIn": 63,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "WT1j0VeI",
+        "hash": "376ce154e3ea5b0b287f5792c210871a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM  \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
+        "expandedSql": "SELECT *\nFROM  \"caracteristiques_coordinates_selected\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
       }
     ]
   }
