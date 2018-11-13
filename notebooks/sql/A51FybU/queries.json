@@ -2620,6 +2620,28 @@
         },
         "sql": "SELECT * -- latitude, longitude\n--FROM \"caracteristiques_coordinates_selected\"\nFROM \"arrondissements_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT * -- latitude, longitude\n--FROM \"caracteristiques_coordinates_selected\"\nFROM \"arrondissements_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "ZpJHmujNSk5E",
+        "runOn": 1542113978201,
+        "runIn": 10,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "WPKKQZuI",
+        "hash": "f82fa0a72bf93e78e7482a614ba4ff8a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * -- latitude, longitude\n--FROM \"caracteristiques_coordinates_selected\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
+        "expandedSql": "SELECT * -- latitude, longitude\n--FROM \"caracteristiques_coordinates_selected\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
       }
     ],
     "6wty3511c09": [
