@@ -2603,10 +2603,10 @@
         "mode": "SQL",
         "id": "fnNp0JXoelSQ",
         "runOn": 1542113961274,
-        "runIn": 24,
+        "runIn": 10,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "VL5Sb6fS",
         "hash": "cb05a875c7e0f36a55cb4c86f1207fe6",
         "querySettings": {
