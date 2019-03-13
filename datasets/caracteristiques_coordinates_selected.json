@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538471771831
+    "lastModifiedOn": 1552491502448
   },
   "creationTag": {
     "versionNumber": 0,
@@ -192,26 +192,6 @@
       {
         "name": "baac_score",
         "type": "double"
-      },
-      {
-        "name": "longitude",
-        "type": "double"
-      },
-      {
-        "name": "geo_type",
-        "type": "string"
-      },
-      {
-        "name": "latitude",
-        "type": "double"
-      },
-      {
-        "name": "geo_source",
-        "type": "string"
-      },
-      {
-        "name": "geo_score",
-        "type": "double"
       }
     ],
     "userModified": true
@@ -285,5 +265,6 @@
     "displayedState": {
       "checks": []
     }
-  }
+  },
+  "customFields": {}
 }
