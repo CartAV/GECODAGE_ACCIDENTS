@@ -152,14 +152,6 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
-          "baac_geopoint",
-          "distance_baac_final",
-          "bano_geopoint",
-          "distance_ban_bano",
-          "distance_baac_bano",
-          "ban_geopoint",
-          "distance_baac_ban",
-          "ban2_geopoint",
           "ban_citycode",
           "ban_label",
           "ban_latitude",
