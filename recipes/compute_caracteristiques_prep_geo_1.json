@@ -12,6 +12,7 @@
           "inheritConf": "default",
           "conf": []
         },
+        "executionEngine": "SPARK_SUBMIT",
         "readParams": {
           "map": {
             "caracteristiques_geocoded_3_postgis_joined": {
@@ -28,7 +29,18 @@
             }
           }
         },
-        "useGlobalMetastore": false
+        "useGlobalMetastore": false,
+        "useNativeProcessors": true
+      },
+      "hive": {
+        "inheritConf": "default",
+        "hiveconf": [],
+        "executionEngine": "HIVECLI_LOCAL",
+        "addDkuUdf": false,
+        "skipPrerunValidate": false
+      },
+      "impala": {
+        "forceStreamMode": true
       },
       "hadoopConfigKeys": [],
       "maxThreads": 8
@@ -60,11 +72,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 39,
+    "versionNumber": 40,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1538687139746
+    "lastModifiedOn": 1552491151386
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,6 +86,7 @@
     "lastModifiedOn": 1488904005819
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
