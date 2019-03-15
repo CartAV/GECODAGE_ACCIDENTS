@@ -84,7 +84,7 @@
         "_refreshTrigger": 1
       },
       "def": {
-        "type": "grouped_columns",
+        "type": "stacked_columns",
         "variant": "normal",
         "name": "Count by ANNEE and geo_type",
         "userEditedName": false,
@@ -266,7 +266,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA90lEQVRoge3QMQ6CMBTG8R5AR0dl1AjnAxdhcfICOjq6oINoajRhZHF2deUWuEBS5RUblRbl+499ebQ/GEMIMcbYwN0vTL9Ba303Ck2/QWvvgC0viut4i5Z0gRvzkwBWCOCadmoJYIWqHr9JUnIGsKkAVghgIYAVdrQGsEIACwGssKO11oHH0+NBNguTdE2d/wQ4C7rkhbbPuWyndWB+vuyoc8uL4izobKlZFVj2hloCOM/2Oc9OE3IGcB7AQv8LnvUiagawuKMb7Kyc0oWvwNTOt8GynY/SCaa+Zwx8HY4ePl6Al7d56dIC/LxTgKmdxoARQggZ7A5guJ5HaJSJ2gAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAIElEQVRoge3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAHgaJagAAXCxjHYAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
