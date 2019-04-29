@@ -184,11 +184,15 @@ def geocode(ids, ods):
             ow.write_dataframe(write_queue.get())
 
     print "waiting {} chunk processes".format(process_queue.qsize())
-    while (process_queue.qsize() > 0):
+    c = 0
+    while (process_queue.qsize() > 0) and c < 300:
+        c += 1
         time.sleep(1)
 
     print "flushing {} chunks".format(write_queue.qsize())
-    while (write_queue.qsize() > 0):
+    c = 0
+    while (write_queue.qsize() > 0) and c < 300:
+        c += 1
         ow.write_dataframe(write_queue.get())
 
     ow.close()

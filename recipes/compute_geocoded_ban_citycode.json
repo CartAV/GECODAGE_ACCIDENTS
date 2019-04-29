@@ -37,11 +37,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 35,
+    "versionNumber": 36,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1539027370665
+    "lastModifiedOn": 1556540736718
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,6 +51,7 @@
     "lastModifiedOn": 1520361457080
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
