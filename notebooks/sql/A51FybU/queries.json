@@ -2909,6 +2909,30 @@
         "sql": "SELECT *\nFROM  \"caracateristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
         "expandedSql": "SELECT *\nFROM  \"caracateristiques_postgis\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
       }
+    ],
+    "08o79yugiii": [
+      {
+        "mode": "SQL",
+        "id": "cEEQ4LfrdA6h",
+        "runOn": 1556809900277,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "YUUAROgx",
+        "hash": "ddd8cc5db59cf320eaea2141a20c3c8e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT  \"nom_circonscription_police\"\n\nFROM \"caracteristiques_arrondissements_prepared\"",
+        "expandedSql": "SELECT DISTINCT  \"nom_circonscription_police\"\n\nFROM \"caracteristiques_arrondissements_prepared\""
+      }
     ]
   }
 }
