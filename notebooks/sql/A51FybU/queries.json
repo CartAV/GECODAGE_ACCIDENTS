@@ -3245,10 +3245,10 @@
         "mode": "SQL",
         "id": "tJY76KgCyPRo",
         "runOn": 1556810699123,
-        "runIn": 506,
+        "runIn": 63,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "Y9VEIwQ6",
         "hash": "48655894f02a553a98d492d9fad605d5",
         "querySettings": {
