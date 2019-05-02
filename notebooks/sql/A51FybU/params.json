@@ -131,15 +131,28 @@
         "statementsParseMode": "SPLIT",
         "statementsExecutionMode": "PREPARED"
       }
+    },
+    {
+      "id": "ifc0hlzbjbt",
+      "type": "MARKDOWN",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
     }
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1542045629583
+    "lastModifiedOn": 1556809873345
   },
   "creationTag": {
     "versionNumber": 0,
@@ -149,6 +162,7 @@
     "lastModifiedOn": 1521044412757
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
