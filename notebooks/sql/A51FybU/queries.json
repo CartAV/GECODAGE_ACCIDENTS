@@ -2981,10 +2981,10 @@
         "mode": "SQL",
         "id": "zqdt5EDorc3v",
         "runOn": 1556809960547,
-        "runIn": 510,
+        "runIn": 532,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "EFGrokuP",
         "hash": "44f37186281bb4abeb44dcd0dfe9b064",
         "querySettings": {
