@@ -3311,10 +3311,10 @@
         "mode": "SQL",
         "id": "2XSvvGzxdT6I",
         "runOn": 1556810754704,
-        "runIn": 53,
+        "runIn": 586,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "TMxnjcrB",
         "hash": "f83917bb824ec6d4585514db0dcc5983",
         "querySettings": {
