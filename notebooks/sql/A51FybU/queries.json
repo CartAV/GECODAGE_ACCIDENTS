@@ -3223,10 +3223,10 @@
         "mode": "SQL",
         "id": "WhLnHHlDr7hS",
         "runOn": 1556810634107,
-        "runIn": 468,
+        "runIn": 506,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "MOuoD6Ne",
         "hash": "b79236314530bf0a4a787af6e4e14fec",
         "querySettings": {
