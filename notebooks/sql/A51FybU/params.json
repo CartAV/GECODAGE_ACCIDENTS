@@ -120,19 +120,6 @@
       }
     },
     {
-      "id": "ifc0hlzbjbt",
-      "type": "MARKDOWN",
-      "querySettings": {
-        "addLimitToStatement": true,
-        "statementsOutOfTransaction": false,
-        "inheritConf": "default",
-        "extraConf": [],
-        "addDkuUdf": false,
-        "statementsParseMode": "SPLIT",
-        "statementsExecutionMode": "PREPARED"
-      }
-    },
-    {
       "id": "08o79yugiii",
       "type": "QUERY",
       "querySettings": {
@@ -152,7 +139,7 @@
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1556810387719
+    "lastModifiedOn": 1556810390119
   },
   "creationTag": {
     "versionNumber": 0,
