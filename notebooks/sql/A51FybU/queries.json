@@ -3003,10 +3003,10 @@
         "mode": "SQL",
         "id": "rosKa3D11POb",
         "runOn": 1556809992789,
-        "runIn": 532,
+        "runIn": 520,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "NtyOr7kq",
         "hash": "dcc190b4a730344ea91746b70938d78d",
         "querySettings": {
