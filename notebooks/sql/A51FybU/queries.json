@@ -3306,6 +3306,28 @@
         },
         "sql": "SELECT \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nORDER BY \"geo_source\"\nWHERE geo_score \u003e\u003d 0.5",
         "expandedSql": "SELECT \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nORDER BY \"geo_source\"\nWHERE geo_score \u003e\u003d 0.5"
+      },
+      {
+        "mode": "SQL",
+        "id": "2XSvvGzxdT6I",
+        "runOn": 1556810754704,
+        "runIn": 53,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "TMxnjcrB",
+        "hash": "f83917bb824ec6d4585514db0dcc5983",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nAND  geo_score \u003e\u003d 0.5\nORDER BY \"geo_source\"\n",
+        "expandedSql": "SELECT \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nAND  geo_score \u003e\u003d 0.5\nORDER BY \"geo_source\"\n"
       }
     ]
   }
