@@ -3020,6 +3020,28 @@
         },
         "sql": "SELECT COUNT(*)\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (11, 12, 13, 14)",
         "expandedSql": "SELECT COUNT(*)\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (11, 12, 13, 14)"
+      },
+      {
+        "mode": "SQL",
+        "id": "noQ0siBmWVWm",
+        "runOn": 1556810002386,
+        "runIn": 520,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "YjpmPYi7",
+        "hash": "f4c57404d76edd1901b26e1a000cc4ce",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)",
+        "expandedSql": "SELECT *\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)"
       }
     ]
   }
