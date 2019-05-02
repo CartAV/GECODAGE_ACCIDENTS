@@ -3113,10 +3113,10 @@
         "mode": "SQL",
         "id": "K2caq4Lgjvxk",
         "runOn": 1556810401301,
-        "runIn": 523,
+        "runIn": 541,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "JN0lDsfv",
         "hash": "f4c57404d76edd1901b26e1a000cc4ce",
         "querySettings": {
