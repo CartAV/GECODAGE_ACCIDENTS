@@ -2932,6 +2932,28 @@
         },
         "sql": "SELECT DISTINCT  \"nom_circonscription_police\"\n\nFROM \"caracteristiques_arrondissements_prepared\"",
         "expandedSql": "SELECT DISTINCT  \"nom_circonscription_police\"\n\nFROM \"caracteristiques_arrondissements_prepared\""
+      },
+      {
+        "mode": "SQL",
+        "id": "kaLf5mO1LjQx",
+        "runOn": 1556809915109,
+        "runIn": 822,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "E09dXtdp",
+        "hash": "8c0af1df396eb0c482566b8157f13002",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT DISTINCT  \"nom_circonscription_police\"\n\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \n\"nom_circonscription_police\" LIKE \u0027%BLOIS%\u0027",
+        "expandedSql": "SELECT DISTINCT  \"nom_circonscription_police\"\n\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE \n\"nom_circonscription_police\" LIKE \u0027%BLOIS%\u0027"
       }
     ]
   }
