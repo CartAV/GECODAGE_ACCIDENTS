@@ -3528,6 +3528,28 @@
         },
         "sql": "SELECT * FROM \"caracteristiques_prep3\"\nWHERE \"Num_Acc\" \u003d 20190128004101800010\n",
         "expandedSql": "SELECT * FROM \"caracteristiques_prep3\"\nWHERE \"Num_Acc\" \u003d 20190128004101800010\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "PgaNbMmL06DD",
+        "runOn": 1556895410581,
+        "runIn": 1621,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "nKB0XRTN",
+        "hash": "c7170caab562668704044ab82d462a74",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM \"caracteristiques_prep3\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n",
+        "expandedSql": "SELECT * FROM \"caracteristiques_prep3\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n"
       }
     ]
   }
