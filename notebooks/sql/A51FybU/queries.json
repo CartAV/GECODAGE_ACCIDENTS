@@ -3465,10 +3465,10 @@
         "mode": "SQL",
         "id": "0wigEn6MXOqE",
         "runOn": 1556895294446,
-        "runIn": 1944,
+        "runIn": 521,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "rSmRU3t7",
         "hash": "8d56581803db7402c894299edf98857a",
         "querySettings": {
