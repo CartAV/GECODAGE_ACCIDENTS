@@ -3505,6 +3505,30 @@
         "sql": "SELECT * -- \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nAND \"current_name\" LIKE \u0027%Victor\u0027\n--AND  geo_score \u003e\u003d 0.5\n--ORDER BY \"geo_source\"\nORDER BY \"Num_Acc\"\n",
         "expandedSql": "SELECT * -- \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nAND \"current_name\" LIKE \u0027%Victor\u0027\n--AND  geo_score \u003e\u003d 0.5\n--ORDER BY \"geo_source\"\nORDER BY \"Num_Acc\"\n"
       }
+    ],
+    "8y64gwbhayw": [
+      {
+        "mode": "SQL",
+        "id": "qIdvY9VcBes8",
+        "runOn": 1556895399167,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "trtQKW6k",
+        "hash": "a37191431f53e016a6497cfb14f090b6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM \"caracteristiques_prep3\"\nWHERE \"Num_Acc\" \u003d 20190128004101800010\n",
+        "expandedSql": "SELECT * FROM \"caracteristiques_prep3\"\nWHERE \"Num_Acc\" \u003d 20190128004101800010\n"
+      }
     ]
   }
 }
