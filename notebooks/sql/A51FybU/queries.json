@@ -3482,6 +3482,28 @@
         },
         "sql": "SELECT * -- \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\n--AND \"current_name\" LIKE \u0027%Victor\u0027\n--AND  geo_score \u003e\u003d 0.5\n--ORDER BY \"geo_source\"\nORDER BY \"Num_Acc\"\n",
         "expandedSql": "SELECT * -- \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\n--AND \"current_name\" LIKE \u0027%Victor\u0027\n--AND  geo_score \u003e\u003d 0.5\n--ORDER BY \"geo_source\"\nORDER BY \"Num_Acc\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "u2QNECSJTbZ6",
+        "runOn": 1556895334506,
+        "runIn": 521,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Wui4219J",
+        "hash": "1013cb027f2b4051abb383e75d63b351",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * -- \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nAND \"current_name\" LIKE \u0027%Victor\u0027\n--AND  geo_score \u003e\u003d 0.5\n--ORDER BY \"geo_source\"\nORDER BY \"Num_Acc\"\n",
+        "expandedSql": "SELECT * -- \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nAND \"current_name\" LIKE \u0027%Victor\u0027\n--AND  geo_score \u003e\u003d 0.5\n--ORDER BY \"geo_source\"\nORDER BY \"Num_Acc\"\n"
       }
     ]
   }
