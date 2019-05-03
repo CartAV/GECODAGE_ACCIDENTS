@@ -133,19 +133,6 @@
       }
     },
     {
-      "id": "0.3888273836156072",
-      "type": "QUERY",
-      "querySettings": {
-        "addLimitToStatement": true,
-        "statementsOutOfTransaction": false,
-        "inheritConf": "default",
-        "extraConf": [],
-        "addDkuUdf": false,
-        "statementsParseMode": "SPLIT",
-        "statementsExecutionMode": "PREPARED"
-      }
-    },
-    {
       "id": "8y64gwbhayw",
       "type": "QUERY",
       "querySettings": {
@@ -161,11 +148,11 @@
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1556895383198
+    "lastModifiedOn": 1556895494687
   },
   "creationTag": {
     "versionNumber": 0,
