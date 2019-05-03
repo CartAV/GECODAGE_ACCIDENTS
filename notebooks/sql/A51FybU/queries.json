@@ -3421,10 +3421,10 @@
         "mode": "SQL",
         "id": "iFfq4bNqicOF",
         "runOn": 1556894528390,
-        "runIn": 495,
+        "runIn": 644,
         "runBy": "dupontlau",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "5FjwPxaB",
         "hash": "2f4c644163a1e96fd309e6d83a427046",
         "querySettings": {
