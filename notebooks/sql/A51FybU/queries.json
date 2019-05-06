@@ -3902,6 +3902,28 @@
         },
         "sql": "SELECT * FROM --\"geocoded_cityname\"\n\"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\n--WHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\nWHERE adr LIKE \u0027GALLOIS%\u0027\nAND \"an\" \u003d 19\nAND  \"mois\" in (1, 2, 3, 4)",
         "expandedSql": "SELECT * FROM --\"geocoded_cityname\"\n\"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\n--WHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\nWHERE adr LIKE \u0027GALLOIS%\u0027\nAND \"an\" \u003d 19\nAND  \"mois\" in (1, 2, 3, 4)"
+      },
+      {
+        "mode": "SQL",
+        "id": "PQ6ZHH9B0fAf",
+        "runOn": 1557147315865,
+        "runIn": 339,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "HT8GJrZM",
+        "hash": "10cafb5a8d55e99bc728ae2947c02785",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM --\"geocoded_cityname\"\n\"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\n--WHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\nWHERE adr LIKE \u0027GALLOIS%\u0027\nAND \"an\" \u003d 19\nAND  \"mois\" \u003d 1",
+        "expandedSql": "SELECT * FROM --\"geocoded_cityname\"\n\"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\n--WHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\nWHERE adr LIKE \u0027GALLOIS%\u0027\nAND \"an\" \u003d 19\nAND  \"mois\" \u003d 1"
       }
     ]
   }
