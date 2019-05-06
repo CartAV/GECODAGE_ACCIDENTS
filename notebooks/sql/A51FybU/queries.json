@@ -3770,6 +3770,28 @@
         },
         "sql": "SELECT * FROM \"geocoded_cityname\"\n-- \"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n",
         "expandedSql": "SELECT * FROM \"geocoded_cityname\"\n-- \"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "IIdRtadDHNob",
+        "runOn": 1557146933568,
+        "runIn": 724,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "JthywSZa",
+        "hash": "06c8c291b0b3b7dff0830b752a8e5141",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM --\"geocoded_cityname\"\n\"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n",
+        "expandedSql": "SELECT * FROM --\"geocoded_cityname\"\n\"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n"
       }
     ]
   }
