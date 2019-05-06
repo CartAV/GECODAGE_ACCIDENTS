@@ -3726,6 +3726,28 @@
         },
         "sql": "SELECT * FROM  \"geocoded_bano_name\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n",
         "expandedSql": "SELECT * FROM  \"geocoded_bano_name\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "e70k8AVKfHZu",
+        "runOn": 1557146738242,
+        "runIn": 2041,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "FxIH6T8D",
+        "hash": "ee6877b5d957b1499bf56a1ab9450585",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM  \"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n",
+        "expandedSql": "SELECT * FROM  \"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n"
       }
     ]
   }
