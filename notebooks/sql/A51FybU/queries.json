@@ -3836,6 +3836,28 @@
         },
         "sql": "SELECT * FROM --\"geocoded_cityname\"\n\"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n",
         "expandedSql": "SELECT * FROM --\"geocoded_cityname\"\n\"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\nWHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "vF2uNdISih4F",
+        "runOn": 1557147247790,
+        "runIn": 242,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "HJ10WAwD",
+        "hash": "4ea45a9329cb56bc253438e7dde681dc",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM --\"geocoded_cityname\"\n\"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\n--WHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\nWHERE adr LIKE \u0027Galois%\u0027\n",
+        "expandedSql": "SELECT * FROM --\"geocoded_cityname\"\n\"geocoded_ban_citycode\"\n-- \"geocoded_bano_name\"\n--WHERE \"Num_Acc\" \u003d \u002720190128004101800010\u0027\nWHERE adr LIKE \u0027Galois%\u0027\n"
       }
     ]
   }
