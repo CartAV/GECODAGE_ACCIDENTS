@@ -3592,6 +3592,28 @@
         },
         "sql": "SELECT * -- \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\n--AND  \"mois\" in (1, 2, 3, 4)\nAND \"Num_Acc\" LIKE \u0027%07\u0027\nWHERE  \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n--AND \"current_name\" LIKE \u0027%Victor\u0027\n--AND  geo_score \u003e\u003d 0.5\n--ORDER BY \"geo_source\"\n--ORDER BY \"Num_Acc\"\n",
         "expandedSql": "SELECT * -- \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\n--AND  \"mois\" in (1, 2, 3, 4)\nAND \"Num_Acc\" LIKE \u0027%07\u0027\nWHERE  \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n--AND \"current_name\" LIKE \u0027%Victor\u0027\n--AND  geo_score \u003e\u003d 0.5\n--ORDER BY \"geo_source\"\n--ORDER BY \"Num_Acc\"\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "e6CMBlvt7aJT",
+        "runOn": 1557146547798,
+        "runIn": 248,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "eOdWmhtL",
+        "hash": "9b04aa1137a258357bad8efcdbea99eb",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * -- \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\n--AND \"Num_Acc\" LIKE \u0027%07\u0027\nAND  \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n--AND \"current_name\" LIKE \u0027%Victor\u0027\n--AND  geo_score \u003e\u003d 0.5\n--ORDER BY \"geo_source\"\n--ORDER BY \"Num_Acc\"\n",
+        "expandedSql": "SELECT * -- \"geo_source\", \"geo_score\", \"pr_score\", \"baac_score\", \"score\"\nFROM \"caracteristiques_arrondissements_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\n--AND \"Num_Acc\" LIKE \u0027%07\u0027\nAND  \"Num_Acc\" \u003d \u002720190128004101800010\u0027\n--AND \"current_name\" LIKE \u0027%Victor\u0027\n--AND  geo_score \u003e\u003d 0.5\n--ORDER BY \"geo_source\"\n--ORDER BY \"Num_Acc\"\n"
       }
     ],
     "8y64gwbhayw": [
